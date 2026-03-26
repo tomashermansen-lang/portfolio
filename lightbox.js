@@ -34,9 +34,9 @@
     menu.classList.toggle('nav__links--open');
   });
 
-  // Close menu when a link is clicked
+  // Close menu when a navigation link is clicked (not dropdown triggers)
   menu.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
+    if (e.target.tagName === 'A' && !e.target.hasAttribute('aria-haspopup')) {
       toggle.setAttribute('aria-expanded', 'false');
       menu.classList.remove('nav__links--open');
     }
