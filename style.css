@@ -903,8 +903,8 @@ section {
   font-size: var(--text-sm);
   color: var(--text-tertiary);
   letter-spacing: 0.02em;
-  margin-top: calc(-1 * var(--space-sm));
-  padding-bottom: var(--space-md);
+  margin-top: calc(-1 * var(--space-md));
+  padding-bottom: var(--space-xs);
 }
 
 .pipeline-timeline__caption {
