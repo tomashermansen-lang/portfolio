@@ -1,24 +1,4 @@
-/**
- * Nav: hide on scroll down, reveal on scroll up (Instrument pattern).
- */
-(function () {
-  var nav = document.querySelector('.nav');
-  if (!nav) return;
-  var lastY = 0;
-  var threshold = 10;
-
-  window.addEventListener('scroll', function () {
-    var y = window.scrollY;
-    if (y < 60) {
-      nav.classList.remove('nav--hidden');
-    } else if (y > lastY + threshold) {
-      nav.classList.add('nav--hidden');
-    } else if (y < lastY - threshold) {
-      nav.classList.remove('nav--hidden');
-    }
-    lastY = y;
-  }, { passive: true });
-})();
+/* Nav is always visible (position: fixed in CSS). */
 
 /**
  * Mobile hamburger menu toggle.
