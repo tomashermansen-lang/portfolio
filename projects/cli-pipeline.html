@@ -246,7 +246,7 @@
                 <span class="pipeline-timeline__command">/static-analysis</span>
                 <span class="pipeline-timeline__loop">fix loop</span>
               </div>
-              <p class="pipeline-timeline__detail">TDD: write the failing test first, then code, then refactor. Deterministic gates enter: ruff, mypy, tsc, SonarQube. LLM fixes what tools flag.</p>
+              <p class="pipeline-timeline__detail">TDD: write the failing test first, then code, then refactor. Linters and type checkers (ruff, mypy, tsc) run inline during implementation. Static analysis then runs SonarQube and coverage enforcement. LLM fixes what tools flag.</p>
             </div>
           </div>
         </div>
@@ -355,7 +355,7 @@
         <div class="exec-graph__phase">
           <div class="exec-graph__phase-header">
             <span class="exec-graph__phase-name">Architecture</span>
-            <span class="exec-graph__phase-number">/plan /team-review /review</span>
+            <span class="exec-graph__phase-number">/plan /team-review</span>
           </div>
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
@@ -371,7 +371,7 @@
           </div>
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
-              <span class="exec-graph__task-name">TDD against acceptance criteria</span>
+              <span class="exec-graph__task-name">TDD against acceptance criteria, inline lint + type checking</span>
             </div>
           </div>
         </div>
@@ -383,7 +383,7 @@
           </div>
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
-              <span class="exec-graph__task-name">deterministic gates: linters, type checkers, SonarQube</span>
+              <span class="exec-graph__task-name">SonarQube scan, coverage enforcement, baseline regression</span>
             </div>
           </div>
         </div>
@@ -391,7 +391,7 @@
         <div class="exec-graph__phase">
           <div class="exec-graph__phase-header">
             <span class="exec-graph__phase-name">Quality</span>
-            <span class="exec-graph__phase-number">/manualtest /team-qa /qa</span>
+            <span class="exec-graph__phase-number">/manualtest /team-qa</span>
           </div>
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
