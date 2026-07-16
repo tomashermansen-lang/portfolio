@@ -317,9 +317,10 @@
 
       <p>
         Each phase runs in a fresh session. No conversation history carries over.
-        When the work is part of an execution graph, a command first orients
-        itself in the graph, which serves as an index rather than a document to
-        ingest. Then it loads exactly the committed artifacts it needs.
+        When the work is part of an
+        <a href="watchfloor-autopilot.html#execution-graphs">execution graph</a>,
+        a command first orients itself in the graph, which serves as an index
+        rather than a document to ingest. Then it loads exactly the committed artifacts it needs.
         This is context engineering applied to an agent harness: the pipeline
         controls what each agent sees, rather than letting context accumulate
         across a long conversation.
