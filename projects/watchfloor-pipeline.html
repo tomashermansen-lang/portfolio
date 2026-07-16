@@ -292,11 +292,13 @@
       </div>
 
       <p>
-        One real feature's complete trail is public: the requirements, plan,
-        test plan, review, QA report (passed after a fix loop that added 13
-        test scenarios), and static analysis for an unattended run, exactly
-        as the pipeline committed them.
-        <a href="https://github.com/tomashermansen-lang/watchfloor/tree/main/docs/example-feature/grinder-auth-recovery" target="_blank" rel="noopener noreferrer">Inspect the audit trail</a>.
+        Two real features' complete trails are public, exactly as the pipeline
+        committed them: one unattended run where QA passed only after a fix
+        loop that added 13 test scenarios, and one where SonarQube flagged two
+        findings in the branch's own code and the pipeline fixed them in a
+        dedicated commit. Each trail includes the requirements-to-report
+        artifact chain and the full tool-level stream of the run.
+        <a href="https://github.com/tomashermansen-lang/watchfloor/tree/main/docs/example-feature" target="_blank" rel="noopener noreferrer">Inspect the audit trails</a>.
       </p>
 
       <h3>The phase order is evidence, not opinion</h3>
