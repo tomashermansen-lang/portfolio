@@ -1651,3 +1651,12 @@ section {
   border-radius: 6px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
 }
+
+/* Hero kicker: visible role positioning above the name */
+.hero__kicker {
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}

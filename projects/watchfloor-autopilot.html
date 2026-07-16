@@ -18,7 +18,7 @@
   <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="../style.css?v=5">
 </head>
 <body>
 
@@ -118,7 +118,8 @@
       <p>
         Execution graphs are the coordination layer for this. Via <code>/plan-project</code>,
         work gets broken into structured YAML plans with phases, tasks, dependency chains, and
-        quality gates, validated against a versioned schema. Each task is a feature that enters
+        quality gates, validated against a
+        <a href="https://github.com/tomashermansen-lang/watchfloor/blob/main/core/schema/execution-plan.schema.json" target="_blank" rel="noopener noreferrer">versioned schema</a>. Each task is a feature that enters
         the pipeline independently. Tasks within a phase can run in parallel. Tasks across
         phases respect dependency ordering. Each task also carries an autopilot eligibility
         flag: backend work with clear acceptance criteria runs unattended, while UI work stays

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#FAF8F5">
   <title>EuLex RAG | Tomas Hermansen</title>
-  <meta name="description" content="Legal Q&A for EU regulations. Hybrid retrieval across 12 EU laws with fail-closed citation validation. Refuses to answer rather than cite wrong articles.">
+  <meta name="description" content="Legal Q&A for EU regulations. Hybrid retrieval across 13 EU laws with fail-closed citation validation. Refuses to answer rather than cite wrong articles.">
   <meta property="og:type" content="article">
   <meta property="og:title" content="EuLex RAG | Tomas Hermansen">
-  <meta property="og:description" content="Legal Q&A for EU regulations. Hybrid retrieval across 12 EU laws with fail-closed citation validation. Refuses to answer rather than cite wrong articles.">
+  <meta property="og:description" content="Legal Q&A for EU regulations. Hybrid retrieval across 13 EU laws with fail-closed citation validation. Refuses to answer rather than cite wrong articles.">
   <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/rag-framework.html">
   <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/assets/eulex/chat-demo.gif">
   <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
   <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="../style.css?v=5">
 </head>
 <body>
 
@@ -79,10 +79,18 @@
     <div class="project-content">
 
       <p class="project-content__summary">
-        Hybrid retrieval across 12 EU laws, fail-closed citation validation,
+        Hybrid retrieval across 13 EU laws, fail-closed citation validation,
         and an evaluation framework that auto-generates test cases during
         ingestion.
       </p>
+
+      <ul>
+        <li><strong>The problem:</strong> LLM answers about legislation are worthless if the citations can't be trusted.</li>
+        <li><strong>The decision:</strong> fail closed. The system refuses to answer rather than cite what the evidence doesn't support, and evaluation runs on production code paths.</li>
+        <li><strong>What I built:</strong> hybrid retrieval across 13 EU laws with citation validation, self-service ingestion, and an eval metrics dashboard.</li>
+        <li><strong>What I measured:</strong> a regression suite of 256 golden cases, most of them auto-generated during ingestion, scored with an LLM judge.</li>
+        <li><strong>Why it matters:</strong> a working pattern for grounding LLM systems in regulated domains where a wrong answer has consequences.</li>
+      </ul>
 
       <h2>How it started</h2>
 
@@ -118,7 +126,7 @@
 
       <p>
         EuLex answers questions about EU legislation with verified article citations. It
-        currently covers 12 EU laws (AI Act, GDPR, DORA, NIS2, Data Act, and others)
+        currently covers 13 EU laws (AI Act, GDPR, DORA, NIS2, Data Act, and others)
         and supports cross-law queries: "Which regulations are relevant for cybersecurity?"
         retrieves across all corpora, merges results, and synthesises a multi-law answer
         with per-article citations.
@@ -223,9 +231,10 @@
 
       <p>
         The evaluation pipeline calls the exact same functions as the production API.
-        There's no separate "test mode" with different behaviour. 296 golden test cases
+        There's no separate "test mode" with different behaviour.
+        <a href="https://github.com/tomashermansen-lang/eulex-rag/tree/main/data/evals" target="_blank" rel="noopener noreferrer">256 golden test cases</a>
         go through multi-stage scoring: anchor presence, response format compliance,
-        citation verification, and LLM-as-judge checks for faithfulness and relevancy. The interesting part is that 278
+        citation verification, and LLM-as-judge checks for faithfulness and relevancy. The interesting part is that 253
         of those cases are auto-generated during ingestion. When a new law is added, the
         pipeline creates test cases from the legislation itself. In a production setting
         those would need an expert-crafted layer on top, but the auto-generated baseline
