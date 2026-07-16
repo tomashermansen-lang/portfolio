@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>Watchfloor: Autopilot &amp; Execution Graphs | Tomas Hermansen</title>
+  <meta name="description" content="Unattended AI delivery for work where the quality gates are sufficient, and dependency-ordered execution graphs for work bigger than one feature. Part of Watchfloor.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Watchfloor: Autopilot &amp; Execution Graphs | Tomas Hermansen">
+  <meta property="og:description" content="Unattended AI delivery for work where the quality gates are sufficient, and dependency-ordered execution graphs for work bigger than one feature. Part of Watchfloor.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-autopilot.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/autopilot-tmux.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-autopilot.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG</a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="watchfloor.html" class="back-link">&larr; Watchfloor</a>
+        <h1 class="hero__title hero__title--project">Autopilot &amp; execution graphs</h1>
+        <p class="hero__subtitle">Unattended delivery for work where the gates are sufficient. Dependency-ordered plans for work bigger than one feature.</p>
+        <div class="hero__meta">
+          <span>Watchfloor chapter 2 of 4 &middot; Solo project, actively evolving</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">bash</span>
+          <span class="tag">tmux</span>
+          <span class="tag">yaml</span>
+          <span class="tag">json schema</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        Three orchestrators run the <a href="watchfloor-pipeline.html">pipeline</a>
+        without a human in the loop: autopilot for one task, autochain for a whole
+        plan, and grinder for continuous codebase improvement. Execution graphs
+        coordinate the work, carry context between tasks, and measure when the
+        implementation drifts from the plan.
+      </p>
+
+      <h2 id="two-modes">Running unattended</h2>
+
+      <p>
+        The commands are the same as in interactive work. How they're orchestrated differs:
+      </p>
+
+      <ul>
+        <li><strong>Flow mode.</strong> For work that needs human judgement: UI features, ambiguous requirements, anything where I want to review output before it propagates. I move through phases conversationally, approving each one.</li>
+        <li><strong>Autopilot.</strong> For backend work where the deterministic gates are sufficient. The entire pipeline runs unattended in tmux. Same agents, same review cycles, same static analysis gates, but all human checkpoints auto-approved. A failed run resumes from the phase that broke, not from scratch.</li>
+        <li><strong>Autochain.</strong> Autopilot at plan level. It walks an execution graph and runs every eligible task through its own pipeline, in parallel where dependencies allow, with gates between phases and configurable behaviour on failure.</li>
+        <li><strong>Grinder.</strong> A continuous improvement loop that runs outside the feature pipeline. It discovers findings across the codebase and works through them in passes: mechanical cleanups, static analysis findings, coverage gaps, and dependency vulnerabilities.</li>
+      </ul>
+
+      <p>
+        One rule holds across all of them: checkpoints being auto-approved changes
+        nothing else. Same gates, same review depth, same standards. Autonomy is not
+        a quality discount.
+      </p>
+
+      <div class="screenshot">
+        <img src="../screenshots/autopilot-tmux.png" alt="Terminal showing autopilot commit phase: tests passing, pre-flight checks clear, merge to main, and autopilot auto-approving the checkpoint" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Autopilot auto-approving a commit checkpoint. Tests pass, merge to main, cleanup.</p>
+      </div>
+
+      <h2 id="execution-graphs">Execution graphs: coordinating what a single pipeline can't</h2>
+
+      <p class="section-epigraph"><em>"Plans are worthless, but planning is everything."</em> — Dwight D. Eisenhower, <a href="https://quoteinvestigator.com/2017/11/18/planning/" target="_blank" rel="noopener noreferrer">remarks to the National Defense Executive Reserve, 1957</a></p>
+
+      <p>
+        The pipeline handles one feature at a time. A real module might need a data
+        layer, an API, business logic, and a UI, each depending on the others, each
+        running through its own requirements-to-QA cycle.
+      </p>
+
+      <p>
+        Execution graphs are the coordination layer for this. Via <code>/plan-project</code>,
+        work gets broken into structured YAML plans with phases, tasks, dependency chains, and
+        quality gates, validated against a versioned schema. Each task is a feature that enters
+        the pipeline independently. Tasks within a phase can run in parallel. Tasks across
+        phases respect dependency ordering. Each task also carries an autopilot eligibility
+        flag: backend work with clear acceptance criteria runs unattended, while UI work stays
+        in flow mode with human checkpoints. The same team-based review pattern applies here.
+        <code>/plan-project --team</code> brings up to eight specialist agents into the
+        planning process itself, poking at the scope and dependencies before any code is written.
+      </p>
+
+      <p>
+        I'm not naive about upfront planning. Nobody can predict everything at the start, and
+        detailed plans drift the moment they meet reality. But execution graphs are useful
+        for a different reason: they force me to think about scope, sequencing, and
+        dependencies <em>before</em> writing code. Even when the plan changes (and it will),
+        having made the plan reveals the right questions early. When reality does drift from
+        the plan, <code>/plan-project --update</code> reconciles the graph with what actually
+        happened, preserving completed work while re-sequencing what remains. The cost of
+        replanning is minutes, not days. That changes how willing I am to change direction
+        mid-project.
+      </p>
+
+      <p>
+        A simplified example of what an execution graph looks like in practice:
+      </p>
+
+      <!-- Execution Graph — typography-driven -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">01</span>
+            <span class="exec-graph__phase-name">Foundation</span>
+            <span class="exec-graph__gate">gate: all tests pass</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Data layer</span>
+              <span class="exec-graph__task-meta">autopilot</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">API layer</span>
+              <span class="exec-graph__task-meta">autopilot</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Configuration</span>
+              <span class="exec-graph__task-meta">autopilot</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">All three run in parallel, no dependencies between them.</p>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">02</span>
+            <span class="exec-graph__phase-name">Core logic</span>
+            <span class="exec-graph__gate">gate: tests + static analysis</span>
+          </div>
+          <div class="exec-graph__tasks exec-graph__tasks--sequential">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Business logic</span>
+              <span class="exec-graph__task-meta">autopilot &middot; after data layer</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Integration tests</span>
+              <span class="exec-graph__task-meta">autopilot &middot; after business logic</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">Sequential, each task unblocks the next.</p>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">03</span>
+            <span class="exec-graph__phase-name">Interface</span>
+            <span class="exec-graph__gate">gate: e2e tests + manual QA</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">UI components</span>
+              <span class="exec-graph__task-meta">flow &middot; after API layer</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">End-to-end wiring</span>
+              <span class="exec-graph__task-meta">flow &middot; after business logic</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">Parallel, both need human review, so both run in flow mode.</p>
+        </div>
+
+        <p class="exec-graph__caption">Each task enters the full pipeline independently, <em>/start</em> through <em>/commit</em>. Tasks marked <em>autopilot</em> run unattended. Tasks marked <em>flow</em> pause for human checkpoints. The gate between phases must pass before downstream work begins.</p>
+      </div>
+
+      <h3>Context flows across the graph</h3>
+
+      <p>
+        The execution graph doesn't just order tasks. It also controls what each
+        task knows about the others. When a task depends on completed work, its
+        phases automatically load a compact context block that the predecessor
+        persisted on completion: the decisions it made and why, the interfaces it
+        exposed, a summary of what actually changed, and a map of the functions and
+        classes it touched with their line ranges. The agent navigates the
+        predecessor's work through that map instead of pulling whole files into
+        context.
+      </p>
+
+      <p>
+        The compact block replaced full artifact reads for a measured reason: long,
+        loosely relevant context makes models less accurate while costing more, a
+        pattern documented in
+        <a href="https://research.trychroma.com/context-rot" target="_blank" rel="noopener noreferrer">context-rot research</a>
+        and visible in my own runs. Each phase gets the context profile it needs.
+        Requirements analysis reads only the decision summaries; implementation also
+        gets the interfaces and the symbol map. Nothing downstream inherits an
+        upstream session's reasoning or mistakes.
+      </p>
+
+      <!-- Context flow — across features -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">Data layer</span>
+            <span class="exec-graph__phase-name">completed</span>
+            <span class="exec-graph__gate">DONE</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Decision shadow</span>
+              <span class="exec-graph__task-meta">what was decided, and why</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Interfaces</span>
+              <span class="exec-graph__task-meta">what it promises to callers</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Change summary + symbol map</span>
+              <span class="exec-graph__task-meta">what changed, where to look, line by line</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">UI layer</span>
+            <span class="exec-graph__phase-name">starting</span>
+            <span class="exec-graph__gate">depends on: data layer</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">/ba reads the decision shadow</span>
+              <span class="exec-graph__task-meta">knows what the data layer promised and delivered</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">/implement adds interfaces + symbol map</span>
+              <span class="exec-graph__task-meta">navigates predecessor code without loading whole files</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="exec-graph__caption">Only the compact context block crosses the feature boundary, tuned per phase. Implementation details stay encapsulated.</p>
+      </div>
+
+      <h3>Watching for drift</h3>
+
+      <p>
+        A plan is a contract, and unattended work needs someone checking the contract.
+        After each phase, a deterministic heuristic compares what was implemented
+        against what the task promised: how many files changed versus planned, how much
+        code, and how much of the acceptance criteria the work actually covers. Tasks
+        within tolerance pass silently. Flagged tasks go to a dedicated assessor agent
+        that classifies the drift into a defined taxonomy (scope creep, scope cut,
+        reinterpretation, and nine other categories), with a confidence score and
+        evidence quoted from the artifacts. Drift is measured, not felt. The
+        <a href="watchfloor-observability.html">watch floor</a> shows the verdicts
+        alongside the plan.
+      </p>
+
+      <div class="screenshot">
+        <img src="../screenshots/execution-graph-dashboard.png" alt="The plan viewer showing an execution graph rendered as a visual task tracker with phases collapsed and expanded, progress bars, task states, and gate evaluation results" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">An execution graph rendered in the watch floor's plan viewer</p>
+      </div>
+
+      <h2>Reflections</h2>
+
+      <p>
+        Autonomy here was never one big decision. It accumulated: first one phase
+        unattended, then one task, then chains of tasks with gates between them, then
+        continuous improvement passes running in the background. Each step was backed
+        by the previous step's evidence. That's the pattern I would bring to an
+        organisation: not "should agents work autonomously" as a yes-or-no question,
+        but a ladder of autonomy where each rung is earned with an audit trail. The
+        infrastructure that lets me trust an unattended run (deterministic gates,
+        drift measurement, resumable failures, full session records) is precisely the
+        infrastructure a team would need, at a larger scale.
+      </p>
+
+      <h3>What went wrong</h3>
+
+      <p>
+        Autopilot went through two redesigns in about two days. The first version tried to
+        scrape tmux terminal output to track what the pipeline was doing. I wanted the full
+        history including hooks, permission prompts, everything. It kept breaking on ANSI
+        escape codes and partial output. I went through many iterations trying to make it
+        work before discovering that Claude Code already writes a structured log of every
+        action it takes. Once I switched to reading that data, the core of
+        autopilot came together quickly. The lesson was simple: I spent two days fighting
+        scraped terminal text when the structured data was already there.
+      </p>
+
+      <p>
+        The grinder taught a quieter lesson. During one long unattended run, the CLI's
+        authentication expired mid-loop. The orchestrator interpreted every failure as
+        transient, retried, and ended up reverting its own commits. Nothing was lost
+        except hours, but the failure mode was embarrassing: a supervision system that
+        couldn't tell "temporarily broken" from "not allowed in". Grinder now probes
+        authentication before starting and emits a structured event that stops the
+        retry loop the moment credentials fail. Autonomous systems need to know the
+        difference between an error they can work through and one that means stop.
+      </p>
+
+      <!-- Repo link -->
+      <a href="https://github.com/tomashermansen-lang/watchfloor" class="project-cta" target="_blank" rel="noopener noreferrer">
+        <div>
+          <p class="project-cta__label">View on GitHub</p>
+          <p class="project-cta__text">tomashermansen-lang/watchfloor</p>
+        </div>
+        <span class="project-cta__arrow">&rarr;</span>
+      </a>
+
+      <div class="next-project">
+        <p class="next-project__label">Next chapter</p>
+        <a href="watchfloor-observability.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">The watch floor</p>
+            <p class="next-project__description">Live supervision, audit trails, and controls</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../screenshots/dashboard-dark.png" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

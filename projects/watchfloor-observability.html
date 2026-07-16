@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>Watchfloor: The Watch Floor | Tomas Hermansen</title>
+  <meta name="description" content="The supervision deck for autonomous AI pipelines. Live session streams, plan tracking, session metrics, and the controls to pause, resume, and intervene. Part of Watchfloor.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Watchfloor: The Watch Floor | Tomas Hermansen">
+  <meta property="og:description" content="The supervision deck for autonomous AI pipelines. Live session streams, plan tracking, session metrics, and the controls to pause, resume, and intervene. Part of Watchfloor.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-observability.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/execution-graph-dashboard.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-observability.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG</a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="watchfloor.html" class="back-link">&larr; Watchfloor</a>
+        <h1 class="hero__title hero__title--project">The watch floor</h1>
+        <p class="hero__subtitle">If I'm going to let AI agents run unattended, I need to see what they did and why. Increasingly, I also need the controls to act on what I see.</p>
+        <div class="hero__meta">
+          <span>Watchfloor chapter 3 of 4 &middot; Built from February 2026, actively evolving</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">react</span>
+          <span class="tag">typescript</span>
+          <span class="tag">python</span>
+          <span class="tag">fastapi</span>
+          <span class="tag">mui</span>
+          <span class="tag">recharts</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        The supervision deck that gives the system its name. A full-stack dashboard
+        for monitoring autonomous pipeline runs, navigating multi-task projects,
+        and providing the audit trail that makes unattended AI work accountable.
+        What began as pure observability has grown a control surface: pause, resume,
+        and a terminal into any running session.
+      </p>
+
+      <h2>How it started</h2>
+
+      <p>
+        Once <a href="watchfloor-autopilot.html">execution graphs</a> existed, I needed
+        a place to see the plan and monitor how it was going: which features are done,
+        which are in progress, and which need my attention. The first version was a
+        single HTML file with inline JavaScript. A bash hook registered with Claude
+        Code fired on every session event and appended a line to a shared log file.
+        The HTML page polled that file through a small Python server and rendered
+        session cards. Two days later, execution plans arrived in the pipeline and the
+        requirements changed completely. The rewrite to React with a Python backend
+        took longer than building the original.
+      </p>
+
+      <h2>What it monitors</h2>
+
+      <p>
+        The <strong>plan viewer</strong> renders
+        <a href="watchfloor-autopilot.html#execution-graphs">execution graphs</a> as visual
+        dependency trackers. Phases expand to show their tasks, each with a
+        progress bar showing how far through the pipeline it is. Gates show
+        whether pass conditions are met, and drift verdicts from the deviation
+        assessor appear alongside the tasks they concern. This is the primary view
+        for larger projects: which phases are done, what's blocked, where the
+        project actually stands.
+      </p>
+
+      <div class="screenshot">
+        <video autoplay muted loop playsinline class="screenshot__image" style="aspect-ratio: 16/9; object-fit: cover;">
+          <source src="../screenshots/dashboard-plan-viewer.mp4" type="video/mp4">
+          <img src="../screenshots/execution-graph-dashboard.png" alt="Plan viewer showing two execution graphs at different stages of completion" class="screenshot__image" loading="lazy">
+        </video>
+        <p class="screenshot__caption">Plan viewer: execution graphs with phases, dependency connections, and task states. Tap to expand.</p>
+      </div>
+
+      <p>
+        The dashboard also shows all active sessions across projects. Click
+        a session and VS Code opens the relevant worktree automatically, so
+        I can jump straight into the code. When several features run in
+        parallel, this is how I know where my attention is needed: sessions
+        waiting for human input get a pulsing indicator and sort to the top.
+      </p>
+
+      <p>
+        The <strong>autopilot monitor</strong> discovers active
+        <a href="watchfloor-autopilot.html#two-modes">autopilot</a> sessions by scanning
+        project directories for pipeline output files. Each session gets a
+        phase stepper and cost tracking per phase. Pipeline state at a glance,
+        session details one click deeper.
+      </p>
+
+      <div class="screenshot">
+        <img src="../screenshots/dashboard-autopilot.png" alt="Dashboard showing a session list on the left with project selector and session filters, and on the right the session viewer streaming live output from a pipeline run in the Business Analysis phase, with entries showing tool calls, phase transitions, and the agent's reasoning" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Session viewer with a live pipeline run. Session list on the left, streamed output on the right. Tap to expand.</p>
+      </div>
+
+      <p>
+        The <strong>session viewer</strong> is the drill-down. Click any
+        session, flow mode or autopilot, and the viewer shows what happened
+        inside it. For active sessions, it streams the agent's output in
+        near-real-time: phase transitions, tool calls (collapsible), the
+        agent's reasoning, and results. For completed sessions, it's a full
+        replay of the run.
+      </p>
+
+      <div class="screenshot">
+        <video autoplay muted loop playsinline class="screenshot__image" style="aspect-ratio: 16/9; object-fit: cover;">
+          <source src="../screenshots/dashboard-session-viewer-dark.mp4" type="video/mp4">
+          <img src="../screenshots/dashboard-session-viewer.gif" alt="Session viewer showing task detail with pipeline phases and artifacts" class="screenshot__image" loading="lazy">
+        </video>
+        <p class="screenshot__caption">Task detail: pipeline phases, requirements, testplan, and artifact chain.</p>
+      </div>
+
+      <p>
+        <strong>Session metrics</strong> came later, once I realised the hook
+        data could feed back into the process. Eight panels cover tool usage,
+        error rates, session lifecycle, permission friction, subagent
+        utilization, file activity, task completion, and an activity timeline.
+        When a run fails or takes too long, the metrics show where time and
+        tokens went.
+      </p>
+
+      <div class="screenshot">
+        <img src="../screenshots/dashboard-metrics.png" alt="Session metrics dashboard showing a KPI strip with session count, tool calls, error rate, and duration, below it an activity timeline with colour-coded events across multiple sessions, a tool usage bar chart, error tracking panel, session lifecycle stats, and permission friction metrics" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Session metrics: KPI strip at the top, activity timeline, tool usage, error tracking, and more. Tap to expand.</p>
+      </div>
+
+      <h2>From observing to controlling</h2>
+
+      <p>
+        The dashboard was read-only by principle for its first months: it never wrote
+        anything, anywhere. That constraint kept the architecture simple and made the
+        early trust question easy, since a monitoring tool that can't act can't do
+        harm. But real supervision eventually needs hands. When an unattended run
+        heads somewhere it shouldn't, watching it go wrong is not oversight.
+      </p>
+
+      <p>
+        So the watch floor grew a control surface, deliberately narrow. Autopilot
+        sessions can be paused and resumed from the dashboard, with a state machine
+        guarding which transitions are legal. An embedded terminal connects into the
+        live tmux session over a WebSocket, so intervention happens in the same
+        session the agent is using, on the record, rather than in a side channel. The
+        backend moved from a small standard-library server to FastAPI as part of this
+        shift. Reads are still cheap file reads with no database. Control actions are
+        the only writes, and each one is explicit.
+      </p>
+      <!-- screenshot slot: watchfloor controls UI / embedded terminal panel -->
+
+      <h2>How the data flows</h2>
+
+      <!-- Architecture — typography-driven, reusing exec-graph component -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">01</span>
+            <span class="exec-graph__phase-name">Data sources</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Claude Code hooks</span>
+              <span class="exec-graph__task-meta">event log via atomic append</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Pipeline streams</span>
+              <span class="exec-graph__task-meta">structured session data</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Git worktrees</span>
+              <span class="exec-graph__task-meta">execution plans and artifacts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">02</span>
+            <span class="exec-graph__phase-name">Backend</span>
+            <span class="exec-graph__gate">FastAPI &middot; no database</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Read endpoints</span>
+              <span class="exec-graph__task-meta">files + git &middot; localhost only</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Control endpoints</span>
+              <span class="exec-graph__task-meta">pause/resume &middot; guarded state machine</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Terminal bridge</span>
+              <span class="exec-graph__task-meta">WebSocket into tmux sessions</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">Reads stay file-based. Control actions are the only writes, each explicit.</p>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">03</span>
+            <span class="exec-graph__phase-name">Frontend</span>
+            <span class="exec-graph__gate">React 19 &middot; MUI v7 &middot; Recharts</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Plan viewer</span>
+              <span class="exec-graph__task-meta">dependency graph &middot; progress &middot; gates &middot; drift verdicts</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Autopilot monitor</span>
+              <span class="exec-graph__task-meta">phase stepper &middot; live logs &middot; cost tracking &middot; controls</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Session viewer</span>
+              <span class="exec-graph__task-meta">live stream &middot; tool calls &middot; phase transitions</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Session metrics</span>
+              <span class="exec-graph__task-meta">8 panels &middot; tool usage through activity timeline</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="exec-graph__caption">Hooks handle event generation. The backend reads, and acts only when told to. The watch floor observes and, when needed, intervenes.</p>
+      </div>
+
+      <p>
+        Session discovery is automatic. The backend scans project directories
+        for pipeline output files and execution plans. No configuration file,
+        no session registration. Start a pipeline run and the watch floor
+        picks it up.
+      </p>
+
+      <h2>Reflections</h2>
+
+      <p>
+        The session data turned out to be the only complete audit trail for
+        unattended runs. Git shows the outcome, commits and merged code, but
+        not the path that got there: which tools the agent called, which files
+        it read, which approaches it tried and abandoned, what ruff and mypy
+        flagged, what SonarQube reported, how the agent responded to each
+        finding. The watch floor captures and persists the full
+        stream per feature, so I can review exactly what happened in any
+        autopilot run after the fact. When AI agents write code autonomously,
+        someone needs to be able to answer the question: "What did it actually
+        do?" This is that answer.
+      </p>
+
+      <p>
+        I didn't trust autopilot mode until I could watch it. The dashboard
+        wasn't a nice-to-have that came after the pipeline was complete. It
+        was the thing that unlocked actually using unattended runs. And the
+        same evidence later justified each control: pause came from the times
+        I watched something drift and had no better option than killing the
+        session. The metrics feed the improvement loop too. Patterns in how
+        agents spend time and turns became the
+        <a href="watchfloor-economics.html">cost and routing work</a> in the
+        next chapter.
+      </p>
+
+      <p>
+        The pattern I keep coming back to is the same one organisations will
+        face as AI-assisted development scales: structured observability over
+        autonomous work, clear audit trails, and human oversight that doesn't
+        require watching every step. This is a solo setup, but the governance
+        questions are the same ones a team of fifty will hit.
+      </p>
+
+      <h3>What went wrong</h3>
+
+      <p>
+        The HTML-to-fullstack rewrite was the biggest early time sink. The original
+        HTML dashboard went up in a day and worked for session monitoring. Two
+        days later, execution plans arrived and the requirements changed completely:
+        visualising task dependencies as graphs, computing phase progress, evaluating
+        gate conditions. Vanilla JavaScript couldn't handle that.
+      </p>
+
+      <p>
+        ANSI escape codes in session data were the other pain point. The
+        backend reads output from pipeline runs that include terminal colour
+        codes, cursor movements, and control sequences. There is no definitive
+        list of all ANSI sequences. I built the stripping regex iteratively:
+        run a session, find garbled text in the dashboard, identify the escape
+        sequence, add it to the pattern, repeat. Dozens of iterations before
+        the session view rendered cleanly.
+      </p>
+
+      <p>
+        And the "read-only" principle itself aged into a small lesson. It was the
+        right constraint for building trust, and I held onto it a little past its
+        usefulness, the same way I held onto the two-repo split. Principles that
+        earn their keep early still deserve re-examination when the system around
+        them changes.
+      </p>
+
+      <!-- Repo link -->
+      <a href="https://github.com/tomashermansen-lang/watchfloor" class="project-cta" target="_blank" rel="noopener noreferrer">
+        <div>
+          <p class="project-cta__label">View on GitHub</p>
+          <p class="project-cta__text">tomashermansen-lang/watchfloor</p>
+        </div>
+        <span class="project-cta__arrow">&rarr;</span>
+      </a>
+
+      <div class="next-project">
+        <p class="next-project__label">Next chapter</p>
+        <a href="watchfloor-economics.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">Economics &amp; model routing</p>
+            <p class="next-project__description">Measured cost decisions for autonomous pipelines</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../screenshots/dashboard-metrics.png" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

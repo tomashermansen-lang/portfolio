@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>Watchfloor | Tomas Hermansen</title>
+  <meta name="description" content="An agentic SDLC built on Claude Code. AI agents take features from requirements to committed code through an eight-phase pipeline; the watch floor is where a human supervises and intervenes.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Watchfloor | Tomas Hermansen">
+  <meta property="og:description" content="An agentic SDLC built on Claude Code. AI agents take features from requirements to committed code through an eight-phase pipeline; the watch floor is where a human supervises and intervenes.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/dashboard-dark.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG</a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+        <h1 class="hero__title hero__title--project">Watchfloor</h1>
+        <p class="hero__subtitle">AI agents run the delivery pipeline. The watch floor is where I supervise them.</p>
+        <div class="hero__meta">
+          <span>Solo project &middot; Built from autumn 2025, actively evolving</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">claude code</span>
+          <span class="tag">bash</span>
+          <span class="tag">python</span>
+          <span class="tag">react</span>
+          <span class="tag">typescript</span>
+          <span class="tag">sonarqube</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        An agentic software delivery system. AI agents take a feature from requirements
+        to committed code through an eight-phase pipeline with deterministic quality
+        gates. Orchestrators run single tasks or whole dependency-ordered plans
+        unattended. And a supervision deck streams what the agents are doing, measures
+        what it costs, and holds the controls to pause anything that drifts.
+      </p>
+
+      <p>
+        The name comes from operations centers. A watch floor is the room where people
+        monitor live systems and step in when a decision is needed. Here the live
+        systems are AI agents building software.
+      </p>
+
+      <h2>How it started</h2>
+
+      <p>
+        In autumn 2025 I started building with GitHub Copilot. Prompt, fix, prompt, fix.
+        I tried Cursor, then settled on Claude Code. The pipeline grew from there: each
+        frustration became a feature. Repetitive prompts became reusable commands.
+        Drifting settings became a central config repo. Inconsistent QA became
+        deterministic gates. Manual approvals on work that didn't need me became
+        autopilot. Once work ran unattended, I needed to see it, so in February 2026
+        I built a monitoring dashboard. None of it was planned upfront. Each project
+        fed back into the system, and the system fed back into the next project.
+      </p>
+
+      <p>
+        For a while the pipeline and the dashboard lived as two separate projects in two
+        repos. That boundary made sense when one generated work and the other only
+        watched it. It stopped making sense as they grew together: most new features
+        touched both sides, documentation split across two places, and every change
+        meant coordinating two histories. In April 2026 I merged them into one system
+        and later gave it one name. Repo boundaries are process decisions, and this one
+        had quietly become the bottleneck.
+      </p>
+
+      <h2>What it is now</h2>
+
+      <p>
+        The system has three layers, plus a cost dimension that runs through all of
+        them. 33 commands and 14 specialist agents do the work. More than ninety
+        features have shipped through the pipeline, including nearly all of Watchfloor
+        itself.
+      </p>
+
+      <!-- System map — typography-driven -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">01</span>
+            <span class="exec-graph__phase-name">The pipeline</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Eight phases from requirements to commit</span>
+              <span class="exec-graph__task-meta">TDD enforced &middot; adversarial review &middot; no agent marks its own work</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">02</span>
+            <span class="exec-graph__phase-name">Autonomy</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Autopilot, execution graphs, grinder</span>
+              <span class="exec-graph__task-meta">unattended tasks &middot; dependency-ordered plans &middot; drift detection</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">03</span>
+            <span class="exec-graph__phase-name">The watch floor</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Live supervision and controls</span>
+              <span class="exec-graph__task-meta">session streams &middot; plan tracking &middot; pause and resume &middot; audit trail</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">04</span>
+            <span class="exec-graph__phase-name">Economics</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Per-phase model routing</span>
+              <span class="exec-graph__task-meta">measured A/B canaries &middot; 56% cost reduction at equal gates</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="exec-graph__caption">Each layer has its own chapter below. The chapters read in order, but each stands on its own.</p>
+      </div>
+
+      <h2>The chapters</h2>
+
+      <div class="projects-grid">
+
+        <a href="watchfloor-pipeline.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">The pipeline</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            The AI writes the code. Static analysis, test suites, and adversarial review
+            decide if it's any good. Eight phases, every artifact committed, every
+            decision traceable.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/pipeline-git-log.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+        <a href="watchfloor-autopilot.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">Autopilot &amp; execution graphs</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            Unattended delivery for work where the gates are sufficient. Dependency-ordered
+            plans coordinate whole projects, with drift detection watching every task.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/autopilot-tmux.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+        <a href="watchfloor-observability.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">The watch floor</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            The supervision deck. Live session streams, plan tracking, session metrics,
+            and the controls that grew out of watching: pause, resume, and a terminal
+            into any running agent.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/dashboard-dark.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+        <a href="watchfloor-economics.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">Economics &amp; model routing</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            Autonomous pipelines have a cost curve. Measured A/B canaries, per-phase
+            model routing, and a local-model harness. Cost decisions with the same
+            rigour as quality decisions.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/dashboard-metrics.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+      </div>
+
+      <h2>Reflections</h2>
+
+      <p>
+        Watchfloor is a solo setup, but the questions it answers are organisational.
+        How do I structure AI work so the output is verifiable? How do I build trust
+        in autonomous processes incrementally, from evidence instead of hope? Where
+        does human judgement add value, and where does it just add latency? What does
+        the supervision layer need to show before I'm comfortable not watching? Every
+        organisation adopting AI agents in development will meet these questions. I've
+        been answering them in miniature, one feature at a time, with the audit trail
+        to show for it.
+      </p>
+
+      <h3>What went wrong</h3>
+
+      <p>
+        The two-repo split lasted months longer than it should have. I kept paying the
+        coordination tax because the structure was familiar and the merge felt like a
+        detour from feature work. What finally forced the decision was noticing that
+        the friction showed up in the plans themselves: tasks artificially split so
+        each repo could own its half. When the process structure starts warping the
+        work to fit it, the structure is wrong. Merging took two days. The tax had
+        cost far more.
+      </p>
+
+      <!-- Repo link -->
+      <a href="https://github.com/tomashermansen-lang/watchfloor" class="project-cta" target="_blank" rel="noopener noreferrer">
+        <div>
+          <p class="project-cta__label">View on GitHub</p>
+          <p class="project-cta__text">tomashermansen-lang/watchfloor</p>
+        </div>
+        <span class="project-cta__arrow">&rarr;</span>
+      </a>
+
+      <div class="next-project">
+        <p class="next-project__label">Next project</p>
+        <a href="rag-framework.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">EuLex RAG</p>
+            <p class="next-project__description">Legal Q&amp;A for EU regulations with fail-closed citation validation</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../assets/eulex/chat-demo.gif" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>Watchfloor: Economics &amp; Model Routing | Tomas Hermansen</title>
+  <meta name="description" content="Autonomous pipelines have a cost curve. Measured A/B canaries, per-phase model routing with a 56% cost reduction at equal quality gates, and a local-model harness. Part of Watchfloor.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Watchfloor: Economics &amp; Model Routing | Tomas Hermansen">
+  <meta property="og:description" content="Autonomous pipelines have a cost curve. Measured A/B canaries, per-phase model routing with a 56% cost reduction at equal quality gates, and a local-model harness. Part of Watchfloor.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-economics.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/dashboard-metrics.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-economics.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG</a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="watchfloor.html" class="back-link">&larr; Watchfloor</a>
+        <h1 class="hero__title hero__title--project">Economics &amp; model routing</h1>
+        <p class="hero__subtitle">Autonomous pipelines have a cost curve. I measure it before I decide anything.</p>
+        <div class="hero__meta">
+          <span>Watchfloor chapter 4 of 4 &middot; Solo project, actively evolving</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">model routing</span>
+          <span class="tag">a/b testing</span>
+          <span class="tag">ollama</span>
+          <span class="tag">cost tracking</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        Every phase of the pipeline can run on a different model. Which model each
+        phase gets is not a guess: it's the outcome of controlled experiments that
+        run the same feature through the same pipeline on different configurations
+        and compare cost, speed, and quality. The result so far is a 56% cost
+        reduction with every quality gate intact.
+      </p>
+
+      <h2>Why cost is a governance problem</h2>
+
+      <p>
+        An unattended pipeline spends money with nobody watching. That makes cost
+        a supervision concern, not an afterthought: the same discipline that gates
+        quality has to gate spend. It also has to be measured honestly, which turned
+        out to be the first problem. Early cost numbers came from a summary file
+        that missed failed attempts and re-runs. One baseline run that really cost
+        $38.01 would have reported as $10.76 on the dashboard. Before optimising
+        anything, I had to build cost accounting that dedupes phantom events and
+        counts retries. If the measurement is wrong, every decision built on it is
+        wrong too.
+      </p>
+
+      <h2>The experiment</h2>
+
+      <p>
+        The question: can cheaper models do part of the pipeline's work without
+        lowering the bar? Rather than guessing from benchmarks, I ran canaries.
+        Three configurations implemented the exact same feature through the same
+        eight-phase pipeline, each in its own isolated worktree, halting at the
+        same phase. Same spec, same gates, different economics.
+      </p>
+
+      <!-- Canary comparison — typography-driven -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">A</span>
+            <span class="exec-graph__phase-name">Opus baseline</span>
+            <span class="exec-graph__gate">$38.01</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Strongest model on every phase</span>
+              <span class="exec-graph__task-meta">fastest in API time &middot; most expensive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">B</span>
+            <span class="exec-graph__phase-name">Sonnet on every phase</span>
+            <span class="exec-graph__gate">$18.35</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Mid-tier model throughout</span>
+              <span class="exec-graph__task-meta">52% cheaper &middot; all gates passed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">C</span>
+            <span class="exec-graph__phase-name">Sonnet + Haiku, compact context</span>
+            <span class="exec-graph__gate">$16.78</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Mid-tier for reasoning, small model for mechanical phases</span>
+              <span class="exec-graph__task-meta">56% cheaper &middot; all gates passed &middot; now the default</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="exec-graph__caption">Three canaries, one feature spec, one pipeline. Costs measured end to end with retry-aware accounting. Configuration C became the default routing.</p>
+      </div>
+
+      <p>
+        The winning configuration routes the reasoning phases (requirements, design,
+        test planning, review, implementation, QA) to a mid-tier model and the
+        mechanical phases (static analysis, commit) to a small one. The premium
+        model earns its price on latency, not on outcomes this pipeline can't
+        already verify. That finding only holds because the gates are deterministic:
+        with tests, type checkers, and adversarial review deciding what passes,
+        the model choice becomes an economic decision instead of a leap of faith.
+      </p>
+
+      <p>
+        Routing is layered like any rollout policy: a per-task override in the
+        execution plan, a per-invocation override on the command line, a per-shell
+        default, and a documented way to disable it entirely. Partial overrides
+        are honored, so a single phase can be re-routed without redefining the rest.
+      </p>
+
+      <h2>Routing to local models</h2>
+
+      <p>
+        The same routing machinery can send selected phases to a local model server
+        (Ollama) instead of the API. It's strictly opt-in, and with the flags unset
+        the behaviour is byte-identical to the default path, which keeps experiments
+        honest. Two phases are denylisted from local routing by design: review and
+        QA always run on the strongest available models. The phases that judge the
+        work are the last place to save money. So far this is an experimentation
+        harness for cost-quality comparisons, not a production default.
+      </p>
+
+      <h2>Cheaper turns, not just cheaper tokens</h2>
+
+      <p>
+        Model price is only half the cost curve. The other half is wasted turns.
+        Reading the session metrics showed that a quarter to a third of all shell
+        commands in unattended runs ended in an error, and the agents' default
+        response was to retry with small variations, including on errors that can
+        never succeed, like operations the sandbox blocks by design. Now a hook
+        classifies every shell error into one of seven categories, and the pipeline's
+        rules tell the agent exactly which categories are worth a retry and which
+        mean move on. The compact predecessor context described in the
+        <a href="watchfloor-autopilot.html">autopilot chapter</a> attacks the same
+        curve from the context side: agents that load less irrelevant text answer
+        faster, cheaper, and more accurately.
+      </p>
+
+      <h2>Reflections</h2>
+
+      <p>
+        This chapter is where the solo project looks most like an organisational
+        one. Model routing policies, measured baselines, controlled canaries,
+        override hierarchies with a paper trail: this is the shape of AI cost
+        governance at any scale. The 56% number matters less than how it was
+        reached. A vendor benchmark would have suggested the same direction, but
+        the canary made it a decision I can defend line by line, on my own
+        workload, with my own quality gates as the referee. That's the standard
+        I would hold an organisation's AI spend to, because it's the standard
+        I hold my own to.
+      </p>
+
+      <h3>What went wrong</h3>
+
+      <p>
+        Not every efficiency idea survived contact with measurement. One documented
+        optimisation reduces how much a model deliberates before acting, promising
+        large output-token savings at benchmark parity. I wired it in behind a flag
+        and ran two canaries side by side, identical except for that flag. The run
+        with reduced deliberation produced plausible-looking work and then failed to
+        commit it: it skipped the careful final pass where the agent checks that
+        everything it changed is actually staged and merged. The twin run with the
+        flag off committed cleanly. The saving was real, and so was the cost of the
+        corner it cut. The flag ships in the codebase, off by default, with the
+        canary evidence documented next to it. Some optimisations are cheaper
+        thinking; this one was skipped thinking.
+      </p>
+
+      <!-- Repo link -->
+      <a href="https://github.com/tomashermansen-lang/watchfloor" class="project-cta" target="_blank" rel="noopener noreferrer">
+        <div>
+          <p class="project-cta__label">View on GitHub</p>
+          <p class="project-cta__text">tomashermansen-lang/watchfloor</p>
+        </div>
+        <span class="project-cta__arrow">&rarr;</span>
+      </a>
+
+      <div class="next-project">
+        <p class="next-project__label">Next project</p>
+        <a href="rag-framework.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">EuLex RAG</p>
+            <p class="next-project__description">Legal Q&amp;A for EU regulations with fail-closed citation validation</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../assets/eulex/chat-demo.gif" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

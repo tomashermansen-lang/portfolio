@@ -37,8 +37,7 @@
           <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
           <div class="nav__dropdown" id="projects-dropdown">
             <ul class="nav__dropdown-menu" role="menu">
-              <li><a href="cli-pipeline.html" role="menuitem">Claude Code Pipeline</a></li>
-              <li><a href="agent-dashboard.html" role="menuitem">Agent Dashboard</a></li>
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor</a></li>
               <li><a href="rag-framework.html" role="menuitem">EuLex RAG</a></li>
               <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub</a></li>
             </ul>
@@ -106,8 +105,8 @@
 
       <p>
         EuLex was my first private project. This is where the "prompt, fix,
-        prompt, fix" cycle started that eventually grew into the
-        <a href="cli-pipeline.html">Claude Code Pipeline</a>. Every
+        prompt, fix" cycle started that eventually grew into
+        <a href="watchfloor.html">Watchfloor</a>. Every
         frustration during this build became a feature in the pipeline later.
       </p>
 
@@ -257,16 +256,22 @@
       <p>
         The Court of Justice of the European Union (CJEU) is the EU's highest court. Its
         rulings set precedent for how regulations are interpreted across member states.
-        The extension will:
+        The ingestion side of the extension has shipped:
       </p>
 
       <ul>
-        <li>Fetch CJEU decisions from the EUR-Lex SPARQL API</li>
-        <li>Parse case metadata: case number, date, the court's core reasoning, and supplementary observations</li>
-        <li>Index in a separate vector collection with article-to-case lookup</li>
-        <li>Include case law in synthesised answers ("Article 6 of the AI Act, as interpreted in Case C-xxx...")</li>
-        <li>Anti-hallucination validation: the LLM must not invent case numbers, which is a real and documented risk</li>
+        <li>Fetching CJEU decisions from the EU's CELLAR publications API</li>
+        <li>Parsing case structure: case number, date, the court's core reasoning, and supplementary observations</li>
+        <li>Structure-aware chunking and citation enrichment, so judgments link to the articles they interpret</li>
       </ul>
+
+      <p>
+        What remains is the retrieval side: indexing a full judgment corpus with
+        article-to-case lookup, including case law in synthesised answers ("Article 6
+        of the AI Act, as interpreted in Case C-xxx..."), and anti-hallucination
+        validation. The LLM must not invent case numbers, which is a real and
+        documented risk.
+      </p>
 
       <p>
         The primary constraint isn't the data pipeline. It's validating that the system
@@ -325,7 +330,7 @@
         orchestrator with proper separation. The first several phases had no tests.
         Retrofitting them was slow and uncomfortable. But both problems acted as feedback
         loops. The god-module experience is why the
-        <a href="cli-pipeline.html">Claude Code Pipeline</a> now enforces module
+        <a href="watchfloor-pipeline.html">Watchfloor pipeline</a> now enforces module
         boundaries through architecture review. The missing-tests experience is why it
         enforces TDD with a pre-commit hook that blocks code without a failing test
         first. Every frustration during this build became a rule in the pipeline.

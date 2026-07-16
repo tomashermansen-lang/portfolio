@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>Watchfloor: The Pipeline | Tomas Hermansen</title>
+  <meta name="description" content="The AI writes the code. Static analysis, test suites, and adversarial review decide if it's any good. The delivery pipeline inside Watchfloor.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Watchfloor: The Pipeline | Tomas Hermansen">
+  <meta property="og:description" content="The AI writes the code. Static analysis, test suites, and adversarial review decide if it's any good. The delivery pipeline inside Watchfloor.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-pipeline.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/pipeline-git-log.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-pipeline.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG</a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="watchfloor.html" class="back-link">&larr; Watchfloor</a>
+        <h1 class="hero__title hero__title--project">The pipeline</h1>
+        <p class="hero__subtitle">The AI writes the code. Static analysis, test suites, and adversarial review decide if it's any good.</p>
+        <div class="hero__meta">
+          <span>Watchfloor chapter 1 of 4 &middot; Solo project, actively evolving</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">claude code</span>
+          <span class="tag">bash</span>
+          <span class="tag">sonarqube</span>
+          <span class="tag">git worktrees</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        A process framework that lets one person handle what normally requires
+        coordination across several roles, from requirements through QA, by structuring
+        how AI agents work and how their output gets verified. Every phase produces a
+        committed artifact. Every decision is traceable in git history.
+      </p>
+
+      <h2>What it does</h2>
+
+      <p>
+        Instead of ad-hoc prompting, the pipeline runs a structured development
+        workflow: requirements, architecture, test planning, review, implementation,
+        quality assurance, static analysis, and release. 33 commands and 14 specialist
+        AI agents carry the work, spanning phase commands, project planning, and
+        utilities. The machine order is eight phases; in interactive work, UX design
+        and manual testing join the sequence.
+      </p>
+
+      <h2>Guardrails</h2>
+
+      <p>
+        AI agents with filesystem access need hard boundaries, not guidelines.
+        The security model has three layers. At the kernel level, a
+        macOS Seatbelt sandbox restricts all file writes to the project directory
+        and <code>/tmp</code>. Credential paths like <code>~/.ssh</code> and
+        <code>~/.aws</code> are blocked from reads entirely. At the application
+        level, permission deny rules prevent the AI from editing shell config,
+        its own settings, or credential files. At the git level, any tracked
+        file change is reversible. The boundaries hold regardless of what the
+        model does.
+      </p>
+
+      <p>
+        This is a solo setup, but the layers are the same ones any
+        organisation will need when AI agents operate beyond a sandbox notebook:
+        kernel-level containment (a macOS sandbox here, containers in a team
+        setting), application-level policy, and version control as the
+        reversibility guarantee.
+      </p>
+
+      <h2 id="workflow">How the workflow runs</h2>
+
+      <p>
+        In practice, the work splits like this:
+      </p>
+
+      <ul>
+        <li><strong>LLM handles:</strong> Requirements analysis, UX reasoning, architectural decisions, code generation, test writing, documentation</li>
+        <li><strong>Deterministic tools handle:</strong> Type checking (mypy, tsc), linting (ruff, eslint, shellcheck), code quality (SonarQube), test execution (pytest, vitest), formatting</li>
+        <li><strong>The pipeline enforces:</strong> TDD (write the failing test first, a pre-commit hook blocks violations), phase-gated commits, and an evaluator-optimizer loop where no agent marks its own work</li>
+      </ul>
+
+      <p>
+        The LLM can sound confident about broken code. The type checker doesn't care
+        how confident it sounds. The whole system is built on that gap.
+      </p>
+
+      <p>
+        Here's what a feature looks like going through the full pipeline:
+      </p>
+
+      <!-- Pipeline Timeline -->
+      <div class="pipeline-timeline">
+
+        <div class="pipeline-timeline__step pipeline-timeline__step--bookend">
+          <div class="pipeline-timeline__marker"></div>
+          <div class="pipeline-timeline__content">
+            <div class="pipeline-timeline__header">
+              <span class="pipeline-timeline__command">/start</span>
+            </div>
+            <p class="pipeline-timeline__detail">Create isolated git worktree and feature branch.</p>
+          </div>
+        </div>
+
+        <div class="pipeline-timeline__phase">
+          <div class="pipeline-timeline__phase-label">
+            <span class="pipeline-timeline__phase-number">01</span>
+            <span class="pipeline-timeline__phase-name">Requirements</span>
+            <span class="pipeline-timeline__actor pipeline-timeline__actor--llm">LLM</span>
+          </div>
+
+          <div class="pipeline-timeline__step">
+            <div class="pipeline-timeline__marker"></div>
+            <div class="pipeline-timeline__content">
+              <div class="pipeline-timeline__header">
+                <span class="pipeline-timeline__command">/ba</span>
+                <span class="pipeline-timeline__arrow">&rarr;</span>
+                <span class="pipeline-timeline__command">/ux</span>
+                <span class="pipeline-timeline__flow-only">flow only</span>
+              </div>
+              <p class="pipeline-timeline__detail">Requirements and acceptance criteria. In flow mode, UX design and user flows are added. No hard gates, all creative work.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-timeline__checkpoint">human approves before advancing · <span class="pipeline-timeline__checkpoint-skip">auto-approved in autopilot</span></div>
+
+        <div class="pipeline-timeline__phase">
+          <div class="pipeline-timeline__phase-label">
+            <span class="pipeline-timeline__phase-number">02</span>
+            <span class="pipeline-timeline__phase-name">Design</span>
+            <span class="pipeline-timeline__actor pipeline-timeline__actor--llm">LLM</span>
+          </div>
+
+          <div class="pipeline-timeline__step">
+            <div class="pipeline-timeline__marker"></div>
+            <div class="pipeline-timeline__content">
+              <div class="pipeline-timeline__header">
+                <span class="pipeline-timeline__command">/plan</span>
+                <span class="pipeline-timeline__arrow">&rarr;</span>
+                <span class="pipeline-timeline__command">/testplan</span>
+                <span class="pipeline-timeline__arrow">&rarr;</span>
+                <span class="pipeline-timeline__command">/team-review</span>
+                <span class="pipeline-timeline__loop">fix loop</span>
+              </div>
+              <p class="pipeline-timeline__detail">Module design and dependency ordering, then the test plan, then review. The test plan comes before review on purpose: five specialist agents check the design and the test scope together, a fixer resolves findings, reviewers re-verify. Cycles until clean.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-timeline__checkpoint">human approves before advancing · <span class="pipeline-timeline__checkpoint-skip">auto-approved in autopilot</span></div>
+
+        <div class="pipeline-timeline__phase">
+          <div class="pipeline-timeline__phase-label">
+            <span class="pipeline-timeline__phase-number">03</span>
+            <span class="pipeline-timeline__phase-name">Implementation</span>
+            <span class="pipeline-timeline__actor pipeline-timeline__actor--det">LLM + Deterministic</span>
+          </div>
+
+          <div class="pipeline-timeline__step">
+            <div class="pipeline-timeline__marker"></div>
+            <div class="pipeline-timeline__content">
+              <div class="pipeline-timeline__header">
+                <span class="pipeline-timeline__command">/implement</span>
+              </div>
+              <p class="pipeline-timeline__detail">TDD: write the failing test first, then code, then refactor. Linters and type checkers (ruff, mypy, tsc, shellcheck) run inline during implementation. The LLM fixes what the tools flag before the phase can complete.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-timeline__checkpoint">human approves before advancing · <span class="pipeline-timeline__checkpoint-skip">auto-approved in autopilot</span></div>
+
+        <div class="pipeline-timeline__phase">
+          <div class="pipeline-timeline__phase-label">
+            <span class="pipeline-timeline__phase-number">04</span>
+            <span class="pipeline-timeline__phase-name">Quality</span>
+            <span class="pipeline-timeline__actor pipeline-timeline__actor--all">Human + LLM + Deterministic</span>
+          </div>
+
+          <div class="pipeline-timeline__step">
+            <div class="pipeline-timeline__marker"></div>
+            <div class="pipeline-timeline__content">
+              <div class="pipeline-timeline__header">
+                <span class="pipeline-timeline__command">/manualtest</span>
+                <span class="pipeline-timeline__flow-only">flow only</span>
+                <span class="pipeline-timeline__arrow">&rarr;</span>
+                <span class="pipeline-timeline__command">/team-qa</span>
+                <span class="pipeline-timeline__loop">fix loop</span>
+                <span class="pipeline-timeline__arrow">&rarr;</span>
+                <span class="pipeline-timeline__gate">tests must pass</span>
+              </div>
+              <p class="pipeline-timeline__detail">Human verifies in browser. Five agents review the implementation against the full artifact chain. Deterministic gate: all tests pass or it doesn't ship.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-timeline__checkpoint">human approves before advancing · <span class="pipeline-timeline__checkpoint-skip">auto-approved in autopilot</span></div>
+
+        <div class="pipeline-timeline__phase">
+          <div class="pipeline-timeline__phase-label">
+            <span class="pipeline-timeline__phase-number">05</span>
+            <span class="pipeline-timeline__phase-name">Verification</span>
+            <span class="pipeline-timeline__actor pipeline-timeline__actor--det">Deterministic</span>
+          </div>
+
+          <div class="pipeline-timeline__step">
+            <div class="pipeline-timeline__marker"></div>
+            <div class="pipeline-timeline__content">
+              <div class="pipeline-timeline__header">
+                <span class="pipeline-timeline__command">/static-analysis</span>
+                <span class="pipeline-timeline__loop">fix loop</span>
+              </div>
+              <p class="pipeline-timeline__detail">SonarQube scan, coverage enforcement, and baseline regression checks run last, so they see the code as it will actually merge, including every fix QA introduced.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-timeline__checkpoint">human approves before advancing · <span class="pipeline-timeline__checkpoint-skip">auto-approved in autopilot</span></div>
+
+        <div class="pipeline-timeline__phase">
+          <div class="pipeline-timeline__phase-label">
+            <span class="pipeline-timeline__phase-number">06</span>
+            <span class="pipeline-timeline__phase-name">Release</span>
+          </div>
+
+          <div class="pipeline-timeline__step">
+            <div class="pipeline-timeline__marker"></div>
+            <div class="pipeline-timeline__content">
+              <div class="pipeline-timeline__header">
+                <span class="pipeline-timeline__command">/commit</span>
+                <span class="pipeline-timeline__arrow">&rarr;</span>
+                <span class="pipeline-timeline__command">/done</span>
+              </div>
+              <p class="pipeline-timeline__detail">Merge feature branch to main, push, clean up worktree. If the feature is part of an execution graph, update the plan and persist a compact context block for the tasks that depend on it.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="screenshot">
+        <img src="../screenshots/pipeline-git-log.png" alt="Git log showing two feature branches merged to main, each with phase-labeled commits: define requirements, architect plan, team review, implement, static analysis, team QA, finalize for merge" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Git log showing the audit trail. Every phase produces a traceable commit on the feature branch.</p>
+      </div>
+
+      <h3>The phase order is evidence, not opinion</h3>
+
+      <p>
+        The sequence above has changed twice, both times because the audit trail showed
+        a leak. Static analysis originally ran right after implementation. Then an
+        unattended run revealed the gap: QA found issues, the agent fixed them, and the
+        fixes merged without ever being scanned. Static analysis now runs after QA, so
+        it verifies the code that actually ships. Test planning originally came after
+        review. That let a quiet failure mode through: QA checked that every planned
+        scenario had a test, but nobody checked whether the plan itself covered the
+        requirements. The test plan now comes before review, so reviewers verify the
+        test scope along with the design. Process changes here are driven by observed
+        failures, not by taste.
+      </p>
+
+      <h3>No agent marks its own work</h3>
+
+      <p>
+        The same evaluator-optimizer pattern runs in plan review (<code>/team-review</code>),
+        quality assurance (<code>/team-qa</code>), and project planning (<code>/plan-project --team</code>).
+        Specialist agents review independently, a separate fixer resolves their findings,
+        and the original reviewers run again to verify. The 14 agents span architect,
+        analyst, lead developer, security auditor, QA engineer, performance engineer,
+        UX designer, code reviewer, DevOps engineer, dependency auditor, test explorer,
+        fixer, a deviation assessor that classifies drift from the plan, and a canary
+        for diagnostics. No agent ever approves its own fixes. If mypy disagrees with
+        the code, it doesn't matter how eloquently the agent argues otherwise.
+      </p>
+
+      <h3>Every command knows what came before</h3>
+
+      <p>
+        Each phase runs in a fresh session. No conversation history carries over.
+        Instead, each command loads exactly the committed artifacts it needs.
+        This is context engineering applied to an agent harness: the pipeline
+        controls what each agent sees, rather than letting context accumulate
+        across a long conversation.
+      </p>
+
+      <p>
+        <code>/implement</code> reads the requirements and architecture plan.
+        <code>/team-qa</code> reads the full chain: what was required, what was
+        designed, what was built, and what the tools found. But none of
+        them inherit the reasoning or mistakes from an earlier phase's session.
+        Every phase starts clean, with curated context from git.
+      </p>
+
+      <!-- Context flow — within a feature -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-name">Requirements</span>
+            <span class="exec-graph__phase-number">/ba /ux</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">acceptance criteria, scope, UX design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-name">Design</span>
+            <span class="exec-graph__phase-number">/plan /testplan /team-review</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">modules, dependencies, file paths, test scope</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-name">Code</span>
+            <span class="exec-graph__phase-number">/implement</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">TDD against acceptance criteria, inline lint + type checking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-name">Quality</span>
+            <span class="exec-graph__phase-number">/manualtest /team-qa</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">verifies code against the full artifact chain</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-name">Verification</span>
+            <span class="exec-graph__phase-number">/static-analysis</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">SonarQube scan, coverage enforcement, baseline regression on the final state</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="exec-graph__caption">Each command reads what was committed before it. The chain is cumulative: <em>/static-analysis</em> sees everything from <em>/ba</em> through <em>/team-qa</em>. No context is passed between commands manually. It's all in git.</p>
+      </div>
+
+      <p>
+        Running work bigger than one feature, and running it unattended, is the next
+        chapter: <a href="watchfloor-autopilot.html">autopilot and execution graphs</a>.
+      </p>
+
+      <h2>Reflections</h2>
+
+      <p>
+        There's a maturity curve to working this way. Early on I wanted the pipeline close,
+        human checkpoints on everything, full permission prompts, reviewing every output. As
+        the setup matured and I saw enough cycles pass the gates cleanly, I started loosening
+        the grip: broader permissions, lighter review modes, tasks flagged for autopilot. I
+        didn't plan that progression. It happened because trust builds from evidence, and the
+        pipeline generates evidence at every phase. Turns out it's easier to
+        loosen a working system than to guess the right constraints upfront.
+      </p>
+
+      <h3>What went wrong</h3>
+
+      <p>
+        The command surface area grew organically as new needs appeared, and the supporting
+        commands still need consolidation. Sometimes the right engineering decision is to
+        delete things, even things that work. And as the phase-order changes above show,
+        two quality leaks made it into unattended runs before the audit trail caught them.
+        I'd rather have a process that reveals its own gaps than one that hides them, but
+        each gap existed longer than it needed to because I only went looking after
+        something felt off. Scheduled process review is on the backlog for a reason.
+      </p>
+
+      <!-- Repo link -->
+      <a href="https://github.com/tomashermansen-lang/watchfloor" class="project-cta" target="_blank" rel="noopener noreferrer">
+        <div>
+          <p class="project-cta__label">View on GitHub</p>
+          <p class="project-cta__text">tomashermansen-lang/watchfloor</p>
+        </div>
+        <span class="project-cta__arrow">&rarr;</span>
+      </a>
+
+      <div class="next-project">
+        <p class="next-project__label">Next chapter</p>
+        <a href="watchfloor-autopilot.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">Autopilot &amp; execution graphs</p>
+            <p class="next-project__description">Unattended delivery and dependency-ordered plans</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../screenshots/autopilot-tmux.png" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
