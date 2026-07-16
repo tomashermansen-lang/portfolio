@@ -330,6 +330,13 @@ section {
   text-decoration: none;
 }
 
+.nav__dropdown-desc {
+  display: block;
+  margin-top: 2px;
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
 /* Hamburger toggle */
 .nav__toggle {
   display: none;
