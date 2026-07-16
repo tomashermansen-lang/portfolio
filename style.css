@@ -337,9 +337,11 @@ section {
   color: var(--text-tertiary);
 }
 
-/* Watchfloor chapter links: shown in the mobile hamburger menu only */
-.nav__dropdown-subitem {
-  display: none;
+/* Watchfloor chapter links, indented under the parent item */
+.nav__dropdown-subitem a {
+  padding: var(--space-xs) var(--space-lg) var(--space-xs) calc(var(--space-lg) + var(--space-md));
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
 }
 
 /* Hamburger toggle */
