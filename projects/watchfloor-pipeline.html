@@ -317,18 +317,22 @@
 
       <p>
         Each phase runs in a fresh session. No conversation history carries over.
-        Instead, each command loads exactly the committed artifacts it needs.
+        When the work is part of an execution graph, a command first orients
+        itself in the graph, which serves as an index rather than a document to
+        ingest. Then it loads exactly the committed artifacts it needs.
         This is context engineering applied to an agent harness: the pipeline
         controls what each agent sees, rather than letting context accumulate
         across a long conversation.
       </p>
 
       <p>
-        <code>/implement</code> reads the requirements and architecture plan.
-        <code>/team-qa</code> reads the full chain: what was required, what was
-        designed, what was built, and what the tools found. But none of
-        them inherit the reasoning or mistakes from an earlier phase's session.
-        Every phase starts clean, with curated context from git.
+        <code>/implement</code> reads the requirements, the architecture plan,
+        and the test plan. <code>/team-qa</code> reads the full chain: what was
+        required, what was designed, what was planned for testing, and what was
+        built. Static analysis findings come later, because that phase runs
+        after QA. But none of them inherit the reasoning or mistakes from an
+        earlier phase's session. Every phase starts clean, with curated
+        context from git.
       </p>
 
       <!-- Context flow — within a feature -->
