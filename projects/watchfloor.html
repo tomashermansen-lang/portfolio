@@ -18,7 +18,7 @@
   <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../style.css?v=5">
+  <link rel="stylesheet" href="../style.css?v=6">
 </head>
 <body>
 
@@ -87,7 +87,7 @@
         <li><strong>The problem:</strong> AI coding assistants produce fast output that is unverifiable by default, and solo delivery still needs the roles a team would provide.</li>
         <li><strong>The decision:</strong> constrain generative work with deterministic gates and adversarial review, and let autonomy be earned through evidence.</li>
         <li><strong>What I built:</strong> an eight-phase delivery pipeline, three orchestrators for unattended work, and a supervision dashboard with live streams and controls.</li>
-        <li><strong>What I measured:</strong> a 56% cost reduction from per-phase model routing, verified in controlled canary runs with every quality gate intact.</li>
+        <li><strong>What I measured:</strong> 56% lower cost from per-phase model routing in a controlled three-configuration canary on the same feature, with every quality gate preserved.</li>
         <li><strong>Why it matters:</strong> these are the governance questions any organisation meets when agents write code, answered in miniature with a full audit trail.</li>
       </ul>
 
@@ -124,9 +124,10 @@
 
       <p>
         The system has three layers, plus a cost dimension that runs through all of
-        them. 33 commands and 14 specialist agents do the work. More than ninety
-        features have shipped through the pipeline, including nearly all of Watchfloor
-        itself.
+        them. 33 commands and 14 specialist agents do the work. Watchfloor has
+        delivered most of its own subsequent development through its own
+        pipeline, feature by feature, with the phase-labeled git history as
+        the audit trail.
       </p>
 
       <!-- System map — typography-driven -->
@@ -179,7 +180,7 @@
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
               <span class="exec-graph__task-name">Per-phase model routing</span>
-              <span class="exec-graph__task-meta">measured A/B canaries &middot; 56% cost reduction at equal gates</span>
+              <span class="exec-graph__task-meta">controlled canary, one feature &middot; 56% lower cost &middot; gates preserved</span>
             </div>
           </div>
         </div>

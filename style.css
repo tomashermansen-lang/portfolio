@@ -72,9 +72,9 @@
   --text-tertiary: #736D67;
 
   /* Accents */
-  --accent-terracotta: #C4755B;
-  --accent-clay: #A8634E;
-  --accent-sage: #7A8B6F;
+  --accent-terracotta: #A2543A;
+  --accent-clay: #8A4A30;
+  --accent-sage: #617056;
   --accent-stone: #8C8478;
 
   /* Functional */
@@ -1659,4 +1659,11 @@ section {
   text-transform: uppercase;
   color: var(--text-secondary);
   margin-bottom: var(--space-sm);
+}
+
+/* Contact lede: role positioning above the links */
+.contact__lede {
+  color: var(--text-secondary);
+  max-width: 60ch;
+  margin-bottom: var(--space-lg);
 }
