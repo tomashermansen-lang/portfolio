@@ -174,8 +174,19 @@
         the behaviour is byte-identical to the default path, which keeps experiments
         honest. Two phases are denylisted from local routing by design: review and
         QA always run on the strongest available models. The phases that judge the
-        work are the last place to save money. So far this is an experimentation
-        harness for cost-quality comparisons, not a production default.
+        work are the last place to save money.
+      </p>
+
+      <p>
+        I have to report this one as a failed experiment, at least for now. The
+        local server advertises compatibility with the same API the pipeline
+        speaks, but real runs against the agent harness broke in ways the
+        documentation didn't predict, and the models my hardware could serve
+        struggled under even the lighter phases. The plumbing works. The
+        economics don't, not on my hardware today. The harness stays in the
+        codebase because the denylist thinking and the byte-identical default
+        cost nothing to keep, and local models keep improving. Parked, not
+        abandoned.
       </p>
 
       <h2>Cheaper turns, not just cheaper tokens</h2>
