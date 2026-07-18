@@ -10,7 +10,7 @@
   <meta property="og:title" content="Watchfloor: Economics &amp; Model Routing | Tomas Hermansen">
   <meta property="og:description" content="Autonomous pipelines have a cost curve. Per-phase model routing measured 56% cheaper in a single-feature canary with quality gates preserved, plus a local-model harness. Part of Watchfloor.">
   <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-economics.html">
-  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/dashboard-metrics.png">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/watchfloor-cost.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor-economics.html">
@@ -177,6 +177,11 @@
         or see the resulting default in
         <a href="https://github.com/tomashermansen-lang/watchfloor/blob/main/adapters/claude-code/claude/tools/lib/claude-session-lib.sh" target="_blank" rel="noopener noreferrer">the routing code</a>.
       </p>
+
+      <div class="screenshot">
+        <img src="../screenshots/watchfloor-cost.png" alt="The watch floor's run-economy metrics: totals for tokens, cost, run time, and turns, a by-phase table of average cost, duration, and turns, and a by-feature table ranking runs by cost with the canary runs visible" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">The run-economy view: average cost per phase, and individual runs ranked by cost. The canary configurations are all here, including the $16.78 run that became the default. Tap to expand.</p>
+      </div>
 
       <p>
         Routing is layered like any rollout policy: a per-task override in the
