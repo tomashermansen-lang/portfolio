@@ -115,7 +115,7 @@
           <source src="../screenshots/dashboard-plan-viewer.mp4" type="video/mp4">
           <img src="../screenshots/execution-graph-dashboard.png" alt="The watch floor's plan viewer showing an execution plan: a strip of phases with per-phase progress, one phase expanded into a dependency graph of tasks, and a gate node with all three checks passed" class="screenshot__image" loading="lazy">
         </video>
-        <p class="screenshot__caption">Plan viewer: execution graphs with phases, dependency connections, and task states. Tap to expand.</p>
+        <p class="screenshot__caption">Plan viewer: a plan's vision and success criteria, then the live execution graph while the chain runs. Tap to expand.</p>
       </div>
 
       <p>
@@ -151,9 +151,9 @@
       <div class="screenshot">
         <video autoplay muted loop playsinline class="screenshot__image" style="aspect-ratio: 16/9; object-fit: cover;">
           <source src="../screenshots/dashboard-session-viewer-dark.mp4" type="video/mp4">
-          <img src="../screenshots/dashboard-session-viewer.gif" alt="Session viewer showing task detail with pipeline phases and artifacts" class="screenshot__image" loading="lazy">
+          <img src="../screenshots/dashboard-session-viewer.gif" alt="Task drill-down during a live chain run: the narrative log, a rendered plan artifact, and the task brief with acceptance criteria" class="screenshot__image" loading="lazy">
         </video>
-        <p class="screenshot__caption">Task detail: pipeline phases, requirements, testplan, and artifact chain.</p>
+        <p class="screenshot__caption">Task drill-down while a chain runs: the live narrative, a rendered plan artifact, and the task brief with its acceptance criteria. Tap to expand.</p>
       </div>
 
       <p>
@@ -186,9 +186,10 @@
       <p>
         So the watch floor grew a control surface, deliberately narrow. Autopilot
         sessions can be paused and resumed from the dashboard, with a state machine
-        guarding which transitions are legal. An embedded terminal connects into the
-        live tmux session over a WebSocket, so intervention happens in the same
-        session the agent is using, on the record, rather than in a side channel. The
+        guarding which transitions are legal. An embedded terminal streams the live
+        tmux session over a WebSocket, deliberately read only: I can watch exactly
+        what the agent's terminal shows, but intervention happens through the
+        explicit controls, never by typing into the agent's session. The
         backend moved from a small standard-library server to FastAPI as part of this
         shift. Reads are still cheap file reads with no database. Control actions are
         the only writes, and each one is explicit.
@@ -237,8 +238,8 @@
               <span class="exec-graph__task-meta">pause/resume &middot; guarded state machine</span>
             </div>
             <div class="exec-graph__task">
-              <span class="exec-graph__task-name">Terminal bridge</span>
-              <span class="exec-graph__task-meta">WebSocket into tmux sessions</span>
+              <span class="exec-graph__task-name">Terminal view</span>
+              <span class="exec-graph__task-meta">read-only WebSocket stream of tmux sessions</span>
             </div>
           </div>
           <p class="exec-graph__note">Reads stay file-based. Control actions are the only writes, each explicit.</p>
