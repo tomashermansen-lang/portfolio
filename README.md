@@ -16,9 +16,9 @@ python3 -m http.server 8000
 
 ## Projects Featured
 
-- [Claude Code Pipeline](https://github.com/tomashermansen-lang/claude-code-pipeline) — SDLC automation for Claude Code
+- [Watchfloor](https://github.com/tomashermansen-lang/watchfloor) — agentic SDLC with a human supervision deck
 - [Agent Dashboard](https://github.com/tomashermansen-lang/claude-agent-dashboard) — real-time monitoring dashboard
-- [EuLex RAG](https://github.com/tomashermansen-lang/RAG-framework) — legal Q&A with fail-closed citation validation
+- [EuLex RAG](https://github.com/tomashermansen-lang/eulex-rag) — legal Q&A with fail-closed citation validation
 - Ops Intelligence Hub — financial operations decision support
 
 ## License
