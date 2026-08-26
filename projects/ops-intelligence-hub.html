@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#FAF8F5">
   <title>Ops Intelligence Hub | Tomas Hermansen</title>
-  <meta name="description" content="Decision intelligence for workforce analytics. Deterministic calculations feed AI recommendations where every claim traces back to its source data. Built on synthetic data with embedded problem scenarios.">
+  <meta name="description" content="Decision intelligence for workforce analytics. Deterministic calculations feed AI recommendations where every claim traces back to the analytics that produced it. Built on synthetic data with embedded problem scenarios.">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Ops Intelligence Hub | Tomas Hermansen">
-  <meta property="og:description" content="Decision intelligence for workforce analytics. Deterministic calculations feed AI recommendations where every claim traces back to its source data. Built on synthetic data with embedded problem scenarios.">
+  <meta property="og:description" content="Decision intelligence for workforce analytics. Deterministic calculations feed AI recommendations where every claim traces back to the analytics that produced it. Built on synthetic data with embedded problem scenarios.">
   <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/ops-intelligence-hub.html">
   <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/oih-data-org.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -71,7 +71,6 @@
           <span class="tag">typescript</span>
           <span class="tag">postgresql</span>
           <span class="tag">openai</span>
-          <span class="tag">langfuse</span>
         </div>
       </div>
     </section>
@@ -81,18 +80,27 @@
       <p class="project-content__summary">
         Two systems built side by side. The first: deterministic workforce
         analytics with AI-generated recommendations where every claim traces
-        back to its source data. The second: a deterministic synthetic
-        organisation with five years of generated data and embedded test
-        scenarios. An LLM-driven simulation loop that tests recommendations
-        over time is the piece now being added.
+        back to the analytics that produced it. The second: a deterministic
+        synthetic organisation with embedded test scenarios &mdash; and a
+        multi-turn, LLM-driven simulation loop that tests recommendations
+        over time.
       </p>
 
       <ul>
         <li><strong>The problem:</strong> BI dashboards show what happened. Managers need what to do about it, with reasoning they can audit.</li>
         <li><strong>The decision:</strong> deterministic analytics produce every number, AI only interprets them, and each claim traces to its source data.</li>
-        <li><strong>What I built:</strong> a workforce decision-intelligence hub and a deterministic synthetic organisation with embedded test scenarios. An LLM-driven simulation loop to test recommendations over time is in progress.</li>
+        <li><strong>What I built:</strong> a workforce decision-intelligence hub, a deterministic synthetic organisation with embedded test scenarios, and a multi-turn simulation loop that tests recommendations over time.</li>
         <li><strong>What I learned:</strong> this is where autopilot was built. Backend work ran unattended through the pipeline while I focused on the judgement calls.</li>
         <li><strong>Why it matters:</strong> separating what the AI generates from what verifies it, the same pattern that runs through everything here.</li>
+      </ul>
+
+      <h2>Where it stands</h2>
+
+      <ul>
+        <li><strong>Shipped:</strong> 11 deterministic analytics modules, the three-agent LangGraph pipeline, the human approval gate, the synthetic organisation, the multi-turn simulation engine, and an MCP server exposing nine analytics tools.</li>
+        <li><strong>In progress:</strong> observability (OpenTelemetry &rarr; Langfuse), analytics reconciliation, and UI unification.</li>
+        <li><strong>Verified:</strong> 1,600+ automated tests (Python + TypeScript), green as of August 2026.</li>
+        <li><strong>Known limitations:</strong> a localhost tool with no authentication layer, and insight-card values are not yet evidence-gated the way recommendations are. Private repo &mdash; happy to walk through the code.</li>
       </ul>
 
       <h2>How it started</h2>
@@ -151,8 +159,12 @@
               <span class="exec-graph__task-name">Outliers &amp; forecasting</span>
               <span class="exec-graph__task-meta">statistical anomalies, capacity projections</span>
             </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Config-driven dispatch</span>
+              <span class="exec-graph__task-meta">configuration decides which analytics run &mdash; not a model</span>
+            </div>
           </div>
-          <p class="exec-graph__note">11 analytics modules. Pure functions, no side effects, config-driven thresholds. Same input, same output, every time.</p>
+          <p class="exec-graph__note">11 analytics modules. Deterministic by construction &mdash; no clock, no randomness, config-driven thresholds &mdash; with a pure computation core behind a thin I/O layer. Same input, same output, every time.</p>
         </div>
 
         <div class="exec-graph__phase">
@@ -163,8 +175,8 @@
           </div>
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
-              <span class="exec-graph__task-name">Analysis agent</span>
-              <span class="exec-graph__task-meta">selects and runs analytics via tool calls</span>
+              <span class="exec-graph__task-name">Insight agent</span>
+              <span class="exec-graph__task-meta">turns computed results into insight cards</span>
             </div>
             <div class="exec-graph__task">
               <span class="exec-graph__task-name">Action agent</span>
@@ -172,10 +184,10 @@
             </div>
             <div class="exec-graph__task">
               <span class="exec-graph__task-name">Reporting agent</span>
-              <span class="exec-graph__task-meta">executive summaries where every claim is footnoted</span>
+              <span class="exec-graph__task-meta">executive summaries for stakeholders</span>
             </div>
           </div>
-          <p class="exec-graph__note">Agents never compute. They call tools. Tools call analytics. The numbers are always deterministic.</p>
+          <p class="exec-graph__note">The LLM never computes a number that reaches a stakeholder: every evidence reference in a recommendation is matched against the computed results &mdash; unmatched references are stripped, and recommendations without evidence are dropped.</p>
         </div>
 
         <div class="exec-graph__phase">
@@ -190,10 +202,10 @@
               <span class="exec-graph__task-meta">graph pauses, surfaces reasoning, waits for human decision</span>
             </div>
           </div>
-          <p class="exec-graph__note">No AI recommendation reaches a stakeholder without documented human review. Evidence is immutable after approval.</p>
+          <p class="exec-graph__note">Default mode gates every recommendation, and a timeout auto-rejects &mdash; never auto-approves. No AI recommendation reaches a stakeholder without documented human review. Evidence is immutable after approval.</p>
         </div>
 
-        <p class="exec-graph__caption">When someone challenges a recommendation ("Why should we move two people to Team B?"), the claim traces through the agent's reasoning, through the tool call, down to the specific analytics function and the exact data rows it processed.</p>
+        <p class="exec-graph__caption">When someone challenges a recommendation ("Why should we move two people to Team B?"), the claim traces through the agent's reasoning, through the tool call, down to the specific analytics function, entity, and period that produced the number.</p>
       </div>
 
       <p>
@@ -215,18 +227,20 @@
 
       <p>
         GDPR constraints meant I couldn't use real workforce data. So I built
-        a synthetic organisation: 220 employees across six departments in a
-        fictitious Nordic fintech, with five years of timesheets,
-        allocations, absences (with Danish categories: holiday, sickness,
-        parental leave, care days, education), and budgets. A two-layer cost
+        a synthetic organisation: roughly 250 employees across six departments
+        in a fictitious Nordic fintech, with five years of planning data
+        (allocations, norm hours, budgets) and two-plus years of realised
+        timesheets and absences (with Danish categories: holiday, sickness,
+        parental leave, care days, education). A two-layer cost
         allocation model distributes employee time across cost groups (AMS,
         Portfolio, Non-billable, Added Value) through team-level splits. The
-        data generator is deterministic: same seed, same output, every run.
+        data generator is deterministic: same seed, same output, every run
+        &mdash; 139,000+ timesheet rows in the current build.
       </p>
 
       <p>
         Seven realistic problem scenarios are embedded in the generated data:
-        the ML Platform team running at 112-130% utilization in Q3-Q4 2024,
+        the ML Platform team seeded at 112&ndash;130% overload from Q3 2024,
         portfolio budget pressure, Backend Core with 40% missing timesheet
         entries, a bench period after a project ends, cost allocation drift
         between AMS and Portfolio, systematic overtime across multiple teams,
@@ -247,8 +261,8 @@
       </div>
 
       <div class="screenshot">
-        <img src="../screenshots/oih-data-timesheets.png" alt="Timesheets data viewer showing a paginated table of generated timesheet entries with date, employee, hours, cost group, activity, project, and description columns across 19,000+ entries" class="screenshot__image" loading="lazy">
-        <p class="screenshot__caption">Five years of generated timesheets: date, employee, hours, cost group, activity, and project. Tap to expand.</p>
+        <img src="../screenshots/oih-data-timesheets.png" alt="Timesheets data viewer showing a paginated table of generated timesheet entries with date, employee, hours, cost group, activity, project, and description columns" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Generated timesheets: date, employee, hours, cost group, activity, and project. Tap to expand.</p>
       </div>
 
       <h2>Simulating decisions</h2>
@@ -256,20 +270,20 @@
       <p>
         Static test data can verify that analytics modules compute correctly,
         but it can't verify that the system handles a changing organisation
-        over time. The simulation engine is the next piece I'm building. It
-        closes the loop: take the OIH system's recommendations, apply them
-        to the synthetic organisation, and play the consequences forward.
+        over time. The simulation engine closes the loop: take the OIH
+        system's recommendations, apply them to the synthetic organisation,
+        and play the consequences forward.
       </p>
 
       <p>
         Organisational decisions don't land cleanly. Moving two people to a
         new team doesn't guarantee full productivity on day one. Hiring takes
         longer than planned. A parental leave creates a gap that ripples
-        through allocations. The simulation engine will model these effects
+        through allocations. The simulation engine models these effects
         with realistic variance: some actions have the intended effect, some
         partially, some create side effects. This is where the LLM fits
         naturally. It generates plausible variation in outcomes, not exact
-        predictions. The simulation will run turn by turn, not just once.
+        predictions. The simulation runs turn by turn, not just once.
         Each turn advances the organisation forward: new timesheets,
         absences, allocations. New problems emerge. The OIH system analyses
         again. Over multiple turns, it simulates a living organisation

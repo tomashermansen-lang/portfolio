@@ -92,6 +92,15 @@
         <li><strong>Why it matters:</strong> a working pattern for grounding LLM systems in regulated domains where a wrong answer has consequences.</li>
       </ul>
 
+      <h2>Where it stands</h2>
+
+      <ul>
+        <li><strong>Shipped:</strong> hybrid retrieval across 13 laws, the fail-closed citation gate, self-service ingestion from EUR-Lex, the eval dashboard, and the ingestion side of CJEU case law.</li>
+        <li><strong>In progress:</strong> case-law retrieval and anti-hallucination validation for case references.</li>
+        <li><strong>Verified:</strong> 256 golden cases and 2,600+ automated tests, green as of August 2026. No end-to-end browser tests yet.</li>
+        <li><strong>Known limitations:</strong> auto-generated evals validate consistency, not legal accuracy, and conversational follow-ups soften the abstention guarantee.</li>
+      </ul>
+
       <h2>How it started</h2>
 
       <p>
@@ -171,7 +180,7 @@
           <div class="exec-graph__phase-header">
             <span class="exec-graph__phase-number">02</span>
             <span class="exec-graph__phase-name">Retrieval</span>
-            <span class="exec-graph__gate">deterministic &middot; three parallel paths</span>
+            <span class="exec-graph__gate">deterministic &middot; three signals</span>
           </div>
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
@@ -184,10 +193,10 @@
             </div>
             <div class="exec-graph__task">
               <span class="exec-graph__task-name">Citation graph</span>
-              <span class="exec-graph__task-meta">cross-references between articles &middot; highest weight</span>
+              <span class="exec-graph__task-meta">citations &amp; structural proximity &middot; highest weight in reranking</span>
             </div>
           </div>
-          <p class="exec-graph__note">All three run in parallel, results merge into hybrid reranking.</p>
+          <p class="exec-graph__note">Vector search retrieves the candidates; BM25 and the citation-graph signal re-rank them in a hybrid scoring formula.</p>
         </div>
 
         <div class="exec-graph__phase">
@@ -219,7 +228,7 @@
           <p class="exec-graph__note">If any citation can't be verified against the retrieved articles, the system refuses to answer.</p>
         </div>
 
-        <p class="exec-graph__caption">The citation graph carries the highest weight because legal text is inherently structured. When Article 6 references Annex III, those should be retrieved together. Pure vector search misses this. Pure keyword search misses paraphrases. The hybrid approach catches both.</p>
+        <p class="exec-graph__caption">The citation signal carries the largest weight in the reranking formula because legal text is inherently structured. When Article 6 references Annex III, those should be retrieved together. Pure vector search misses this. Pure keyword search misses paraphrases. The hybrid approach catches both.</p>
       </div>
 
       <div class="screenshot">
@@ -234,7 +243,7 @@
         There's no separate "test mode" with different behaviour.
         <a href="https://github.com/tomashermansen-lang/eulex-rag/tree/main/data/evals" target="_blank" rel="noopener noreferrer">256 golden test cases</a>
         go through multi-stage scoring: anchor presence, response format compliance,
-        citation verification, and LLM-as-judge checks for faithfulness and relevancy. The interesting part is that 253
+        and LLM-as-judge checks for faithfulness and relevancy. The interesting part is that 253
         of those cases are auto-generated during ingestion. When a new law is added, the
         pipeline creates test cases from the legislation itself. In a production setting
         those would need an expert-crafted layer on top, but the auto-generated baseline
@@ -243,7 +252,8 @@
 
       <p>
         An honest caveat: auto-generated cases validate consistency, not legal accuracy.
-        The system is tested against itself, not against a qualified lawyer's assessment.
+        The system is tested against itself, not against a qualified lawyer's assessment,
+        and the LLM judge is the same model family as the system under test.
         Expert-crafted adversarial cases would tell a different and more useful story.
       </p>
 
@@ -345,8 +355,8 @@
         loops. The god-module experience is why the
         <a href="watchfloor-pipeline.html">Watchfloor pipeline</a> now enforces module
         boundaries through architecture review. The missing-tests experience is why it
-        enforces TDD with a pre-commit hook that blocks code without a failing test
-        first. Every frustration during this build became a rule in the pipeline.
+        enforces TDD with a hook that blocks source edits when no test has been
+        touched. Every frustration during this build became a rule in the pipeline.
       </p>
 
       <!-- Repo link -->
