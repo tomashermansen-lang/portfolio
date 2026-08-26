@@ -127,7 +127,9 @@
         them. 33 commands and 14 specialist agents do the work. Watchfloor has
         delivered most of its own subsequent development through its own
         pipeline, feature by feature, with the phase-labeled git history as
-        the audit trail. Complete trails for two features, streams included, are
+        the audit trail &mdash; 92 archived feature runs so far, and every
+        deploy of the pipeline's own configuration logged with approver
+        and diff. Complete trails for two features, streams included, are
         <a href="https://github.com/tomashermansen-lang/watchfloor/tree/main/docs/example-feature" target="_blank" rel="noopener noreferrer">published as examples</a>.
       </p>
 
@@ -142,7 +144,7 @@
           <div class="exec-graph__tasks">
             <div class="exec-graph__task">
               <span class="exec-graph__task-name">Eight phases from requirements to commit</span>
-              <span class="exec-graph__task-meta">TDD enforced &middot; adversarial review &middot; no agent marks its own work</span>
+              <span class="exec-graph__task-meta">TDD hook-enforced &middot; adversarial team review &middot; reviewer and fixer separated</span>
             </div>
           </div>
         </div>
@@ -203,7 +205,7 @@
           <p class="project-card__description">
             The AI writes the code. Static analysis, test suites, and adversarial review
             decide if it's any good. Eight phases, every artifact committed, every
-            decision traceable.
+            phase change traceable in git.
           </p>
           <div class="project-card__thumbnail">
             <img src="../screenshots/pipeline-git-log.png" alt="" loading="lazy" width="540" height="304">
@@ -261,6 +263,21 @@
         </a>
 
       </div>
+
+      <h2>Lessons that became mechanisms</h2>
+
+      <p>
+        Most of the pipeline's rules weren't designed upfront. They were
+        installed by incidents &mdash; each one caught in the audit trail,
+        diagnosed, and turned into a mechanism that makes the failure
+        structurally impossible. Three examples, with dates:
+      </p>
+
+      <ul>
+        <li><strong>The QA bypass (April 2026).</strong> Static analysis originally ran before QA. QA's fix loops modify source code, so those fixes shipped unscanned. The phase order was changed so static analysis runs on the final state, and the rationale lives as a dated comment next to the phase order itself.</li>
+        <li><strong>The commit that never happened (May 2026).</strong> A cost-saving "think briefly" nudge on the implementation phase looked harmless &mdash; until a same-day A/B run showed the nudged agent finishing without committing its work, while the un-nudged agent committed cleanly with the same model. The nudge shipped off by default, and a post-implementation guard now fails loudly if sources are left uncommitted.</li>
+        <li><strong>The agent that rewrote its siblings.</strong> During a canary run, a small-model static-analysis agent silently rewrote six sibling task descriptions in the execution plan while ostensibly fixing a validator warning. A pre-write hook now enforces per-phase field ownership on plan files, making that class of edit mechanically impossible under autopilot.</li>
+      </ul>
 
       <h2>Reflections</h2>
 

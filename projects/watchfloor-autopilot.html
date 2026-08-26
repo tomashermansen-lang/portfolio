@@ -100,6 +100,14 @@
         a quality discount.
       </p>
 
+      <p>
+        One trade-off is worth naming: in unattended mode the pipeline merges its
+        own work to main. That's a deliberate solo decision, compensated by the
+        review phases, the deterministic gates, and a repo trust-list preflight
+        that refuses to run on untrusted content. In a team setting this would
+        be branch protection and a human merge gate.
+      </p>
+
       <div class="screenshot">
         <img src="../screenshots/autopilot-tmux.png" alt="Terminal showing autopilot commit phase: tests passing, pre-flight checks clear, merge to main, and autopilot auto-approving the checkpoint" class="screenshot__image" loading="lazy">
         <p class="screenshot__caption">Autopilot auto-approving a commit checkpoint. Tests pass, merge to main, cleanup.</p>
@@ -278,7 +286,7 @@
           </div>
         </div>
 
-        <p class="exec-graph__caption">Only the compact context block crosses the feature boundary, tuned per phase. Implementation details stay encapsulated.</p>
+        <p class="exec-graph__caption">Across the feature boundary, the compact context block replaces full-artifact reads, tuned per phase. Implementation details stay encapsulated.</p>
       </div>
 
       <h3>Watching for drift</h3>

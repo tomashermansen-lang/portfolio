@@ -125,7 +125,7 @@
       <ul>
         <li><strong>LLM handles:</strong> Requirements analysis, UX reasoning, architectural decisions, code generation, test writing, documentation</li>
         <li><strong>Deterministic tools handle:</strong> Type checking (mypy, tsc), linting (ruff, eslint, shellcheck), code quality (SonarQube), test execution (pytest, vitest), formatting</li>
-        <li><strong>The pipeline enforces:</strong> TDD (write the failing test first, a pre-commit hook blocks violations), phase-gated commits, and an evaluator-optimizer loop where no agent marks its own work</li>
+        <li><strong>The pipeline enforces:</strong> TDD (write the failing test first &mdash; a hook blocks source edits when no test has been touched), phase-gated commits, and an evaluator-optimizer loop in the team reviews where reviewers never fix and the fixer never evaluates</li>
       </ul>
 
       <p>
@@ -237,7 +237,7 @@
                 <span class="pipeline-timeline__arrow">&rarr;</span>
                 <span class="pipeline-timeline__gate">tests must pass</span>
               </div>
-              <p class="pipeline-timeline__detail">Human verifies in browser. Five agents review the implementation against the full artifact chain. Deterministic gate: all tests pass or it doesn't ship.</p>
+              <p class="pipeline-timeline__detail">Human verifies in browser. Five agents review the implementation against the full artifact chain. Deterministic gate: the test suite must pass at HEAD or it doesn't ship.</p>
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@
         analyst, lead developer, security auditor, QA engineer, performance engineer,
         UX designer, code reviewer, DevOps engineer, dependency auditor, test explorer,
         fixer, a deviation assessor that classifies drift from the plan, and a canary
-        for diagnostics. No agent ever approves its own fixes. If mypy disagrees with
+        for diagnostics. Within these loops, no agent approves its own fixes. If mypy disagrees with
         the code, it doesn't matter how eloquently the agent argues otherwise.
       </p>
 
