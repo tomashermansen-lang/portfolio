@@ -97,6 +97,14 @@
         systems are AI agents building software.
       </p>
 
+      <h2>Where it stands</h2>
+
+      <ul>
+        <li><strong>Shipped:</strong> the eight-phase pipeline, three orchestrators for unattended work, the supervision dashboard, per-phase model routing, and drift detection.</li>
+        <li><strong>Next:</strong> continuous evals of the agent configuration. The pipeline's own commands, skills, and hooks are pinned by contract tests that check the files &mdash; nothing yet runs the model to verify behaviour. The plan is an eval suite of recorded tasks, gated on the same audited deploy step that already logs every config change.</li>
+        <li><strong>Known gaps, named deliberately:</strong> unattended runs merge to main without a pull-request gate (a solo trade-off &mdash; see the <a href="watchfloor-autopilot.html">autopilot chapter</a>), and checkpoint approvals aren't recorded as data: git shows what was approved, not who approved it, human or autopilot.</li>
+      </ul>
+
       <h2>How it started</h2>
 
       <p>
