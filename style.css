@@ -1452,7 +1452,18 @@ section {
 @media (max-width: 639px) {
   .hero {
     min-height: auto;
-    padding-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+
+  /* Phone: pull the first project card up so its image starts above the
+     fold; measured on iPhone Safari the heading alone sat at the fold. */
+  .hero + section {
+    padding-top: var(--space-xl);
+  }
+
+  .hero + section .projects-grid {
+    margin-top: var(--space-lg);
   }
 
   .hero__title {
