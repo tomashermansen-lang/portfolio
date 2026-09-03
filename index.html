@@ -28,7 +28,7 @@
   <link rel="icon" href="assets/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -92,55 +92,6 @@
       </div>
     </section>
 
-    <!-- Career thread -->
-    <section aria-labelledby="thread-title">
-      <div class="container">
-        <h2 class="section-title" id="thread-title">How I got here</h2>
-        <div class="exec-graph">
-
-          <div class="exec-graph__phase">
-            <div class="exec-graph__phase-header">
-              <span class="exec-graph__phase-number">01</span>
-              <span class="exec-graph__phase-name">Business-process automation</span>
-            </div>
-            <div class="exec-graph__tasks">
-              <div class="exec-graph__task">
-                <span class="exec-graph__task-name">Derivatives and post-trade workflows in capital markets</span>
-                <span class="exec-graph__task-meta">complex processes &middot; high cost of error</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="exec-graph__phase">
-            <div class="exec-graph__phase-header">
-              <span class="exec-graph__phase-number">02</span>
-              <span class="exec-graph__phase-name">Delivery automation</span>
-            </div>
-            <div class="exec-graph__tasks">
-              <div class="exec-graph__task">
-                <span class="exec-graph__task-name">Test automation, CI/CD, quality gates</span>
-                <span class="exec-graph__task-meta">release governance</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="exec-graph__phase">
-            <div class="exec-graph__phase-header">
-              <span class="exec-graph__phase-number">03</span>
-              <span class="exec-graph__phase-name">AI-enabled processes</span>
-            </div>
-            <div class="exec-graph__tasks">
-              <div class="exec-graph__task">
-                <span class="exec-graph__task-name">Agents, retrieval, decision intelligence, supervision</span>
-                <span class="exec-graph__task-meta">the three projects below</span>
-              </div>
-            </div>
-          </div>
-
-          <p class="exec-graph__caption">Same pattern each time: see a broken process, diagnose the structural cause, design the fix, verify it works.</p>
-        </div>
-      </div>
-    </section>
 
     <!-- Projects -->
     <section id="projects" aria-labelledby="projects-title">
@@ -149,14 +100,16 @@
         <div class="projects-grid">
 
           <a href="projects/watchfloor.html" class="project-card">
+            <div class="project-card__thumbnail project-card__thumbnail--lead">
+              <img src="screenshots/dashboard-dark.png" alt="" loading="lazy" width="540" height="304">
+            </div>
             <div class="project-card__header">
               <div class="project-card__title-row">
                 <h3 class="project-card__title">Watchfloor</h3>
               </div>
-              <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
             </div>
             <p class="project-card__description">
-              An agentic SDLC. AI agents take features from requirements to committed code through an eight-phase pipeline. The watch floor is where I supervise them: live sessions, execution graphs, cost, and the controls to pause anything that drifts. Four chapters: pipeline, autonomy, supervision, and economics.
+              AI agents build software features from requirements to finished code, in eight fixed steps with tests and independent review. I watch every run live and can stop anything that drifts.
             </p>
             <div class="project-card__tags">
               <span class="tag">claude code</span>
@@ -166,21 +119,21 @@
               <span class="tag">typescript</span>
               <span class="tag">sonarqube</span>
             </div>
-            <div class="project-card__thumbnail">
-              <img src="screenshots/dashboard-dark.png" alt="" loading="lazy" width="540" height="304">
-            </div>
+            <span class="project-card__link">See how the agents are supervised <span class="project-card__arrow" aria-hidden="true">&rarr;</span></span>
           </a>
 
           <a href="projects/rag-framework.html" class="project-card">
+            <div class="project-card__thumbnail project-card__thumbnail--lead">
+              <img src="assets/eulex/chat-demo.gif" alt="" loading="lazy" width="540" height="304">
+            </div>
             <div class="project-card__header">
               <div class="project-card__title-row">
                 <h3 class="project-card__title">EuLex RAG</h3>
                 <span class="chip chip--extending"><span class="chip__dot"></span> extending</span>
               </div>
-              <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
             </div>
             <p class="project-card__description">
-              A legal Q&amp;A system that would rather say "I don't know" than cite the wrong article. Hybrid retrieval across 13 EU laws with fail-closed citation validation.
+              A legal Q&amp;A system that would rather say "I don't know" than cite the wrong article. It answers questions about 13 EU laws and only cites what it can verify.
             </p>
             <div class="project-card__tags">
               <span class="tag">python</span>
@@ -190,21 +143,21 @@
               <span class="tag">chromadb</span>
               <span class="tag">openai</span>
             </div>
-            <div class="project-card__thumbnail">
-              <img src="assets/eulex/chat-demo.gif" alt="" loading="lazy" width="540" height="304">
-            </div>
+            <span class="project-card__link">See how the citations are checked <span class="project-card__arrow" aria-hidden="true">&rarr;</span></span>
           </a>
 
           <a href="projects/ops-intelligence-hub.html" class="project-card">
+            <div class="project-card__thumbnail project-card__thumbnail--lead">
+              <img src="screenshots/oih-data-org.png" alt="" loading="lazy" width="540" height="304">
+            </div>
             <div class="project-card__header">
               <div class="project-card__title-row">
                 <h3 class="project-card__title">Ops Intelligence Hub</h3>
                 <span class="chip chip--wip"><span class="chip__dot"></span> work in progress</span>
               </div>
-              <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
             </div>
             <p class="project-card__description">
-              BI dashboards show what happened. This one tells you what to do about it, and shows its working. Deterministic calculations feed AI recommendations with evidence-gated traceability.
+              BI dashboards show what happened. This one tells a manager what to do about it, and shows its working: every recommendation traces back to the numbers, and a person approves it before it counts.
             </p>
             <div class="project-card__tags">
               <span class="tag">python</span>
@@ -215,9 +168,7 @@
               <span class="tag">postgresql</span>
               <span class="tag">openai</span>
             </div>
-            <div class="project-card__thumbnail">
-              <img src="screenshots/oih-data-org.png" alt="" loading="lazy" width="540" height="304">
-            </div>
+            <span class="project-card__link">See how a recommendation is traced <span class="project-card__arrow" aria-hidden="true">&rarr;</span></span>
           </a>
 
         </div>

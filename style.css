@@ -378,13 +378,19 @@ section {
    ========================================================================== */
 
 .hero {
-  min-height: 50vh;
+  /* Half a screen, not a full one: the first project card must peek above
+     the fold on a laptop. A clean hero edge reads as a "false floor". */
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--space-4xl) 0 var(--space-3xl);
+  padding: var(--space-3xl) 0 var(--space-2xl);
   margin-top: 60px;
   position: relative;
+}
+
+.hero + section {
+  padding-top: var(--space-2xl);
 }
 
 .hero--project {
@@ -648,6 +654,29 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Thumbnail first: a picture reads as "something to open", a paragraph as
+   "something to read". */
+.project-card__thumbnail--lead {
+  margin: 0 0 var(--space-md);
+}
+
+/* Link label with information scent, replaces the bare arrow */
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--accent-terracotta);
+}
+
+.project-card__link .project-card__arrow {
+  margin-left: 0;
+  font-size: var(--text-base);
+  color: inherit;
 }
 
 /* ==========================================================================
@@ -1413,7 +1442,7 @@ section {
 @media (max-width: 639px) {
   .hero {
     min-height: auto;
-    padding-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
   }
 
   .hero__title {
