@@ -434,6 +434,16 @@ section {
   margin-top: var(--space-sm);
 }
 
+/* Two descriptive links under the subtitle: one down the page, one to About */
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
 .hero__scroll {
   position: absolute;
   bottom: var(--space-xl);
