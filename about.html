@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Tomas Hermansen</title>
+  <meta name="description" content="Process automation and AI in regulated financial services. I build working AI systems to understand what it takes to deliver AI responsibly.">
+  <meta name="theme-color" content="#FAF8F5">
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About | Tomas Hermansen">
+  <meta property="og:description" content="Process automation and AI in regulated financial services. I build working AI systems to understand what it takes to deliver AI responsibly.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/about.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/dashboard-dark.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css?v=9">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="projects/watchfloor.html" role="menuitem">Watchfloor <span class="nav__dropdown-desc">Agentic SDLC with human supervision</span></a></li>
+              <li class="nav__dropdown-subitem"><a href="projects/watchfloor-pipeline.html" role="menuitem" aria-label="Watchfloor chapter: The pipeline">The pipeline</a></li>
+              <li class="nav__dropdown-subitem"><a href="projects/watchfloor-autopilot.html" role="menuitem" aria-label="Watchfloor chapter: Autopilot and execution graphs">Autopilot &amp; execution graphs</a></li>
+              <li class="nav__dropdown-subitem"><a href="projects/watchfloor-observability.html" role="menuitem" aria-label="Watchfloor chapter: The watch floor">The watch floor</a></li>
+              <li class="nav__dropdown-subitem"><a href="projects/watchfloor-economics.html" role="menuitem" aria-label="Watchfloor chapter: Economics and model routing">Economics &amp; model routing</a></li>
+              <li><a href="projects/rag-framework.html" role="menuitem">EuLex RAG <span class="nav__dropdown-desc">Legal Q&amp;A across 13 EU laws</span></a></li>
+              <li><a href="projects/ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub <span class="nav__dropdown-desc">Decision intelligence for workforce analytics</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <h1 class="hero__title hero__title--project">About</h1>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        What I do best is take a broken, manual process, find the
+        structural cause, design the fix and build the automated process,
+        with quality gates before anything goes live. Automation, to me,
+        is about freeing people from the repetitive stuff so their time
+        can go to what actually creates value. I have done that in
+        regulated financial services my whole career.
+      </p>
+
+      <p>
+        A recent example from Forca, where I serve as Release Train Engineer:
+        at every month-end, capacity had to be reconciled against realised hours
+        by hand. The reconciliation was
+        complex, and the result was contested. I built a Python application for
+        the analysis, using GitHub Copilot agents in defined SDLC roles. The
+        month-end now gives one consistent, objective report instead of
+        conflicting assessments.
+      </p>
+
+      <h2>How I got here</h2>
+
+      <div class="exec-graph">
+
+          <div class="exec-graph__phase">
+            <div class="exec-graph__phase-header">
+              <span class="exec-graph__phase-number">01</span>
+              <span class="exec-graph__phase-name">Business-process automation</span>
+              <span class="exec-graph__gate">Nordea</span>
+            </div>
+            <div class="exec-graph__tasks">
+              <div class="exec-graph__task">
+                <span class="exec-graph__task-name">Derivatives and post-trade workflows in capital markets</span>
+                <span class="exec-graph__task-meta">complex processes &middot; high cost of error</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exec-graph__phase">
+            <div class="exec-graph__phase-header">
+              <span class="exec-graph__phase-number">02</span>
+              <span class="exec-graph__phase-name">Delivery automation</span>
+              <span class="exec-graph__gate">Nordea &middot; BEC &middot; Forca</span>
+            </div>
+            <div class="exec-graph__tasks">
+              <div class="exec-graph__task">
+                <span class="exec-graph__task-name">Test automation, CI/CD, quality gates</span>
+                <span class="exec-graph__task-meta">release governance &middot; agile transformations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exec-graph__phase">
+            <div class="exec-graph__phase-header">
+              <span class="exec-graph__phase-number">03</span>
+              <span class="exec-graph__phase-name">AI-enabled processes</span>
+              <span class="exec-graph__gate">personal projects</span>
+            </div>
+            <div class="exec-graph__tasks">
+              <div class="exec-graph__task">
+                <span class="exec-graph__task-name">Agents, retrieval, decision intelligence, supervision</span>
+                <span class="exec-graph__task-meta">the three <a href="index.html#projects">projects</a> on the front page</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <p>
+        I have led IT development in regulated financial services for most of
+        my career, with and without formal line management, and have built
+        development teams myself, local and distributed. The best deliveries I
+        have been part of came from teams built on trust, engagement and shared
+        ownership: colleagues who make each other better. That is the
+        collaboration I look for, and the one I take responsibility for creating.
+      </p>
+
+      <h2>The AI projects</h2>
+
+      <p>
+        Over the past year I have built three AI systems as personal
+        <a href="index.html#projects">projects</a>. I built them to understand
+        the possibilities and the limitations, and because it fascinates me so
+        much that I cannot leave it alone.
+      </p>
+
+      <p>
+        I'm not a software engineer. In these projects I am the architect, the
+        designer and the quality assurance, and AI writes the code. They are
+        not demos. They are working systems with evaluation frameworks, audit
+        trails, and quality gates.
+      </p>
+
+      <p>
+        The point was never the code itself. It was to develop genuine,
+        first-hand understanding of what it takes to deliver AI
+        responsibly, and to be able to ask the right questions when
+        it matters.
+      </p>
+
+      <h2>What I am looking for</h2>
+
+      <p>
+        A role where I am responsible for rethinking processes with AI, take
+        part in the building myself and get the solutions all the way into
+        production.
+      </p>
+
+      <ul class="contact__links">
+        <li>
+          <a href="https://github.com/tomashermansen-lang" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/tomashermansen" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="mailto:tomas.hermansen@gmail.com">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

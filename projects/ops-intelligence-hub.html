@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>Ops Intelligence Hub | Tomas Hermansen</title>
+  <meta name="description" content="Decision intelligence for workforce analytics. Deterministic calculations feed AI recommendations where every claim traces back to the analytics that produced it. Built on synthetic data with embedded problem scenarios.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ops Intelligence Hub | Tomas Hermansen">
+  <meta property="og:description" content="Decision intelligence for workforce analytics. Deterministic calculations feed AI recommendations where every claim traces back to the analytics that produced it. Built on synthetic data with embedded problem scenarios.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/ops-intelligence-hub.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/oih-data-org.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/ops-intelligence-hub.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css?v=8">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor <span class="nav__dropdown-desc">Agentic SDLC with human supervision</span></a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-pipeline.html" role="menuitem" aria-label="Watchfloor chapter: The pipeline">The pipeline</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-autopilot.html" role="menuitem" aria-label="Watchfloor chapter: Autopilot and execution graphs">Autopilot &amp; execution graphs</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-observability.html" role="menuitem" aria-label="Watchfloor chapter: The watch floor">The watch floor</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-economics.html" role="menuitem" aria-label="Watchfloor chapter: Economics and model routing">Economics &amp; model routing</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG <span class="nav__dropdown-desc">Legal Q&amp;A across 13 EU laws</span></a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub <span class="nav__dropdown-desc">Decision intelligence for workforce analytics</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+        <h1 class="hero__title hero__title--project">Ops Intelligence Hub</h1>
+        <p class="hero__subtitle">BI dashboards show what happened. This one tells you what to do about it, and shows its working.</p>
+        <div class="hero__meta">
+          <span>Solo project &middot; Built from February 2026</span>
+          <span class="chip chip--wip"><span class="chip__dot"></span> solution design &middot; mid-flight</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">python</span>
+          <span class="tag">fastapi</span>
+          <span class="tag">langgraph</span>
+          <span class="tag">react</span>
+          <span class="tag">typescript</span>
+          <span class="tag">postgresql</span>
+          <span class="tag">openai</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        A solution design, mid-flight. Built and tested: deterministic workforce
+        analytics, AI recommendations that trace back to the numbers behind them,
+        and a person who approves before anything goes further. Built but not
+        finished: a synthetic organisation and a simulation loop meant to test
+        those recommendations over time.
+      </p>
+
+      <ul>
+        <li><strong>The process:</strong> the capacity and budget analysis a manager does by hand in spreadsheets.</li>
+        <li><strong>The problem:</strong> BI dashboards show what happened. Managers need what to do about it, with reasoning they can audit.</li>
+        <li><strong>The decision:</strong> deterministic analytics produce the numbers, AI only interprets them, and each recommendation traces to the computed results behind it.</li>
+        <li><strong>What I built:</strong> a workforce decision-intelligence hub, a deterministic synthetic organisation with test scenarios built in, and a turn-based simulation loop.</li>
+        <li><strong>What I learned:</strong> this is where <a href="watchfloor-autopilot.html#two-modes">autopilot</a> was built. Backend work ran unattended through the pipeline while I focused on the judgement calls.</li>
+        <li><strong>Why it matters:</strong> separating what the AI generates from what verifies it, the same pattern that runs through everything here.</li>
+      </ul>
+
+      <h2>The questions behind the design</h2>
+
+      <p>
+        The first design question was where AI makes sense and what has to stay
+        deterministic. Here the numbers come from fixed calculations, and the AI
+        explains them and recommends, because a model that does the arithmetic
+        gives figures nobody can reproduce. That only works when the data is in
+        order. Without order in the data there is no automation, which I learned
+        the slow way (see <em>What went wrong</em>). A recommendation also has to
+        be explainable to the person it affects, so each one carries references to
+        the computed results behind it and waits for a person's approval. And since
+        real workforce data is off limits, the system is tested on a synthetic
+        organisation with known problems built in. I would expect any organisation
+        that puts AI into a management process to meet the same questions.
+      </p>
+
+      <h2>Where it stands</h2>
+
+      <ul>
+        <li><strong>Built and tested:</strong> 11 deterministic analytics modules, the three-agent LangGraph pipeline, the evidence gate on recommendations, the human approval gate, the synthetic organisation, and an MCP server exposing eight analytics tools and two report exports.</li>
+        <li><strong>Built, not yet wired:</strong> the simulation loop. It runs turn by turn against the real pipeline, but the LLM-generated life events that should make outcomes vary are not connected in the running app.</li>
+        <li><strong>In progress:</strong> observability (the stack is configured, nothing is instrumented yet), analytics reconciliation, UI unification, and scoring of live agent output. Today only the analytics are evaluated against the real code.</li>
+        <li><strong>Verified:</strong> 1,600+ automated tests (Python + TypeScript), green as of August 2026.</li>
+        <li><strong>Known limitations:</strong> a localhost tool with no authentication layer, and insight-card values and the summary text are not yet evidence-gated the way recommendations are.</li>
+      </ul>
+
+      <h2>How it started</h2>
+
+      <p>
+        I've spent years accounting for where hours went, arguing for budget
+        adjustments, and fighting time registration structures that were too
+        fine-grained to be useful. The data existed, but the analysis was
+        always manual: spreadsheets, gut feel, and executive summaries that
+        cherry-picked data points with no traceability. I wanted to build the
+        analysis tooling I wished I had.
+      </p>
+
+      <h2>What it does</h2>
+
+      <p>
+        The system has three layers, and the separation between them is the
+        point.
+      </p>
+
+      <!-- Architecture — typography-driven -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">01</span>
+            <span class="exec-graph__phase-name">Analytics</span>
+            <span class="exec-graph__gate">deterministic &middot; no LLM</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Capacity &amp; utilization</span>
+              <span class="exec-graph__task-meta">overload, bench, allocation balance</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Budget &amp; cost groups</span>
+              <span class="exec-graph__task-meta">variance, two-layer allocation model</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Absence &amp; overtime</span>
+              <span class="exec-graph__task-meta">type classification, systematic overwork</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Data quality</span>
+              <span class="exec-graph__task-meta">missing data, rounding errors, time leakage</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Outliers &amp; forecasting</span>
+              <span class="exec-graph__task-meta">statistical anomalies, capacity projections</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Config-driven dispatch</span>
+              <span class="exec-graph__task-meta">configuration decides which analytics run, not a model</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">11 analytics modules. Deterministic by construction, with no clock, no randomness and config-driven thresholds. Same input, same output, every time.</p>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">02</span>
+            <span class="exec-graph__phase-name">Agents</span>
+            <span class="exec-graph__gate">LLM &middot; LangGraph</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Insight agent</span>
+              <span class="exec-graph__task-meta">turns computed results into insight cards</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Action agent</span>
+              <span class="exec-graph__task-meta">generates recommendations grounded in evidence</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Reporting agent</span>
+              <span class="exec-graph__task-meta">executive summaries for stakeholders</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">Recommendations are evidence-gated: every evidence reference is matched against the computed results. Unmatched references are stripped, and recommendations without evidence are dropped. The text the model writes around them is not number-checked yet.</p>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">03</span>
+            <span class="exec-graph__phase-name">Human gate</span>
+            <span class="exec-graph__gate">approve &middot; reject &middot; adjust</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Approval with LangGraph interrupt()</span>
+              <span class="exec-graph__task-meta">graph pauses, surfaces reasoning, waits for human decision</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">Default mode gates every recommendation, and a timeout auto-rejects. It never auto-approves. In that mode no AI recommendation reaches a stakeholder without documented human review. Evidence is immutable after approval.</p>
+        </div>
+
+        <p class="exec-graph__caption">When someone challenges a recommendation ("Why should we move two people to Team B?"), the claim traces through the agent's reasoning, through the tool call, down to the analytics module, metric, entity, and period that produced the number.</p>
+      </div>
+
+      <h2>Two systems, not one</h2>
+
+      <p>
+        The OIH system analyses workforce data and recommends actions. But
+        how do I test whether those recommendations are any good? I needed
+        a second system: a synthetic world that the first system operates on,
+        where I can run scenarios, observe consequences, and reset to
+        baseline.
+      </p>
+
+      <p>
+        GDPR constraints meant I couldn't use real workforce data. So I built
+        a synthetic organisation: roughly 250 employees across six departments
+        in a fictitious Nordic fintech, with five years of planning data
+        (allocations and norm hours; budgets cover three) and two-plus years of realised
+        timesheets and absences. The
+        data generator is deterministic: same seed, same output, every run.
+        The current build has 139,000+ timesheet rows.
+      </p>
+
+      <p>
+        Seven problem scenarios are specified, and five are demonstrably in the
+        generated data, among them the ML Platform team at 112&ndash;130% overload
+        in the second half of 2024 and Backend Core with 40% missing timesheet
+        entries. Portfolio budget pressure and external dependency concentration
+        are not there yet. All seven are patterns I've seen repeatedly over 25
+        years, and the data is a test harness designed to stress every analytics
+        module.
+      </p>
+
+      <p>
+        Building on synthetic data turned out to be an advantage, not just a GDPR
+        workaround. The scenarios are reproducible, the analytics modules can be
+        tested against known ground truth, and the whole system can be demonstrated
+        without access to anyone's actual workforce data.
+      </p>
+
+      <div class="screenshot">
+        <img src="../screenshots/oih-data-org.png" alt="Data viewer showing the synthetic organisation: Corporate Services with 25 people and Data & AI with 50 people, teams expanded to show individual employees with stacked allocation bars, chapter-level cost splits showing Non-billable 35% and Added 65%, and squad-level splits showing Portfolio 85%" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Data viewer: the synthetic organisation with departments, teams, and the two-layer allocation model. Tap to expand.</p>
+      </div>
+
+      <div class="screenshot">
+        <img src="../screenshots/oih-data-budget.png" alt="Budget data viewer showing cost group summary with annual budgets and variance percentages, project-level FY breakdown with allocated amounts, and epic-level budget drill-down with FTE counts and cost tracking" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Budget data: cost groups, project allocations, and epic-level breakdown. Tap to expand.</p>
+      </div>
+
+      <div class="screenshot">
+        <img src="../screenshots/oih-data-timesheets.png" alt="Timesheets data viewer showing a paginated table of generated timesheet entries with date, employee, hours, cost group, activity, project, and description columns" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Generated timesheets: date, employee, hours, cost group, activity, and project. Tap to expand.</p>
+      </div>
+
+      <h2>Simulating decisions</h2>
+
+      <p>
+        Static test data can verify that analytics modules compute correctly,
+        but it can't verify that the system handles a changing organisation
+        over time. The simulation engine is meant to close the loop: take the OIH
+        system's recommendations, apply them to the synthetic organisation,
+        and play the consequences forward.
+      </p>
+
+      <p>
+        Organisational decisions don't land cleanly. Moving two people to a new
+        team doesn't guarantee full productivity on day one, and hiring takes
+        longer than planned. The design is for an LLM to generate that variation
+        in outcomes. What runs today is the loop itself: turn by turn against the
+        real OIH pipeline, approved actions applied to a copy of the synthetic
+        organisation, and the scenario compared with the baseline. The
+        LLM-generated life events are written but not connected, so every action
+        lands exactly as planned, and each turn re-projects the same period.
+        Carrying earlier decisions forward month by month is the next step.
+      </p>
+
+      <h2>Design decisions</h2>
+
+      <ul>
+        <li><strong>No classifier, no dynamic routing.</strong> The graph is fixed, and configuration decides which analytics run. A classifier adds latency and failure modes for no benefit when the set of analyses is known.</li>
+        <li><strong>No vector database.</strong> The data is 100% structured, so RAG would add complexity without value. <a href="rag-framework.html">EuLex</a> is the RAG project.</li>
+        <li><strong>Config-driven thresholds.</strong> All business rules in YAML, not code. "Over-allocated" means 110% or more, and that number lives in a config file.</li>
+      </ul>
+
+      <h2>What went wrong</h2>
+
+      <p>
+        The biggest lesson: I should have started with the data. I built
+        analytics modules, agent orchestration, and UI components before the
+        synthetic data model was solid. That meant constantly retrofitting
+        as the data shape changed. Everything in a system like this starts
+        with data. The structure of the timesheets, the allocation model,
+        the absence categories. Getting those right first would have saved
+        weeks of rework. It's the kind of mistake that sounds obvious in
+        hindsight, but the pull to build the interesting parts first is
+        strong.
+      </p>
+
+      <!-- Repo link — not public yet -->
+      <div class="project-cta project-cta--disabled">
+        <div>
+          <p class="project-cta__label">Repository</p>
+          <p class="project-cta__text">Available when the project reaches a presentable state</p>
+        </div>
+      </div>
+
+      <div class="next-project">
+        <p class="next-project__label">Next project</p>
+        <a href="watchfloor.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">Watchfloor</p>
+            <p class="next-project__description">An agentic SDLC with a human supervision deck</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../screenshots/dashboard-dark.png" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
