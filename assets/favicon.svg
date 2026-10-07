@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Option 3: Arrow/chevron pointing right — represents forward movement, delivery, transformation -->
+  <rect width="32" height="32" rx="6" fill="#C4755B"/>
+  <polyline points="12,8 22,16 12,24" fill="none" stroke="#FAF8F5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>Watchfloor | Tomas Hermansen</title>
+  <meta name="description" content="An agentic SDLC built on Claude Code. AI agents take features from requirements to committed code through an eight-phase pipeline; the watch floor is where a human supervises and intervenes.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Watchfloor | Tomas Hermansen">
+  <meta property="og:description" content="An agentic SDLC built on Claude Code. AI agents take features from requirements to committed code through an eight-phase pipeline; the watch floor is where a human supervises and intervenes.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/screenshots/dashboard-dark.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/watchfloor.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css?v=8">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor <span class="nav__dropdown-desc">Agentic SDLC with human supervision</span></a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-pipeline.html" role="menuitem" aria-label="Watchfloor chapter: The pipeline">The pipeline</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-autopilot.html" role="menuitem" aria-label="Watchfloor chapter: Autopilot and execution graphs">Autopilot &amp; execution graphs</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-observability.html" role="menuitem" aria-label="Watchfloor chapter: The watch floor">The watch floor</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-economics.html" role="menuitem" aria-label="Watchfloor chapter: Economics and model routing">Economics &amp; model routing</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG <span class="nav__dropdown-desc">Legal Q&amp;A across 13 EU laws</span></a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub <span class="nav__dropdown-desc">Decision intelligence for workforce analytics</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+        <h1 class="hero__title hero__title--project">Watchfloor</h1>
+        <p class="hero__subtitle">AI agents run the delivery pipeline. The watch floor is where I supervise them.</p>
+        <div class="hero__meta">
+          <span>Solo project &middot; Grew out of EuLex, actively evolving</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">claude code</span>
+          <span class="tag">bash</span>
+          <span class="tag">python</span>
+          <span class="tag">react</span>
+          <span class="tag">typescript</span>
+          <span class="tag">sonarqube</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        An agentic software delivery system. AI agents take a feature from requirements
+        to committed code through an eight-phase pipeline with deterministic quality
+        gates. Larger jobs run as execution graphs of dependent tasks, unattended where
+        the gates are sufficient.
+      </p>
+
+      <ul>
+        <li><strong>The process:</strong> software delivery, from requirement to merged code.</li>
+        <li><strong>The problem:</strong> AI coding assistants produce fast output that is unverifiable by default, and solo delivery still needs the roles a team would provide.</li>
+        <li><strong>The decision:</strong> constrain generative work with deterministic gates and adversarial review, and let autonomy be earned through evidence.</li>
+        <li><strong>What I built:</strong> an eight-phase delivery pipeline, execution graphs and two orchestrators for unattended work, and a supervision dashboard with live streams and controls.</li>
+        <li><strong>What I measured:</strong> 56% lower cost from per-phase model routing in a controlled three-configuration canary on the same feature, with every quality gate preserved.</li>
+        <li><strong>Why it matters:</strong> these are the governance questions any organisation meets when agents write code, answered in miniature with a full audit trail.</li>
+      </ul>
+
+      <p>
+        The name comes from operations centers. A watch floor is the room where people
+        monitor live systems and step in when a decision is needed. Here the live
+        systems are AI agents building software.
+      </p>
+
+      <p>
+        33 commands and 14 specialist agents do the work. Watchfloor has
+        delivered most of its own subsequent development through its own
+        pipeline, feature by feature, with the phase-labeled git history as
+        the audit trail. There are more than 100 archived feature runs so far,
+        and every deploy of the pipeline's own configuration is logged with
+        approver and diff. Complete trails for two features, streams included, are
+        <a href="https://github.com/tomashermansen-lang/watchfloor/tree/main/docs/example-feature" target="_blank" rel="noopener noreferrer">published as examples</a>.
+      </p>
+
+      <h2>The chapters</h2>
+
+      <p>
+        The system has three layers, plus a cost dimension that runs through all of
+        them. Each layer has its own chapter below. The chapters read in order, but
+        each stands on its own.
+      </p>
+
+      <div class="projects-grid">
+
+        <a href="watchfloor-pipeline.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">The pipeline</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            The AI writes the code. Static analysis, test suites, and adversarial review
+            decide if it's any good. Eight phases, every artifact committed, every
+            phase change traceable in git.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/pipeline-git-log.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+        <a href="watchfloor-autopilot.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">Autopilot &amp; execution graphs</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            Unattended delivery for work where the gates are sufficient. Dependency-ordered
+            plans coordinate whole projects, with drift detection watching every task.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/autopilot-tmux.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+        <a href="watchfloor-observability.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">The watch floor</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            The supervision deck. Live session streams, plan tracking, session metrics,
+            and the controls that grew out of watching: pause and resume, plus a
+            read-only terminal view of any running agent.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/dashboard-dark.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+        <a href="watchfloor-economics.html" class="project-card">
+          <div class="project-card__header">
+            <div class="project-card__title-row">
+              <h3 class="project-card__title">Economics &amp; model routing</h3>
+            </div>
+            <span class="project-card__arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <p class="project-card__description">
+            Autonomous pipelines have a cost curve. Measured A/B canaries and per-phase
+            model routing. Cost decisions with the same rigour as quality decisions.
+          </p>
+          <div class="project-card__thumbnail">
+            <img src="../screenshots/watchfloor-cost.png" alt="" loading="lazy" width="540" height="304">
+          </div>
+        </a>
+
+      </div>
+
+      <h2>Where it stands</h2>
+
+      <ul>
+        <li><strong>Next:</strong> continuous evals of the agent configuration. The pipeline's own commands, skills, and hooks are pinned by contract tests that check the files. Nothing yet runs the model to verify behaviour. The plan is an eval suite of recorded tasks, gated on the same audited deploy step that already logs every config change.</li>
+        <li><strong>Known gaps, named deliberately:</strong> unattended runs merge to main without a pull-request gate (a solo trade-off, see the <a href="watchfloor-autopilot.html">autopilot chapter</a>), and checkpoint approvals aren't recorded as data: git shows what was approved, not who approved it, human or autopilot.</li>
+      </ul>
+
+      <!-- Repo link -->
+      <a href="https://github.com/tomashermansen-lang/watchfloor" class="project-cta" target="_blank" rel="noopener noreferrer">
+        <div>
+          <p class="project-cta__label">View on GitHub</p>
+          <p class="project-cta__text">tomashermansen-lang/watchfloor</p>
+        </div>
+        <span class="project-cta__arrow">&rarr;</span>
+      </a>
+
+      <div class="next-project">
+        <p class="next-project__label">Next project</p>
+        <a href="rag-framework.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">EuLex RAG</p>
+            <p class="next-project__description">Legal Q&amp;A for EU regulations that refuses to answer on weak evidence</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../assets/eulex/chat-demo.gif" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

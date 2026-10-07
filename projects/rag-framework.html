@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <title>EuLex RAG | Tomas Hermansen</title>
+  <meta name="description" content="Legal Q&A for EU regulations. Hybrid retrieval across 13 EU laws. Refuses to answer when the retrieved evidence is too weak, and tests every new law with auto-generated cases.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="EuLex RAG | Tomas Hermansen">
+  <meta property="og:description" content="Legal Q&A for EU regulations. Hybrid retrieval across 13 EU laws. Refuses to answer when the retrieved evidence is too weak, and tests every new law with auto-generated cases.">
+  <meta property="og:url" content="https://tomashermansen-lang.github.io/portfolio/projects/rag-framework.html">
+  <meta property="og:image" content="https://tomashermansen-lang.github.io/portfolio/assets/eulex/chat-demo.gif">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://tomashermansen-lang.github.io/portfolio/projects/rag-framework.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../style.css?v=8">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <svg class="nav__icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="nav__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li class="nav__dropdown-trigger">
+          <a href="../index.html#projects" role="button" aria-expanded="false" aria-haspopup="true">Projects</a>
+          <div class="nav__dropdown" id="projects-dropdown">
+            <ul class="nav__dropdown-menu" role="menu">
+              <li><a href="watchfloor.html" role="menuitem">Watchfloor <span class="nav__dropdown-desc">Agentic SDLC with human supervision</span></a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-pipeline.html" role="menuitem" aria-label="Watchfloor chapter: The pipeline">The pipeline</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-autopilot.html" role="menuitem" aria-label="Watchfloor chapter: Autopilot and execution graphs">Autopilot &amp; execution graphs</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-observability.html" role="menuitem" aria-label="Watchfloor chapter: The watch floor">The watch floor</a></li>
+              <li class="nav__dropdown-subitem"><a href="watchfloor-economics.html" role="menuitem" aria-label="Watchfloor chapter: Economics and model routing">Economics &amp; model routing</a></li>
+              <li><a href="rag-framework.html" role="menuitem">EuLex RAG <span class="nav__dropdown-desc">Legal Q&amp;A across 13 EU laws</span></a></li>
+              <li><a href="ops-intelligence-hub.html" role="menuitem">Ops Intelligence Hub <span class="nav__dropdown-desc">Decision intelligence for workforce analytics</span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero hero--project">
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">&larr; All projects</a>
+        <h1 class="hero__title hero__title--project">EuLex RAG</h1>
+        <p class="hero__subtitle">A legal Q&amp;A system for EU regulations that would rather say "I don't know" than cite the wrong article.</p>
+        <div class="hero__meta">
+          <span>Solo project &middot; Built from December 2025, actively evolving</span>
+        </div>
+        <div class="hero__meta">
+          <span class="chip chip--extending"><span class="chip__dot"></span> extending: CJEU case law</span>
+        </div>
+        <div class="project-card__tags" style="margin-top: var(--space-sm);">
+          <span class="tag">python</span>
+          <span class="tag">fastapi</span>
+          <span class="tag">react</span>
+          <span class="tag">typescript</span>
+          <span class="tag">chromadb</span>
+          <span class="tag">openai</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="project-content">
+
+      <p class="project-content__summary">
+        Hybrid retrieval across 13 EU laws, deterministic abstention when the
+        evidence is too weak, and an evaluation framework that auto-generates
+        test cases during ingestion.
+      </p>
+
+      <ul>
+        <li><strong>The process:</strong> finding out what a regulation actually requires, and being able to point to the article.</li>
+        <li><strong>The problem:</strong> LLM answers about legislation are worthless if the citations can't be trusted.</li>
+        <li><strong>The decision:</strong> fail closed. When retrieval doesn't find strong enough evidence, the system refuses before the model is asked, and evaluation runs on the same code path as the API.</li>
+        <li><strong>What I built:</strong> hybrid retrieval across 13 EU laws, abstention and citation checks, self-service ingestion, and an eval metrics dashboard.</li>
+        <li><strong>What I measured:</strong> a regression suite of 256 golden cases, most of them auto-generated during ingestion, scored with an LLM judge.</li>
+        <li><strong>Why it matters:</strong> a working pattern for grounding LLM systems in regulated domains where a wrong answer has consequences.</li>
+      </ul>
+
+      <h2>Where it stands</h2>
+
+      <ul>
+        <li><strong>Shipped:</strong> hybrid retrieval across 13 laws, abstention before generation, the citation check for the engineering profile, self-service ingestion from EUR-Lex, the eval dashboard, and the ingestion side of CJEU case law.</li>
+        <li><strong>In progress:</strong> case-law retrieval and anti-hallucination validation for case references.</li>
+        <li><strong>Verified:</strong> 3,200+ automated tests (Python and TypeScript), green as of September 2026, and a regression suite of 256 golden cases. No end-to-end browser tests yet.</li>
+        <li><strong>Known limitations:</strong> the strict citation check covers the engineering profile on the non-streaming path the evals use. The streaming chat and the default legal profile rely on the abstention before generation. Auto-generated evals validate consistency, not legal accuracy, and conversational follow-ups soften the abstention guarantee.</li>
+      </ul>
+
+      <h2>How it started</h2>
+
+      <p>
+        I'd been using AI tools for a while, and over summer 2025 started
+        building: workflow automation with Make and OpenAI, a demand/supply
+        analysis in Python with GitHub Copilot at work. Useful, but
+        surface-level. I wanted to understand how LLMs
+        actually work with external knowledge, not just use them. RAG felt
+        like the right place to dig in: retrieval, augmentation, generation.
+        It's the core pattern for grounding LLM output in real data, and it
+        stays relevant even as context windows grow, because controlling
+        which content the model answers from is a governance question as
+        much as a technical one.
+      </p>
+
+      <p>
+        I chose EU legislation as the domain because it's a problem I kept
+        running into in IT: what do the AI Act, DORA, and NIS2 actually mean
+        for software development requirements? The laws are complex enough to
+        stress-test every part of a retrieval pipeline, and getting a citation
+        wrong in legal text has real consequences.
+      </p>
+
+      <p>
+        EuLex was my first private project. This is where the "prompt, fix,
+        prompt, fix" cycle started that eventually grew into
+        <a href="watchfloor.html">Watchfloor</a>. Every
+        frustration during this build became a feature in the pipeline later.
+      </p>
+
+      <h2>What it does</h2>
+
+      <p>
+        EuLex answers questions about EU legislation with article citations. It
+        currently covers 13 EU laws (AI Act, GDPR, DORA, NIS2, Data Act, and others)
+        and supports cross-law queries: "Which regulations are relevant for cybersecurity?"
+        retrieves across all corpora, merges results, and synthesises a multi-law answer
+        with per-article citations.
+      </p>
+
+      <p>
+        New EU laws can be ingested through the browser UI. The ingestion pipeline fetches
+        legislation from EUR-Lex, chunks it along legal structure boundaries (articles and
+        paragraphs, not fixed token windows), enriches chunks with LLM-generated search
+        terms, and builds a citation graph capturing cross-references between articles.
+      </p>
+
+      <div class="screenshot">
+        <img src="../assets/eulex/legislation-browser.gif" alt="Admin panel browsing EUR-Lex, running preflight checks, ingesting new legislation" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Self-service ingestion: browsing EUR-Lex, running preflight checks, adding new legislation. Tap to expand.</p>
+      </div>
+
+      <h2>How retrieval works</h2>
+
+      <!-- Retrieval pipeline — typography-driven -->
+      <div class="exec-graph">
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">01</span>
+            <span class="exec-graph__phase-name">Planning</span>
+            <span class="exec-graph__gate">LLM</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Intent analysis</span>
+              <span class="exec-graph__task-meta">classify query type</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Corpus discovery</span>
+              <span class="exec-graph__task-meta">auto-select relevant laws &middot; or abstain</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">02</span>
+            <span class="exec-graph__phase-name">Retrieval</span>
+            <span class="exec-graph__gate">deterministic &middot; four signals</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Vector search</span>
+              <span class="exec-graph__task-meta">semantic similarity</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">BM25 lexical search</span>
+              <span class="exec-graph__task-meta">exact terminology</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Citation graph</span>
+              <span class="exec-graph__task-meta">citations &amp; structural proximity &middot; highest weight in reranking</span>
+            </div>
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Role alignment</span>
+              <span class="exec-graph__task-meta">the chunk's role against query intent and profile &middot; lowest weight</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">Vector search retrieves the candidates; BM25, the citation-graph signal and role alignment re-rank them in a hybrid scoring formula.</p>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">03</span>
+            <span class="exec-graph__phase-name">Evidence gate</span>
+            <span class="exec-graph__gate">fail-closed &middot; deterministic</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Abstain before generation</span>
+              <span class="exec-graph__task-meta">no hits or best match too distant &rarr; refuse, the model is never asked</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">04</span>
+            <span class="exec-graph__phase-name">Generation</span>
+            <span class="exec-graph__gate">LLM</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Answer with citations</span>
+              <span class="exec-graph__task-meta">synthesise from retrieved articles</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exec-graph__phase">
+          <div class="exec-graph__phase-header">
+            <span class="exec-graph__phase-number">05</span>
+            <span class="exec-graph__phase-name">Citation check</span>
+            <span class="exec-graph__gate">deterministic &middot; engineering profile</span>
+          </div>
+          <div class="exec-graph__tasks">
+            <div class="exec-graph__task">
+              <span class="exec-graph__task-name">Validate every citation</span>
+              <span class="exec-graph__task-meta">every citation points to a retrieved article &rarr; answer &middot; otherwise &rarr; refuse</span>
+            </div>
+          </div>
+          <p class="exec-graph__note">Runs on the non-streaming path the evals use. The streaming chat shows the answer while it is generated, so there the evidence gate is the guard.</p>
+        </div>
+
+        <p class="exec-graph__caption">The citation signal carries the largest weight in the reranking formula because legal text is inherently structured. When Article 6 references Annex III, those should be retrieved together. Pure vector search misses this. Pure keyword search misses paraphrases. The hybrid approach catches both.</p>
+      </div>
+
+      <div class="screenshot">
+        <img src="../assets/eulex/chat-demo.gif" alt="Cross-law query demo showing AI-powered corpus discovery, multi-law retrieval, and an answer with article citations" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Cross-law query: "Hvilke love er relevante for cybersikkerhed". Corpus discovery, multi-law retrieval, an answer with article citations. Tap to expand.</p>
+      </div>
+
+      <h2>How evaluation works</h2>
+
+      <p>
+        The evaluation pipeline calls the same function as the API's answer endpoint.
+        There's no separate "test mode" with different behaviour. The streaming chat
+        shares the retrieval but not the checks after generation, so the evals don't
+        cover it.
+        <a href="https://github.com/tomashermansen-lang/eulex-rag/tree/main/data/evals" target="_blank" rel="noopener noreferrer">256 golden test cases</a>
+        go through multi-stage scoring: anchor presence, response format compliance,
+        and LLM-as-judge checks for faithfulness and relevancy. Of those cases, 253 are
+        auto-generated during ingestion. When a new law is added, the
+        pipeline creates test cases from the legislation itself. In a production setting
+        those would need an expert-crafted layer on top, but the auto-generated baseline
+        catches regressions immediately.
+      </p>
+
+      <p>
+        Auto-generated cases validate consistency, not legal accuracy.
+        The system is tested against itself, not against a qualified lawyer's assessment,
+        and the LLM judge is the same model family as the system under test.
+        Expert-crafted adversarial cases would tell a different and more useful story.
+      </p>
+
+      <div class="screenshot">
+        <img src="../assets/eulex/eval-dashboard.gif" alt="Eval dashboard showing matrix view of test results by law, expanding to see LLM-judge scores" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Eval dashboard: matrix view of test results by law, expanding to see LLM-judge scores. Tap to expand.</p>
+      </div>
+
+      <div class="screenshot">
+        <img src="../assets/eulex/eval-metrics.gif" alt="Eval metrics drilling down through quality, performance, and ingestion health with AI-powered analysis" class="screenshot__image" loading="lazy">
+        <p class="screenshot__caption">Eval metrics: drilling from overview through quality, performance, and ingestion health. Tap to expand.</p>
+      </div>
+
+      <h2>Adding case law</h2>
+
+      <p>
+        The biggest gap in EuLex today: it provides statute only, not case law. Professional
+        legal tools (Karnov, Westlaw, LexisNexis) pair legislation with court interpretations.
+        Understanding a regulation means knowing not just what it says, but how courts have
+        applied it.
+      </p>
+
+      <p>
+        The Court of Justice of the European Union (CJEU) is the EU's highest court. Its
+        rulings set precedent for how regulations are interpreted across member states.
+        The ingestion side of the extension is built and tested, behind a switch that is off by default:
+      </p>
+
+      <ul>
+        <li>Fetching CJEU decisions from the EU's CELLAR publications API</li>
+        <li>Parsing each judgment into its sections: summary, grounds, operative part, parties and costs, with case number and date taken from the CELLAR metadata</li>
+        <li>Structure-aware chunking and citation enrichment, so judgments link to the articles they interpret</li>
+      </ul>
+
+      <p>
+        What remains is the retrieval side: indexing a full judgment corpus with
+        article-to-case lookup, including case law in synthesised answers ("Article 6
+        of the AI Act, as interpreted in Case C-xxx..."), and anti-hallucination
+        validation. The LLM must not invent case numbers, which is a real and
+        documented risk.
+      </p>
+
+      <p>
+        The primary constraint isn't the data pipeline. It's validating that the system
+        doesn't hallucinate case references. In legal Q&amp;A, a made-up case number is worse
+        than no answer at all.
+      </p>
+
+      <h2>Reflections</h2>
+
+      <p>
+        The instinct when building a Q&amp;A system is to always return an answer. Legal
+        Q&amp;A inverts that instinct. The correct behaviour is often to refuse. Building
+        a system that says "I don't know" meant fighting every optimisation that improved
+        recall at the expense of precision. The "insufficient evidence" response appears
+        more often than feels comfortable, and that is the feature, not a bug.
+      </p>
+
+      <p>
+        Structure-aware chunking turned out to matter more than chunk size. Fixed-size token
+        windows break legal text in the wrong places. An article that spans 2,000 tokens
+        should not be split arbitrarily, because paragraph boundaries and cross-references
+        carry meaning. EuLex chunks along legal structure, so chunk sizes vary wildly, but
+        each chunk is a coherent legal unit.
+      </p>
+
+      <p>
+        Three limitations are still open. The strict citation check covers one profile on
+        one path, as described above. The abstention holds well on single queries, but
+        follow-up questions in a conversation carry implicit context that gradually erodes
+        it. And auto-generated eval cases test consistency, not legal correctness.
+      </p>
+
+      <p>
+        The patterns that emerged here apply beyond legal Q&amp;A. Controlling which
+        content a model can answer from, refusing to answer rather than guessing, and
+        building evaluation into the ingestion pipeline rather than bolting it on
+        afterwards. Any organisation deploying RAG in a regulated domain will face the
+        same design decisions. I built them for EU law, but the governance questions
+        are the same for financial compliance, medical guidelines, or internal policy.
+      </p>
+
+      <h3>What went wrong</h3>
+
+      <p>
+        EuLex went through 11 refactoring phases. TOC routing and concept routing were
+        built and then cut when their complexity exceeded their benefit. Streamlit was
+        replaced with React when it couldn't support the eval dashboard and ingestion
+        flows I needed. That trade-off added real complexity to the project, but it was
+        the right call. Other features were simply removed. The final system is simpler
+        than it was at phase 6 and significantly better.
+      </p>
+
+      <p>
+        The project was initially built prompt, fix, prompt, fix. That approach left marks.
+        The main module grew to 10,000 lines before I refactored it down to a slim
+        orchestrator with proper separation. The first several phases had no tests.
+        Retrofitting them was slow and uncomfortable. But both problems acted as feedback
+        loops. The god-module experience is why the
+        <a href="watchfloor-pipeline.html">Watchfloor pipeline</a> now enforces module
+        boundaries through architecture review. The missing-tests experience is why it
+        enforces TDD with a hook that blocks source edits when no test has been
+        touched. Every frustration during this build became a rule in the pipeline.
+      </p>
+
+      <!-- Repo link -->
+      <a href="https://github.com/tomashermansen-lang/eulex-rag" class="project-cta" target="_blank" rel="noopener noreferrer">
+        <div>
+          <p class="project-cta__label">View on GitHub</p>
+          <p class="project-cta__text">tomashermansen-lang/eulex-rag</p>
+        </div>
+        <span class="project-cta__arrow">&rarr;</span>
+      </a>
+
+      <div class="next-project">
+        <p class="next-project__label">Next project</p>
+        <a href="ops-intelligence-hub.html" class="next-project__link">
+          <div>
+            <p class="next-project__title">Ops Intelligence Hub</p>
+            <p class="next-project__description">Decision intelligence for workforce analytics</p>
+          </div>
+          <div class="next-project__thumbnail">
+            <img src="../screenshots/oih-data-org.png" alt="" loading="lazy" width="120" height="68">
+          </div>
+          <span class="next-project__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen</span>
+    </div>
+  </footer>
+
+  <script src="../lightbox.js"></script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
