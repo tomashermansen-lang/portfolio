@@ -1,0 +1,393 @@
+{
+ "schema": [],
+ "quotes_verbatim": [],
+ "references_exist": [
+  {
+   "term": "11_default_and_termination",
+   "field": "note",
+   "reference": "Annex 5",
+   "message": "note cites Annex 5, which is not in the document",
+   "document": "lichtung-offshore-ppa-execution"
+  },
+  {
+   "term": "11_default_and_termination",
+   "field": "clause",
+   "reference": "Annex 5",
+   "message": "clause cites Annex 5, which is not in the document",
+   "document": "lichtung-offshore-ppa-execution"
+  }
+ ],
+ "paper_vs_contract": [
+  {
+   "term": "3_supply_period",
+   "unit": "years",
+   "paper": [
+    "10"
+   ],
+   "contract": [
+    "12"
+   ],
+   "message": "paper states 10 years; contract says 12",
+   "paper_id": "havrebakke-ic-key-terms",
+   "contract_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "term": "10_credit_support",
+   "unit": "eur",
+   "paper": [
+    "2500000"
+   ],
+   "contract": [
+    "2000000"
+   ],
+   "message": "paper states 2500000 eur; contract says 2000000",
+   "paper_id": "havrebakke-ic-key-terms",
+   "contract_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "term": "3_supply_period",
+   "unit": "years",
+   "paper": [
+    "10"
+   ],
+   "contract": [
+    "12"
+   ],
+   "message": "paper states 10 years; contract says 12",
+   "paper_id": "havrebakke-legal-dd-summary",
+   "contract_id": "havrebakke-ppa-v2-execution"
+  }
+ ],
+ "version_diff": [
+  {
+   "term": "3_supply_period",
+   "unit": "years",
+   "a": [
+    "10"
+   ],
+   "b": [
+    "12"
+   ],
+   "message": "years: 10 → 12",
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "term": "4_cod_and_delay",
+   "unit": "date",
+   "a": [
+    "1 october 2027",
+    "31 december 2027"
+   ],
+   "b": [
+    "1 october 2027",
+    "31 march 2028"
+   ],
+   "message": "date: 1 october 2027, 31 december 2027 → 1 october 2027, 31 march 2028",
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "term": "5_price_and_indexation",
+   "unit": "eur_per_mwh",
+   "a": [
+    "58"
+   ],
+   "b": [
+    "54.5"
+   ],
+   "message": "eur_per_mwh: 58 → 54.5",
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "term": "5_price_and_indexation",
+   "unit": "percent",
+   "a": [],
+   "b": [
+    "30",
+    "70"
+   ],
+   "message": "percent: — → 30, 70",
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "term": "8_curtailment",
+   "unit": "hours",
+   "a": [],
+   "b": [
+    "150",
+    "2"
+   ],
+   "message": "hours: — → 150, 2",
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "term": "10_credit_support",
+   "unit": "months",
+   "a": [
+    "12",
+    "6"
+   ],
+   "b": [
+    "12",
+    "9"
+   ],
+   "message": "months: 12, 6 → 12, 9",
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  }
+ ],
+ "document_diff": [
+  {
+   "change": "replace",
+   "a": [
+    "Not a real contract and not legal advice. **Draft, 12 March 2026** DRAFT for negotiation.",
+    "Subject to contract and not binding on either Party until signed by both Parties. between **Havrebakke Vind ApS** (the Seller) and **Jutland Board & Packaging A/S** (the Buyer) with the payment obligations of the Buyer guaranteed by **Jutland Industri Holding A/S** under the Parent Company Guarantee in Annex 4."
+   ],
+   "b": [
+    "Not a real contract and not legal advice. **Execution version, 28 May 2026** between **Havrebakke Vind ApS** (the Seller) and **Jutland Board & Packaging A/S** (the Buyer) with the payment obligations of the Buyer guaranteed by **Jutland Industri Holding A/S** under the Parent Company Guarantee in Annex 4."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "The Buyer's payment obligations under this Agreement are guaranteed by Jutland Industri Holding A/S under the Parent Company Guarantee set out in Annex 4. ## Facility The Facility is the Havrebakke Wind Farm, consisting of eight onshore wind turbine generators with a total installed capacity of 48.0 MW located at Havrebakke in Ringkøbing-Skjern Municipality, Denmark, in bidding zone DK1, together with the internal cabling, the Havrebakke substation and the ancillary installations described in Annex 1. ## Supply Period Supply Period: ten (10) years commencing on the Commercial Operation Date."
+   ],
+   "b": [
+    "The Buyer's payment obligations under this Agreement are guaranteed by Jutland Industri Holding A/S under the Parent Company Guarantee set out in Annex 4. ## Facility The Facility is the Havrebakke Wind Farm, consisting of eight onshore wind turbine generators with a total installed capacity of 48.0 MW located at Havrebakke in Ringkøbing-Skjern Municipality, Denmark, in bidding zone DK1, together with the internal cabling, the Havrebakke substation and the ancillary installations described in Annex 1. ## Supply Period Supply Period: twelve (12) years commencing on the Commercial Operation Date."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "31 December 2027. ## Product and Certificates Product: electricity generated by the Facility and delivered at the Delivery Point, together with all Guarantees of Origin issued in respect of the Metered Output."
+   ],
+   "b": [
+    "31 March 2028. ## Product and Certificates Product: electricity generated by the Facility and delivered at the Delivery Point, together with all Guarantees of Origin issued in respect of the Metered Output."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "insert",
+   "a": [],
+   "b": [
+    "Deemed Delivered Electricity means the quantity of electricity, expressed in MWh, that the Facility would have generated during a period of reduced output instructed by the Buyer under section 5.4, calculated in accordance with section 5.6."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "Longstop Date means 31 December 2027."
+   ],
+   "b": [
+    "Longstop Date means 31 March 2028."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "Signing Date means the date on which this Agreement is signed by both Parties."
+   ],
+   "b": [
+    "Signing Date means 28 May 2026."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "4.5 If in any Contract Year the Metered Output is less than the Minimum Annual Production, the Seller shall pay the Buyer a shortfall payment equal to the shortfall in MWh multiplied by the amount, if positive, by which the average day-ahead price for bidding zone DK1 for that Contract Year exceeds the Contract Price, capped at EUR 500,000 per Contract Year."
+   ],
+   "b": [
+    "4.5 If in any Contract Year the sum of the Metered Output and the Deemed Delivered Electricity is less than the Minimum Annual Production, the Seller shall pay the Buyer a shortfall payment equal to the shortfall in MWh multiplied by the amount, if positive, by which the average day-ahead price for bidding zone DK1 for that Contract Year exceeds the Contract Price, capped at EUR 500,000 per Contract Year."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "4.6 For the purposes of section 4.5 the Minimum Annual Production is further reduced by the electricity the Facility could not generate because of Force Majeure, reductions of output instructed by the Transmission System Operator or a breach by the Buyer, calculated under section 5.5. ## 5."
+   ],
+   "b": [
+    "4.6 For the purposes of section 4.5 the Minimum Annual Production is further reduced by the electricity the Facility could not generate because of Force Majeure, reductions of output instructed by the Transmission System Operator or a breach by the Buyer, calculated under section 5.6. ## 5."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "5.4 Reductions of output instructed by the transmission system operator shall not give rise to any payment by the Buyer."
+   ],
+   "b": [
+    "5.4 The Buyer may instruct the Seller to reduce the output of the Facility for up to one hundred and fifty (150) hours per Contract Year, and the electricity that would otherwise have been generated during such hours shall be treated as Deemed Delivered Electricity and paid at the Contract Price.",
+    "Each instruction shall be given at least two (2) hours in advance, stating the start time, duration and output level, and the Seller may refuse any instruction beyond the limit in this section.",
+    "5.5 Reductions of output instructed by the transmission system operator shall not give rise to any payment by the Buyer."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "5.5 Any deemed quantity under this Agreement is calculated from the wind measured at the Facility's meteorological mast, the turbine supplier's power curve, the availability of each turbine generator at the time and the electrical losses to the Delivery Point."
+   ],
+   "b": [
+    "5.6 Deemed Delivered Electricity and any other deemed quantity under this Agreement are calculated from the wind measured at the Facility's meteorological mast, the turbine supplier's power curve, the availability of each turbine generator at the time and the electrical losses to the Delivery Point."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "The Contract Price applies to each MWh of Metered Output."
+   ],
+   "b": [
+    "The Contract Price applies to each MWh of Metered Output and to each MWh of Deemed Delivered Electricity."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "7.2 Within ten (10) Business Days after the end of each calendar month the Seller shall invoice the Buyer for the Metered Output of that month, stating the quantities in MWh, the Contract Price, the amount payable and value added tax."
+   ],
+   "b": [
+    "7.2 Within ten (10) Business Days after the end of each calendar month the Seller shall invoice the Buyer for the Metered Output and the Deemed Delivered Electricity of that month, stating the quantities in MWh, the Contract Price, the amount payable and value added tax."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "8.2 The Seller is not obliged to procure replacement Guarantees of Origin for any shortfall against the Expected Annual Production."
+   ],
+   "b": [
+    "8.2 Guarantees of Origin are not issued for Deemed Delivered Electricity, and the Seller is not obliged to procure replacement Guarantees of Origin for any shortfall against the Expected Annual Production."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "The Buyer shall deliver a letter of credit in an amount equal to six (6) months of expected payments under this Agreement, calculated as six twelfths of the Expected Annual Production multiplied by the Contract Price in force at the time of calculation, no later than thirty (30) days before the expected Commercial Operation Date, to remain in force until sixty (60) days after the end of the Supply Period."
+   ],
+   "b": [
+    "The Buyer shall deliver a letter of credit in an amount equal to nine (9) months of expected payments under this Agreement, calculated as nine twelfths of the Expected Annual Production multiplied by the Contract Price in force at the time of calculation, no later than thirty (30) days before the expected Commercial Operation Date, to remain in force until sixty (60) days after the end of the Supply Period."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "20.4 Disputes concerning metering data or a calculation under section 5.5 may be referred to an independent technical expert appointed jointly by the Parties, whose determination is binding unless manifestly incorrect. ## 21."
+   ],
+   "b": [
+    "20.4 Disputes concerning metering data or a calculation under section 5.6 may be referred to an independent technical expert appointed jointly by the Parties, whose determination is binding unless manifestly incorrect. ## 21."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "EUR 58.00 per MWh, exclusive of value added tax, applicable to each MWh of Metered Output from the Commercial Operation Date.",
+    "Indexation: none.",
+    "The Contract Price is fixed for the Supply Period and shall not be indexed."
+   ],
+   "b": [
+    "EUR 54.50 per MWh, exclusive of value added tax, applicable to each MWh of Metered Output and of Deemed Delivered Electricity from the Commercial Operation Date.",
+    "Indexation:",
+    "Thirty per cent (30%) of the Contract Price shall be adjusted on 1 January of each Contract Year from 2029 by the percentage change in the Danish consumer price index over the preceding calendar year.",
+    "The remaining seventy per cent (70%) of the Contract Price is fixed for the Supply Period.",
+    "The Seller shall notify the Buyer of the adjusted Contract Price, with the calculation, within ten (10) Business Days after the index for December of the preceding year has been published."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "insert",
+   "a": [],
+   "b": [
+    "Buyer reduction of output: up to one hundred and fifty (150) hours per Contract Year under section 5.4, paid as Deemed Delivered Electricity at the Contract Price."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "We, the undersigned bank, refer to the Power Purchase Agreement dated [date of signing] 2026 between Havrebakke Vind ApS (the Applicant) and the Beneficiary (the Agreement)."
+   ],
+   "b": [
+    "We, the undersigned bank, refer to the Power Purchase Agreement dated 28 May 2026 between Havrebakke Vind ApS (the Applicant) and the Beneficiary (the Agreement)."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "We, the undersigned bank, issue this irrevocable standby letter of credit at the request of Jutland Board & Packaging A/S (the Applicant) under the Power Purchase Agreement dated [date of signing] 2026 between the Applicant and the Beneficiary (the Agreement)."
+   ],
+   "b": [
+    "We, the undersigned bank, issue this irrevocable standby letter of credit at the request of Jutland Board & Packaging A/S (the Applicant) under the Power Purchase Agreement dated 28 May 2026 between the Applicant and the Beneficiary (the Agreement)."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "It is governed by Danish law. # Annex 4 — Parent Company Guarantee This guarantee is given on [date of signing] 2026 by Jutland Industri Holding A/S, a public limited company incorporated in Denmark (the Guarantor), in favour of Havrebakke Vind ApS (the Seller)."
+   ],
+   "b": [
+    "It is governed by Danish law. # Annex 4 — Parent Company Guarantee This guarantee is given on 28 May 2026 by Jutland Industri Holding A/S, a public limited company incorporated in Denmark (the Guarantor), in favour of Havrebakke Vind ApS (the Seller)."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "The Seller has entered into the Power Purchase Agreement dated [date of signing] 2026 relating to the Havrebakke Wind Farm (the Agreement) in reliance on this guarantee."
+   ],
+   "b": [
+    "The Seller has entered into the Power Purchase Agreement dated 28 May 2026 relating to the Havrebakke Wind Farm (the Agreement) in reliance on this guarantee."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  },
+  {
+   "change": "replace",
+   "a": [
+    "Disputes are settled by arbitration in accordance with section 20 of the Agreement, which applies to this guarantee as if the Guarantor were a Party. --- # Signatures To be signed on [date of signing] 2026 in two originals."
+   ],
+   "b": [
+    "Disputes are settled by arbitration in accordance with section 20 of the Agreement, which applies to this guarantee as if the Guarantor were a Party. --- # Signatures Signed on 28 May 2026 in two originals."
+   ],
+   "a_id": "havrebakke-ppa-v1-draft",
+   "b_id": "havrebakke-ppa-v2-execution"
+  }
+ ],
+ "run": 1
+}

@@ -1,0 +1,93 @@
+{
+ "document_id": "havrebakke-ic-key-terms",
+ "model": "claude-sonnet-5-5",
+ "run": 1,
+ "run_at": "2026-10-29T09:28:50+00:00",
+ "source_sha256": "9a4991f0571c42ba564274962701802e8312fc8109cafba015e7c972339ce225",
+ "terms": {
+  "1_parties_and_buyer_credit": {
+   "found": true,
+   "value": "Buyer is Jutland Board & Packaging A/S, unrated, with a parent guarantee from Jutland Industri Holding A/S.",
+   "quote": "Buyer Jutland Board & Packaging A/S, unrated; parent guarantee from Jutland Industri Holding A/S",
+   "clause": "Section 4.2, key terms table, row 1",
+   "note": "The Seller is not named anywhere in the document. No rating trigger is mentioned. The source is a due diligence summary as modelled, not the contract text."
+  },
+  "2_facility": {
+   "found": true,
+   "value": "Onshore wind farm (Havrebakke) with 8 turbines and 48.0 MW installed capacity, in Ringkøbing-Skjern, Denmark, bidding zone DK1.",
+   "quote": "8 turbines, 48.0 MW, Ringkøbing-Skjern, DK1",
+   "clause": "Section 4.2, key terms table, row 2 (project header gives 48 MW onshore, Denmark, DK1)",
+   "note": "Only one capacity figure is given, and it is not labelled AC or DC."
+  },
+  "3_supply_period": {
+   "found": true,
+   "value": "The supply period is 10 years from the commercial operation date (COD). Target COD is 1 Oct 2027.",
+   "quote": "10 years from COD",
+   "clause": "Section 4.2, key terms table, row 3",
+   "note": ""
+  },
+  "4_cod_and_delay": {
+   "found": true,
+   "value": "Target COD is 1 Oct 2027 and the longstop date is 31 Mar 2028. Delay liquidated damages are EUR 9,600 per day, capped at EUR 1.75m.",
+   "quote": "Target COD 1 Oct 2027; longstop 31 Mar 2028; LDs EUR 9,600/day, cap EUR 1.75m",
+   "clause": "Section 4.2, key terms table, row 4",
+   "note": ""
+  },
+  "5_price_and_indexation": {
+   "found": true,
+   "value": "The contract price is EUR 54.50/MWh. 30 % of the price is CPI-indexed from 2029.",
+   "quote": "EUR 54.50/MWh; 30 % CPI-indexed from 2029",
+   "clause": "Section 4.2, key terms table, row 5",
+   "note": "The price is stated in the summary table only. The underlying contract clause is not cited, and the document does not say whether the price is fixed or escalating before 2029."
+  },
+  "6_volume_and_performance": {
+   "found": true,
+   "value": "Pay-as-produced, covering 100 % of output. Expected annual production (P50) is 158 GWh/yr, and a minimum of 118.5 GWh/yr is stated.",
+   "quote": "Pay-as-produced, 100 % of output; P50 158 GWh/yr; minimum 118.5 GWh/yr",
+   "clause": "Section 4.2, key terms table, row 6",
+   "note": "The remedy if production falls below the 118.5 GWh/yr minimum is not stated. The document does not say whether the minimum is an availability or a production guarantee."
+  },
+  "7_product_and_certificates": {
+   "found": true,
+   "value": "The Seller sells electricity and all guarantees of origin (GoOs) to the Buyer.",
+   "quote": "Electricity + all GoOs to buyer",
+   "clause": "Section 4.2, key terms table, row 7",
+   "note": "No GoO volume or price is stated. Capacity or other attributes are not mentioned."
+  },
+  "8_curtailment": {
+   "found": true,
+   "value": "The Buyer may curtail up to 150 hours per year, compensated at the contract price. Curtailment ordered by the TSO is uncompensated.",
+   "quote": "Buyer right 150 h/yr, compensated at contract price; TSO curtailment uncompensated",
+   "clause": "Section 4.2, key terms table, row 8",
+   "note": "Negative-price treatment is not addressed. The document does not say whether the compensated curtailed energy counts as deemed delivered."
+  },
+  "9_delivery_point_and_balancing": {
+   "found": true,
+   "value": "Physical settlement at the 60 kV Havrebakke substation. The Buyer is the balance responsible party (BRP) and bears imbalance costs.",
+   "quote": "Physical, 60 kV Havrebakke substation; buyer is BRP and bears imbalance",
+   "clause": "Section 4.2, key terms table, row 9",
+   "note": ""
+  },
+  "10_credit_support": {
+   "found": true,
+   "value": "The Seller provides a bank guarantee of EUR 2,500,000 running to COD plus 12 months. The Buyer provides a letter of credit (LC) for 9 months of payments.",
+   "quote": "Seller bank guarantee EUR 2,500,000 to COD + 12 months; buyer LC 9 months of payments",
+   "clause": "Section 4.2, key terms table, row 10",
+   "note": "The Buyer LC is sized as 9 months of payments, not as a fixed amount, and its duration is not stated."
+  },
+  "11_default_and_termination": {
+   "found": true,
+   "value": "The termination amount is calculated as mark-to-market against the forward curve for the remaining term.",
+   "quote": "Mark-to-market vs forward curve for remaining term",
+   "clause": "Section 4.2, key terms table, row 11",
+   "note": "The main events of default are not listed anywhere in the document. The calculation is described in one line only, with no formula or valuation party."
+  },
+  "12_change_in_law_and_force_majeure": {
+   "found": true,
+   "value": "Where the cost of a change in law exceeds EUR 250k per year, the parties renegotiate. If renegotiation fails, either party has a mutual termination right with no termination amount. A force majeure event lasting more than 180 days gives a termination right.",
+   "quote": "Renegotiation above EUR 250k/yr, then mutual termination right without termination amount; FM > 180 days termination right",
+   "clause": "Section 4.2, key terms table, row 12",
+   "note": "The document does not say who bears change-in-law costs below the EUR 250k/yr threshold. It also does not say which party holds the force majeure termination right."
+  }
+ }
+}

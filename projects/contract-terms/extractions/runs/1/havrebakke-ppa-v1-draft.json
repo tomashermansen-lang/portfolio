@@ -1,0 +1,93 @@
+{
+ "document_id": "havrebakke-ppa-v1-draft",
+ "model": "claude-sonnet-5-5",
+ "run": 1,
+ "run_at": "2026-10-29T09:30:40+00:00",
+ "source_sha256": "9d2da518a6e2c742a4992dd3e45776ebb0602b1b981c7c253eae663bd4bd3388",
+ "terms": {
+  "1_parties_and_buyer_credit": {
+   "found": true,
+   "value": "Seller is Havrebakke Vind ApS; Buyer is Jutland Board & Packaging A/S, which holds no credit rating from a recognised rating agency. The Buyer's payment obligations are guaranteed by Jutland Industri Holding A/S (the Guarantor) under the Parent Company Guarantee in Annex 4.",
+   "quote": "The Buyer's payment obligations under this Agreement are guaranteed by Jutland Industri Holding A/S under the Parent Company Guarantee set out in Annex 4.",
+   "clause": "Part I, Parties; section 9.2; section 9.5; Annex 4",
+   "note": "The guarantee has no rating trigger. Section 9.5 requires a replacement guarantee, or a doubled Letter of Credit, if the Guarantor stops holding the entire share capital of the Buyer or the guarantee ceases to be in force. Annex 4 clause 5 caps the Guarantor's liability at the Buyer's aggregate liability under the Agreement and states no separate amount. The document is a draft dated 12 March 2026 and is not binding until signed."
+  },
+  "2_facility": {
+   "found": true,
+   "value": "Havrebakke Wind Farm: eight onshore wind turbine generators with a total installed capacity of 48.0 MW, located at Havrebakke in Ringkøbing-Skjern Municipality, Denmark, in bidding zone DK1.",
+   "quote": "The Facility is the Havrebakke Wind Farm, consisting of eight onshore wind turbine generators with a total installed capacity of 48.0 MW located at Havrebakke in Ringkøbing-Skjern Municipality, Denmark, in bidding zone DK1, together with the internal cabling, the Havrebakke substation and the ancillary installations described in Annex 1.",
+   "clause": "Part I, Facility; Annex 1",
+   "note": "Annex 1 gives each turbine as 6.0 MW, with a 125 m hub height and a 162 m rotor diameter. Only one MW figure is stated, with no separate AC and DC capacity."
+  },
+  "3_supply_period": {
+   "found": true,
+   "value": "The Supply Period is ten (10) years, starting on the Commercial Operation Date.",
+   "quote": "Supply Period: ten (10) years commencing on the Commercial Operation Date.",
+   "clause": "Part I, Supply Period; sections 1.1 and 3.3 (definition and conditions of the Commercial Operation Date)",
+   "note": "The start is an event, not a fixed date. It occurs when all eight turbines have passed commissioning tests, the grid connection and meters are in place, the registrations are done, and the Seller has given written notice (section 3.3). The Seller must give at least 30 days' notice of the expected date."
+  },
+  "4_cod_and_delay": {
+   "found": true,
+   "value": "Target Commercial Operation Date is 1 October 2027 and the Longstop Date is 31 December 2027. If the target is missed, the Seller pays liquidated damages of EUR 9,600 per day of delay, capped at EUR 1,750,000 in aggregate.",
+   "quote": "If the Commercial Operation Date has not occurred by the Target Commercial Operation Date of 1 October 2027, the Seller shall pay the Buyer liquidated damages of EUR 9,600 for each day of delay, up to an aggregate cap of EUR 1,750,000.",
+   "clause": "Part I, Supply Period (target and longstop dates); sections 3.4, 3.5 and 3.6",
+   "note": "Both dates extend day for day for Force Majeure or Buyer breach, up to 180 days in aggregate (3.5). The liquidated damages are the Buyer's sole remedy for delay except termination (3.4). After the Longstop Date, as extended, the Buyer may terminate. The Seller then pays accrued liquidated damages and no Termination Amount is due (3.6). At EUR 9,600 per day the cap is reached after about 182 days (calculated here), which is later than the 91 days between the target and the Longstop Date unless the dates are extended."
+  },
+  "5_price_and_indexation": {
+   "found": true,
+   "value": "The Contract Price is EUR 58.00 per MWh, exclusive of VAT, applying to each MWh of Metered Output from the Commercial Operation Date. There is no indexation: the price is fixed for the Supply Period.",
+   "quote": "Contract Price: EUR 58.00 per MWh, exclusive of value added tax, applicable to each MWh of Metered Output from the Commercial Operation Date.",
+   "clause": "Annex 2 (Election Sheet); referred to from Part I, Price and section 7.1",
+   "note": "The price is stated only in Annex 2, which prevails over other parts. Annex 2 states: \"Indexation: none. The Contract Price is fixed for the Supply Period and shall not be indexed.\" The only route to a price change is by agreement following a Change in Law (section 11.2)."
+  },
+  "6_volume_and_performance": {
+   "found": true,
+   "value": "Pay-as-produced: the Buyer takes 100% of Metered Output. Expected Annual Production is 158,000 MWh (P50). Minimum Annual Production is 118,500 MWh (75% of P50). If output in a Contract Year falls below the minimum, the Seller pays the shortfall in MWh times the amount, if positive, by which the average DK1 day-ahead price exceeds the Contract Price, capped at EUR 500,000 per Contract Year.",
+   "quote": "If in any Contract Year the Metered Output is less than the Minimum Annual Production, the Seller shall pay the Buyer a shortfall payment equal to the shortfall in MWh multiplied by the amount, if positive, by which the average day-ahead price for bidding zone DK1 for that Contract Year exceeds the Contract Price, capped at EUR 500,000 per Contract Year.",
+   "clause": "Part I, Contract Quantity and Volume Structure; sections 4.1, 4.3, 4.5 and 4.6; Annex 1; Annex 2",
+   "note": "The Seller guarantees no quantity in any hour, day or month (4.3). Minimum Annual Production is cut pro rata in the first and last Contract Year and is reduced for Force Majeure, Transmission System Operator output reductions and Buyer breach (4.5, 4.6). The shortfall payment is a make-whole against market price, so it is zero when the day-ahead price is at or below EUR 58.00."
+  },
+  "7_product_and_certificates": {
+   "found": true,
+   "value": "The product is electricity delivered at the Delivery Point plus all Guarantees of Origin issued for the Metered Output, transferred to the Buyer at no additional cost. No capacity product, ancillary service or other attribute is sold.",
+   "quote": "Product: electricity generated by the Facility and delivered at the Delivery Point, together with all Guarantees of Origin issued in respect of the Metered Output.",
+   "clause": "Part I, Product and Certificates; section 8",
+   "note": "Guarantees of Origin for each month are transferred to the Buyer's registry account within 15 Business Days of issue (8.1). The Seller need not procure replacement Guarantees of Origin for any production shortfall (8.2). Certificates under any replacement scheme also pass to the Buyer at no additional cost (8.3)."
+  },
+  "8_curtailment": {
+   "found": true,
+   "value": "Reductions of output instructed by the transmission system operator give rise to no payment by the Buyer, so curtailed energy is not paid as deemed delivered. Any compensation paid by the Transmission System Operator for the reduction belongs to the Seller.",
+   "quote": "Reductions of output instructed by the transmission system operator shall not give rise to any payment by the Buyer.",
+   "clause": "Section 5.4; also sections 4.6 and 5.5",
+   "note": "The document gives the Buyer no right to curtail. It sets no cap in hours or MWh, and it does not mention negative prices or how they are treated. Deemed quantities (5.5) are used only to reduce the Minimum Annual Production for the shortfall test (4.6), not to create a payment."
+  },
+  "9_delivery_point_and_balancing": {
+   "found": true,
+   "value": "Settlement is physical. The Delivery Point is the metering point on the 60 kV side of the Havrebakke substation, where title and risk pass to the Buyer. The Buyer appoints the balance responsible party and bears all imbalance costs from the Commercial Operation Date.",
+   "quote": "The Buyer shall appoint the balance responsible party for the Facility and shall bear all imbalance costs from the Commercial Operation Date.",
+   "clause": "Part I, Settlement; Part I, Delivery Point and Balancing; sections 4.2 and 5.2; Annex 2",
+   "note": "No reference price applies because settlement is physical, not financial. The balance responsible party must be registered no later than 30 days before the expected Commercial Operation Date (5.2). The Seller provides day-ahead and intraday production forecasts without warranty (5.1)."
+  },
+  "10_credit_support": {
+   "found": true,
+   "value": "Seller: bank guarantee of EUR 2,000,000, delivered within 10 Business Days after Financial Close and in force until 12 months after the Commercial Operation Date. Buyer: Parent Company Guarantee plus a letter of credit for six months of expected payments (six twelfths of Expected Annual Production times the Contract Price), delivered at least 30 days before expected Commercial Operation Date and in force until 60 days after the end of the Supply Period.",
+   "quote": "The Buyer shall deliver a letter of credit in an amount equal to six (6) months of expected payments under this Agreement, calculated as six twelfths of the Expected Annual Production multiplied by the Contract Price in force at the time of calculation, no later than thirty (30) days before the expected Commercial Operation Date, to remain in force until sixty (60) days after the end of the Supply Period.",
+   "clause": "Part I, Credit Support; sections 9.1 to 9.5; Annex 3; Annex 4",
+   "note": "The letter of credit amount is not stated as a figure. With the document's 158,000 MWh and EUR 58.00 it works out to EUR 4,582,000 (calculated here, not stated in the document). It is recalculated each 1 January. Both instruments must come from a bank rated at least A-. If an issuer loses its rating, or an instrument is not extended in time, the other Party may draw the full amount as cash security (9.4). The Seller's guarantee covers amounts unpaid under sections 3.4, 3.6 or 4.5."
+  },
+  "11_default_and_termination": {
+   "found": true,
+   "value": "Events of Default include non-payment (10 Business Days after notice), failure to deliver, restore or replace credit support (10 Business Days after notice), insolvency, an uncured material breach (30 days), assignment in breach, and the Seller missing the Longstop Date or selling to a third party. For the Buyer they also include Guarantor insolvency or an invalid guarantee that is not replaced. The Termination Amount is the present value of the difference between the Contract Price and the Reference Forward Price over the remaining Supply Period on Expected Annual Production, discounted at the Danish central bank reference rate plus 2 percentage points, determined by the Non-Defaulting Party.",
+   "quote": "The Termination Amount shall be the present value of the difference between the Contract Price and the Reference Forward Price for the Expected Annual Production over the remainder of the Supply Period, discounted at the reference rate of the Danish central bank plus two (2) percentage points, and determined by the Non-Defaulting Party as at the early termination date, acting in good faith and in a commercially reasonable manner.",
+   "clause": "Sections 12.1, 12.2, 13.2 to 13.6; definition of Reference Forward Price in section 1.1; Annex 2 (production profile factor)",
+   "note": "The Reference Forward Price is the average of DK1 baseload forwards quoted by at least three market participants chosen by the Non-Defaulting Party, adjusted by the factor 0.88 in Annex 2. The amount is payable only if it is a loss for the Non-Defaulting Party; if it is a gain, nothing is payable (13.4). It is the exclusive remedy for loss of bargain (13.5). No Termination Amount applies on termination under sections 2.3, 3.6, 10.4 or 11.3 (13.6)."
+  },
+  "12_change_in_law_and_force_majeure": {
+   "found": true,
+   "value": "If a Change in Law raises a Party's cost of performing by more than EUR 250,000 in any Contract Year, the Parties negotiate in good faith an adjustment, which may include the Contract Price. If none is agreed within 90 days of notice, the affected Party may terminate on 60 days' notice with no Termination Amount. Force Majeure lasting more than 180 consecutive days lets either Party terminate on 30 days' notice, also with no Termination Amount.",
+   "quote": "If a Change in Law increases the cost to a Party of performing this Agreement by more than EUR 250,000 in any Contract Year, the Parties shall negotiate in good faith an adjustment to restore the economic balance of this Agreement, which may include an adjustment to the Contract Price.",
+   "clause": "Sections 11.1 to 11.3; section 17.2 and 17.3 (taxes and regulatory costs); sections 10.1 to 10.4",
+   "note": "Below the threshold no adjustment right exists, so the cost stays where it falls. Section 17.2 allocates taxes: the Seller bears those on generation and injection into the grid, and the Buyer bears those on offtake, transport, consumption or resale. New taxes after signing follow that split and are subject to section 11 if the threshold is met (17.3). Change in Law excludes general corporate income tax changes and changes published in final form before signing. Force Majeure excludes lack of funds, market price changes and insufficient wind (10.1). The force majeure termination period is 180 consecutive days (10.4)."
+  }
+ }
+}

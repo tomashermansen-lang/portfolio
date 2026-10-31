@@ -1,0 +1,93 @@
+{
+ "document_id": "olivos-solar-ppa-execution",
+ "model": "claude-sonnet-5-5",
+ "run": 3,
+ "run_at": "2026-10-29T10:11:48+00:00",
+ "source_sha256": "bafff9c5c71137f439e416133a25faf330c30e500084cc8c8f0cf229c4b80c3f",
+ "terms": {
+  "1_parties_and_buyer_credit": {
+   "found": true,
+   "value": "Seller: Olivos Solar Proyecto Dos S.L. (Spain). Buyer: Meseta Energía Comercializadora S.A. (Spain), a licensed electricity trader. There is no guarantor and no parent company guarantee, and the Buyer's obligations are supported solely by the letter of credit under section 9.2.",
+   "quote": "The Buyer is a licensed electricity trader and no guarantee of the Buyer's obligations is provided by any affiliate of the Buyer.",
+   "clause": "Part I, Parties; section 9.6; Annex 4 (not used)",
+   "note": "No rating trigger on the Buyer is stated. The only rating requirement is on the issuing bank of each credit instrument (at least A-, sections 9.1, 9.2 and 9.5). Section 9.6 also records that the Buyer's shareholders have given no undertaking."
+  },
+  "2_facility": {
+   "found": true,
+   "value": "Ground-mounted solar PV plant (bifacial modules on single-axis trackers) with 90 MWp DC installed capacity and 75 MW AC grid export capacity. It is at Valdeolivos, Province of Badajoz, Extremadura, Spain, connected at the 220 kV Valdeolivos substation.",
+   "quote": "Facility: a ground-mounted solar photovoltaic plant with an installed capacity of 90 MWp (direct current) and a grid export capacity of 75 MW (alternating current) located at Valdeolivos in the Province of Badajoz, Spain, as further described in Annex 1.",
+   "clause": "Part I, Facility; Annex 1, A1.1 to A1.4",
+   "note": "No sentence names the bidding zone for the Facility. The document refers to day-ahead prices for \"the Spanish bidding zone\" in sections 7.3, 7.4 and 13.3."
+  },
+  "3_supply_period": {
+   "found": true,
+   "value": "Twelve (12) years starting on the Commercial Operation Date. The start occurs when the Seller gives notice that the conditions in section 3.4 are met, including 60 MW AC exported for 72 continuous hours.",
+   "quote": "Supply Period: twelve (12) years commencing on the Commercial Operation Date.",
+   "clause": "Part I, Supply Period; section 1.1 (Commercial Operation Date, Contract Year); section 3.4",
+   "note": ""
+  },
+  "4_cod_and_delay": {
+   "found": true,
+   "value": "Target Commercial Operation Date is 30 June 2027 and the Longstop Date is 31 December 2027. Delay liquidated damages are EUR 6,000 per day, capped at EUR 1,500,000 in aggregate.",
+   "quote": "If the Commercial Operation Date has not occurred by the Target Commercial Operation Date of 30 June 2027, the Seller shall pay the Buyer liquidated damages of EUR 6,000 for each day of delay, up to an aggregate cap of EUR 1,500,000.",
+   "clause": "Part I, Target Commercial Operation Date; sections 3.5, 3.6 and 3.7; section 1.1 (Longstop Date)",
+   "note": "Both dates extend day for day for Force Majeure or transmission system operator delay, up to 180 days in aggregate (3.6). The delay damages are the Buyer's sole remedy until the Longstop Date. If the Longstop Date is missed the Buyer may terminate, and no Termination Amount is payable (3.7). The milestones in 3.2 are indicative only."
+  },
+  "5_price_and_indexation": {
+   "found": true,
+   "value": "Contract Price is EUR 38.75 per MWh, fixed for the Supply Period with no indexation or escalation, so there is no indexation start date or share. The price includes Guarantees of Origin and excludes VAT. No payment is due for hours with a negative day-ahead price.",
+   "quote": "Contract Price: EUR 38.75 per MWh, fixed for the Supply Period without indexation.",
+   "clause": "Part I, Price; section 7.1; section 7.4",
+   "note": "Section 7.1 allows adjustment only under sections 7.4 (negative price hours) and 17.3 (new taxes above the 3% threshold)."
+  },
+  "6_volume_and_performance": {
+   "found": true,
+   "value": "Pay-as-produced: the Buyer takes 100% of Metered Output, with no minimum or maximum annual quantity. Expected Annual Production is 165,000 MWh (P50), an estimate and not a delivery obligation. The Seller guarantees 97% Availability in each Contract Year. The shortfall remedy is damages of shortfall in percentage points x 1% of Expected Annual Production x Contract Price x 50%, capped at 5% of the amount payable by the Buyer for that year, as the Buyer's sole remedy.",
+   "quote": "The Buyer purchases one hundred per cent (100%) of the Metered Output during the Supply Period.",
+   "clause": "Part I, Contract Quantity and volume structure; sections 4.1, 4.4 and 5.6; Annex 1, A1.5 and A1.6",
+   "note": "The P50 is not adjusted for module degradation (A1.5). Availability counts an hour as available at 95% or more of irradiance-adjusted capacity (section 1.1, A1.6). Planned maintenance counts as unavailability (5.4). The Buyer may have the statement verified, at the Seller's cost if Availability was overstated by more than one percentage point."
+  },
+  "7_product_and_certificates": {
+   "found": true,
+   "value": "The Seller sells electricity delivered at the Delivery Point together with all Guarantees of Origin for that electricity. The Guarantees of Origin are transferred at no additional cost, because they are included in the Contract Price. No capacity product, ancillary service or other attribute is sold.",
+   "quote": "Electricity generated by the Facility and delivered at the Delivery Point, together with all Guarantees of Origin issued in respect of that electricity.",
+   "clause": "Part I, Product; sections 7.1, 8.1 and 8.2",
+   "note": "Guarantees of Origin are transferred within 30 days after issue (8.1). Negative-price hours still give rise to Guarantees of Origin (7.4)."
+  },
+  "8_curtailment": {
+   "found": false,
+   "value": null,
+   "quote": null,
+   "clause": null,
+   "note": "The document has no curtailment provision. It does not say who may curtail the Facility, set any cap in hours or MWh, provide deemed-delivery payment for curtailed energy, or address grid-operator curtailment. Related provisions that are not curtailment clauses: under section 7.4 no payment is due for any hour with a negative day-ahead price, although the output is still delivered and gives Guarantees of Origin. Under section 10.4 no payment is due for electricity not delivered because of Force Majeure, which includes failure of the transmission grid beyond the Delivery Point (10.1). Availability excludes hours of grid-connection unavailability not caused by the Seller (section 1.1)."
+  },
+  "9_delivery_point_and_balancing": {
+   "found": true,
+   "value": "Physical settlement at the 220 kV connection point at the Valdeolivos substation, where title and risk pass to the Buyer. The Buyer is the market representative and balance responsible party from the Commercial Operation Date and bears all imbalance costs.",
+   "quote": "The Buyer shall act as the market representative of the Facility and shall bear all imbalance costs from the Commercial Operation Date.",
+   "clause": "Part I, Settlement and Delivery Point and Balancing; sections 4.3, 5.2 and 5.3; Annex 1, A1.4",
+   "note": "No reference price is needed because settlement is physical. The Seller bears imbalance costs only where the imbalance results from its failure to notify an outage under 5.4 or 5.5 (5.3). Section 3.3 has the Buyer act as market representative for pre-COD test electricity, while 5.2 places imbalance costs on the Buyer only from the Commercial Operation Date."
+  },
+  "10_credit_support": {
+   "found": true,
+   "value": "Seller: EUR 1,200,000 on-demand performance bond from a bank rated at least A-, delivered within 10 Business Days after the Signing Date and held until the Commercial Operation Date. Buyer: standby letter of credit for three months of expected payments, EUR 1,598,437.50 at signing, delivered at least 10 Business Days before the expected Commercial Operation Date and maintained until 60 days after the end of the Supply Period.",
+   "quote": "Seller: performance bond of EUR 1,200,000 from the Signing Date until the Commercial Operation Date (Annex 2). Buyer: letter of credit equal to three (3) months of expected payments under this Agreement (Annex 3), from the Commercial Operation Date until the end of the Supply Period.",
+   "clause": "Part I, Credit Support; sections 9.1 to 9.6; Annex 2; Annex 3",
+   "note": "The Buyer's letter of credit may have a one-year term with replacement at least 30 days before expiry, failing which the Seller may draw it in full (9.3). The Buyer must restore it within 10 Business Days after each drawing (9.4). The bond form in Annex 2 expires at the latest on 30 June 2028. The amount in the Annex 3 form is left blank. Part I says the Buyer's letter of credit runs from the Commercial Operation Date, while section 9.2 requires delivery 10 Business Days before the expected date."
+  },
+  "11_default_and_termination": {
+   "found": true,
+   "value": "Events of Default include non-payment (10 Business Days after notice), failure to deliver or restore credit support, an Insolvency Event, uncured material breach (30 days, or up to 90 days), and party-specific events. For the Seller these are an unlawful third-party sale and permit revocation unreinstated for 90 days. For the Buyer they are loss of its trader licence or registration unreinstated for 30 days and revocation of its powers of representation. The Termination Amount is the replacement value, set by an independent expert, of the difference between the Contract Price and the forward price over the remaining Supply Period, applied to Expected Annual Production and discounted at the Interest Rate.",
+   "quote": "The expert shall determine, under section 20.3, the present value at the Interest Rate of the difference between the Contract Price and the forward price for the Spanish bidding zone at the early termination date, evidenced by quotations from at least two (2) market participants, applied to the Expected Annual Production over the remainder of the Supply Period.",
+   "clause": "Sections 12.1, 13.1 to 13.4, 20.3; section 1.1 (Interest Rate)",
+   "note": "The calculation is fully set out in the document, not referenced to an unattached schedule. The Interest Rate is the ECB main refinancing rate plus 4 percentage points. A negative Termination Amount means nothing is payable by either Party (13.2). The document does not state which price is subtracted from which. The Defaulting Party bears the expert's costs. No Termination Amount is payable on termination under 2.3, 3.7 or 10.5. A lender may suspend early termination for a Seller default for up to 120 days (16.4)."
+  },
+  "12_change_in_law_and_force_majeure": {
+   "found": true,
+   "value": "The allocation sits in section 17 (Taxes, Levies and Regulatory Costs). The Seller bears any new tax, levy or charge on generation or sale unless it exceeds 3% of the Seller's revenue in the Contract Year, in which case the Parties meet to agree an equitable adjustment, limited to the part above 3%. Either Party may terminate on 30 days' notice if Force Majeure continues for more than 180 consecutive days.",
+   "quote": "Should any law, regulation or administrative decision enacted after the Signing Date impose a new tax, levy or charge on the generation or sale of electricity from the Facility, the Seller shall bear such cost unless it exceeds three per cent (3%) of the Seller's revenue under this Agreement in the relevant Contract Year, in which case the Parties shall meet to agree an equitable adjustment.",
+   "clause": "Sections 17.1, 17.3 to 17.5; sections 10.1 to 10.5",
+   "note": "If no adjustment is agreed within 90 days, either Party may refer the matter to the expert procedure in 20.3. Benefits of any abolished or reduced generation-side charge stay with the Seller, and new Buyer-side charges are borne by the Buyer (17.4). Corporate income tax and penalties are excluded (17.5). The document has no general change-in-law clause beyond section 17. Force Majeure termination requires the event to still be continuing at the end of the notice period, and no Termination Amount is payable (10.5)."
+  }
+ }
+}

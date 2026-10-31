@@ -1,0 +1,29 @@
+{
+  "_note": "The twelve columns of the committee table. 'ask' is what the extractor must find; it is the same text the page shows as the column definition.",
+  "terms": [
+    {"id": "1_parties_and_buyer_credit", "label": "Parties and buyer credit standing",
+     "ask": "Seller and Buyer by legal name; any guarantor of the Buyer and the instrument (parent company guarantee, rating trigger)."},
+    {"id": "2_facility", "label": "Facility: technology, capacity, location",
+     "ask": "Technology, installed capacity in MW (AC and DC where both are given), site, municipality or region, country, bidding zone."},
+    {"id": "3_supply_period", "label": "Supply period and its start",
+     "ask": "Length of the supply or delivery term in years and the event or date it starts from."},
+    {"id": "4_cod_and_delay", "label": "Commercial operation date, longstop and delay damages",
+     "ask": "Target commercial operation date, longstop date, delay liquidated damages per day and their cap."},
+    {"id": "5_price_and_indexation", "label": "Contract price and indexation",
+     "ask": "The price per MWh (or strike price), where in the document it is stated, and any indexation or escalation with its start date and share."},
+    {"id": "6_volume_and_performance", "label": "Volume structure, expected production and performance guarantee",
+     "ask": "Pay-as-produced or fixed volume, contract quantity, expected annual production (P50), minimum or availability guarantee and its remedy."},
+    {"id": "7_product_and_certificates", "label": "Product and certificates",
+     "ask": "What is sold: electricity, guarantees of origin (amount, cost), capacity or other attributes."},
+    {"id": "8_curtailment", "label": "Curtailment: who may curtail, cap, deemed delivery",
+     "ask": "Who may curtail the facility, any cap in hours or MWh, whether curtailed energy is paid as deemed delivered, treatment of grid-operator curtailment and negative prices."},
+    {"id": "9_delivery_point_and_balancing", "label": "Delivery point, settlement type and balancing responsibility",
+     "ask": "Physical or financial settlement, delivery point, reference price if financial, who is balance responsible and bears imbalance cost."},
+    {"id": "10_credit_support", "label": "Credit support from each party",
+     "ask": "Instrument, amount and duration of the credit support given by the Seller and by the Buyer."},
+    {"id": "11_default_and_termination", "label": "Events of default, termination and termination amount",
+     "ask": "Main events of default and how the termination amount is calculated. If the calculation is only referenced to a document that is not attached, the amount is not found."},
+    {"id": "12_change_in_law_and_force_majeure", "label": "Change in law and force majeure allocation",
+     "ask": "Who bears the cost of a change in law, any threshold or renegotiation right, and the force majeure duration that gives a termination right. Read the meaning, not the heading: the allocation may sit under taxes or regulatory costs."}
+  ]
+}
