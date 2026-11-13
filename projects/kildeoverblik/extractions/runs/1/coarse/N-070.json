@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c849ee699c87ef346acad42229487ab73b57272e61fbfe72a33d9c98d85a7116",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:48+00:00",
+  "id": "N-070",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Storm i dag; lokal legepladslukning fra kl. 15, men kun en kommune og ét sted.\", \"M\": \"Rutinemæssig lokal afspærring fra kommunen; ingen svigt eller bredere forvaltningssag i uddraget.\", \"E\": \"Lokal legeplads, ingen virksomheder, transport eller energi berørt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Storm i dag; lokal legepladslukning fra kl. 15, men kun en kommune og ét sted.",
+      "M": "Rutinemæssig lokal afspærring fra kommunen; ingen svigt eller bredere forvaltningssag i uddraget.",
+      "E": "Lokal legeplads, ingen virksomheder, transport eller energi berørt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

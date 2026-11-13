@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "6ca086b691e870a7b172f1dee4f442e10f7a1de9b8e6fa7dff499b923f8454c6",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:27+00:00",
+  "id": "N-022",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Rutinemæssig kommunal dagsorden, intet der rammer læsere i dag.\", \"M\": \"Lokalt udvalgsmøde, budgetopfølgning; uddraget viser ingen afvigelse eller sag.\", \"E\": \"Kommunal budgetopfølgning uden synlig påvirkning af virksomheder.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinemæssig kommunal dagsorden, intet der rammer læsere i dag.",
+      "M": "Lokalt udvalgsmøde, budgetopfølgning; uddraget viser ingen afvigelse eller sag.",
+      "E": "Kommunal budgetopfølgning uden synlig påvirkning af virksomheder."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

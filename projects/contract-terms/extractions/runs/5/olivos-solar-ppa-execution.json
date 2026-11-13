@@ -1,0 +1,93 @@
+{
+ "document_id": "olivos-solar-ppa-execution",
+ "model": "claude-sonnet-5-5",
+ "run": 5,
+ "run_at": "2026-10-29T10:24:39+00:00",
+ "source_sha256": "bafff9c5c71137f439e416133a25faf330c30e500084cc8c8f0cf229c4b80c3f",
+ "terms": {
+  "1_parties_and_buyer_credit": {
+   "found": true,
+   "value": "Seller is Olivos Solar Proyecto Dos S.L. (Spain), a special purpose company owning the Facility. Buyer is Meseta Energía Comercializadora S.A. (Spain), a licensed electricity trader. No guarantor, parent company guarantee or rating trigger exists for the Buyer. Its obligations are supported solely by a bank letter of credit.",
+   "quote": "The Buyer is a licensed electricity trader and no guarantee of the Buyer's obligations is provided by any affiliate of the Buyer.",
+   "clause": "Part I (Parties); Part II sections 9.2 and 9.6; Annex 4 (not used)",
+   "note": "Section 9.6 confirms the Buyer contracts as a stand-alone trader and its shareholders have given no undertaking. The only Buyer credit protection is the letter of credit (see term 10). The bank issuing it must be rated at least A- (9.2), and a downgrade requires replacement within 20 Business Days (9.5)."
+  },
+  "2_facility": {
+   "found": true,
+   "value": "Ground-mounted solar PV plant (bifacial modules on single-axis trackers) with 90 MWp DC installed capacity and 75 MW AC grid export capacity. Located at Valdeolivos, Province of Badajoz (Extremadura), Spain. Prices and the Termination Amount refer to the Spanish bidding zone.",
+   "quote": "Facility: a ground-mounted solar photovoltaic plant with an installed capacity of 90 MWp (direct current) and a grid export capacity of 75 MW (alternating current) located at Valdeolivos in the Province of Badajoz, Spain, as further described in Annex 1.",
+   "clause": "Part I (Facility); Annex 1, A1.1 to A1.4",
+   "note": "The bidding zone is not named in the Facility description. It appears as 'the Spanish bidding zone' in sections 7.3, 7.4 and 13.3."
+  },
+  "3_supply_period": {
+   "found": true,
+   "value": "Twelve (12) years, starting on the Commercial Operation Date. That date occurs when the Seller gives notice that the conditions in section 3.4 are met, including 60 MW AC exporting for 72 continuous hours.",
+   "quote": "Supply Period: twelve (12) years commencing on the Commercial Operation Date.",
+   "clause": "Part I (Supply Period); Part II sections 1.1 and 3.4",
+   "note": "No calendar end date is stated, so the end depends on when the Commercial Operation Date actually occurs. The Contract Year runs from that date."
+  },
+  "4_cod_and_delay": {
+   "found": true,
+   "value": "Target Commercial Operation Date is 30 June 2027 and Longstop Date is 31 December 2027. Delay liquidated damages are EUR 6,000 per day after the target date, capped at EUR 1,500,000 in aggregate. They are the Buyer's sole remedy for delay until the Longstop Date. If COD has not occurred by the Longstop Date, as extended, the Buyer may terminate and no Termination Amount is payable.",
+   "quote": "If the Commercial Operation Date has not occurred by the Target Commercial Operation Date of 30 June 2027, the Seller shall pay the Buyer liquidated damages of EUR 6,000 for each day of delay, up to an aggregate cap of EUR 1,500,000.",
+   "clause": "Part I (Target Commercial Operation Date); Part II sections 3.5, 3.6, 3.7 and 1.1",
+   "note": "Both dates are extended day for day for Force Majeure or a transmission system operator delay, up to 180 days in aggregate (3.6). The Seller must notify the Buyer within 5 Business Days of the event. The Seller's performance bond of EUR 1,200,000 can be drawn for unpaid delay damages (9.1)."
+  },
+  "5_price_and_indexation": {
+   "found": true,
+   "value": "Contract Price is EUR 38.75 per MWh, fixed for the whole Supply Period with no indexation or escalation. It includes Guarantees of Origin and excludes VAT. The price does not apply in hours when the day-ahead price is negative.",
+   "quote": "Contract Price: EUR 38.75 per MWh, fixed for the Supply Period without indexation.",
+   "clause": "Part I (Price); Part II sections 7.1 and 7.4",
+   "note": "Section 7.1 allows adjustment only under sections 7.4 (negative prices) and 17.3 (new taxes above a threshold). Under 7.4, no payment is due for electricity delivered in negative-price hours."
+  },
+  "6_volume_and_performance": {
+   "found": true,
+   "value": "Pay-as-produced: the Buyer takes 100% of Metered Output, with no minimum or maximum annual quantity. Expected Annual Production is 165,000 MWh (P50), an estimate and not a delivery obligation. The Seller guarantees 97% Availability per Contract Year. If it falls short, availability damages equal shortfall in percentage points x 1% of Expected Annual Production x Contract Price x 50%. They are capped at 5% of the annual amount payable by the Buyer and are the Buyer's sole remedy.",
+   "quote": "Pay-as-produced. The Buyer purchases one hundred per cent (100%) of the Metered Output during the Supply Period.",
+   "clause": "Part I (Contract Quantity and volume structure); Part II sections 4.1, 4.4, 5.6 and 1.1 (Availability); Annex 1, A1.5 and A1.6",
+   "note": "Availability counts a Daylight Hour as available only if the Facility could export at least 95% of its irradiance-adjusted capacity. Planned maintenance counts as unavailability (5.4). Force Majeure hours and grid-connection unavailability not caused by the Seller are excluded. The P50 figure is not adjusted for module degradation (A1.5)."
+  },
+  "7_product_and_certificates": {
+   "found": true,
+   "value": "The Buyer buys electricity delivered at the Delivery Point together with all Guarantees of Origin issued for it. The Guarantees of Origin are transferred at no additional cost and are included in the Contract Price. No capacity product, ancillary service or other attribute is sold.",
+   "quote": "Electricity generated by the Facility and delivered at the Delivery Point, together with all Guarantees of Origin issued in respect of that electricity.",
+   "clause": "Part I (Product); Part II sections 7.1, 8.1, 8.2 and 8.3",
+   "note": "The Seller must transfer Guarantees of Origin to the Buyer's register account within 30 days of issue (8.1). If they are replaced by another scheme, the Seller transfers the successor certificate without a price adjustment (8.2)."
+  },
+  "8_curtailment": {
+   "found": false,
+   "value": null,
+   "quote": null,
+   "clause": null,
+   "note": "The document has no curtailment clause. I read the whole document (Part I, sections 1 to 21, Annexes 1 to 4) and found nothing on who may curtail the Facility, a cap in hours or MWh, or deemed-delivery payment for curtailed energy. Related provisions: (a) Section 7.4 sets no payment for any hour with a negative day-ahead price, while the output is still delivered and generates Guarantees of Origin. (b) Section 4.5 requires the Buyer to accept all electricity generated. (c) Grid failure beyond the Delivery Point is Force Majeure (10.1), and no payment is due for electricity not delivered because of Force Majeure (10.4). (d) Availability excludes grid-connection unavailability not caused by the Seller (1.1). Whether grid-operator curtailment is paid is therefore not stated."
+  },
+  "9_delivery_point_and_balancing": {
+   "found": true,
+   "value": "Physical settlement at the Delivery Point, the 220 kV connection point at the Valdeolivos substation. No financial reference price applies. From COD the Buyer is market representative and balance responsible party, and bears all imbalance costs. The Seller is liable for imbalance only where it results from failing to notify an outage under sections 5.4 or 5.5.",
+   "quote": "The Buyer is the market representative of the Facility and the balance responsible party for the Metered Output from the Commercial Operation Date (section 5.2 of Part II).",
+   "clause": "Part I (Settlement; Delivery Point and Balancing); Part II sections 4.2, 4.3, 5.2 and 5.3; Annex 1, A1.4",
+   "note": "Section 3.3 also has the Buyer act as market representative for test electricity delivered before COD. Title and risk pass at the Delivery Point (4.3)."
+  },
+  "10_credit_support": {
+   "found": true,
+   "value": "Seller: performance bond of EUR 1,200,000, delivered within 10 Business Days after the Signing Date and held until COD, from a bank rated at least A-, payable on first demand (Annex 2). Buyer: standby letter of credit equal to three months of expected payments, stated as EUR 1,598,437.50 on the Signing Date, payable on first demand (Annex 3). It is delivered at least 10 Business Days before the expected COD and maintained until 60 days after the end of the Supply Period. No parent company guarantee is given by either Party.",
+   "quote": "Seller: performance bond of EUR 1,200,000 from the Signing Date until the Commercial Operation Date (Annex 2). Buyer: letter of credit equal to three (3) months of expected payments under this Agreement (Annex 3), from the Commercial Operation Date until the end of the Supply Period.",
+   "clause": "Part I (Credit Support); Part II sections 9.1 to 9.6; Annexes 2 and 3",
+   "note": "Part I says the Buyer's letter of credit runs from COD to the end of the Supply Period. Section 9.2 adds that it is delivered 10 Business Days before expected COD and kept until 60 days after the Supply Period ends. Part I prevails where they conflict. The letter of credit may have a one-year term with a replacement due 30 days before expiry, failing which the Seller may draw it in full (9.3). The Buyer must restore it within 10 Business Days after each drawing (9.4). The form in Annex 3 leaves the amount and expiry date blank; the EUR figure comes from section 9.2."
+  },
+  "11_default_and_termination": {
+   "found": true,
+   "value": "Events of Default include non-payment (10 Business Days after notice), failure to deliver or restore credit support, an Insolvency Event, uncured material breach (30 days, or up to 90), and a materially incorrect representation. Seller-only events are third-party sales and Permit revocation not reinstated within 90 days. Buyer-only events are loss of trader licence or market registration not reinstated within 30 days, and revocation of the Seller's powers of representation. The Termination Amount is the present value, at the Interest Rate, of the difference between the Contract Price and the forward price for the Spanish bidding zone at the termination date. It is evidenced by at least two market quotations, determined by an independent expert, and applied to Expected Annual Production over the remaining Supply Period. The Defaulting Party pays it and bears the expert's costs.",
+   "quote": "The expert shall determine, under section 20.3, the present value at the Interest Rate of the difference between the Contract Price and the forward price for the Spanish bidding zone at the early termination date, evidenced by quotations from at least two (2) market participants, applied to the Expected Annual Production over the remainder of the Supply Period.",
+   "clause": "Part II sections 12.1 (a) to (g), 13.1 to 13.5 and 16.4",
+   "note": "The calculation is in the body and is not defined by reference to an unattached document, so it is found. The sign convention is not stated per party. If the Termination Amount is negative, nothing is payable by either Party (13.2). It is payable within 20 Business Days of the determination and can be drawn from the Defaulting Party's credit support (13.4). No Termination Amount is payable on termination under sections 2.3, 3.7 or 10.5 (13.5). Where the Seller defaults, a Lender may cure or suspend the early termination date for up to 120 days (16.4)."
+  },
+  "12_change_in_law_and_force_majeure": {
+   "found": true,
+   "value": "Change in law is addressed only as new taxes, levies and charges, under section 17 (Taxes, Levies and Regulatory Costs). A new charge on generation or sale from the Facility is borne by the Seller unless it exceeds 3% of the Seller's revenue under the Agreement in the relevant Contract Year. Above that, the Parties meet to agree an equitable adjustment limited to the portion above 3%. If nothing is agreed within 90 days, either Party may refer the matter to the expert procedure. Reductions in generation-side charges benefit the Seller, and new charges on the Buyer's purchase, trading or supply are borne by the Buyer. If Force Majeure continues for more than 180 consecutive days, either Party may terminate on 30 days' notice if the event is still continuing, with no Termination Amount.",
+   "quote": "Should any law, regulation or administrative decision enacted after the Signing Date impose a new tax, levy or charge on the generation or sale of electricity from the Facility, the Seller shall bear such cost unless it exceeds three per cent (3%) of the Seller's revenue under this Agreement in the relevant Contract Year, in which case the Parties shall meet to agree an equitable adjustment.",
+   "clause": "Part II sections 17.3, 17.4 and 17.5 (change in law); section 10.5 (Force Majeure termination)",
+   "note": "There is no general change-in-law clause beyond taxes, levies and charges. No adjustment is available for corporate income tax or for penalties arising from the Seller's non-compliance (17.5). The Seller must notify the Buyer of a new charge within 30 days of enactment, and the Parties meet within 30 days of that notice (17.3). Force Majeure notice is due within 5 Business Days (10.3)."
+  }
+ }
+}

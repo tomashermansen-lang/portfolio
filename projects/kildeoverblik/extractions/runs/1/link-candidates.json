@@ -1,0 +1,142 @@
+[
+  {
+    "from": "D-006",
+    "to": "A-001",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-006",
+    "to": "A-007",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-006",
+    "to": "A-008",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-007",
+    "to": "A-005",
+    "shared": "Tangsø Havn"
+  },
+  {
+    "from": "D-007",
+    "to": "A-020",
+    "shared": "Tangsø Havn"
+  },
+  {
+    "from": "D-007",
+    "to": "A-021",
+    "shared": "Tangsø Havn"
+  },
+  {
+    "from": "D-010",
+    "to": "A-005",
+    "shared": "Sydhavnen"
+  },
+  {
+    "from": "D-010",
+    "to": "A-016",
+    "shared": "Sydhavnen"
+  },
+  {
+    "from": "D-010",
+    "to": "A-017",
+    "shared": "Sydhavnen"
+  },
+  {
+    "from": "D-010",
+    "to": "A-018",
+    "shared": "Tangsø Energi"
+  },
+  {
+    "from": "D-010",
+    "to": "A-019",
+    "shared": "Tangsø Energi"
+  },
+  {
+    "from": "D-024",
+    "to": "A-005",
+    "shared": "Sydhavnen"
+  },
+  {
+    "from": "D-024",
+    "to": "A-016",
+    "shared": "Sydhavnen"
+  },
+  {
+    "from": "D-024",
+    "to": "A-017",
+    "shared": "Sydhavnen"
+  },
+  {
+    "from": "D-024",
+    "to": "A-018",
+    "shared": "Tangsø Energi"
+  },
+  {
+    "from": "D-024",
+    "to": "A-019",
+    "shared": "Tangsø Energi"
+  },
+  {
+    "from": "D-026",
+    "to": "A-005",
+    "shared": "byrådet"
+  },
+  {
+    "from": "D-026",
+    "to": "A-016",
+    "shared": "byrådet"
+  },
+  {
+    "from": "D-028",
+    "to": "A-001",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-028",
+    "to": "A-007",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-028",
+    "to": "A-008",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-028",
+    "to": "A-022",
+    "shared": "Nørrevang Idrætshal"
+  },
+  {
+    "from": "D-032",
+    "to": "A-001",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-032",
+    "to": "A-007",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "D-032",
+    "to": "A-008",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "N-083",
+    "to": "A-001",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "N-083",
+    "to": "A-007",
+    "shared": "Nørrevang Strand"
+  },
+  {
+    "from": "N-083",
+    "to": "A-008",
+    "shared": "Nørrevang Strand"
+  }
+]

@@ -1,0 +1,412 @@
+{
+  "desks": {
+    "F": {
+      "found": [
+        "E01",
+        "E02",
+        "E05",
+        "E15"
+      ],
+      "missed": [
+        {
+          "event": "E10",
+          "why": "aldrig læst i fuld tekst"
+        },
+        {
+          "event": "E19",
+          "why": "aldrig læst i fuld tekst"
+        }
+      ],
+      "noise": [
+        {
+          "finds": [
+            "N-080"
+          ],
+          "label": "Trafikcentralen advarer om kraftig sidevind",
+          "value": 5
+        },
+        {
+          "finds": [
+            "N-034"
+          ],
+          "label": "Dyreinternat opfordrer: hold katte inde",
+          "value": 5
+        },
+        {
+          "finds": [
+            "N-051"
+          ],
+          "label": "Egeby Kommune: undgå parkering under store træer",
+          "value": 5
+        },
+        {
+          "finds": [
+            "N-067"
+          ],
+          "label": "Forsikringsselskab giver råd før stormen",
+          "value": 5
+        },
+        {
+          "finds": [
+            "D-012"
+          ],
+          "label": "Væltet lastbil spærrer motorvej 21 ved Egeby",
+          "value": 5
+        }
+      ],
+      "proposals": [
+        {
+          "finds": [
+            "D-001",
+            "D-014",
+            "D-021"
+          ],
+          "label": "Stormflodsvarsel hævet til højeste niveau på vestkysten",
+          "value": 9
+        },
+        {
+          "finds": [
+            "D-006",
+            "D-028"
+          ],
+          "label": "Digebrud-frygt og evakuering ved Nørrevang Strand",
+          "value": 8
+        },
+        {
+          "finds": [
+            "D-032",
+            "N-083"
+          ],
+          "label": "Udlevering af sandsække ved Nørrevang og Tangsø",
+          "value": 6
+        },
+        {
+          "finds": [
+            "D-009",
+            "D-011"
+          ],
+          "label": "Togdrift indstilles mellem Tangsø og Nørrevang",
+          "value": 7
+        },
+        {
+          "finds": [
+            "N-080"
+          ],
+          "label": "Trafikcentralen advarer om kraftig sidevind",
+          "value": 5
+        },
+        {
+          "finds": [
+            "N-034"
+          ],
+          "label": "Dyreinternat opfordrer: hold katte inde",
+          "value": 5
+        },
+        {
+          "finds": [
+            "N-051"
+          ],
+          "label": "Egeby Kommune: undgå parkering under store træer",
+          "value": 5
+        },
+        {
+          "finds": [
+            "N-067"
+          ],
+          "label": "Forsikringsselskab giver råd før stormen",
+          "value": 5
+        },
+        {
+          "finds": [
+            "D-008",
+            "D-034"
+          ],
+          "label": "Uhentet lottogevinst på 42 mio. kr. i Lindholt",
+          "value": 9
+        },
+        {
+          "finds": [
+            "D-012"
+          ],
+          "label": "Væltet lastbil spærrer motorvej 21 ved Egeby",
+          "value": 5
+        },
+        {
+          "finds": [
+            "D-020"
+          ],
+          "label": "Madhuset tilbagekalder kyllingesalat pga. listeria",
+          "value": 7
+        }
+      ],
+      "counts": {
+        "stories": 6,
+        "proposed": 11,
+        "found": 6,
+        "missed": 2,
+        "noise": 5
+      },
+      "stories_found": 4
+    },
+    "M": {
+      "found": [
+        "E01",
+        "E02",
+        "E13",
+        "E14"
+      ],
+      "missed": [
+        {
+          "event": "E04",
+          "why": "læst, men under grænsen for redaktionen"
+        },
+        {
+          "event": "E06",
+          "why": "læst, men under grænsen for redaktionen"
+        },
+        {
+          "event": "E16",
+          "why": "aldrig læst i fuld tekst"
+        },
+        {
+          "event": "E18",
+          "why": "ubekræftet kilde; ligger til verifikation"
+        },
+        {
+          "event": "E19",
+          "why": "aldrig læst i fuld tekst"
+        }
+      ],
+      "noise": [
+        {
+          "finds": [
+            "D-018"
+          ],
+          "label": "Lægernes Forening Vest afviser ny ventetidsgaranti-model",
+          "value": 6
+        }
+      ],
+      "proposals": [
+        {
+          "finds": [
+            "D-001",
+            "D-014",
+            "D-021"
+          ],
+          "label": "Stormflodsvarsel hævet til højeste niveau på vestkysten",
+          "value": 5
+        },
+        {
+          "finds": [
+            "D-006",
+            "D-028"
+          ],
+          "label": "Digebrud-frygt og evakuering ved Nørrevang Strand",
+          "value": 6
+        },
+        {
+          "finds": [
+            "D-018"
+          ],
+          "label": "Lægernes Forening Vest afviser ny ventetidsgaranti-model",
+          "value": 6
+        },
+        {
+          "finds": [
+            "D-019"
+          ],
+          "label": "Erhvervsministeren trækker ny lukkelov tilbage",
+          "value": 6
+        },
+        {
+          "finds": [
+            "D-023"
+          ],
+          "label": "Forbrugerpriserne steg 3,4 procent i oktober",
+          "value": 5
+        }
+      ],
+      "counts": {
+        "stories": 9,
+        "proposed": 5,
+        "found": 4,
+        "missed": 5,
+        "noise": 1
+      },
+      "stories_found": 4
+    },
+    "E": {
+      "found": [
+        "E04",
+        "E06",
+        "E07",
+        "E13",
+        "E14"
+      ],
+      "missed": [
+        {
+          "event": "E17",
+          "why": "aldrig læst i fuld tekst"
+        }
+      ],
+      "noise": [
+        {
+          "finds": [
+            "D-007"
+          ],
+          "label": "Tangsø Havn lukker for skibstrafik",
+          "value": 8
+        },
+        {
+          "finds": [
+            "D-009",
+            "D-011"
+          ],
+          "label": "Togdrift indstilles mellem Tangsø og Nørrevang",
+          "value": 6
+        }
+      ],
+      "proposals": [
+        {
+          "finds": [
+            "D-007"
+          ],
+          "label": "Tangsø Havn lukker for skibstrafik",
+          "value": 8
+        },
+        {
+          "finds": [
+            "D-009",
+            "D-011"
+          ],
+          "label": "Togdrift indstilles mellem Tangsø og Nørrevang",
+          "value": 6
+        },
+        {
+          "finds": [
+            "D-010",
+            "D-024"
+          ],
+          "label": "Tangsø Energi lukker fabrik, 240 mister job",
+          "value": 8
+        },
+        {
+          "finds": [
+            "D-013",
+            "D-027"
+          ],
+          "label": "Halvor & Søn A/S i Lindholt erklæret konkurs",
+          "value": 8
+        },
+        {
+          "finds": [
+            "D-017",
+            "D-030"
+          ],
+          "label": "Tangholm nedskriver tørlastflåden med 1,2 mia. kr.",
+          "value": 8
+        },
+        {
+          "finds": [
+            "D-019"
+          ],
+          "label": "Erhvervsministeren trækker ny lukkelov tilbage",
+          "value": 7
+        },
+        {
+          "finds": [
+            "D-023"
+          ],
+          "label": "Forbrugerpriserne steg 3,4 procent i oktober",
+          "value": 7
+        }
+      ],
+      "counts": {
+        "stories": 6,
+        "proposed": 7,
+        "found": 5,
+        "missed": 1,
+        "noise": 2
+      },
+      "stories_found": 5
+    }
+  },
+  "titles": {
+    "E01": "Stormflod på vestkysten i nat: evakuering ved Nørrevang, tog og havn lukker",
+    "E02": "Kommunen udskød to gange at lade diget ved Nørrevang Strand udbedre",
+    "E04": "Tangsø Energi lukker fabrik og venter at nedlægge op til 240 stillinger",
+    "E05": "Lottogevinst på 42 mio. kr. er ikke hentet",
+    "E06": "Rederiet Tangholm nedskriver 1,2 mia. kr.",
+    "E07": "Halvor & Søn er gået konkurs",
+    "E08": "Væltet lastbil spærrer motorvejen ved Egeby",
+    "E09": "Læger advarer mod ny ventetidsgaranti",
+    "E10": "Nørrevang Skole lukker efter fund af skimmelsvamp",
+    "E11": "Samme entreprenør vinder tredje udbud i Lindholt som eneste tilbudsgiver",
+    "E12": "Elprisen topper i aften",
+    "E13": "Erhvervsministeren trækker forslag om ny lukkelov",
+    "E14": "Inflationen steg til 3,4 procent i oktober",
+    "E15": "Kyllingesalat tilbagekaldes efter fund af listeria",
+    "E16": "Ventetiden på akutmodtagelsen i Egeby er fordoblet",
+    "E17": "Vesterfjord Bank lukker 12 filialer",
+    "E18": "Borgmesteren i Sønderholt melder sig ud af sit parti",
+    "E19": "Plejecenter lukker den afdeling, tilsynet har givet påbud"
+  },
+  "links": {
+    "found": [
+      "L1",
+      "L5"
+    ],
+    "missed": [
+      {
+        "link": "L2",
+        "why": "dagens fund blev aldrig læst i fuld tekst"
+      },
+      {
+        "link": "L3",
+        "why": "dagens fund blev aldrig læst i fuld tekst"
+      },
+      {
+        "link": "L4",
+        "why": "dagens fund blev aldrig læst i fuld tekst"
+      },
+      {
+        "link": "L6",
+        "why": "dagens fund blev aldrig læst i fuld tekst"
+      },
+      {
+        "link": "L7",
+        "why": "dagens fund blev aldrig læst i fuld tekst"
+      },
+      {
+        "link": "L8",
+        "why": "dagens fund blev aldrig læst i fuld tekst"
+      }
+    ],
+    "wrong": [
+      {
+        "from": "D-024",
+        "to": "A-018"
+      },
+      {
+        "from": "N-083",
+        "to": "A-001"
+      }
+    ],
+    "counts": {
+      "planted": 8,
+      "found": 2,
+      "missed": 6,
+      "wrong": 2,
+      "judged": 28
+    }
+  },
+  "reading": {
+    "documents": 120,
+    "read": 32,
+    "value_differs_from_coarse": {
+      "F": 27,
+      "M": 27,
+      "E": 18
+    }
+  }
+}

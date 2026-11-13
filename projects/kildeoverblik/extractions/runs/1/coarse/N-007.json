@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "e712252a1f6a9d497ca45fc975c23d4625d88dacde1491ccaac8675a020899bb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:10+00:00",
+  "id": "N-007",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal lukning pga. storm, lukker kl. 16 i dag; rammer få, men stormen er relevant.\", \"M\": \"Rutinemeddelelse fra én kommune om en genbrugsplads; ingen forvaltningssvigt.\", \"E\": \"Ingen erhvervsvinkel; lokal kommunal servicemeddelelse uden virksomhedspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal lukning pga. storm, lukker kl. 16 i dag; rammer få, men stormen er relevant.",
+      "M": "Rutinemeddelelse fra én kommune om en genbrugsplads; ingen forvaltningssvigt.",
+      "E": "Ingen erhvervsvinkel; lokal kommunal servicemeddelelse uden virksomhedspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

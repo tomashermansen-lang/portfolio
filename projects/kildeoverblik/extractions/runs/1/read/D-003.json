@@ -1,0 +1,52 @@
+{
+  "prompt_sha256": "a6f8b2ba9cd6e1e24932f72828438c061d4737641b8c08c9ed2a39ca50328d3c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:50+00:00",
+  "id": "D-003",
+  "reply": "{\"summary\": \"Elprisen i regionen når onsdag aften op på omkring 1,10 kr. pr. kWh mellem kl. 17 og 20, hvilket er på niveau med de seneste uger, og om natten falder den til under 40 øre.\", \"facts\": [{\"text\": \"Elprisen i regionen topper onsdag aften med omkring 1,10 kr. pr. kWh mellem kl. 17 og 20, og tallene stammer fra elbørsen.\", \"quote\": \"Elprisen i regionen topper onsdag aften med omkring 1,10 kr. pr. kWh mellem kl. 17 og 20, viser tal fra elbørsen.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Prisniveauet er på niveau med de seneste uger og lidt under samme måned sidste år.\", \"quote\": \"Det er på niveau med de seneste uger og lidt under samme måned sidste år.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"I nattetimerne falder elprisen til under 40 øre.\", \"quote\": \"I nattetimerne falder prisen til under 40 øre.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [], \"orgs\": [\"elbørsen\"], \"values\": {\"F\": {\"value\": 4, \"why\": \"Aftenens spidspris rammer mange husstande i dag, men niveauet er normalt og ikke ekstraordinært.\"}, \"M\": {\"value\": 2, \"why\": \"Ingen politik, myndighedssvigt eller forvaltning; en rutinemæssig prismelding uden konsekvenser ud over det sædvanlige.\"}, \"E\": {\"value\": 3, \"why\": \"Energipris relevant for virksomheder, men uden driftsforstyrrelser, afvigelser eller nyt; priserne er på niveau med seneste uger.\"}}}\n",
+  "parsed": {
+    "summary": "Elprisen i regionen når onsdag aften op på omkring 1,10 kr. pr. kWh mellem kl. 17 og 20, hvilket er på niveau med de seneste uger, og om natten falder den til under 40 øre.",
+    "facts": [
+      {
+        "text": "Elprisen i regionen topper onsdag aften med omkring 1,10 kr. pr. kWh mellem kl. 17 og 20, og tallene stammer fra elbørsen.",
+        "quote": "Elprisen i regionen topper onsdag aften med omkring 1,10 kr. pr. kWh mellem kl. 17 og 20, viser tal fra elbørsen.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Prisniveauet er på niveau med de seneste uger og lidt under samme måned sidste år.",
+        "quote": "Det er på niveau med de seneste uger og lidt under samme måned sidste år.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "I nattetimerne falder elprisen til under 40 øre.",
+        "quote": "I nattetimerne falder prisen til under 40 øre.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [],
+    "orgs": [
+      "elbørsen"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "Aftenens spidspris rammer mange husstande i dag, men niveauet er normalt og ikke ekstraordinært."
+      },
+      "M": {
+        "value": 2,
+        "why": "Ingen politik, myndighedssvigt eller forvaltning; en rutinemæssig prismelding uden konsekvenser ud over det sædvanlige."
+      },
+      "E": {
+        "value": 3,
+        "why": "Energipris relevant for virksomheder, men uden driftsforstyrrelser, afvigelser eller nyt; priserne er på niveau med seneste uger."
+      }
+    }
+  },
+  "parse_error": null
+}

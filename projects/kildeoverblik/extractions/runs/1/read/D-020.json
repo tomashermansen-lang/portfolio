@@ -1,0 +1,78 @@
+{
+  "prompt_sha256": "c4abc2fd39039632a273fcf54dec03fe0f4b419fe8c10a3c7e77b24ee34b128a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:40+00:00",
+  "id": "D-020",
+  "reply": "{\"summary\":\"Madhuset A/S tilbagekalder to partier Kyllingesalat med karry efter fund af listeria i en stikprøve, og salaten er solgt i 87 butikker i to kæder i regionen.\",\"facts\":[{\"text\":\"Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, i parti L2611 og L2612.\",\"quote\":\"Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, parti L2611 og L2612\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Tilbagekaldelsen sker efter fund af listeria i en stikprøve.\",\"quote\":\"efter fund af listeria i en stikprøve\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"De berørte partier har sidste anvendelsesdato 13.11.2026 og 14.11.2026.\",\"quote\":\"med sidste anvendelsesdato 13.11.2026 og 14.11.2026\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i regionen.\",\"quote\":\"Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i hele regionen.\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Forbrugere, der har købt produktet, opfordres til at kassere det eller levere det tilbage til butikken.\",\"quote\":\"Forbrugere, der har købt produktet, bør kassere det eller levere det tilbage til butikken.\",\"statement\":true,\"speaker\":\"Fødevaretilsynet Vest\",\"accuses\":null},{\"text\":\"Listeria kan være alvorlig for gravide, ældre og personer med svækket immunforsvar.\",\"quote\":\"Listeria kan være alvorlig for gravide, ældre og personer med svækket immunforsvar.\",\"statement\":true,\"speaker\":\"Fødevaretilsynet Vest\",\"accuses\":null}],\"places\":[\"regionen\"],\"orgs\":[\"Fødevaretilsynet Vest\",\"Madhuset A/S\",\"Købmandsgården\",\"Daglivest\"],\"values\":{\"F\":{\"value\":7,\"why\":\"Advarsel til forbrugere om listeria i fødevare, solgt i 87 butikker; regional, ikke landsdækkende, men med kort frist.\"},\"M\":{\"value\":4,\"why\":\"Rutinemæssig tilbagekaldelse uden myndighedssvigt; rammer mange forbrugere regionalt, men sagen har ikke politisk eller forvaltningsmæssig rækkevidde.\"},\"E\":{\"value\":4,\"why\":\"Virksomhedstilbagekaldelse i to detailkæder kan give omkostninger for Madhuset, men ingen lukning, fyring eller regnskabsafvigelse.\"}}}\n",
+  "parsed": {
+    "summary": "Madhuset A/S tilbagekalder to partier Kyllingesalat med karry efter fund af listeria i en stikprøve, og salaten er solgt i 87 butikker i to kæder i regionen.",
+    "facts": [
+      {
+        "text": "Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, i parti L2611 og L2612.",
+        "quote": "Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, parti L2611 og L2612",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Tilbagekaldelsen sker efter fund af listeria i en stikprøve.",
+        "quote": "efter fund af listeria i en stikprøve",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "De berørte partier har sidste anvendelsesdato 13.11.2026 og 14.11.2026.",
+        "quote": "med sidste anvendelsesdato 13.11.2026 og 14.11.2026",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i regionen.",
+        "quote": "Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i hele regionen.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Forbrugere, der har købt produktet, opfordres til at kassere det eller levere det tilbage til butikken.",
+        "quote": "Forbrugere, der har købt produktet, bør kassere det eller levere det tilbage til butikken.",
+        "statement": true,
+        "speaker": "Fødevaretilsynet Vest",
+        "accuses": null
+      },
+      {
+        "text": "Listeria kan være alvorlig for gravide, ældre og personer med svækket immunforsvar.",
+        "quote": "Listeria kan være alvorlig for gravide, ældre og personer med svækket immunforsvar.",
+        "statement": true,
+        "speaker": "Fødevaretilsynet Vest",
+        "accuses": null
+      }
+    ],
+    "places": [
+      "regionen"
+    ],
+    "orgs": [
+      "Fødevaretilsynet Vest",
+      "Madhuset A/S",
+      "Købmandsgården",
+      "Daglivest"
+    ],
+    "values": {
+      "F": {
+        "value": 7,
+        "why": "Advarsel til forbrugere om listeria i fødevare, solgt i 87 butikker; regional, ikke landsdækkende, men med kort frist."
+      },
+      "M": {
+        "value": 4,
+        "why": "Rutinemæssig tilbagekaldelse uden myndighedssvigt; rammer mange forbrugere regionalt, men sagen har ikke politisk eller forvaltningsmæssig rækkevidde."
+      },
+      "E": {
+        "value": 4,
+        "why": "Virksomhedstilbagekaldelse i to detailkæder kan give omkostninger for Madhuset, men ingen lukning, fyring eller regnskabsafvigelse."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "224e3e38b306d47d490817c7a8c1699ebe074d6bd75c3fdd7e272950684bf7f9",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:14+00:00",
+  "from": "N-083",
+  "to": "A-008",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om udlevering af sandsække ved Nørrevang Strand før en storm, mens arkivdokumentet er en pressemeddelelse om en årlig frivillig strandrensning i april; de deler kun stedet og supplerer ikke hinanden.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om udlevering af sandsække ved Nørrevang Strand før en storm, mens arkivdokumentet er en pressemeddelelse om en årlig frivillig strandrensning i april; de deler kun stedet og supplerer ikke hinanden.",
+    "facts": []
+  },
+  "parse_error": null
+}

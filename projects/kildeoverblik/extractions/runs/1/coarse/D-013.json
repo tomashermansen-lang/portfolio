@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "99a099f3a846602d5dabaeb60941121429417e3c7330bb17971cbc9b1d1e3578",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:49+00:00",
+  "id": "D-013",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 5}, \"why\": {\"F\": \"Lokal konkurs uden synlig bredde for læsere eller kendt navn.\", \"M\": \"Almindeligt konkursdekret; ingen synlig myndighedssvigt eller offentlig interesse ud over det lokale.\", \"E\": \"Konkurs er erhvervsstof, men uddraget viser ingen størrelse, branche eller antal ansatte.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 5
+    },
+    "why": {
+      "F": "Lokal konkurs uden synlig bredde for læsere eller kendt navn.",
+      "M": "Almindeligt konkursdekret; ingen synlig myndighedssvigt eller offentlig interesse ud over det lokale.",
+      "E": "Konkurs er erhvervsstof, men uddraget viser ingen størrelse, branche eller antal ansatte."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

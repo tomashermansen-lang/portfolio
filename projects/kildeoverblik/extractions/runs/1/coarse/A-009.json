@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "d813f5199168770168235ce36209ec859c6536e5255746998914b25d93232bc2",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:19+00:00",
+  "id": "A-009",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Lokal afsluttet digerenovering uden aktuel fare eller bred læserpåvirkning.\", \"M\": \"Kommunal orientering om afsluttet projekt; lokalt og rutinepræget, ingen svigt synligt.\", \"E\": \"Kommunal infrastruktur uden synlig virksomhedspåvirkning, regulering eller driftsforstyrrelse.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokal afsluttet digerenovering uden aktuel fare eller bred læserpåvirkning.",
+      "M": "Kommunal orientering om afsluttet projekt; lokalt og rutinepræget, ingen svigt synligt.",
+      "E": "Kommunal infrastruktur uden synlig virksomhedspåvirkning, regulering eller driftsforstyrrelse."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

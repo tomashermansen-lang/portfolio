@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3a400239a016fa7444414277a6badbf55099e46a0805fbf318ec18286617792e",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:46+00:00",
+  "id": "N-069",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal aflysning, men bekræfter at storm rammer i aften; vejrvinkel kan undersøges.\", \"M\": \"Lokal klubmeddelelse uden forvaltning eller myndighedsvinkel.\", \"E\": \"Ingen virksomheder eller drift berørt; kun en amatørklub aflyser.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal aflysning, men bekræfter at storm rammer i aften; vejrvinkel kan undersøges.",
+      "M": "Lokal klubmeddelelse uden forvaltning eller myndighedsvinkel.",
+      "E": "Ingen virksomheder eller drift berørt; kun en amatørklub aflyser."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

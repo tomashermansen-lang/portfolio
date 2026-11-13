@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "ca6d0f15e760b8c61e87dfa54c1624f9935aa3276f3d56b95b59d0e2bcb7ee5c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:24+00:00",
+  "id": "N-020",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Almindelig morgenkø, lokal og uden ulykke; kun få bilister berørt.\", \"M\": \"Rutinemæssig lokal trafikmelding uden myndighedssvigt eller politisk indhold.\", \"E\": \"Ingen virksomheder, transportdrift eller energi rammes af almindelig morgentrafik.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Almindelig morgenkø, lokal og uden ulykke; kun få bilister berørt.",
+      "M": "Rutinemæssig lokal trafikmelding uden myndighedssvigt eller politisk indhold.",
+      "E": "Ingen virksomheder, transportdrift eller energi rammes af almindelig morgentrafik."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

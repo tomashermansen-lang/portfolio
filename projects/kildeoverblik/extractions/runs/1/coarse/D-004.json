@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "9632d4d180941031fb0a2a36c96cb68290ace2704d82036fe16c862f0863f937",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:17+00:00",
+  "id": "D-004",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 4, \"E\": 2}, \"why\": {\"F\": \"Berører forældre og medarbejdere på én skole, men uddraget afslører ikke, hvad forholdene er.\", \"M\": \"Kommunal information om en skoles bygninger; lokalt og uden synligt indhold i uddraget.\", \"E\": \"Ingen synlig virksomheds- eller erhvervsvinkel i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 4,
+      "E": 2
+    },
+    "why": {
+      "F": "Berører forældre og medarbejdere på én skole, men uddraget afslører ikke, hvad forholdene er.",
+      "M": "Kommunal information om en skoles bygninger; lokalt og uden synligt indhold i uddraget.",
+      "E": "Ingen synlig virksomheds- eller erhvervsvinkel i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

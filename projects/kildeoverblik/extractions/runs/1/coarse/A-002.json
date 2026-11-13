@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "0a1bd8f623f80cd8b1737ae0e060f5f38bc6d2bc6babe7476c1cc860648dbd34",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:12+00:00",
+  "id": "A-002",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 3}, \"why\": {\"F\": \"Rutinemæssig kommunal kontrakttildeling om grøn drift uden akut betydning for læsere.\", \"M\": \"Lokal kommunal udbudssag; ingen tegn på fejl eller sag der rækker ud over kommunen.\", \"E\": \"Kommunalt udbud for virksomheder, men uddraget nævner hverken vinder, beløb eller afvigelser.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 3
+    },
+    "why": {
+      "F": "Rutinemæssig kommunal kontrakttildeling om grøn drift uden akut betydning for læsere.",
+      "M": "Lokal kommunal udbudssag; ingen tegn på fejl eller sag der rækker ud over kommunen.",
+      "E": "Kommunalt udbud for virksomheder, men uddraget nævner hverken vinder, beløb eller afvigelser."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

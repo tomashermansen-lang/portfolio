@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "d06591db7a70c828ef2dc252af3050edafb15e799fe44d5e0954bcbfea75b813",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:14+00:00",
+  "id": "A-005",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Rutinereferat fra lokalt byråd uden synlig nyhed eller konsekvens for mange læsere.\", \"M\": \"Kommunalt referat, men uddraget viser kun rutinepunkter og en lokalplan uden kendt substans.\", \"E\": \"Ingen synlige virksomhedsforhold; budgetopfølgning blot taget til efterretning, lokalpolitik vægtes lavt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinereferat fra lokalt byråd uden synlig nyhed eller konsekvens for mange læsere.",
+      "M": "Kommunalt referat, men uddraget viser kun rutinepunkter og en lokalplan uden kendt substans.",
+      "E": "Ingen synlige virksomhedsforhold; budgetopfølgning blot taget til efterretning, lokalpolitik vægtes lavt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

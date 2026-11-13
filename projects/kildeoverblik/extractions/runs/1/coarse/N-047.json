@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "b30ba3dc671658543e3809cfcd4177b59084e9b0dcac68894c01395fefab5d1c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:02+00:00",
+  "id": "N-047",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal kunstudstilling på lørdag; kuriøst er det ikke, ramt af få læsere.\", \"M\": \"Lokal kulturforening, ingen forvaltning, politik eller svigt af myndighed.\", \"E\": \"Ingen erhvervsvinkel; en lokal forenings udstilling uden betydning for virksomheder.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal kunstudstilling på lørdag; kuriøst er det ikke, ramt af få læsere.",
+      "M": "Lokal kulturforening, ingen forvaltning, politik eller svigt af myndighed.",
+      "E": "Ingen erhvervsvinkel; en lokal forenings udstilling uden betydning for virksomheder."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

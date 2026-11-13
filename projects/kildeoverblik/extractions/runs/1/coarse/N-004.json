@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "81ea9baff60374ee77715e3ec0f53e71a2197fd1002f9a901616d30639b8cbca",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:06+00:00",
+  "id": "N-004",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Lokal ændring af åbningstid i én by; rammer få læsere, ingen akut vinkel.\", \"M\": \"Lokal handelsforening, ingen politik, forvaltning eller myndighedssvigt.\", \"E\": \"Små butikkers åbningstid i én by; ingen regulering, lukning eller regnskab.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokal ændring af åbningstid i én by; rammer få læsere, ingen akut vinkel.",
+      "M": "Lokal handelsforening, ingen politik, forvaltning eller myndighedssvigt.",
+      "E": "Små butikkers åbningstid i én by; ingen regulering, lukning eller regnskab."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

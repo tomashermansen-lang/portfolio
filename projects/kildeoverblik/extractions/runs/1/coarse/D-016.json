@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "b88cd06b9ee124b0a8b5967377ccf8bfc16792d1a0851aa5adebc2dccd0b0a70",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:55+00:00",
+  "id": "D-016",
+  "reply": "{\"scores\": {\"F\": 6, \"M\": 3, \"E\": 3}, \"why\": {\"F\": \"Kraftig blæst i dag kan ramme mange; viralt, men sted og ægthed uklare.\", \"M\": \"Enkeltstående hændelse uden synlig myndighedsvinkel; kun lokalt uddrag.\", \"E\": \"Taget er skadet, men ingen virksomhed eller drift nævnt; lav erhvervsværdi.\"}, \"unverified\": true}\n",
+  "parsed": {
+    "scores": {
+      "F": 6,
+      "M": 3,
+      "E": 3
+    },
+    "why": {
+      "F": "Kraftig blæst i dag kan ramme mange; viralt, men sted og ægthed uklare.",
+      "M": "Enkeltstående hændelse uden synlig myndighedsvinkel; kun lokalt uddrag.",
+      "E": "Taget er skadet, men ingen virksomhed eller drift nævnt; lav erhvervsværdi."
+    },
+    "unverified": true
+  },
+  "parse_error": null
+}

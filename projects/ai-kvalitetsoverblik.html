@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Drift og kvalitetssikring af AI-løsninger | Tomas Hermansen</title>
+  <meta name="description" content="Casebesvarelse: drift og kvalitetssikring af AI-løsninger. Hvordan jeg starter, og hvordan overblik, kvalitet, forbedringer og prioritering hænger sammen, vist med syntetiske tal.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css?v=8">
+  <style>
+    /* Layout: one readable document. A narrow table of contents follows the reader on wide screens
+       and sits as a scrolling line under the header on narrow ones. Boxes are used only where they
+       mean something: KPI tiles, one "learned from" block, tables. Tokens come from style.css. */
+    [hidden] { display: none !important; }
+    .case { max-width: var(--max-width-grid); margin: 0 auto; padding: calc(60px + var(--space-3xl)) var(--space-lg) 0; }
+    .doc-head { min-width: 0; margin-bottom: var(--space-2xl); }
+    .doc-head .hero__title { margin-bottom: var(--space-md); }
+    @media (min-width: 1024px) {
+      .case { display: grid; grid-template-columns: 200px minmax(0, 720px); grid-template-rows: auto auto; column-gap: var(--space-2xl); row-gap: 0; align-items: start; }
+      .doc-head { grid-column: 2; grid-row: 1; }
+      .toc { grid-column: 1; grid-row: 2; position: sticky; top: calc(var(--nav-h, 72px) + var(--space-lg)); }
+      .doc { grid-column: 2; grid-row: 2; }
+    }
+    .toc { font-size: var(--text-sm); }
+    .toc ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 2px; }
+    .toc a { display: block; color: var(--text-secondary); text-decoration: none; padding: 4px 0 4px var(--space-sm); border-left: 2px solid var(--border); line-height: 1.35; }
+    .toc a:hover { color: var(--text-primary); text-decoration: none; }
+    .toc li.is-current a { color: var(--text-primary); border-left-color: var(--accent-terracotta); }
+    .toc li.sub a { padding-left: var(--space-lg); }
+    .toc__label { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-secondary); letter-spacing: 0.04em; margin-bottom: var(--space-sm); }
+    .toc__toggle { display: none; }
+    @media (max-width: 1023px) {
+      .toc { position: sticky; top: var(--nav-h, 72px); z-index: 5; background: var(--bg-primary); margin: 0 calc(-1 * var(--space-lg)) var(--space-lg); padding: 0 var(--space-lg); border-bottom: 1px solid var(--border); }
+      .toc__label { display: none; }
+      .toc__toggle { display: flex; align-items: center; gap: var(--space-sm); width: 100%; min-height: 44px; padding: var(--space-sm) 0; background: none; border: 0; font-family: var(--font-sans); font-size: var(--text-sm); color: var(--text-primary); text-align: left; cursor: pointer; }
+      .toc__toggle:focus-visible { outline: 2px solid var(--accent-terracotta); outline-offset: -2px; }
+      .toc__toggle-label { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-secondary); letter-spacing: 0.04em; flex: 0 0 auto; }
+      .toc__toggle-current { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .toc__chevron { flex: 0 0 auto; color: var(--text-secondary); transition: transform 0.2s ease; }
+      .toc.is-open .toc__chevron { transform: rotate(180deg); }
+      .toc ol { display: none; flex-direction: column; gap: 0; padding: 0 0 var(--space-sm); }
+      .toc.is-open ol { display: flex; }
+      .toc a { padding: var(--space-sm) 0 var(--space-sm) var(--space-sm); border-left: 2px solid var(--border); min-height: 44px; display: flex; align-items: center; }
+      .toc li.sub a { padding-left: var(--space-lg); }
+    }
+    @media (prefers-reduced-motion: reduce) { .toc__chevron { transition: none; } }
+    .doc { min-width: 0; }
+    .doc section { padding: 0; margin: 0 0 var(--space-3xl); scroll-margin-top: calc(var(--nav-h, 72px) + var(--toc-h, 0px) + var(--space-lg)); }
+    .doc h2 { font-family: var(--font-serif); font-size: var(--text-2xl); font-weight: 400; letter-spacing: -0.02em; line-height: 1.2; color: var(--text-primary); margin: 0 0 var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border); text-wrap: balance; }
+    .doc h3 { font-family: var(--font-sans); font-size: var(--text-base); font-weight: 600; margin: var(--space-xl) 0 var(--space-sm); }
+    .doc p, .doc li { color: var(--text-primary); }
+    .doc p + p { margin-top: var(--space-md); }
+    .doc ul, .doc ol { padding-left: 1.25rem; margin: var(--space-sm) 0 var(--space-md); }
+    .doc li { margin-bottom: var(--space-xs); }
+    .muted { color: var(--text-secondary); }
+    .q { font-style: italic; color: var(--text-secondary); font-size: var(--text-lg); line-height: 1.5; margin: 0 0 var(--space-sm); }
+    .a { font-size: var(--text-lg); line-height: 1.55; margin-bottom: var(--space-lg); }
+    .meta { font-size: var(--text-sm); color: var(--text-secondary); margin-top: var(--space-md); }
+    .meta a { color: var(--accent-terracotta); text-decoration: none; }
+    .meta a:hover { text-decoration: underline; }
+    .doc-head .hero__subtitle { max-width: 36em; }
+
+    .steps { counter-reset: s; list-style: none; padding: 0; }
+    .steps li { counter-increment: s; position: relative; padding-left: 2.25rem; margin-bottom: var(--space-sm); }
+    .steps li::before { content: counter(s); position: absolute; left: 0; top: 0.1rem; font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-secondary); border: 1px solid var(--border); border-radius: 50%; width: 1.5rem; height: 1.5rem; display: inline-flex; align-items: center; justify-content: center; }
+    .steplink { color: var(--accent-terracotta); text-decoration: none; }
+    .steplink:hover { text-decoration: underline; }
+
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--space-md); margin: var(--space-lg) 0; }
+    .kpi { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 4px; padding: var(--space-md); min-width: 0; }
+    .kpi__label { font-size: var(--text-xs); font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: var(--space-xs); }
+    .kpi__value { font-size: var(--text-2xl); font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; color: var(--text-primary); font-variant-numeric: tabular-nums; }
+    .kpi__delta { font-size: var(--text-sm); color: var(--text-secondary); margin-top: var(--space-xs); }
+
+    .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; margin: var(--space-md) 0 var(--space-lg); }
+    .tbl { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+    .tbl th, .tbl td { text-align: left; padding: var(--space-sm); border-bottom: 1px solid var(--border); vertical-align: top; }
+    .tbl th { font-family: var(--font-mono); font-weight: 400; font-size: var(--text-xs); color: var(--text-secondary); }
+    .tbl td.num, .tbl th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .tbl tr.start td { background: var(--bg-secondary); }
+    .tbl thead tr.grp th { text-align: center; border-bottom: 0; padding-bottom: 0; color: var(--text-primary); font-weight: 600; }
+    .tbl thead tr.grp th:first-child { text-align: left; }
+    .tbl tr.queue td { color: var(--text-secondary); }
+    .st--muted .st__dot { background: #8C8478; }
+    .tbl td.calc { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-secondary); white-space: nowrap; }
+    .st { display: inline-flex; align-items: center; gap: 6px; font-size: var(--text-sm); }
+    .st__dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: 0 0 auto; }
+    .st--ok .st__dot { background: #008300; }
+    .st--warn .st__dot { background: #B8741A; }
+    .st--bad .st__dot { background: #B03A2E; }
+
+    .viz { margin: var(--space-lg) 0 var(--space-xl); }
+    .viz.diagram { margin: var(--space-xl) 0; padding: var(--space-lg); }
+    .viz.diagram svg { max-width: none; }
+    .viz__title { font-size: var(--text-sm); font-weight: 600; color: var(--text-primary); margin-bottom: 2px; }
+    .viz__sub { font-size: var(--text-xs); color: var(--text-secondary); margin-bottom: var(--space-sm); }
+    .viz svg { width: 100%; height: auto; display: block; overflow: visible; }
+    .viz text { font-family: var(--font-sans); font-size: 12px; fill: var(--text-secondary); }
+    .viz text.v { fill: var(--text-primary); font-variant-numeric: tabular-nums; }
+    .viz .hit { fill: transparent; cursor: default; }
+    .legend { display: flex; flex-wrap: wrap; gap: var(--space-md); font-size: var(--text-xs); color: var(--text-secondary); margin-bottom: var(--space-sm); }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .legend i { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+    .tip { position: fixed; z-index: 50; pointer-events: none; background: var(--text-primary); color: var(--bg-primary); font-size: var(--text-xs); line-height: 1.4; padding: 6px 8px; border-radius: 3px; max-width: 260px; opacity: 0; transition: opacity 0.1s ease; }
+    .tip.show { opacity: 1; }
+    .viz [tabindex]:focus { outline: none; }
+    .viz [tabindex]:focus-visible { outline: 2px solid var(--accent-terracotta); outline-offset: 2px; }
+
+    .learned { margin: var(--space-lg) 0; padding: var(--space-lg); border-left: 3px solid var(--accent-sage); background: var(--bg-secondary); border-radius: 0 4px 4px 0; }
+    .learned__title { font-weight: 600; margin-bottom: var(--space-sm); }
+    .formula { font-size: var(--text-sm); color: var(--text-secondary); margin: var(--space-md) 0; }
+    .formula strong { color: var(--text-primary); }
+    .terms { font-size: var(--text-sm); color: var(--text-secondary); }
+    .terms li { margin-bottom: var(--space-sm); line-height: 1.55; color: var(--text-secondary); }
+    .terms strong { color: var(--text-primary); }
+    .terms li:target { background: var(--bg-secondary); }
+    .terms li { scroll-margin-top: calc(var(--nav-h, 72px) + var(--toc-h, 0px) + var(--space-lg)); }
+    .terms a, .doc table a { color: var(--accent-terracotta); text-decoration: none; }
+    .terms a:hover, .doc table a:hover { text-decoration: underline; }
+    sup.fn a { font-family: var(--font-mono); font-size: 0.7em; text-decoration: none; color: var(--accent-terracotta); padding-left: 1px; }
+
+    .note { margin: var(--space-lg) 0; padding: var(--space-md) var(--space-lg); border-left: 3px solid var(--accent-sage); background: var(--bg-secondary); border-radius: 0 4px 4px 0; font-size: var(--text-sm); }
+    .note p { margin: 0; color: var(--text-secondary); }
+    .note strong { color: var(--text-primary); }
+    .tbl th { white-space: normal; }
+    @media (min-width: 1200px) { .tbl-wrap.wide { width: 880px; } }
+    .terms-details summary { cursor: pointer; font-size: var(--text-sm); color: var(--accent-terracotta); padding: var(--space-sm) 0; }
+    .terms-details[open] summary { margin-bottom: var(--space-sm); }
+    .terms-details .terms { padding-left: 1.25rem; }
+
+    @media print {
+      .nav, .skip-link, .toc, .back-link, .tip { display: none !important; }
+      .case { display: block; }
+      body::before { display: none; }
+      a { color: inherit; text-decoration: none; }
+      .case { padding-top: var(--space-lg); }
+      .doc section { break-inside: auto; margin-bottom: var(--space-xl); }
+      .doc section.q-section { break-before: page; page-break-before: always; }
+      .kpi, .viz, .learned, .tbl-wrap, .terms li, .steps li { break-inside: avoid; page-break-inside: avoid; }
+      h2, h3 { break-after: avoid; }
+      .tbl { font-size: 9.5px; }
+      .tbl th, .tbl td { padding: 4px 5px; white-space: normal; }
+      .tbl-wrap, .tbl-wrap.wide { overflow: visible; width: 100%; }
+      .tbl { font-size: 9px; }
+      .st { white-space: nowrap; font-size: 9px; }
+      .terms-details summary { display: none; }
+      .terms-details .terms { display: block; }
+      @page { size: A4; margin: 16mm 14mm; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__name">Tomas Hermansen</a>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../index.html#projects">Projects and cases</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <div class="case">
+
+      <header class="doc-head">
+        <a href="../index.html#projects" class="back-link">&larr; Min AI-portefølje</a>
+        <p class="hero__kicker">Casebesvarelse · AI Quality &amp; Performance Specialist, PensionDanmark</p>
+        <h1 class="hero__title hero__title--project">Drift og kvalitetssikring af AI-løsninger</h1>
+        <p class="hero__subtitle">"Forestil dig, at du starter som AI Quality &amp; Performance Specialist i morgen. Hvordan ville du gribe denne opgave an?"</p>
+        <p class="meta">Tomas Hermansen · oktober 2026</p>
+      </header>
+
+      <nav class="toc" aria-label="Indhold">
+        <p class="toc__label">Indhold</p>
+        <button class="toc__toggle" type="button" aria-expanded="false" aria-controls="toc-list" aria-label="Indhold">
+          <span class="toc__toggle-current" id="toc-current">Kort sagt</span>
+          <svg class="toc__chevron" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <ol id="toc-list">
+          <li><a href="#kort">Kort sagt</a></li>
+          <li><a href="#start">Hvordan jeg starter</a></li>
+          <li class="sub"><a href="#q1">01 Overblik</a></li>
+          <li class="sub"><a href="#q2">02 Kvalitet</a></li>
+          <li class="sub"><a href="#q3">03 Forbedringer</a></li>
+          <li class="sub"><a href="#q4">04 Prioritering</a></li>
+          <li><a href="#erfaring">Fra casen til min portefølje</a></li>
+          <li><a href="#begreber">Begreber</a></li>
+        </ol>
+      </nav>
+
+      <div class="doc">
+
+        <!-- ===================== KORT SAGT ===================== -->
+        <section id="kort" aria-labelledby="kort-h">
+          <h2 id="kort-h">Kort sagt</h2>
+          <p>Casebesvarelsen bygger på min erfaring med optimering og automatisering af forretnings- og udviklingsprocesser i reguleret finans og på en række personlige AI-projekter, hvori jeg har udforsket, hvordan AI kan bruges i de processer, og hvordan man kan arbejde med kvalitetssikring af AI-løsninger.</p>
+          <p>Jeg starter i det, der findes: løsningerne i drift, dagens målinger og brugernes oplevelser. Derfra to spor samtidig: én kendt fejl rettes og måles, mens overblik og måling bygges op, så prioriteringen kan afledes af tal. Kritiske fejl, hvor et medlem kan blive ramt, håndteres straks; alt andet prioriteres efter risiko, forventet effekt og indsats.</p>
+        </section>
+
+        <!-- ===================== HVORDAN JEG STARTER ===================== -->
+        <section id="start" aria-labelledby="start-h">
+          <h2 id="start-h">Hvordan jeg starter</h2>
+          <p>To spor fra start, ellers går et halvt år med overblik og roadmap uden en konkret forandring.</p>
+
+          <div class="viz diagram">
+            <div class="viz__title">De første seks måneder, to spor</div>
+            <div class="legend"><span><i style="background:#A2543A"></i>Forbedre én løsning i drift, først som pilot</span><span><i style="background:#D2A28F"></i>Bygge overblik og måling</span><span><i style="background:#2C2825;border-radius:50%"></i>Milepæl</span></div>
+            <svg viewBox="0 0 640 210" role="img" aria-label="Tidslinje over seks måneder med to spor. Forbedre: måned 1 vælg piloten; måned 2 til 3 ret og mål før og efter; måned 4 til 6 næste forbedringer valgt på tal. Måling: måned 1 kortlæg og oplæg; måned 2 til 3 acceptkriterier og første evaluering; måned 4 til 6 bred ud, justeret efter piloten. Milepæle ved måned 1, 3 og 6.">
+              <line stroke="#E0D8CF" x1="120" y1="20" x2="120" y2="168"/>
+              <line stroke="#E0D8CF" x1="200" y1="20" x2="200" y2="168"/>
+              <line stroke="#E0D8CF" x1="360" y1="20" x2="360" y2="168"/>
+              <line stroke="#E0D8CF" x1="600" y1="20" x2="600" y2="168"/>
+              <text x="120" y="184" text-anchor="middle">uge 1</text>
+              <text x="200" y="184" text-anchor="middle">måned 1</text>
+              <text x="360" y="184" text-anchor="middle">måned 3</text>
+              <text x="600" y="184" text-anchor="middle">måned 6</text>
+              <text x="110" y="66" text-anchor="end" style="font-weight:600;fill:#2C2825">Forbedre</text>
+              <rect class="hit" fill="transparent" x="120" y="48" width="80" height="24" tabindex="0" data-tip="Måned 1: piloten vælges sammen med teamet og ledelsen: én løsning i drift og én kendt fejl, hvor før og efter kan måles."/>
+              <rect fill="#A2543A" x="120" y="48" width="78" height="24" rx="3"/>
+              <text x="159" y="64" text-anchor="middle" style="fill:#FAF8F5;font-size:10px">pilot: vælg</text>
+              <rect class="hit" fill="transparent" x="200" y="48" width="160" height="24" tabindex="0" data-tip="Måned 2-3: teamet retter fejlen; effekten vises før og efter."/>
+              <rect fill="#A2543A" x="200" y="48" width="158" height="24" rx="3"/>
+              <text x="279" y="64" text-anchor="middle" style="fill:#FAF8F5;font-size:10px">pilot: ret, mål før og efter</text>
+              <rect class="hit" fill="transparent" x="360" y="48" width="240" height="24" tabindex="0" data-tip="Måned 4-6: de næste forbedringer vælges på tal fra målingen."/>
+              <rect fill="#A2543A" x="360" y="48" width="240" height="24" rx="3"/>
+              <text x="480" y="64" text-anchor="middle" style="fill:#FAF8F5;font-size:10px">næste forbedringer, valgt på tal</text>
+              <text x="110" y="126" text-anchor="end" style="font-weight:600;fill:#2C2825">Måling</text>
+              <rect class="hit" fill="transparent" x="120" y="108" width="80" height="24" tabindex="0" data-tip="Måned 1: hvad måles i dag pr. løsning af kvalitet, anvendelse og værdi; oplæg til, hvordan de tre måles."/>
+              <rect fill="#D2A28F" x="120" y="108" width="78" height="24" rx="3"/>
+              <text x="159" y="124" text-anchor="middle" style="fill:#2C2825;font-size:10px">kortlæg, oplæg</text>
+              <rect class="hit" fill="transparent" x="200" y="108" width="160" height="24" tabindex="0" data-tip="Måned 2-3: acceptkriterier og kritiske fejltyper med forretningen; teamet bygger første automatiserede evaluering på én løsning."/>
+              <rect fill="#D2A28F" x="200" y="108" width="158" height="24" rx="3"/>
+              <text x="279" y="124" text-anchor="middle" style="fill:#2C2825;font-size:10px">kriterier, første evaluering</text>
+              <rect class="hit" fill="transparent" x="360" y="108" width="240" height="24" tabindex="0" data-tip="Måned 4-6: målingen, justeret efter piloten, bredes ud til de væsentlige løsninger; månedlig rapport om kvalitet, anvendelse og værdi."/>
+              <rect fill="#D2A28F" x="360" y="108" width="240" height="24" rx="3"/>
+              <text x="480" y="124" text-anchor="middle" style="fill:#2C2825;font-size:10px">bred ud, justeret efter piloten</text>
+              <line stroke="#8C8478" stroke-dasharray="3 3" x1="300" y1="74" x2="300" y2="106"/>
+              <polyline fill="none" stroke="#8C8478" points="295,100 300,106 305,100"/>
+              <text x="306" y="92" style="font-size:10px">læring fra piloten</text>
+              <circle cx="200" cy="34" r="5" fill="#2C2825" stroke="#FAF8F5" stroke-width="2" tabindex="0" data-tip="Måned 1: første billede af porteføljen og oplæg til, hvordan kvalitet, anvendelse og værdi måles."/>
+              <text x="200" y="24" text-anchor="middle" style="font-size:10px">overblik og oplæg</text>
+              <circle cx="360" cy="34" r="5" fill="#2C2825" stroke="#FAF8F5" stroke-width="2" tabindex="0" data-tip="Måned 3: første forbedring målt, første evaluering i drift, første rapport til ledelsen."/>
+              <text x="360" y="24" text-anchor="middle" style="font-size:10px">1. forbedring · 1. evaluering · 1. rapport</text>
+              <circle cx="600" cy="34" r="5" fill="#2C2825" stroke="#FAF8F5" stroke-width="2" tabindex="0" data-tip="Måned 6: den faste rytme kører; prioriteringsgrundlag til roadmappet."/>
+              <text x="600" y="24" text-anchor="end" style="font-size:10px">fast rytme</text>
+            </svg>
+          </div>
+
+          <h3>Første uge</h3>
+          <p>Jeg ser arbejdsgangene hos dem, der bruger løsningerne, læser de målinger, der findes, og spørger til kendte alvorlige problemer. Ingen nye værktøjer endnu.</p>
+
+          <h3>Første måned</h3>
+          <p>Jeg skaber overblik over de eksisterende AI-løsninger, et eventuelt AI-roadmap, og hvad der i dag måles eller er defineret af kvalitet, anvendelse og værdi, og hvad brugerne siger. Resultatet er et første billede af porteføljen med hullerne markeret og et oplæg til, hvordan de tre måles hos jer, til diskussion med teamet. Sammen med teamet og ledelsen vælger jeg piloten: én løsning i drift og én kendt fejl, hvor før og efter kan måles med det, der findes.</p>
+
+          <h3>Måned 2 til 6</h3>
+          <p>Piloten rettes og måles, mens acceptkriterier og kritiske fejltyper fastlægges med forretningen, og teamet bygger den første automatiserede evaluering på én løsning. Det, piloten lærer os, justerer, hvordan vi måler. Fra måned fire vælges de næste forbedringer på tal, målingen bredes ud til de væsentlige løsninger, og rytmen bliver fast: ugemødet og den månedlige rapport, beskrevet under mit ansvar.</p>
+
+          <h3>Mit ansvar og samarbejdet</h3>
+          <p>Jeg driver analyserne, faciliterer kvalitetskriterierne med forretningen, følger op på evalueringerne og samler anbefalingerne til prioritering. Forretningen bidrager med de faglige vurderinger, udviklingsteamet gennemfører de tekniske ændringer, og løsningernes ejere beslutter risiko og prioritering. Rytmen er fast: et kort ugemøde, hvor jeg gennemgår listen af incidents og forbedringer med udviklingsteamet og forretningen, og en månedlig rapport til ledelsen om kvalitet, anvendelse og værdi. Hver forbedring får en ansvarlig, et målbart succeskriterium og en dato for opfølgning.</p>
+
+        </section>
+
+        <!-- ===================== 01 OVERBLIK ===================== -->
+        <section id="q1" class="q-section" aria-labelledby="q1-h">
+          <h2 id="q1-h">01 Overblik</h2>
+          <p class="q">Hvordan vil du skabe overblik over kvalitet, anvendelse og værdi på tværs af AI-løsninger?</p>
+          <p class="a">Ét billede pr. løsning i drift med de samme kolonner: status, anvendelse og dækning, kvalitet og værdi netto. Billedet bygges af det, der allerede logges, før nogen bliver bedt om nye data.</p>
+
+          <aside class="note" aria-label="Forudsætninger for eksemplerne">
+            <p><strong>Forudsætninger for eksemplerne.</strong> Casen nævner ingen konkrete løsninger. Jeg har antaget tre, inspireret af det, PensionDanmark har omtalt offentligt: notetagning i kundecentret (transskription, note skrevet af en sprogmodel, godkendt af medarbejderen), en assistent til rådgiverne (sammenfatter sagen og foreslår et svar) og klassificering og forudfyldning af sager. Jeg antager, at løsningerne logger kald og resultater, at brugerne kan give hvert resultat en karakter og melde et forkert svar med ét klik, og at anonymiserede samtaler og sager må bruges til evaluering. Alle tal er syntetiske. Mål og skøn er eksempler og aftales med forretningen og udviklingsteamet.</p>
+          </aside>
+
+          <div class="kpis" aria-label="Nøgletal for porteføljen">
+            <div class="kpi"><div class="kpi__label">løsninger i drift</div><div class="kpi__value">3</div><div class="kpi__delta">ca. 7.950 noter og sager pr. uge</div></div>
+            <div class="kpi"><div class="kpi__label">under kvalitetsmål</div><div class="kpi__value">2 af 3</div><div class="kpi__delta">på løsningens hovedkriterium</div></div>
+            <div class="kpi"><div class="kpi__label">værdi netto</div><div class="kpi__value">775</div><div class="kpi__delta">timer pr. uge efter kontrol og rettelser</div></div>
+          </div>
+
+          <div class="tbl-wrap wide">
+          <table class="tbl" aria-label="Overblik pr. løsning i drift">
+            <thead>
+              <tr>
+                <th>Løsning</th>
+                <th>Status</th>
+                <th class="num">Anvendelse<br><span class="muted">resultater pr. uge</span></th>
+                <th class="num">Dækning<br><span class="muted">af relevante</span></th>
+                <th>Kvalitet<br><span class="muted">hovedkriterium · feedback</span></th>
+                <th class="num">Flagget<br><span class="muted">til menneske</span></th>
+                <th class="num">Sparet<br><span class="muted">timer/uge</span></th>
+                <th class="num">Kontrol<br><span class="muted">timer/uge</span></th>
+                <th class="num">Netto<br><span class="muted">timer/uge</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Notetagning</strong><br><span class="muted">kundecentret</span></td>
+                <td><span class="st st--warn"><span class="st__dot"></span>Under mål (95 %)</span></td>
+                <td class="num">5.400 noter</td><td class="num">83 %</td><td>93 % faithfulness · 4,1 / 5</td><td class="num">11 %</td><td class="num">450</td><td class="num">90</td><td class="num"><strong>360</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Rådgiverassistent</strong><br><span class="muted">rådgivning</span></td>
+                <td><span class="st st--bad"><span class="st__dot"></span>Under mål (90 %), faldende</span></td>
+                <td class="num">650 sager</td><td class="num">50 %</td><td>88 % citation check · 3,6 / 5</td><td class="num">17 %</td><td class="num">195</td><td class="num">65</td><td class="num"><strong>130</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Sagsassistent</strong><br><span class="muted">sagsbehandling</span></td>
+                <td><span class="st st--ok"><span class="st__dot"></span>På mål (90 %)</span></td>
+                <td class="num">1.900 sager</td><td class="num">79 %</td><td>96 % korrekt klassificeret · 4,4 / 5</td><td class="num">8 %</td><td class="num">380</td><td class="num">95</td><td class="num"><strong>285</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <p class="muted">Seneste 4 uger, samme version i hele perioden. Status bygger på hovedkriteriet; kriterierne står i 02. Faithfulness: er alt i noten dækket af transskriptionen? Citation check: henviser hvert udsagn til en kilde, der findes?</p>
+
+          <h3>Hvor tallene kommer fra</h3>
+          <ul>
+            <li><strong>Anvendelse</strong> er antallet af resultater pr. uge, og <strong>dækning</strong> er andelen af de relevante opkald og sager, løsningen bruges i; begge fra løsningernes egne logs holdt mod sagstallene. <strong>Status</strong> fra kvalitetsmålingen mod målet i 02.</li>
+            <li><strong>Kvalitet</strong> er andelen af resultater, der består løsningens hovedkriterium, brugernes karakter (<strong>feedback</strong>) og andelen <strong>flagget</strong> til et menneske, fordi grundlaget ikke rakte. Målingen bag kommer fra tre lag, der supplerer hinanden: regelbaserede kontroller af det entydige (findes kilden, står beløbet i transskriptionen, er noten koblet til det rigtige medlem), modelvurdering af det, der kræver læsning (er udsagnet dækket af kilden, er noten fuldstændig), og en menneskelig stikprøve, der kalibrerer modellens domme. Dertil brugernes meldinger om forkerte svar. Et beløb kan stå i transskriptionen og alligevel høre til den forkerte aftale; det fanger reglen ikke, det gør læsningen.</li>
+            <li><strong>Værdi.</strong> <strong>Sparet</strong> er tiden, løsningen sparer mod en baseline for hele arbejdsgangen; <strong>kontrol</strong> er den tid, kontrol, rettelser og manuel overtagelse koster; <strong>netto</strong> er forskellen. I eksemplet 5, 18 og 12 minutter sparet og 1, 6 og 3 minutter kontrol pr. note eller sag. Driftsomkostningen, kald til modellen, følges i kroner pr. løsning og trækkes fra; her er den lille. Mangler en baseline, måles den nu på sammenlignelige sager med og uden assistenten. Frigjort tid er kapacitet; gevinsten afhænger af, hvad tiden bruges til. Værdi, der ikke er timer, som kortere svartid til medlemmet, noteres pr. løsning og vejer med i prioriteringen.</li>
+          </ul>
+        </section>
+
+        <!-- ===================== 02 KVALITET ===================== -->
+        <section id="q2" class="q-section" aria-labelledby="q2-h">
+          <h2 id="q2-h">02 Kvalitet</h2>
+          <p class="q">Hvordan vil du sikre, at løsningerne lever op til brugernes og forretningens forventninger?</p>
+          <p class="a">Kvalitet defineres pr. løsning sammen med dem, der bruger den, ud fra konkrete eksempler på acceptable og uacceptable resultater. Derfra pr. løsning et golden eval set, et sæt sager med kendt rigtigt resultat, et mål pr. kriterium og en evaluering, før hver ændring frigives.</p>
+
+          <div class="tbl-wrap">
+          <table class="tbl" aria-label="Kvalitetsdefinition pr. løsning">
+            <thead><tr><th>Løsning</th><th>Acceptkriterier og mål</th><th>Kritiske fejltyper</th><th>Når et resultat fejler en kontrol</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Notetagning</strong></td><td>Kun det, der blev sagt; alle aftaler og næste skridt med; rigtig sag.<br><span class="muted">Faithfulness ≥ 95 %, fuldstændighed ≥ 95 %, feedback ≥ 4,0</span></td><td>Et beløb, en dato eller en aftale, som ikke blev sagt; en note i et andet medlems sag</td><td>Noten holdes tilbage og markeres til medarbejderen; ved usikker transskription dokumenterer medarbejderen selv</td></tr>
+              <tr><td><strong>Rådgiverassistent</strong></td><td>Alle relevante ordninger med, intet opfundet, uklarheder markeret.<br><span class="muted">Citation check ≥ 90 %, fuldstændighed ≥ 95 %</span></td><td>En ordning udeladt; et tal, der ikke står i medlemmets data</td><td>Markeres "ufuldstændigt grundlag"; rådgiveren slår op selv</td></tr>
+              <tr><td><strong>Sagsassistent</strong></td><td>Rigtig sagstype, felter fra dokumenterne, afvigelser flagget.<br><span class="muted">Korrekt ≥ 90 %, flagget ≤ 10 %</span></td><td>Forkert sagstype uden flag; et felt gættet</td><td>Sagen går til manuel behandling</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Tabellen gælder det enkelte resultat. Falder løsningens samlede kvalitet under målet, gennemgås fejlene pr. klasse (03), rettelsen prioriteres (04), og indtil den er på mål igen, øges den manuelle kontrol, eller anvendelsen begrænses. Målet er et kvalitetskrav, ikke et mål for værdi: notetagningen sparer tid under målet, men sender fejl videre i medlemmernes sager.</p>
+
+          <p><strong>Hellere intet resultat end et forkert.</strong> Når grundlaget ikke rækker, skal løsningen markere usikkerhed, holde resultatet tilbage eller kræve godkendelse; tabellen siger hvilket. Andelen, der flagges, læses sammen med, om beslutningen var rigtig.</p>
+
+          <h3>Evaluering før frigivelse, overvågning i drift</h3>
+          <p>Evalueringen kører mod den kode, der er i drift, ikke mod en forenklet testudgave, og den kører igen, før hver ændring af model, prompt eller opsætning frigives. Den viser, hvad versionen gør på de kendte sager; hvad den gør i drift, viser kontrollerne på driftssagerne og stikprøven.</p>
+          <p>Eksempel: samme modelskift testet mod de tre golden eval sets gav notetagning 93 → 95 %, rådgiverassistenten 92 → 84 % og sagsassistenten 96 → 97 %. Skiftet frigives for to løsninger og afvises for rådgiverassistenten; uden evalueringen var faldet først set i rådgivernes klager. Skiftet er endnu ikke rullet ud; overblikket viser driftstallene før det.</p>
+          <p>Bekræftede fejl i drift bliver nye testcases i golden eval set (03); en fast kerne holdes uændret, så kørslerne kan sammenlignes.</p>
+        </section>
+
+        <!-- ===================== 03 FORBEDRINGER ===================== -->
+        <section id="q3" class="q-section" aria-labelledby="q3-h">
+          <h2 id="q3-h">03 Forbedringer</h2>
+          <p class="q">Hvordan vil du arbejde med fejl, udfordringer og løbende forbedringer?</p>
+          <p class="a">Incidents, udfordringer og forbedringsønsker samles i én liste og går gennem samme loop: opdag, klassificér, prioritér, ret, mål. Incidents skilles i bekræftede kvalitetsfejl og resten; hver bekræftet fejl får en fejlklasse og en konsekvens fra 1 til 3 og bliver en testcase.</p>
+
+          <div class="tbl-wrap">
+          <table class="tbl" aria-label="Incidents fordelt på fejlklasse, seneste 4 uger">
+            <thead><tr><th>Fejlklasse</th><th class="num">Incidents</th><th class="num">Bekræftede<br><span class="muted">kvalitetsfejl</span></th><th>Ikke kvalitetsfejl</th><th class="num">Konsekvens<br><span class="muted">1 til 3</span></th></tr></thead>
+            <tbody>
+              <tr><td>Fakta uden dækning i transskriptionen</td><td class="num">41</td><td class="num">41</td><td></td><td class="num">2</td></tr>
+              <tr><td>Aftale eller næste skridt mangler</td><td class="num">27</td><td class="num">27</td><td></td><td class="num">2</td></tr>
+              <tr class="start"><td><strong>Koblet til forkert medlem eller sag</strong></td><td class="num">19</td><td class="num">19</td><td></td><td class="num"><strong>3</strong></td></tr>
+              <tr><td>Ufuldstændig transskription</td><td class="num">12</td><td class="num">4</td><td>8: løsningen markerede selv noten som usikker, og medarbejderen tog over</td><td class="num">2</td></tr>
+              <tr><td>Tonefald og forståelighed</td><td class="num">9</td><td class="num">4</td><td>5: smag, ikke fejl</td><td class="num">2</td></tr>
+              <tr><td>Teknisk fejl (timeout)</td><td class="num">6</td><td class="num">0</td><td>6: driftsfejl, til udviklingsteamets driftsliste</td><td class="num">1</td></tr>
+              <tr><td><strong>I alt</strong></td><td class="num"><strong>114</strong></td><td class="num"><strong>95</strong></td><td><strong>19</strong></td><td></td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p class="muted">Seneste 4 uger, alle løsninger. Incidents er det, brugerne melder som forkerte svar, og det, kontrollerne og stikprøven fanger. 95 af 114 var bekræftede kvalitetsfejl og blev til testcases; 19 var det ikke. Konsekvens efter, hvem fejlen nåede: 3 = medlemmets sag eller medlemmet, 2 = medarbejderen, som rettede, 1 = ingen, fanget af løsningen selv eller uden følger.</p>
+
+          <h3>Feedback loopet</h3>
+          <ol class="steps">
+            <li><strong>Opdag.</strong> Incidents kommer fra de automatiske kontroller, brugernes meldinger om forkerte svar og den menneskelige stikprøve. Udfordringer og forbedringsønsker kommer fra udviklingsteamet, forretningen, brugerne og overblikket: transskriptionskvalitet ved dårlig lyd, et sagsmix, der ændrer sig, modeller, der udfases, medarbejdere, der holder op med at bruge en løsning, de ikke stoler på, og uudnyttet volumen som opkald uden note. Alt ender i samme liste.</li>
+            <li><strong>Klassificér.</strong> Hver bekræftet fejl får én fejlklasse efter faste definitioner, automatisk hvor det er pålideligt og ellers ved faglig afklaring, og en konsekvens fra 1 til 3 efter, hvem fejlen nåede: løsningen selv, medarbejderen eller medlemmet. Så ses, om 40 fejl er ét problem eller 40, og hvilke der ikke kan vente.</li>
+            <li><strong>Prioritér sammen.</strong> Incidents holdes op mod udfordringer og forbedringsønsker på den samme liste, ikke hver for sig. En fejl med konsekvens 3 går forrest. Derefter vejer en kendt udfordring, der snart bliver til fejl, lige så tungt som en fejl, der allerede er sket, og en forbedring, ingen har meldt ind, kan slå dem begge på effekt. Resten af reglen står i 04.</li>
+            <li><strong>Ret efter konsekvens, så efter årsag.</strong> De 19 noter i et andet medlems sag undersøges først, selv om klassen er den tredjestørste: hvad blev fanget før lagring, og hvad nåede videre. Mønstret peger på integrationen til sagssystemet ved medlemmer med flere ordninger; det bekræftes, før der rettes dér. Den største klasse begrænses med et dækningstjek, før noten gemmes: står hvert beløb og hver dato i transskriptionen? Det fanger symptomet, og årsagen undersøges bagefter.</li>
+            <li><strong>Mål effekten.</strong> Hver bekræftet fejl bliver en testcase; næste evaluering viser, om rettelsen holder og ikke har ødelagt andet, og overblikket viser, om den kan ses i timer. Hver forbedring, uanset hvor den kom fra, har en ansvarlig, et succeskriterium og en dato.</li>
+          </ol>
+        </section>
+
+        <!-- ===================== 04 PRIORITERING ===================== -->
+        <section id="q4" class="q-section" aria-labelledby="q4-h">
+          <h2 id="q4-h">04 Prioritering</h2>
+          <p class="q">Hvordan vil du vurdere, hvor MLAI bør fokusere sin indsats først?</p>
+          <p class="a">Hver måned skal den samme teamkapacitet fordeles mellem det, der kører, og det, der endnu ikke er bygget. Kritiske fejl først, derefter kvalitetsafvigelser efter konsekvens, og så afvejes forbedringer og nyt på samme skala, forventet effekt mod indsats, med risikoen som særskilt vurdering.</p>
+
+          <ol class="steps">
+            <li><strong>Kritiske fejl, konsekvens 3, og uacceptabel risiko først</strong>, uanset hvor få de er. I eksemplet de 19 noter i et andet medlems sag; det afgøres på dage.</li>
+            <li><strong>Øvrige kvalitetsafvigelser</strong> vurderes på konsekvens, omfang og den kontrol, der allerede findes. En løsning under mål rettes før nyt, når rettelsen er billig og fejlene når medlemmer; en mindre afvigelse blokerer ikke nyt.</li>
+            <li><strong>Forbedringer og nye initiativer</strong> afvejes på forventet effekt, indsats og usikkerhed. Et nyt initiativ starter som en afprøvning af værdi og risiko med eget golden eval set, før det skaleres.</li>
+          </ol>
+          <p class="formula"><strong>Værdi pr. indsatsuge</strong> = forventet nettoværdi i timer pr. uge ÷ indsats i uger, kun for kandidater på samme grundlag. En afprøvning af noget nyt får ikke et rangeringstal; estimatet gælder fuld udbredelse.</p>
+
+          <h3>Kandidaterne denne måned</h3>
+          <div class="tbl-wrap wide">
+          <table class="tbl" aria-label="Kandidater til indsats, eksisterende og nyt">
+            <thead><tr><th>Kandidat</th><th>Hvad</th><th>Forventet effekt</th><th class="num">Indsats<br><span class="muted">uger</span></th><th>Beslutning</th></tr></thead>
+            <tbody>
+              <tr class="start"><td><strong>Forkert medlem eller sag</strong><br><span class="muted">kritisk fejl, notetagning</span></td><td>Vurdér på dage; ret integrationen til sagssystemet</td><td>Fjerner den kritiske fejltype; få timer</td><td class="num">1 + 2</td><td>Nu, uanset tal</td></tr>
+              <tr><td><strong>Dækningstjek, før noten gemmes</strong><br><span class="muted">notetagning, under mål</span></td><td>Begrænser den største fejlklasse</td><td>+45 timer/uge netto, færre rettelser</td><td class="num">1</td><td>Først af forbedringerne: 45 pr. indsatsuge</td></tr>
+              <tr><td><strong>Rådgiverassistenten falder</strong><br><span class="muted">under mål</span></td><td>Undersøg årsagen med fem rådgivere og stikprøven</td><td>Ukendt, til årsagen er fundet; målet er at stoppe faldet</td><td class="num">1, så rettelsen</td><td>Undersøgelsen nu; rettelsen prioriteres, når den er kendt</td></tr>
+              <tr><td><strong>Realtidsstøtte under opkaldet</strong><br><span class="muted">nyt initiativ, eksempel</span></td><td>Afprøvning med eget golden eval set og svartidskrav</td><td>Skøn op til +200 timer/uge ved fuld udbredelse; stor usikkerhed</td><td class="num">10 til afprøvning</td><td>Starter, når dækningstjekket er i drift</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h3>Hvorfor den rækkefølge</h3>
+          <ul>
+            <li><strong>De 19 forkerte koblinger først.</strong> Få, men den alvorligste fejltype. Hvad der nåede videre, afgør, om notetagningen skal begrænses for medlemmer med flere ordninger, til integrationen er rettet.</li>
+            <li><strong>Rådgiverassistenten undersøges, før nogen rører modellen.</strong> Faldet i drift er ikke forklaret. At kriterierne ikke er aftalt med rådgiverne (feedback 3,6), eller at sagsmixet har ændret sig, er hypoteser, som stikprøven og fem rådgivere kan afgøre på en uge. Aftalte kriterier sparer ikke tid i sig selv; de gør rettelsen mulig at finde og måle.</li>
+            <li><strong>Realtidsstøtten venter på dækningstjekket, ikke på alt andet.</strong> Den har langt den største mulige værdi og blokeres ikke af, at to løsninger er under mål. Men den bygger på samme transskription som notetagningen, og et dækningsproblem dér bliver til forslag midt i samtalen, som ikke kan trækkes tilbage.</li>
+          </ul>
+          <p class="muted">Reglen er et grundlag, ledelsen kan være uenig i, med tal på bordet: vil forretningen have det nye frem nu, viser tabellen, hvad det koster i de eksisterende løsninger, og hvilken risiko der følger med.</p>
+        </section>
+
+        <!-- ===================== PORTEFØLJE ===================== -->
+        <section id="erfaring" aria-labelledby="erfaring-h">
+          <h2 id="erfaring-h">Fra casen til min portefølje</h2>
+          <p>Målingerne i besvarelsen har jeg bygget i mindre skala i tre personlige AI-projekter, bygget for at lære, ikke produktionssoftware. Hvert af dem kan klikkes igennem.</p>
+          <ul>
+            <li><strong><a href="rag-framework.html">EuLex</a>, en lovgivningsassistent til EU-regler.</strong> Et golden eval set på 256 sager, de fleste genereret, når en ny lov indlæses; evalueringen kører mod samme kode som API'et; deterministisk afvisning, før modellen spørges, når kilderne ikke rækker; citation check på den vej, evalueringerne bruger; LLM-as-judge på faithfulness og relevans; et eval-dashboard over kvalitet, ydelse og indlæsning. Mange af elementerne fra 02 er bygget her, i lille skala.</li>
+            <li><strong><a href="watchfloor.html">Watchfloor</a>, en leverancepipeline drevet af AI-agenter.</strong> Deterministiske kvalitetsgates, test, statisk analyse og adversarial review, afgør, om agenternes kode går videre; otte målepaneler over værktøjsbrug, fejlrater og tid pr. session; omkostning målt pr. fase i en kontrolleret sammenligning af tre opsætninger på samme opgave, 56 % lavere med alle gates bevaret. Fælles med casen: gaten før frigivelse og målingen af fejl og omkostning pr. kørsel.</li>
+            <li><strong><a href="ops-intelligence-hub.html">Ops Intelligence Hub</a>, beslutningsstøtte til kapacitet og budget.</strong> 11 deterministiske analysemoduler regner, modellen forklarer og anbefaler, hver anbefaling spores til tallene bag den, og et menneske godkender, før noget går videre.</li>
+          </ul>
+          <p class="muted">Grænsen: tallene dér er kode, retsakter og timesedler, ikke samtalenoter, og modelvurdering med menneskelig kalibrering har jeg brugt mindst. Oversigten: <a class="steplink" href="../index.html#projects">min AI-portefølje</a>.</p>
+        </section>
+
+        <!-- ===================== BEGREBER ===================== -->
+        <section id="begreber" aria-labelledby="begreber-h">
+          <h2 id="begreber-h">Begreber</h2>
+          <details class="terms-details">
+            <summary>De engelske udtryk, kort forklaret</summary>
+            <ol class="terms">
+              <li><strong>Golden eval set.</strong> Et sæt sager med kendt rigtigt resultat, som løsningen måles mod. Kernen er rigtige, anonymiserede samtaler og sager; syntetiske sager dækker det sjældne og det følsomme.</li>
+              <li><strong>Evaluering (eval run).</strong> En samlet kørsel af golden eval set mod løsningen med resultat pr. kontrol og pr. sag, sammenlignet med forrige kørsel. Kører, før en ændring af model, prompt eller opsætning frigives, og mod præcis den kode og opsætning, der er i drift. Ellers måler man noget andet end det, medlemmerne møder.</li>
+              <li><strong>Faithfulness.</strong> Er hvert udsagn i noten dækket af transskriptionen? Bedømmes af en sprogmodel efter faste kriterier (LLM-as-judge) og kalibreres mod menneskelige bedømmelser af en stikprøve.</li>
+              <li><strong>Citation check.</strong> Beskrivende navn, ikke en fast fagterm. Et regelbaseret tjek af, at hvert udsagn i et svar henviser til en kilde, der findes: en artikel, et vilkår, et felt i sagen. Om kilden dækker udsagnet, bedømmer model og stikprøve.</li>
+              <li><strong>Abstention.</strong> Løsningen markerer usikkerhed, holder resultatet tilbage eller kræver godkendelse, når grundlaget ikke rækker. Måles som en andel sammen med, om beslutningen var rigtig.</li>
+              <li><strong>Incident.</strong> Alt, der meldes ind eller fanges om et resultat: en fejl, en mistanke, en klage. Først efter gennemgang ved man, om det var en fejl, og hvilken klasse den hører til.</li>
+              <li><strong>Fejlklasser (error classes).</strong> Få faste kategorier med klare definitioner, som hver bekræftet fejl placeres i, så man kan se, om 40 fejl er ét problem eller 40.</li>
+            </ol>
+          </details>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen &middot; casebesvarelse, syntetiske data</span>
+    </div>
+  </footer>
+
+  <div class="tip" id="tip" role="tooltip" aria-hidden="true"></div>
+
+  </div>
+
+  <script src="../lightbox.js"></script>
+  <script>
+    (function () {
+      window.addEventListener('beforeprint', function () { Array.prototype.forEach.call(document.querySelectorAll('details'), function (d) { d.open = true; }); });
+      // Fixed site header and sticky contents: measure them so anchors land below both
+      var nav = document.querySelector('.nav'), toc = document.querySelector('.toc'), root = document.documentElement;
+      function measure() {
+        root.style.setProperty('--nav-h', (nav ? nav.offsetHeight : 72) + 'px');
+        var tocSticky = toc && window.getComputedStyle(toc).position === 'sticky' && window.innerWidth < 1024;
+        root.style.setProperty('--toc-h', (tocSticky ? toc.offsetHeight : 0) + 'px');
+      }
+      measure();
+      window.addEventListener('resize', measure);
+      window.addEventListener('load', measure);
+
+      // Table of contents: mark the section in view
+      var items = Array.prototype.slice.call(document.querySelectorAll('.toc li'));
+      var sections = items.map(function (li) { return document.querySelector(li.querySelector('a').getAttribute('href')); });
+      var toggle = document.querySelector('.toc__toggle'), currentLabel = document.getElementById('toc-current');
+      function mark() {
+        var offset = (nav ? nav.offsetHeight : 72) + (window.innerWidth < 1024 && toc ? toc.offsetHeight : 0) + 40;
+        var y = window.scrollY + offset, current = 0;
+        sections.forEach(function (sec, i) { if (sec && sec.offsetTop <= y) current = i; });
+        items.forEach(function (li, i) { li.classList.toggle('is-current', i === current); });
+        if (currentLabel && items[current]) currentLabel.textContent = items[current].textContent.trim();
+      }
+      function setOpen(open) {
+        toc.classList.toggle('is-open', open);
+        if (toggle) toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        measure();
+      }
+      if (toggle) toggle.addEventListener('click', function () { setOpen(!toc.classList.contains('is-open')); });
+      Array.prototype.forEach.call(toc.querySelectorAll('a'), function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+      window.addEventListener('scroll', mark, { passive: true });
+      window.addEventListener('resize', mark);
+      mark();
+
+      // Tooltips on marks (hover + keyboard focus)
+      var tip = document.getElementById('tip');
+      function show(el, x, y) {
+        tip.textContent = el.getAttribute('data-tip');
+        tip.classList.add('show');
+        tip.setAttribute('aria-hidden', 'false');
+        var w = tip.offsetWidth, h = tip.offsetHeight;
+        var left = Math.min(Math.max(8, x + 12), window.innerWidth - w - 8);
+        var top = y - h - 12 < 8 ? y + 16 : y - h - 12;
+        tip.style.left = left + 'px'; tip.style.top = top + 'px';
+      }
+      function hide() { tip.classList.remove('show'); tip.setAttribute('aria-hidden', 'true'); }
+      function bindTips(root) {
+        Array.prototype.forEach.call(root.querySelectorAll('[data-tip]'), function (el) {
+          el.addEventListener('mousemove', function (e) { show(el, e.clientX, e.clientY); });
+          el.addEventListener('mouseleave', hide);
+          el.addEventListener('focus', function () { var r = el.getBoundingClientRect(); show(el, r.left + r.width / 2, r.top); });
+          el.addEventListener('blur', hide);
+        });
+      }
+      bindTips(document);
+    })();
+  </script>
+  <script>window.goatcounter = { path: function () { return location.pathname.replace(/\/index\.html$/, "/"); } };</script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "prompt_sha256": "454fc0e36920ba5adcfcdd00a6d7c8cef647ca175f474c723eedaba1d57571c7",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:33+00:00",
+  "id": "N-063",
+  "reply": "{\"summary\": \"Vestposten har onsdag morgen bragt en vejledning med ti råd til husejere før aftenens storm, bygget på råd fra en tømrermester og en skorstensfejer.\", \"facts\": [{\"text\": \"Vestposten bringer onsdag morgen en læservejledning med ti råd til husejere før aftenens storm.\", \"quote\": \"Vestposten bringer onsdag morgen en læservejledning med ti råd til husejere før aftenens storm.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"En tømrermester og en skorstensfejer råder ifølge avisen til at lukke tagvinduer og garageporte, rense tagrender og nedløb for blade og tjekke, at lågen til skuret kan lukkes.\", \"quote\": \"som blandt andet råder til at lukke tagvinduer og garageporte, rense tagrender og nedløb for blade og tjekke, at lågen til skuret kan lukkes\", \"statement\": true, \"speaker\": \"en tømrermester og en skorstensfejer, gengivet af Vestposten\", \"accuses\": null}, {\"text\": \"Vestposten anbefaler, at man indendørs har en lommelygte og en opladet telefon liggende.\", \"quote\": \"Indendørs anbefaler avisen at have en lommelygte og en opladet telefon liggende.\", \"statement\": true, \"speaker\": \"Vestposten\", \"accuses\": null}, {\"text\": \"Ifølge Vestposten er rådene de samme, som avisen bragte før efterårets første blæsevejr i oktober.\", \"quote\": \"Rådene er ifølge Vestposten de samme, som avisen bragte før efterårets første blæsevejr i oktober.\", \"statement\": true, \"speaker\": \"Vestposten\", \"accuses\": null}], \"places\": [], \"orgs\": [\"Vestposten\"], \"values\": {\"F\": {\"value\": 4, \"why\": \"Storm i aften kan ramme mange, men kilden er generelle husråd uden oplysninger om stormens styrke, område eller varsler.\"}, \"M\": {\"value\": 2, \"why\": \"Ingen myndighed, politik eller forsømmelse; kun gentagne forbrugerråd fra en anden avis.\"}, \"E\": {\"value\": 1, \"why\": \"Ingen virksomheder, drift eller regulering berøres; kun private husejerråd.\"}}}\n",
+  "parsed": {
+    "summary": "Vestposten har onsdag morgen bragt en vejledning med ti råd til husejere før aftenens storm, bygget på råd fra en tømrermester og en skorstensfejer.",
+    "facts": [
+      {
+        "text": "Vestposten bringer onsdag morgen en læservejledning med ti råd til husejere før aftenens storm.",
+        "quote": "Vestposten bringer onsdag morgen en læservejledning med ti råd til husejere før aftenens storm.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "En tømrermester og en skorstensfejer råder ifølge avisen til at lukke tagvinduer og garageporte, rense tagrender og nedløb for blade og tjekke, at lågen til skuret kan lukkes.",
+        "quote": "som blandt andet råder til at lukke tagvinduer og garageporte, rense tagrender og nedløb for blade og tjekke, at lågen til skuret kan lukkes",
+        "statement": true,
+        "speaker": "en tømrermester og en skorstensfejer, gengivet af Vestposten",
+        "accuses": null
+      },
+      {
+        "text": "Vestposten anbefaler, at man indendørs har en lommelygte og en opladet telefon liggende.",
+        "quote": "Indendørs anbefaler avisen at have en lommelygte og en opladet telefon liggende.",
+        "statement": true,
+        "speaker": "Vestposten",
+        "accuses": null
+      },
+      {
+        "text": "Ifølge Vestposten er rådene de samme, som avisen bragte før efterårets første blæsevejr i oktober.",
+        "quote": "Rådene er ifølge Vestposten de samme, som avisen bragte før efterårets første blæsevejr i oktober.",
+        "statement": true,
+        "speaker": "Vestposten",
+        "accuses": null
+      }
+    ],
+    "places": [],
+    "orgs": [
+      "Vestposten"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "Storm i aften kan ramme mange, men kilden er generelle husråd uden oplysninger om stormens styrke, område eller varsler."
+      },
+      "M": {
+        "value": 2,
+        "why": "Ingen myndighed, politik eller forsømmelse; kun gentagne forbrugerråd fra en anden avis."
+      },
+      "E": {
+        "value": 1,
+        "why": "Ingen virksomheder, drift eller regulering berøres; kun private husejerråd."
+      }
+    }
+  },
+  "parse_error": null
+}

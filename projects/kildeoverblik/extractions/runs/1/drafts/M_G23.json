@@ -1,0 +1,123 @@
+{
+  "prompt_sha256": "9d50ff7ae7be70861aa9178a2b11b895e3eee7fba9f74792109ec47538ed0d3a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:49+00:00",
+  "desk": "M",
+  "group": 23,
+  "finds": [
+    "D-026"
+  ],
+  "facts": [
+    {
+      "text": "Borgmesteren oplyser, at han i dag har meldt sig ud af sit parti.",
+      "quote": "har jeg i dag meldt mig ud af mit parti",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-026",
+      "no": 1
+    },
+    {
+      "text": "Borgmesteren fortsætter i embedet i Sønderholt som løsgænger.",
+      "quote": "Jeg fortsætter som borgmester i Sønderholt som løsgænger.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-026",
+      "no": 2
+    },
+    {
+      "text": "Borgmesteren begrunder udmeldelsen med en uenighed med landsledelsen om kommunernes økonomi.",
+      "quote": "uenigheden med landsledelsen om kommunernes økonomi er blevet for stor",
+      "statement": true,
+      "speaker": "Jørgen Thybo",
+      "accuses": null,
+      "find": "D-026",
+      "no": 3
+    },
+    {
+      "text": "Borgmesteren oplyser, at han i morges orienterede byrådets gruppeformænd.",
+      "quote": "Jeg har orienteret byrådets gruppeformænd i morges",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-026",
+      "no": 4
+    },
+    {
+      "text": "Borgmesteren vil svare på spørgsmål på et pressemøde på rådhuset kl. 11.",
+      "quote": "vil svare på spørgsmål på et pressemøde på rådhuset kl. 11",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-026",
+      "no": 5
+    }
+  ],
+  "reply": "{\"angle\": \"Sønderholts borgmester forlader sit parti og fortsætter som løsgænger\", \"web\": [{\"s\": \"Borgmesteren i Sønderholt oplyser, at han i dag har meldt sig ud af sit parti.\", \"facts\": [1, 2]}, {\"s\": \"Han fortsætter i embedet som løsgænger.\", \"facts\": [2]}, {\"s\": \"Som begrundelse siger borgmesteren, at uenigheden med landsledelsen om kommunernes økonomi er blevet for stor.\", \"facts\": [3]}, {\"s\": \"Borgmesteren oplyser, at han i morges orienterede byrådets gruppeformænd.\", \"facts\": [4]}, {\"s\": \"Han vil svare på spørgsmål på et pressemøde på rådhuset kl. 11.\", \"facts\": [5]}], \"notification\": {\"s\": \"Sønderholts borgmester melder sig ud af partiet og fortsætter som løsgænger\", \"facts\": [1, 2]}, \"audio\": [{\"s\": \"Borgmesteren i Sønderholt oplyser, at han i dag har meldt sig ud af sit parti.\", \"facts\": [1, 2]}, {\"s\": \"Han fortsætter som borgmester som løsgænger.\", \"facts\": [2]}, {\"s\": \"Borgmesteren vil svare på spørgsmål på et pressemøde på rådhuset klokken 11.\", \"facts\": [5]}]}\n",
+  "parsed": {
+    "angle": "Sønderholts borgmester forlader sit parti og fortsætter som løsgænger",
+    "web": [
+      {
+        "s": "Borgmesteren i Sønderholt oplyser, at han i dag har meldt sig ud af sit parti.",
+        "facts": [
+          1,
+          2
+        ]
+      },
+      {
+        "s": "Han fortsætter i embedet som løsgænger.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Som begrundelse siger borgmesteren, at uenigheden med landsledelsen om kommunernes økonomi er blevet for stor.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Borgmesteren oplyser, at han i morges orienterede byrådets gruppeformænd.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Han vil svare på spørgsmål på et pressemøde på rådhuset kl. 11.",
+        "facts": [
+          5
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Sønderholts borgmester melder sig ud af partiet og fortsætter som løsgænger",
+      "facts": [
+        1,
+        2
+      ]
+    },
+    "audio": [
+      {
+        "s": "Borgmesteren i Sønderholt oplyser, at han i dag har meldt sig ud af sit parti.",
+        "facts": [
+          1,
+          2
+        ]
+      },
+      {
+        "s": "Han fortsætter som borgmester som løsgænger.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Borgmesteren vil svare på spørgsmål på et pressemøde på rådhuset klokken 11.",
+        "facts": [
+          5
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

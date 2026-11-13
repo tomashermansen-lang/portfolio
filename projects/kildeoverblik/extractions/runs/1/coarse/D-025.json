@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "ff547cd0783facfd0432f9c72d32c7e5c988904c2692622ded5b061271a01ece",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:32+00:00",
+  "id": "D-025",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 4}, \"why\": {\"F\": \"Bankens egen markedsføring; rammer ikke mange læsere i dag, ingen konkret nyhed.\", \"M\": \"Virksomhedens investering, ingen myndighed eller forvaltning involveret; lokal relevans.\", \"E\": \"60 mio. kr. investering i rådgivningscenter er erhvervsrelevant, men ligner pr-stof uden afvigelser.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 4
+    },
+    "why": {
+      "F": "Bankens egen markedsføring; rammer ikke mange læsere i dag, ingen konkret nyhed.",
+      "M": "Virksomhedens investering, ingen myndighed eller forvaltning involveret; lokal relevans.",
+      "E": "60 mio. kr. investering i rådgivningscenter er erhvervsrelevant, men ligner pr-stof uden afvigelser."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

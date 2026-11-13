@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "b3846adab323978d450b6723bc36a4d8319364586c15364b64d888bdf941631c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:02+00:00",
+  "id": "D-001",
+  "reply": "{\"scores\": {\"F\": 10, \"M\": 8, \"E\": 7}, \"why\": {\"F\": \"Højeste stormflodsvarsel for vestkysten i nat rammer mange og haster.\", \"M\": \"Myndighedsvarsel på højeste niveau, beredskab og borgere på hele vestkysten berørt.\", \"E\": \"Stormflod kan ramme havne, transport og energi på vestkysten i nat.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 10,
+      "M": 8,
+      "E": 7
+    },
+    "why": {
+      "F": "Højeste stormflodsvarsel for vestkysten i nat rammer mange og haster.",
+      "M": "Myndighedsvarsel på højeste niveau, beredskab og borgere på hele vestkysten berørt.",
+      "E": "Stormflod kan ramme havne, transport og energi på vestkysten i nat."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

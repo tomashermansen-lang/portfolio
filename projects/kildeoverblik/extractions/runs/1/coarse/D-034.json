@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3f3b84e36366e4029cd752c6557aad3c36909281ab15948ddcfdeac6d564bd07",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:08+00:00",
+  "id": "D-034",
+  "reply": "{\"scores\": {\"F\": 7, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Uindløst lottogevinst på 42 mio., frist lørdag, kuriøst og med stor læserinteresse.\", \"M\": \"Kuriøs enkeltsag uden forvaltningsmæssig vinkel; lokal og lavt vægtet.\", \"E\": \"Ingen erhvervsvinkel; en lottogevinst påvirker ikke virksomheder eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 7,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Uindløst lottogevinst på 42 mio., frist lørdag, kuriøst og med stor læserinteresse.",
+      "M": "Kuriøs enkeltsag uden forvaltningsmæssig vinkel; lokal og lavt vægtet.",
+      "E": "Ingen erhvervsvinkel; en lottogevinst påvirker ikke virksomheder eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

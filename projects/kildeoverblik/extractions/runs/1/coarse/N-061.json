@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5babbcc5518b620af5878a255b9fe3d38bc0cd5ab99ead177a86c14c66a84c90",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:28+00:00",
+  "id": "N-061",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 2}, \"why\": {\"F\": \"Rutinebrev om skolepraktik i februar; rammer ingen læsere i dag.\", \"M\": \"Lokal institution søger praktikpladser; ingen forvaltningssvigt eller bredere politisk rækkevidde.\", \"E\": \"Opfordring til lokale virksomheder om praktikpladser; ingen regulering, fyringer eller driftsforstyrrelser.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinebrev om skolepraktik i februar; rammer ingen læsere i dag.",
+      "M": "Lokal institution søger praktikpladser; ingen forvaltningssvigt eller bredere politisk rækkevidde.",
+      "E": "Opfordring til lokale virksomheder om praktikpladser; ingen regulering, fyringer eller driftsforstyrrelser."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

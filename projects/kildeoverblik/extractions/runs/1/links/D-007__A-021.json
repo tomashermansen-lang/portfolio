@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "d8c8b4402d452f187d410adcf23e8d7a7316b6642275697c68cd21067015b61c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:37+00:00",
+  "from": "D-007",
+  "to": "A-021",
+  "shared": "Tangsø Havn",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om en midlertidig lukning af Tangsø Havn pga. højvande, mens arkivdokumentet fra 2024 kun omtaler ansættelsen af en ny havnefoged, så de deler kun stedet og ikke en historie.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om en midlertidig lukning af Tangsø Havn pga. højvande, mens arkivdokumentet fra 2024 kun omtaler ansættelsen af en ny havnefoged, så de deler kun stedet og ikke en historie.",
+    "facts": []
+  },
+  "parse_error": null
+}

@@ -1,0 +1,93 @@
+{
+ "document_id": "havrebakke-legal-dd-summary",
+ "model": "claude-sonnet-5-5",
+ "run": 1,
+ "run_at": "2026-10-29T09:29:33+00:00",
+ "source_sha256": "c249b6ffd7d8907ce13066fabf49167116dfd79886f983c35c180a5db8e6b916",
+ "terms": {
+  "1_parties_and_buyer_credit": {
+   "found": true,
+   "value": "Seller is Havrebakke Vind ApS. Buyer is Jutland Board & Packaging A/S, which is unrated. The Buyer's payment obligations are guaranteed by its parent, Jutland Industri Holding A/S, through a parent company guarantee in Annex 4.",
+   "quote": "Seller: Havrebakke Vind ApS. Buyer: Jutland Board & Packaging A/S, unrated. Payment obligations guaranteed by Jutland Industri Holding A/S.",
+   "clause": "Part I; Part II 9.2; Annex 4 (as cited in the summary's Key Terms table)",
+   "note": "This document is a legal due diligence summary of the PPA, not the PPA itself. The summary states that the parent guarantee is the credit being relied on. It names no rating trigger."
+  },
+  "2_facility": {
+   "found": true,
+   "value": "Eight onshore wind turbines with 48.0 MW capacity at Havrebakke, Ringkøbing-Skjern Municipality, Denmark, in bidding zone DK1.",
+   "quote": "Eight onshore turbines, 48.0 MW, Havrebakke, Ringkøbing-Skjern Municipality, DK1.",
+   "clause": "Part I; Annex 1",
+   "note": "The summary gives a single MW figure and does not split it into AC and DC."
+  },
+  "3_supply_period": {
+   "found": true,
+   "value": "The Supply Period is ten years and starts on the Commercial Operation Date.",
+   "quote": "The Supply Period runs ten (10) years from the Commercial Operation Date.",
+   "clause": "Part I",
+   "note": ""
+  },
+  "4_cod_and_delay": {
+   "found": true,
+   "value": "Target COD is 1 October 2027 and the Longstop Date is 31 March 2028. Delay damages are EUR 9,600 per day after the Target COD, capped at EUR 1,750,000.",
+   "quote": "Delay damages EUR 9,600 per day after the Target COD, capped at EUR 1,750,000.",
+   "clause": "Part II 3",
+   "note": "Failure to reach COD by the Longstop Date is also listed as an Event of Default (see term 11)."
+  },
+  "5_price_and_indexation": {
+   "found": true,
+   "value": "The price is EUR 54.50 per MWh, taken from the Election Sheet. Thirty per cent of the price is adjusted annually by the Danish consumer price index, starting 1 January 2029.",
+   "quote": "EUR 54.50 per MWh per the Election Sheet.",
+   "clause": "Part II 7.1; Annex 2 (Election Sheet)",
+   "note": "The price is stated in the Election Sheet rather than in the body. The indexation sentence is: 'Thirty per cent of the price is adjusted annually from 1 January 2029 by the Danish consumer price index.'"
+  },
+  "6_volume_and_performance": {
+   "found": true,
+   "value": "Pay-as-produced: the Buyer takes 100 % of Metered Output. Expected Annual Production is 158,000 MWh (P50). Minimum Annual Production is 118,500 MWh, and a shortfall payment is the remedy.",
+   "quote": "Minimum Annual Production 118,500 MWh with a shortfall payment.",
+   "clause": "Part I; Part II 4",
+   "note": "The summary does not say how the shortfall payment is calculated or over what measurement period. Pay-as-produced is stated in Section 1: 'The agreement is a pay-as-produced physical PPA under Danish law'."
+  },
+  "7_product_and_certificates": {
+   "found": true,
+   "value": "The Seller sells electricity and all Guarantees of Origin, transferred at no additional cost. No capacity product is sold.",
+   "quote": "Electricity and all Guarantees of Origin, transferred at no additional cost.",
+   "clause": "Part II 8",
+   "note": ""
+  },
+  "8_curtailment": {
+   "found": true,
+   "value": "The Buyer may instruct reductions for up to 150 hours per Contract Year. Curtailed energy is paid as Deemed Delivered Electricity at the Contract Price. Reductions instructed by the transmission system operator are not compensated by the Buyer. The Seller has no equivalent curtailment right.",
+   "quote": "Buyer may instruct reductions for up to 150 hours per Contract Year, paid as Deemed Delivered Electricity at the Contract Price.",
+   "clause": "Part II 5.4–5.5",
+   "note": "The cap is in hours only; no MWh cap is stated. The summary does not address negative prices. The no-compensation point for operator-instructed reductions is from this sentence: 'Reductions instructed by the transmission system operator are not compensated by the Buyer.'"
+  },
+  "9_delivery_point_and_balancing": {
+   "found": true,
+   "value": "Physical delivery at the metering point on the 60 kV side of the Havrebakke substation. The Buyer appoints the balance responsible party and bears imbalance costs from COD.",
+   "quote": "Buyer appoints the balance responsible party and bears imbalance costs from COD.",
+   "clause": "Part I; Part II 4.2, 5.2",
+   "note": "Settlement is physical, so no financial reference price applies."
+  },
+  "10_credit_support": {
+   "found": true,
+   "value": "Seller: bank guarantee of EUR 2,000,000 from Financial Close until twelve months after COD. Buyer: parent company guarantee plus a letter of credit equal to nine months of expected payments.",
+   "quote": "Seller: bank guarantee EUR 2,000,000 from Financial Close until twelve months after COD. Buyer: parent company guarantee plus a letter of credit equal to nine months of expected payments.",
+   "clause": "Part II 9",
+   "note": "The summary gives no euro amount for the Buyer's letter of credit and no duration for the Buyer's letter of credit or parent guarantee."
+  },
+  "11_default_and_termination": {
+   "found": true,
+   "value": "Events of Default include non-payment within ten Business Days of notice, insolvency, and failure to reach COD by the Longstop Date. The Termination Amount is the present value of the difference between the Contract Price and the Reference Forward Price over the remaining Supply Period.",
+   "quote": "Termination Amount is the present value of the difference between the Contract Price and the Reference Forward Price over the remaining Supply Period.",
+   "clause": "Part II 12–13",
+   "note": "The summary says the Reference Forward Price source is named in the agreement and is a published forward curve for DK1, but it does not name the source or the discount rate. The listed Events of Default are the ones the summary names and may not be exhaustive."
+  },
+  "12_change_in_law_and_force_majeure": {
+   "found": true,
+   "value": "A cost impact above EUR 250,000 in a Contract Year triggers good-faith renegotiation. If there is no agreement within 90 days, the affected Party may terminate without a Termination Amount. Force majeure lasting more than 180 consecutive days gives either Party a termination right.",
+   "quote": "A cost impact above EUR 250,000 in a Contract Year triggers good-faith renegotiation; absent agreement within 90 days the affected Party may terminate without a Termination Amount.",
+   "clause": "Part II 11, 10 (as cited in the summary's reference column)",
+   "note": "The summary does not say which Party bears change-in-law costs below the EUR 250,000 threshold. The termination right after failed renegotiation is mutual, and the summary expects lenders to ask for it to be tightened. The force majeure sentence is: 'Force majeure beyond 180 consecutive days gives either Party a termination right.'"
+  }
+ }
+}

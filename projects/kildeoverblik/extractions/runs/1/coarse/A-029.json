@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "23989aae7c2312b14a327ed9c43f1b38840388a9874041fa115592bcf202f86d",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:41+00:00",
+  "id": "A-029",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 1, \"E\": 3}, \"why\": {\"F\": \"Rutinemæssig halvårsregnskab fra lille virksomhed, ingen læserrelevans eller kuriosum.\", \"M\": \"Privat virksomheds regnskab uden politisk eller forvaltningsmæssig vinkel.\", \"E\": \"Regnskab uden afvigelser, små stigninger; lille virksomhed, ingen fyringer eller lukninger.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 1,
+      "E": 3
+    },
+    "why": {
+      "F": "Rutinemæssig halvårsregnskab fra lille virksomhed, ingen læserrelevans eller kuriosum.",
+      "M": "Privat virksomheds regnskab uden politisk eller forvaltningsmæssig vinkel.",
+      "E": "Regnskab uden afvigelser, små stigninger; lille virksomhed, ingen fyringer eller lukninger."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

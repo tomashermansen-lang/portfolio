@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "4bccf30918ce271847a9ba46f96d4bb1cd34e623f27d049e48c924d8f27d3abb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:20+00:00",
+  "id": "A-010",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 2}, \"why\": {\"F\": \"Lokal kontrakttildeling om stier i en park; rammer ingen læsere i dag.\", \"M\": \"Rutinemæssig lokal udbudsorientering uden tegn på fejl eller regelbrud i uddraget.\", \"E\": \"Lille kommunal anlægskontrakt; ingen synlig afvigelse, stor værdi eller branchepåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokal kontrakttildeling om stier i en park; rammer ingen læsere i dag.",
+      "M": "Rutinemæssig lokal udbudsorientering uden tegn på fejl eller regelbrud i uddraget.",
+      "E": "Lille kommunal anlægskontrakt; ingen synlig afvigelse, stor værdi eller branchepåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "1d493df739ed42f99eb26ea534e1b0a8a1c1e04765020eb05fc3c045056c9377",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:27+00:00",
+  "id": "D-024",
+  "reply": "{\"scores\": {\"F\": 5, \"M\": 4, \"E\": 8}, \"why\": {\"F\": \"240 mister jobbet, men lokalt; kan blive en menneskelig historie.\", \"M\": \"Privat lukning og lokalt; fagforeningskrav om vilkår giver kun begrænset forvaltningsvinkel.\", \"E\": \"Lukning af energifabrik med 240 fyringer; virksomhedens version er ikke forelagt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 5,
+      "M": 4,
+      "E": 8
+    },
+    "why": {
+      "F": "240 mister jobbet, men lokalt; kan blive en menneskelig historie.",
+      "M": "Privat lukning og lokalt; fagforeningskrav om vilkår giver kun begrænset forvaltningsvinkel.",
+      "E": "Lukning af energifabrik med 240 fyringer; virksomhedens version er ikke forelagt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

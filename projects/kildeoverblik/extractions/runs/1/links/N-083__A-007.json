@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "820ea52d3b5fee12cb1867355d9b4a3fc9c57fce6628a69682538237ff39d43c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:13+00:00",
+  "from": "N-083",
+  "to": "A-007",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om udlevering af sandsække ved Nørrevang Strand før en storm, mens arkivdokumentet er et udvalgsreferat om nye bænke og en ny badebro samme sted, så de deler kun stedsnavnet og ikke noget i sagen.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om udlevering af sandsække ved Nørrevang Strand før en storm, mens arkivdokumentet er et udvalgsreferat om nye bænke og en ny badebro samme sted, så de deler kun stedsnavnet og ikke noget i sagen.",
+    "facts": []
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "7c66c14580cd30a9077abe1dba8946ca9e491e440ce2b6f3ec82a36407462f83",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:17+00:00",
+  "id": "D-003",
+  "reply": "{\"scores\": {\"F\": 5, \"M\": 2, \"E\": 4}, \"why\": {\"F\": \"Daglig elpris rammer mange i aften, men er på niveau med de seneste uger.\", \"M\": \"Rutinemæssig prismelding uden forvaltnings- eller politisk vinkel.\", \"E\": \"Energipris relevant for erhverv, men uden nyhed, uændret niveau og ingen driftsramte.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 5,
+      "M": 2,
+      "E": 4
+    },
+    "why": {
+      "F": "Daglig elpris rammer mange i aften, men er på niveau med de seneste uger.",
+      "M": "Rutinemæssig prismelding uden forvaltnings- eller politisk vinkel.",
+      "E": "Energipris relevant for erhverv, men uden nyhed, uændret niveau og ingen driftsramte."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

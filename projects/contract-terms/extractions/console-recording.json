@@ -1,0 +1,649 @@
+{
+ "recorded_at": "2026-10-31T14:39:37+00:00",
+ "python": [
+  {
+   "cls": "sys",
+   "text": "recorded on the desk, 2026-10-31 · CPython 3.14.5 · the same calls the browser makes",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/havrebakke-ppa-v1-draft.md · 6,125 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/havrebakke-ppa-v2-execution.md · 6,350 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/lichtung-offshore-ppa-execution.md · 6,443 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/olivos-solar-ppa-execution.md · 6,408 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "extraction records from run 1: havrebakke-ic-key-terms, havrebakke-legal-dd-summary, havrebakke-ppa-v1-draft, havrebakke-ppa-v2-execution, lichtung-offshore-ppa-execution, olivos-solar-ppa-execution",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "exec tools/checks.py · 332 lines",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "import json; inputs = json.loads(_inputs_json)",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "schema(inputs[\"extractions\"][\"havrebakke-ppa-v2-execution\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "[]  (no findings)",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "quotes_verbatim(inputs[\"extractions\"][\"havrebakke-ppa-v2-execution\"], inputs[\"documents\"][\"havrebakke-ppa-v2-execution\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "[]  (no findings)",
+   "ms": 7
+  },
+  {
+   "cls": "in",
+   "text": "typed_facts(inputs[\"extractions\"][\"havrebakke-ic-key-terms\"][\"terms\"][\"10_credit_support\"][\"value\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "{\"eur\": [\"2500000\"], \"months\": [\"12\", \"9\"]}",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "typed_facts(inputs[\"extractions\"][\"havrebakke-ppa-v2-execution\"][\"terms\"][\"10_credit_support\"][\"value\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "{\"eur\": [\"2000000\"], \"business_days\": [\"10\"], \"months\": [\"12\", \"9\"], \"days\": [\"30\", \"60\"]}",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "paper_vs_contract(inputs[\"extractions\"][\"havrebakke-ic-key-terms\"], inputs[\"extractions\"][\"havrebakke-ppa-v2-execution\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "{term: 3_supply_period, paper states 10 years; contract says 12}\n{term: 10_credit_support, paper states 2500000 eur; contract says 2000000}",
+   "ms": 2
+  },
+  {
+   "cls": "in",
+   "text": "paper_vs_contract(inputs[\"extractions\"][\"havrebakke-legal-dd-summary\"], inputs[\"extractions\"][\"havrebakke-ppa-v2-execution\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "{term: 3_supply_period, paper states 10 years; contract says 12}",
+   "ms": 2
+  },
+  {
+   "cls": "in",
+   "text": "version_diff(inputs[\"extractions\"][\"havrebakke-ppa-v1-draft\"], inputs[\"extractions\"][\"havrebakke-ppa-v2-execution\"], inputs[\"documents\"][\"havrebakke-ppa-v1-draft\"], inputs[\"documents\"][\"havrebakke-ppa-v2-execution\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "{term: 3_supply_period, years: 10 → 12}\n{term: 4_cod_and_delay, date: 1 october 2027, 31 december 2027 → 1 october 2027, 31 march 2028}\n{term: 5_price_and_indexation, eur_per_mwh: 58 → 54.5}\n{term: 5_price_and_indexation, percent: — → 30, 70}\n{term: 8_curtailment, hours: — → 150, 2}\n{term: 10_credit_support, months: 12, 6 → 12, 9}",
+   "ms": 31
+  },
+  {
+   "cls": "in",
+   "text": "len(document_diff(inputs[\"documents\"][\"havrebakke-ppa-v1-draft\"], inputs[\"documents\"][\"havrebakke-ppa-v2-execution\"]))",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "22",
+   "ms": 2
+  },
+  {
+   "cls": "in",
+   "text": "references_in(inputs[\"extractions\"][\"olivos-solar-ppa-execution\"][\"terms\"][\"8_curtailment\"][\"note\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "[\"10.1\", \"10.4\", \"4.5\", \"7.4\", \"Annex 1\"]",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "references_exist(inputs[\"extractions\"][\"olivos-solar-ppa-execution\"], inputs[\"documents\"][\"olivos-solar-ppa-execution\"])",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "[]  (no findings)",
+   "ms": 1
+  },
+  {
+   "cls": "in",
+   "text": "run_all_json(_inputs_json)",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "{schema: 0, quotes_verbatim: 0, references_exist: 2, paper_vs_contract: 3, version_diff: 6, document_diff: 22}  · 0.11 s on the desk",
+   "ms": 68
+  }
+ ],
+ "evaluate": [
+  {
+   "cls": "sys",
+   "text": "recorded on the desk, 2026-10-31 · CPython 3.14.5 · the same calls the browser makes",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read spec/answer-key.json · 6 documents keyed: havrebakke-ppa-v2-execution, havrebakke-ppa-v1-draft, olivos-solar-ppa-execution, lichtung-offshore-ppa-execution, havrebakke-legal-dd-summary, havrebakke-ic-key-terms",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/havrebakke-ppa-v2-execution.md · 6,350 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/havrebakke-ppa-v1-draft.md · 6,125 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/olivos-solar-ppa-execution.md · 6,408 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/lichtung-offshore-ppa-execution.md · 6,443 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/havrebakke-legal-dd-summary.md · 799 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "read dataroom/havrebakke-ic-key-terms.md · 328 words",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "extraction records: runs 1, 2, 3, 4, 5, one file per document and run",
+   "ms": 0
+  },
+  {
+   "cls": "sys",
+   "text": "exec tools/evaluate.py · 326 lines; it imports typed_facts from tools/checks.py",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "key = json.loads(KEY_PATH.read_text()); docs = evaluate_run(key, RUNS / \"1\")",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "6 documents judged · havrebakke-ppa-v2-execution: contract, havrebakke-ppa-v1-draft: contract, olivos-solar-ppa-execution: contract, lichtung-offshore-ppa-execution: contract, havrebakke-legal-dd-summary: paper, havrebakke-ic-key-terms: paper",
+   "ms": 36
+  },
+  {
+   "cls": "in",
+   "text": "docs[\"havrebakke-ppa-v2-execution\"][\"terms\"]",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "  correct            1_parties_and_buyer_credit\n  correct            2_facility\n  correct            3_supply_period\n  correct            4_cod_and_delay\n  correct            5_price_and_indexation\n  correct            6_volume_and_performance  (quote from another sentence)\n  correct            7_product_and_certificates\n  correct            8_curtailment\n  correct            9_delivery_point_and_balancing\n  correct            10_credit_support\n  correct            11_default_and_termination\n  correct            12_change_in_law_and_force_majeure",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "docs[\"havrebakke-ppa-v1-draft\"][\"terms\"]",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "  correct            1_parties_and_buyer_credit\n  correct            2_facility\n  correct            3_supply_period\n  correct            4_cod_and_delay\n  correct            5_price_and_indexation\n  correct            6_volume_and_performance  (quote from another sentence)\n  correct            7_product_and_certificates\n  correct            8_curtailment\n  correct            9_delivery_point_and_balancing\n  correct            10_credit_support\n  correct            11_default_and_termination\n  correct            12_change_in_law_and_force_majeure",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "docs[\"olivos-solar-ppa-execution\"][\"terms\"]",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "  correct            1_parties_and_buyer_credit\n  correct            2_facility\n  correct            3_supply_period\n  correct            4_cod_and_delay\n  correct            5_price_and_indexation\n  correct            6_volume_and_performance\n  correct            7_product_and_certificates\n  correct            8_curtailment\n  correct            9_delivery_point_and_balancing\n  correct            10_credit_support  (quote from another sentence)\n  correct            11_default_and_termination\n  correct            12_change_in_law_and_force_majeure",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "docs[\"lichtung-offshore-ppa-execution\"][\"terms\"]",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "  correct            1_parties_and_buyer_credit\n  correct            2_facility\n  correct            3_supply_period\n  correct            4_cod_and_delay\n  correct            5_price_and_indexation\n  correct            6_volume_and_performance\n  wrong_value        7_product_and_certificates  missing [\"1000000\"]\n  correct            8_curtailment\n  correct            9_delivery_point_and_balancing\n  correct            10_credit_support\n  correct            11_default_and_termination\n  wrong_value        12_change_in_law_and_force_majeure  missing [\"60 days\"]",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "docs[\"havrebakke-legal-dd-summary\"][\"terms\"]",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "  faithful           3_supply_period  paper states ten (10) years; the contract says twelve (12) years",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "docs[\"havrebakke-ic-key-terms\"][\"terms\"]",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "  faithful           3_supply_period  paper states 10 years; the contract says 12 years\n  faithful           10_credit_support  paper states EUR 2,500,000; the contract says EUR 2,000,000",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "stability({n: evaluate_run(key, RUNS / str(n)) for n in run_numbers})",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "5 runs · terms not correct in every run:\n  1/5  lichtung-offshore-ppa-execution / 7_product_and_certificates  [\"wrong_value\", \"wrong_value\", \"wrong_value\", \"correct\", \"wrong_value\"]\n  0/5  lichtung-offshore-ppa-execution / 12_change_in_law_and_force_majeure  [\"wrong_value\", \"wrong_value\", \"wrong_value\", \"wrong_value\", \"wrong_value\"]",
+   "ms": 182
+  },
+  {
+   "cls": "in",
+   "text": "summary of run 1, contracts only",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "{\"correct\": 46, \"wrong_value\": 2}  · 0.22 s on the desk",
+   "ms": 0
+  }
+ ],
+ "sql": [
+  {
+   "cls": "sys",
+   "text": "recorded on the desk, 2026-10-31 · sqlite3 3.53.1 · the same statements the browser runs",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "-- sql/schema.sql · 9 CREATE TABLE",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "-- sql/seed.sql · 612 INSERT INTO",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "database in memory · extractions 360, reviews 48, checks 11, events 12 · 0.00 s",
+   "ms": 3
+  },
+  {
+   "cls": "in",
+   "text": "-- 1. Effort per contract: what the analyst's pass cost, and how much of the table stood first time.\nWITH current AS (                          -- the current decision per term: the latest row of the append-only log (R-94)\n  SELECT r.* FROM reviews r\n  WHERE r.decided_at = (SELECT MAX(r2.decided_at) FROM reviews r2\n                        WHERE r2.document_id = r.document_id AND r2.document_sha256 = r.document_sha256 AND r2.term_id = r.term_id)\n)\nSELECT d.id                                              AS document,\n       p.name                                            AS project,\n       COUNT(*)                                          AS terms,\n       SUM(r.outcome = 'confirmed')                      AS confirmed,\n       SUM(r.outcome = 'flagged')                        AS flagged,\n       ROUND(100.0 * SUM(r.outcome = 'confirmed') / COUNT(*)) AS first_pass_pct,\n       ROUND(SUM(r.minutes), 1)                          AS review_minutes\nFROM current r\nJOIN documents d ON d.id = r.document_id\nJOIN projects  p ON p.id = d.project_id\nWHERE d.kind IN ('ppa_execution','ppa_draft')\nGROUP BY d.id\nORDER BY review_minutes DESC;",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "4 rows · document | project | terms | confirmed | flagged | first_pass_pct | review_minutes · 89 µs",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "-- 2. Cycle time: days from the data room to a reviewed terms table, and to the committee.\nSELECT p.name                                                             AS project,\n       MIN(CASE WHEN e.event = 'dataroom_received'  THEN e.at END)        AS dataroom_received,\n       ROUND(julianday(MIN(CASE WHEN e.event = 'terms_reviewed' THEN e.at END))\n           - julianday(MIN(CASE WHEN e.event = 'dataroom_received' THEN e.at END)), 1) AS days_to_reviewed_table,\n       ROUND(julianday(MIN(CASE WHEN e.event = 'ic_meeting' THEN e.at END))\n           - julianday(MIN(CASE WHEN e.event = 'dataroom_received' THEN e.at END)), 1) AS days_to_committee\nFROM events e\nJOIN projects p ON p.id = e.project_id\nGROUP BY p.id\nORDER BY days_to_committee;",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "3 rows · project | dataroom_received | days_to_reviewed_table | days_to_committee · 33 µs",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "-- 3. Where the method needs a human: per term, how often the model's answer stood across runs,\n--    how often the analyst flagged it, and how many deterministic checks fired on it.\nWITH current AS (                          -- the current decision per term: the latest row of the append-only log (R-94)\n  SELECT r.* FROM reviews r\n  WHERE r.decided_at = (SELECT MAX(r2.decided_at) FROM reviews r2\n                        WHERE r2.document_id = r.document_id AND r2.document_sha256 = r.document_sha256 AND r2.term_id = r.term_id)\n)\nSELECT t.ord,\n       t.label                                                               AS term,\n       COUNT(DISTINCT e.run)                                                 AS runs,\n       ROUND(100.0 * SUM(e.verdict IN ('correct','faithful')) / COUNT(*))   AS model_right_pct,\n       (SELECT COUNT(*) FROM current r WHERE r.term_id = t.id AND r.outcome = 'flagged')   AS flagged,\n       (SELECT COUNT(*) FROM checks c WHERE c.term_id = t.id)                AS check_findings\nFROM terms t\nJOIN extractions e ON e.term_id = t.id\nJOIN documents  d ON d.id = e.document_id AND d.kind IN ('ppa_execution','ppa_draft')\nGROUP BY t.id\nORDER BY model_right_pct ASC, flagged DESC, t.ord;",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "12 rows · ord | term | runs | model_right_pct | flagged | check_findings · 205 µs",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "-- 4. Against the baseline: before, after and the change per metric (after minus before), and on what basis the baseline rests.\n--    The baseline rows are assumptions until the first weeks in the seat replace them with measurements.\nWITH current AS (                          -- the current decision per term: the latest row of the append-only log (R-94)\n  SELECT r.* FROM reviews r\n  WHERE r.decided_at = (SELECT MAX(r2.decided_at) FROM reviews r2\n                        WHERE r2.document_id = r.document_id AND r2.document_sha256 = r.document_sha256 AND r2.term_id = r.term_id)\n),\nmeasured AS (\n  SELECT 'minutes_per_contract' AS metric,\n         (SELECT AVG(m) FROM (SELECT SUM(minutes) AS m FROM current GROUP BY document_id)) AS value\n  UNION ALL\n  SELECT 'days_to_reviewed_table',\n         (SELECT AVG(julianday(r.at) - julianday(d.at))\n            FROM events d JOIN events r ON r.project_id = d.project_id\n           WHERE d.event = 'dataroom_received' AND r.event = 'terms_reviewed')\n  UNION ALL\n  SELECT 'discrepancies_per_paper',\n         (SELECT 1.0 * COUNT(*) FROM checks WHERE check_name = 'paper_vs_contract')\n         / (SELECT COUNT(*) FROM documents WHERE kind IN ('dd_summary','ic_paper'))\n  UNION ALL\n  SELECT 'contracts_processed',\n         (SELECT COUNT(DISTINCT document_id) FROM current)\n)\nSELECT b.metric,\n       b.unit,\n       b.value                                   AS before,\n       ROUND(m.value, 1)                         AS after,\n       CASE WHEN b.value IS NULL THEN NULL ELSE ROUND(m.value - b.value, 1) END AS change,\n       b.basis                                   AS before_basis,\n       b.source\nFROM baseline b LEFT JOIN measured m ON m.metric = b.metric\nORDER BY CASE b.metric WHEN 'minutes_per_contract' THEN 1 WHEN 'days_to_reviewed_table' THEN 2 WHEN 'discrepancies_per_paper' THEN 3 ELSE 4 END;",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "4 rows · metric | unit | before | after | change | before_basis | source · 136 µs",
+   "ms": 0
+  },
+  {
+   "cls": "in",
+   "text": "-- 5. A portfolio question on the extracted terms: once the twelve terms are structured,\n--    the figures in them can be asked across contracts. Here: the price, the supply\n--    period, the curtailment cap and the delay-damages cap, per contract, from run 1.\n--    Limit: the facts table stores a figure and its unit, not what the figure means. MAX(hours)\n--    returns the cap here only because the cap is the largest hour figure in the term; the next\n--    step is a fact kind per figure (curtailment_cap_hours, notice_hours), stored at extraction.\nSELECT d.id                                                                        AS contract,\n       p.technology,\n       MAX(CASE WHEN f.term_id = '5_price_and_indexation' AND f.unit = 'eur_per_mwh' THEN CAST(f.value AS REAL) END) AS price_eur_per_mwh,\n       MAX(CASE WHEN f.term_id = '3_supply_period'  AND f.unit = 'years'  THEN CAST(f.value AS INTEGER) END) AS supply_years,\n       MAX(CASE WHEN f.term_id = '8_curtailment'    AND f.unit = 'hours'  THEN CAST(f.value AS INTEGER) END) AS curtailment_cap_hours,\n       MAX(CASE WHEN f.term_id = '4_cod_and_delay'  AND f.unit = 'eur'    THEN CAST(f.value AS REAL)    END) AS delay_damages_cap_eur\nFROM documents d\nJOIN projects p ON p.id = d.project_id\nLEFT JOIN facts f ON f.document_id = d.id AND f.run = 1\nWHERE d.kind IN ('ppa_execution','ppa_draft')\nGROUP BY d.id\nORDER BY d.version_date;",
+   "ms": 0
+  },
+  {
+   "cls": "out",
+   "text": "4 rows · contract | technology | price_eur_per_mwh | supply_years | curtailment_cap_hours | delay_damages_cap_eur · 53 µs",
+   "ms": 0
+  }
+ ],
+ "sql_results": {
+  "1_review_effort_per_contract": {
+   "columns": [
+    "document",
+    "project",
+    "terms",
+    "confirmed",
+    "flagged",
+    "first_pass_pct",
+    "review_minutes"
+   ],
+   "values": [
+    [
+     "lichtung-offshore-ppa-execution",
+     "Lichtung Offshore",
+     12,
+     9,
+     3,
+     75.0,
+     69.0
+    ],
+    [
+     "havrebakke-ppa-v2-execution",
+     "Havrebakke Wind Farm",
+     12,
+     10,
+     2,
+     83.0,
+     60.0
+    ],
+    [
+     "havrebakke-ppa-v1-draft",
+     "Havrebakke Wind Farm",
+     12,
+     12,
+     0,
+     100.0,
+     42.0
+    ],
+    [
+     "olivos-solar-ppa-execution",
+     "Valdeolivos Solar",
+     12,
+     12,
+     0,
+     100.0,
+     42.0
+    ]
+   ]
+  },
+  "2_cycle_time_to_committee": {
+   "columns": [
+    "project",
+    "dataroom_received",
+    "days_to_reviewed_table",
+    "days_to_committee"
+   ],
+   "values": [
+    [
+     "Lichtung Offshore",
+     "2025-11-03",
+     2.0,
+     null
+    ],
+    [
+     "Valdeolivos Solar",
+     "2026-02-14",
+     2.0,
+     null
+    ],
+    [
+     "Havrebakke Wind Farm",
+     "2026-05-28",
+     2.0,
+     21.0
+    ]
+   ]
+  },
+  "3_terms_that_need_a_human": {
+   "columns": [
+    "ord",
+    "term",
+    "runs",
+    "model_right_pct",
+    "flagged",
+    "check_findings"
+   ],
+   "values": [
+    [
+     12,
+     "Change in law and force majeure allocation",
+     5,
+     75.0,
+     1,
+     0
+    ],
+    [
+     7,
+     "Product and certificates",
+     5,
+     80.0,
+     1,
+     0
+    ],
+    [
+     3,
+     "Supply period and its start",
+     5,
+     100.0,
+     1,
+     3
+    ],
+    [
+     10,
+     "Credit support from each party",
+     5,
+     100.0,
+     1,
+     2
+    ],
+    [
+     11,
+     "Events of default, termination and termination amount",
+     5,
+     100.0,
+     1,
+     2
+    ],
+    [
+     1,
+     "Parties and buyer credit standing",
+     5,
+     100.0,
+     0,
+     0
+    ],
+    [
+     2,
+     "Facility: technology, capacity, location",
+     5,
+     100.0,
+     0,
+     0
+    ],
+    [
+     4,
+     "Commercial operation date, longstop and delay damages",
+     5,
+     100.0,
+     0,
+     1
+    ],
+    [
+     5,
+     "Contract price and indexation",
+     5,
+     100.0,
+     0,
+     2
+    ],
+    [
+     6,
+     "Volume structure, expected production and performance guarantee",
+     5,
+     100.0,
+     0,
+     0
+    ],
+    [
+     8,
+     "Curtailment: who may curtail, cap, deemed delivery",
+     5,
+     100.0,
+     0,
+     1
+    ],
+    [
+     9,
+     "Delivery point, settlement type and balancing responsibility",
+     5,
+     100.0,
+     0,
+     0
+    ]
+   ]
+  },
+  "4_time_saved_against_baseline": {
+   "columns": [
+    "metric",
+    "unit",
+    "before",
+    "after",
+    "change",
+    "before_basis",
+    "source"
+   ],
+   "values": [
+    [
+     "minutes_per_contract",
+     "minutes",
+     240.0,
+     53.3,
+     -186.8,
+     "assumed",
+     "a careful analyst, about four hours per contract; to be replaced by a time log on the pilot's three contracts"
+    ],
+    [
+     "days_to_reviewed_table",
+     "days",
+     5.0,
+     2.0,
+     -3.0,
+     "assumed",
+     "from data room to a table the team trusts; to be replaced by the dates in the last twelve cases"
+    ],
+    [
+     "discrepancies_per_paper",
+     "findings per committee paper",
+     null,
+     1.5,
+     null,
+     "not measured",
+     "no record exists of a paper disagreeing with its contract, because no one compared them"
+    ],
+    [
+     "contracts_processed",
+     "contracts",
+     0.0,
+     4.0,
+     4.0,
+     "measured",
+     "no tool in use before the prototype; counts document versions put through the method, not contracts per month"
+    ]
+   ]
+  },
+  "5_a_portfolio_question": {
+   "columns": [
+    "contract",
+    "technology",
+    "price_eur_per_mwh",
+    "supply_years",
+    "curtailment_cap_hours",
+    "delay_damages_cap_eur"
+   ],
+   "values": [
+    [
+     "lichtung-offshore-ppa-execution",
+     "offshore wind",
+     72.0,
+     15,
+     null,
+     6000000.0
+    ],
+    [
+     "olivos-solar-ppa-execution",
+     "solar PV",
+     38.75,
+     12,
+     null,
+     1500000.0
+    ],
+    [
+     "havrebakke-ppa-v1-draft",
+     "onshore wind",
+     58.0,
+     10,
+     null,
+     1750000.0
+    ],
+    [
+     "havrebakke-ppa-v2-execution",
+     "onshore wind",
+     54.5,
+     12,
+     150,
+     1750000.0
+    ]
+   ]
+  }
+ }
+}

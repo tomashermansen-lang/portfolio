@@ -1,0 +1,62 @@
+{
+  "prompt_sha256": "025677740d820ee0fd8fce61d429d0d69e3682c4827b59ca7f6b73c9e0877a43",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:58+00:00",
+  "id": "D-027",
+  "reply": "{\"summary\": \"Byggefirmaet Halvor & Søn i Lindholt med 85 ansatte og en omsætning på 212 mio. kr. sidste år er erklæret konkurs, og kurator undersøger, om dele kan sælges.\", \"facts\": [{\"text\": \"Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs, og kurator Morten Skov bekræfter det over for Nyhedsbureauet.\", \"quote\": \"Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs. Det bekræfter kurator Morten Skov over for Nyhedsbureauet.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.\", \"quote\": \"Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Medarbejderne blev orienteret tirsdag eftermiddag.\", \"quote\": \"Medarbejderne blev orienteret tirsdag eftermiddag.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Kurator vil nu undersøge, om dele af virksomheden kan sælges.\", \"quote\": \"Kurator vil nu undersøge, om dele af virksomheden kan sælges.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Lindholt\"], \"orgs\": [\"Halvor & Søn\", \"Nyhedsbureauet\"], \"values\": {\"F\": {\"value\": 4, \"why\": \"85 jobs går tabt, men det er en enkelt lokal virksomhed og rammer ikke mange læsere i dag.\"}, \"M\": {\"value\": 3, \"why\": \"Privat konkurs uden offentlig myndighed eller forvaltning involveret og uden åbenbar sag om svigt.\"}, \"E\": {\"value\": 8, \"why\": \"Konkurs i byggefirma med 85 ansatte og 212 mio. kr. i omsætning; mulig delsalg fra kurator.\"}}}\n",
+  "parsed": {
+    "summary": "Byggefirmaet Halvor & Søn i Lindholt med 85 ansatte og en omsætning på 212 mio. kr. sidste år er erklæret konkurs, og kurator undersøger, om dele kan sælges.",
+    "facts": [
+      {
+        "text": "Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs, og kurator Morten Skov bekræfter det over for Nyhedsbureauet.",
+        "quote": "Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs. Det bekræfter kurator Morten Skov over for Nyhedsbureauet.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.",
+        "quote": "Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Medarbejderne blev orienteret tirsdag eftermiddag.",
+        "quote": "Medarbejderne blev orienteret tirsdag eftermiddag.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kurator vil nu undersøge, om dele af virksomheden kan sælges.",
+        "quote": "Kurator vil nu undersøge, om dele af virksomheden kan sælges.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Lindholt"
+    ],
+    "orgs": [
+      "Halvor & Søn",
+      "Nyhedsbureauet"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "85 jobs går tabt, men det er en enkelt lokal virksomhed og rammer ikke mange læsere i dag."
+      },
+      "M": {
+        "value": 3,
+        "why": "Privat konkurs uden offentlig myndighed eller forvaltning involveret og uden åbenbar sag om svigt."
+      },
+      "E": {
+        "value": 8,
+        "why": "Konkurs i byggefirma med 85 ansatte og 212 mio. kr. i omsætning; mulig delsalg fra kurator."
+      }
+    }
+  },
+  "parse_error": null
+}

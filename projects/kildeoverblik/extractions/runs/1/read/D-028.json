@@ -1,0 +1,56 @@
+{
+  "prompt_sha256": "45049fb4872d7b0b04788677fdd691c37023d1e93fe5cce2a391795344c30713",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:06+00:00",
+  "id": "D-028",
+  "reply": "{\"summary\": \"Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i idrætshallen for beboere bag diget ved Nørrevang Strand, og politiet anbefaler, at de forlader deres hjem senest kl. 20.\", \"facts\": [{\"text\": \"Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.\", \"quote\": \"Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.\", \"statement\": true, \"speaker\": \"Nørrevang Kommune\", \"accuses\": null}, {\"text\": \"Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20.\", \"quote\": \"Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20.\", \"statement\": true, \"speaker\": \"Politiet i Vest\", \"accuses\": null}, {\"text\": \"Evakueringen er foreløbig frivillig.\", \"quote\": \"Evakueringen er foreløbig frivillig.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Nørrevang Idrætshal\", \"Nørrevang Strand\"], \"orgs\": [\"Nørrevang Kommune\", \"Politiet i Vest\"], \"values\": {\"F\": {\"value\": 8, \"why\": \"Evakuering af beboere i aften og i nat med deadline kl. 20; rammer et helt boligområde, men antal ukendt.\"}, \"M\": {\"value\": 6, \"why\": \"Kommune og politi iværksætter evakuering af borgere, men sagen er foreløbig lokal og uden kendt ansvarsspørgsmål.\"}, \"E\": {\"value\": 3, \"why\": \"Intet om virksomheder, drift eller infrastruktur; kun beboere og et evakueringscenter nævnes.\"}}}\n",
+  "parsed": {
+    "summary": "Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i idrætshallen for beboere bag diget ved Nørrevang Strand, og politiet anbefaler, at de forlader deres hjem senest kl. 20.",
+    "facts": [
+      {
+        "text": "Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.",
+        "quote": "Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.",
+        "statement": true,
+        "speaker": "Nørrevang Kommune",
+        "accuses": null
+      },
+      {
+        "text": "Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20.",
+        "quote": "Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20.",
+        "statement": true,
+        "speaker": "Politiet i Vest",
+        "accuses": null
+      },
+      {
+        "text": "Evakueringen er foreløbig frivillig.",
+        "quote": "Evakueringen er foreløbig frivillig.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Nørrevang Idrætshal",
+      "Nørrevang Strand"
+    ],
+    "orgs": [
+      "Nørrevang Kommune",
+      "Politiet i Vest"
+    ],
+    "values": {
+      "F": {
+        "value": 8,
+        "why": "Evakuering af beboere i aften og i nat med deadline kl. 20; rammer et helt boligområde, men antal ukendt."
+      },
+      "M": {
+        "value": 6,
+        "why": "Kommune og politi iværksætter evakuering af borgere, men sagen er foreløbig lokal og uden kendt ansvarsspørgsmål."
+      },
+      "E": {
+        "value": 3,
+        "why": "Intet om virksomheder, drift eller infrastruktur; kun beboere og et evakueringscenter nævnes."
+      }
+    }
+  },
+  "parse_error": null
+}

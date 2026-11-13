@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tomashermansen-lang.github.io/portfolio/sitemap.xml

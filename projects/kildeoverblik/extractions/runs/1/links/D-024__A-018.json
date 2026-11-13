@@ -1,0 +1,44 @@
+{
+  "prompt_sha256": "2d89b60b64f2ce0f6ff6eb0ec7ffe828c06468b50e7c30e07e3dee6426adc87c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:54+00:00",
+  "from": "D-024",
+  "to": "A-018",
+  "shared": "Tangsø Energi",
+  "reply": "{\"related\": true, \"why\": \"Årsrapporten for 2024 viser et overskud og en forventning om uændret niveau i 2025, hvilket er relevant baggrund for lukningen af fabrikken og fagforeningens krav om, at virksomheden betaler.\", \"facts\": [{\"text\": \"Tangsø Energis omsætning steg i 2024 med 6 procent til 1.184 mio. kr.\", \"quote\": \"Koncernens omsætning steg med 6 procent til 1.184 mio. kr. mod 1.117 mio. kr. i 2023.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Resultatet før skat var 71 mio. kr. i 2024 mod 64 mio. kr. året før.\", \"quote\": \"Resultatet før skat blev 71 mio. kr. mod 64 mio. kr. året før.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Ledelsen forventede i marts 2025 en omsætning og et resultat for 2025 på niveau med 2024.\", \"quote\": \"For 2025 forventer ledelsen en omsætning og et resultat på niveau med 2024.\", \"statement\": true, \"speaker\": \"Tangsø Energis ledelse\", \"accuses\": null}, {\"text\": \"Bestyrelsen indstillede et udbytte på 20 mio. kr. for 2024.\", \"quote\": \"Bestyrelsen indstiller til generalforsamlingen, at der udbetales et udbytte på 20 mio. kr.\", \"statement\": true, \"speaker\": \"Bestyrelsen i Tangsø Energi\", \"accuses\": null}]}\n",
+  "parsed": {
+    "related": true,
+    "why": "Årsrapporten for 2024 viser et overskud og en forventning om uændret niveau i 2025, hvilket er relevant baggrund for lukningen af fabrikken og fagforeningens krav om, at virksomheden betaler.",
+    "facts": [
+      {
+        "text": "Tangsø Energis omsætning steg i 2024 med 6 procent til 1.184 mio. kr.",
+        "quote": "Koncernens omsætning steg med 6 procent til 1.184 mio. kr. mod 1.117 mio. kr. i 2023.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Resultatet før skat var 71 mio. kr. i 2024 mod 64 mio. kr. året før.",
+        "quote": "Resultatet før skat blev 71 mio. kr. mod 64 mio. kr. året før.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Ledelsen forventede i marts 2025 en omsætning og et resultat for 2025 på niveau med 2024.",
+        "quote": "For 2025 forventer ledelsen en omsætning og et resultat på niveau med 2024.",
+        "statement": true,
+        "speaker": "Tangsø Energis ledelse",
+        "accuses": null
+      },
+      {
+        "text": "Bestyrelsen indstillede et udbytte på 20 mio. kr. for 2024.",
+        "quote": "Bestyrelsen indstiller til generalforsamlingen, at der udbetales et udbytte på 20 mio. kr.",
+        "statement": true,
+        "speaker": "Bestyrelsen i Tangsø Energi",
+        "accuses": null
+      }
+    ]
+  },
+  "parse_error": null
+}

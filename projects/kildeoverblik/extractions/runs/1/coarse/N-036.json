@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "a7927346fc7df3c4bb79a4d74432b0fec87fc54c19629d80d34d2c96089d2238",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:47+00:00",
+  "id": "N-036",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinereferat fra lokalt ældreråd uden synlig nyhed eller bred læserrelevans.\", \"M\": \"Lokalt kommunalt referat; uddraget viser kun godkendelse af referat og afbud.\", \"E\": \"Ingen virksomhedsvinkel, regulering eller drift i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinereferat fra lokalt ældreråd uden synlig nyhed eller bred læserrelevans.",
+      "M": "Lokalt kommunalt referat; uddraget viser kun godkendelse af referat og afbud.",
+      "E": "Ingen virksomhedsvinkel, regulering eller drift i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

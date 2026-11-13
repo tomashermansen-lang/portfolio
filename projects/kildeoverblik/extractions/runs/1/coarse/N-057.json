@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "7251b48582d3afee409fb52ad96b8a61c5a1c74483bcdc83a8ee0986879d79a4",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:20+00:00",
+  "id": "N-057",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal sølvvinder i lærlingekonkurrence; pæn omtale, men ingen bred læserrelevans eller haster.\", \"M\": \"Ingen politik, forvaltning eller myndighedssvigt; rutinemæssig skolepressemeddelelse om en elev.\", \"E\": \"Ingen erhvervsmæssig betydning; ingen regnskab, lukning, regulering eller drift berørt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal sølvvinder i lærlingekonkurrence; pæn omtale, men ingen bred læserrelevans eller haster.",
+      "M": "Ingen politik, forvaltning eller myndighedssvigt; rutinemæssig skolepressemeddelelse om en elev.",
+      "E": "Ingen erhvervsmæssig betydning; ingen regnskab, lukning, regulering eller drift berørt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "51c8edb0daf7a09691836d274ddd880ae3d340051f3dadfb2354fb4787402acf",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:21+00:00",
+  "id": "N-017",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 2}, \"why\": {\"F\": \"Intern ansættelse i lokalt erhvervsråd rammer ingen læsere og har ingen kuriøs vinkel.\", \"M\": \"Rutinemæssig lokal personalemeddelelse fra en erhvervsorganisation uden forvaltningssag eller svigt.\", \"E\": \"Ny konsulent i erhvervsråd er rutine, ingen lukning, fyring, regulering eller regnskab.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 2
+    },
+    "why": {
+      "F": "Intern ansættelse i lokalt erhvervsråd rammer ingen læsere og har ingen kuriøs vinkel.",
+      "M": "Rutinemæssig lokal personalemeddelelse fra en erhvervsorganisation uden forvaltningssag eller svigt.",
+      "E": "Ny konsulent i erhvervsråd er rutine, ingen lukning, fyring, regulering eller regnskab."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

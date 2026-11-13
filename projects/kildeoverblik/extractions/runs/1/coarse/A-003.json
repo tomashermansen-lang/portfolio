@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "817b758ac3764f0d276cd8358f9507045bf3f23dc4347d5dc43fe418fef1e57c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:12+00:00",
+  "id": "A-003",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Rutinemæssig kontrakttildeling om skolegårde, rammer ingen læsere i dag eller i nat.\", \"M\": \"Kommunalt udbud, lokalt og rutinepræget; ingen tegn på fejl eller myndighedssvigt i uddraget.\", \"E\": \"Lille lokal entreprisekontrakt; ingen oplyst værdi eller vinder i uddraget, lav erhvervsrelevans.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinemæssig kontrakttildeling om skolegårde, rammer ingen læsere i dag eller i nat.",
+      "M": "Kommunalt udbud, lokalt og rutinepræget; ingen tegn på fejl eller myndighedssvigt i uddraget.",
+      "E": "Lille lokal entreprisekontrakt; ingen oplyst værdi eller vinder i uddraget, lav erhvervsrelevans."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "19b104d3bd40ae21a477539163e45b75b62edda5983929488b8e28ae2ca95423",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:55+00:00",
+  "id": "N-073",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt, afsluttet oliespild i går; ingen aktuel fare eller bred læserrelevans.\", \"M\": \"Rutinemæssig enkeltstående trafikmelding uden forvaltningsmæssig vinkel.\", \"E\": \"Lokal trafikhændelse uden erhvervsmæssig påvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt, afsluttet oliespild i går; ingen aktuel fare eller bred læserrelevans.",
+      "M": "Rutinemæssig enkeltstående trafikmelding uden forvaltningsmæssig vinkel.",
+      "E": "Lokal trafikhændelse uden erhvervsmæssig påvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

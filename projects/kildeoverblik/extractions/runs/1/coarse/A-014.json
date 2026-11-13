@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "0be26ab70835e32bdd9e315d81a6aef071d32317b1732f7920ebf00b9c81d3d4",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:23+00:00",
+  "id": "A-014",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal indvielse af sansehave på plejecenter; ingen bred rækkevidde eller kuriøs vinkel.\", \"M\": \"Kommunalt, lokalt og rutinepræget; ingen myndighedssvigt eller bredere politisk dimension.\", \"E\": \"Ingen erhvervsrelevans; ren lokal indvielse uden virksomhedspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal indvielse af sansehave på plejecenter; ingen bred rækkevidde eller kuriøs vinkel.",
+      "M": "Kommunalt, lokalt og rutinepræget; ingen myndighedssvigt eller bredere politisk dimension.",
+      "E": "Ingen erhvervsrelevans; ren lokal indvielse uden virksomhedspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

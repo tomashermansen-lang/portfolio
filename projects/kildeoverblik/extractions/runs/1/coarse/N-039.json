@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "8a165fc54b660a39a3156dc5680eb2d1fe33a79173848ce839bde9885eba5d33",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:52+00:00",
+  "id": "N-039",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Normal æblehøst, ingen rekord eller kuriositet; rammer ikke læserne i dag.\", \"M\": \"Ingen politik, forvaltning eller svigt; ren branchemelding om normal høst.\", \"E\": \"Lille branche, 26 avlere, normal høst og ingen afvigelse eller driftsproblem.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Normal æblehøst, ingen rekord eller kuriositet; rammer ikke læserne i dag.",
+      "M": "Ingen politik, forvaltning eller svigt; ren branchemelding om normal høst.",
+      "E": "Lille branche, 26 avlere, normal høst og ingen afvigelse eller driftsproblem."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "59b62d43afd86d4f94fb42692862004d1bc573f40c45995b73da9acc4f6cccac",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:40+00:00",
+  "id": "D-028",
+  "reply": "{\"scores\": {\"F\": 9, \"M\": 8, \"E\": 4}, \"why\": {\"F\": \"Evakuering i dag fra kystområde bag dige; politiet anbefaler at forlade hjem inden kl. 20.\", \"M\": \"Kommune og politi evakuerer beboere; myndighedshåndtering, sandsynligvis lokal men alvorlig, ukendt omfang.\", \"E\": \"Primært beboere ramt; erhvervspåvirkning ikke nævnt i uddraget, kun indirekte via evt. havn/kyst.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 9,
+      "M": 8,
+      "E": 4
+    },
+    "why": {
+      "F": "Evakuering i dag fra kystområde bag dige; politiet anbefaler at forlade hjem inden kl. 20.",
+      "M": "Kommune og politi evakuerer beboere; myndighedshåndtering, sandsynligvis lokal men alvorlig, ukendt omfang.",
+      "E": "Primært beboere ramt; erhvervspåvirkning ikke nævnt i uddraget, kun indirekte via evt. havn/kyst."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

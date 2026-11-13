@@ -1,0 +1,77 @@
+{
+  "prompt_sha256": "0cf91a393544d22b9aaa4e3f2a3155e2aa4c24ff8d854032d3cf26bb20f6c0fb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:50+00:00",
+  "id": "D-006",
+  "reply": "{\"summary\": \"Beredskab Vest frygter, at diget ved Nørrevang Strand ikke holder til nattens stormflod, og ca. 300 boliger ligger bag det, mens politiet i løbet af dagen afgør, om beboerne skal evakueres.\", \"facts\": [{\"text\": \"Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.\", \"quote\": \"Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.\", \"statement\": true, \"speaker\": \"Karen Lyngsø, operationschef i Beredskab Vest\", \"accuses\": null}, {\"text\": \"Operationschefen siger, at diget ved Nørrevang Strand er det sted på kysten, beredskabet er mest bekymret for.\", \"quote\": \"Diget ved Nørrevang Strand er det sted på kysten, vi er mest bekymrede for.\", \"statement\": true, \"speaker\": \"Karen Lyngsø, operationschef i Beredskab Vest\", \"accuses\": null}, {\"text\": \"Operationschefen siger, at vandet vil stå ind i boligområdet bag diget, hvis diget ikke holder.\", \"quote\": \"Holder det ikke, står vandet ind i boligområdet bag det\", \"statement\": true, \"speaker\": \"Karen Lyngsø, operationschef i Beredskab Vest\", \"accuses\": null}, {\"text\": \"Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.\", \"quote\": \"Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.\", \"statement\": true, \"speaker\": \"Beredskab Vest\", \"accuses\": null}, {\"text\": \"Beredskabet begynder onsdag formiddag at udlevere sandsække.\", \"quote\": \"Beredskabet begynder onsdag formiddag at udlevere sandsække.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Politiet i Vest vil i løbet af dagen tage stilling til, om beboerne skal evakueres.\", \"quote\": \"Politiet i Vest vil i løbet af dagen tage stilling til, om beboerne skal evakueres.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Nørrevang Strand\"], \"orgs\": [\"Beredskab Vest\", \"Politiet i Vest\", \"Nyhedsbureauet\"], \"values\": {\"F\": {\"value\": 8, \"why\": \"Stormflod i nat, mulig evakuering af ca. 300 boliger og sandsække i dag; akut advarsel, men lokalt afgrænset.\"}, \"M\": {\"value\": 5, \"why\": \"Beredskab og politi involveret og evakuering overvejes, men sagen er lokal, og ingen myndighed kritiseres.\"}, \"E\": {\"value\": 2, \"why\": \"Ingen virksomheder, havne, transport eller energi nævnt; kun boliger og vejr, som vægtes lavt.\"}}}\n",
+  "parsed": {
+    "summary": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke holder til nattens stormflod, og ca. 300 boliger ligger bag det, mens politiet i løbet af dagen afgør, om beboerne skal evakueres.",
+    "facts": [
+      {
+        "text": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.",
+        "quote": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.",
+        "statement": true,
+        "speaker": "Karen Lyngsø, operationschef i Beredskab Vest",
+        "accuses": null
+      },
+      {
+        "text": "Operationschefen siger, at diget ved Nørrevang Strand er det sted på kysten, beredskabet er mest bekymret for.",
+        "quote": "Diget ved Nørrevang Strand er det sted på kysten, vi er mest bekymrede for.",
+        "statement": true,
+        "speaker": "Karen Lyngsø, operationschef i Beredskab Vest",
+        "accuses": null
+      },
+      {
+        "text": "Operationschefen siger, at vandet vil stå ind i boligområdet bag diget, hvis diget ikke holder.",
+        "quote": "Holder det ikke, står vandet ind i boligområdet bag det",
+        "statement": true,
+        "speaker": "Karen Lyngsø, operationschef i Beredskab Vest",
+        "accuses": null
+      },
+      {
+        "text": "Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.",
+        "quote": "Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.",
+        "statement": true,
+        "speaker": "Beredskab Vest",
+        "accuses": null
+      },
+      {
+        "text": "Beredskabet begynder onsdag formiddag at udlevere sandsække.",
+        "quote": "Beredskabet begynder onsdag formiddag at udlevere sandsække.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Politiet i Vest vil i løbet af dagen tage stilling til, om beboerne skal evakueres.",
+        "quote": "Politiet i Vest vil i løbet af dagen tage stilling til, om beboerne skal evakueres.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Nørrevang Strand"
+    ],
+    "orgs": [
+      "Beredskab Vest",
+      "Politiet i Vest",
+      "Nyhedsbureauet"
+    ],
+    "values": {
+      "F": {
+        "value": 8,
+        "why": "Stormflod i nat, mulig evakuering af ca. 300 boliger og sandsække i dag; akut advarsel, men lokalt afgrænset."
+      },
+      "M": {
+        "value": 5,
+        "why": "Beredskab og politi involveret og evakuering overvejes, men sagen er lokal, og ingen myndighed kritiseres."
+      },
+      "E": {
+        "value": 2,
+        "why": "Ingen virksomheder, havne, transport eller energi nævnt; kun boliger og vejr, som vægtes lavt."
+      }
+    }
+  },
+  "parse_error": null
+}

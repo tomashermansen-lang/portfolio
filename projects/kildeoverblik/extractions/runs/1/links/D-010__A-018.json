@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "cad50079afd828fe29cf075c273528cb5206a7e9ab6593fc04a20fd547f93e92",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:45+00:00",
+  "from": "D-010",
+  "to": "A-018",
+  "shared": "Tangsø Energi",
+  "reply": "{\"related\": false, \"why\": \"Arkivdokumentet er en årsrapport for 2024 med omsætning, resultat og udbytte, men det nævner hverken fabrikken i Sydhavnen, en lukning eller afskedigelser, så det handler om noget andet end dagens historie.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Arkivdokumentet er en årsrapport for 2024 med omsætning, resultat og udbytte, men det nævner hverken fabrikken i Sydhavnen, en lukning eller afskedigelser, så det handler om noget andet end dagens historie.",
+    "facts": []
+  },
+  "parse_error": null
+}

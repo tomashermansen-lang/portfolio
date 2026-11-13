@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "f83f4ea9bca6374c9cd1fb15d0278add67dd0ac5417809df5d3a560af3c21871",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:13+00:00",
+  "id": "N-012",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig lokal retsliste med bagatelsager; ingen kuriøs eller landsdækkende vinkel i uddraget.\", \"M\": \"Små straffesager i lokal ret; ingen forvaltnings- eller myndighedssvigt synlig i uddraget.\", \"E\": \"Ingen virksomhedsrelevans: butikstyveri og hærværk mod læskur, intet om regulering eller drift.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig lokal retsliste med bagatelsager; ingen kuriøs eller landsdækkende vinkel i uddraget.",
+      "M": "Små straffesager i lokal ret; ingen forvaltnings- eller myndighedssvigt synlig i uddraget.",
+      "E": "Ingen virksomhedsrelevans: butikstyveri og hærværk mod læskur, intet om regulering eller drift."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

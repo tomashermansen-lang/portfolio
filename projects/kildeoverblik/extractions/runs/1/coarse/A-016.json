@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "cf1a84336d0c9e5e7a9846921e5fc5bc3e3012545f6c656649b36c11e8626d46",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:25+00:00",
+  "id": "A-016",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Rutinereferat fra lokalt byråd uden konkret hændelse, der rammer læsere i dag.\", \"M\": \"Kommunalt referat; kun rutinepunkter synlige, intet lokalt-overskridende eller myndighedssvigt i uddraget.\", \"E\": \"Regnskabsprognose blot taget til efterretning, ingen afvigelser eller erhvervspåvirkning synlig.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinereferat fra lokalt byråd uden konkret hændelse, der rammer læsere i dag.",
+      "M": "Kommunalt referat; kun rutinepunkter synlige, intet lokalt-overskridende eller myndighedssvigt i uddraget.",
+      "E": "Regnskabsprognose blot taget til efterretning, ingen afvigelser eller erhvervspåvirkning synlig."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

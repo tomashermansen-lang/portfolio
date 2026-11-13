@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "24408160f3c21665f8dcf1f8c2a7f03d9b3a16ada5b41b77a254f81aaaf13e1a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:35+00:00",
+  "id": "N-028",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Statistik med minimal ændring, 31 mod 30 frivillige, rammer ingen læsere i dag.\", \"M\": \"Lille regional foreningsundersøgelse uden forvaltningsmæssig vinkel eller svigt fra myndighed.\", \"E\": \"Ingen erhvervsvinkel; frivillige i idrætsforeninger påvirker ikke virksomheder eller nøgletal.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Statistik med minimal ændring, 31 mod 30 frivillige, rammer ingen læsere i dag.",
+      "M": "Lille regional foreningsundersøgelse uden forvaltningsmæssig vinkel eller svigt fra myndighed.",
+      "E": "Ingen erhvervsvinkel; frivillige i idrætsforeninger påvirker ikke virksomheder eller nøgletal."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

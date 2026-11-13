@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5b1477e73fbd632f6c6c671a31ab5568398c30b83a743f5276798eece4a8b71f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:34+00:00",
+  "id": "N-027",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal aflysning pga. storm i aften; storm kan ramme mange, men selve koncerten er lille.\", \"M\": \"Lokal kirkekoncert aflyst, ingen forvaltning eller myndighedssvigt.\", \"E\": \"Ingen erhvervsrelevans; kun en sognekoncert aflyst.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal aflysning pga. storm i aften; storm kan ramme mange, men selve koncerten er lille.",
+      "M": "Lokal kirkekoncert aflyst, ingen forvaltning eller myndighedssvigt.",
+      "E": "Ingen erhvervsrelevans; kun en sognekoncert aflyst."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

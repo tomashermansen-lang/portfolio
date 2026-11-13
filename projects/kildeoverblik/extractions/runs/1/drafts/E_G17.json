@@ -1,0 +1,158 @@
+{
+  "prompt_sha256": "e51cc40a55320510e002661590fcc096b86d963cddf54068b5901800c9a99081",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:19+00:00",
+  "desk": "E",
+  "group": 17,
+  "finds": [
+    "D-017",
+    "D-030"
+  ],
+  "facts": [
+    {
+      "text": "Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden.",
+      "quote": "Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-017",
+      "no": 1
+    },
+    {
+      "text": "Koncernen nedjusterer forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.",
+      "quote": "nedjusterer forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.",
+      "statement": true,
+      "speaker": "Rederiet Tangholm A/S",
+      "accuses": null,
+      "find": "D-017",
+      "no": 2
+    },
+    {
+      "text": "Ledelsen venter fortsat lave rater i tørlastmarkedet resten af året.",
+      "quote": "Ledelsen venter fortsat lave rater i tørlastmarkedet resten af året.",
+      "statement": true,
+      "speaker": "Ledelsen i Rederiet Tangholm A/S",
+      "accuses": null,
+      "find": "D-017",
+      "no": 3
+    },
+    {
+      "text": "Omsætningen i kvartalet var 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.",
+      "quote": "Omsætningen udgjorde 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-017",
+      "no": 4
+    },
+    {
+      "text": "Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.",
+      "quote": "Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-017",
+      "no": 5
+    },
+    {
+      "text": "Rederiet Tangholm nedskriver værdien af sin tørlastflåde med 1,2 mia. kr., ifølge Dagbladet Tiden.",
+      "quote": "Rederiet Tangholm nedskriver værdien af sin tørlastflåde med 1,2 mia. kr.",
+      "statement": true,
+      "speaker": "Dagbladet Tiden",
+      "accuses": null,
+      "find": "D-030",
+      "no": 6
+    },
+    {
+      "text": "Tangholm nedjusterer forventningerne til året, ifølge Dagbladet Tiden.",
+      "quote": "nedjusterer forventningerne til året, skriver Dagbladet Tiden",
+      "statement": true,
+      "speaker": "Dagbladet Tiden",
+      "accuses": null,
+      "find": "D-030",
+      "no": 7
+    },
+    {
+      "text": "En aktieanalytiker siger ifølge Dagbladet Tiden, at nedskrivningen er større end ventet.",
+      "quote": "Avisen citerer en aktieanalytiker for, at nedskrivningen er større end ventet.",
+      "statement": true,
+      "speaker": "En aktieanalytiker (unavngiven), citeret af Dagbladet Tiden",
+      "accuses": null,
+      "find": "D-030",
+      "no": 8
+    },
+    {
+      "text": "Aktien ventes at åbne lavere, når børsen åbner kl. 09.",
+      "quote": "Aktien ventes at åbne lavere, når børsen åbner kl. 09.",
+      "statement": true,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-030",
+      "no": 9
+    }
+  ],
+  "reply": "{\"angle\": \"Tangholm nedskriver tørlastflåden med 1,2 mia. og sænker forventningerne\", \"web\": [{\"s\": \"Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden.\", \"facts\": [1]}, {\"s\": \"Ifølge Rederiet Tangholm A/S nedjusterer koncernen forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.\", \"facts\": [2]}, {\"s\": \"Omsætningen i kvartalet var 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.\", \"facts\": [4]}, {\"s\": \"Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.\", \"facts\": [5]}, {\"s\": \"Ledelsen i Rederiet Tangholm A/S venter fortsat lave rater i tørlastmarkedet resten af året.\", \"facts\": [3]}], \"notification\": {\"s\": \"Tangholm nedskriver tørlastflåden med 1,2 mia. kr. og nedjusterer forventningerne\", \"facts\": [1, 2]}, \"audio\": [{\"s\": \"Koncernen har i kvartalet foretaget en nedskrivning på 1,2 milliarder kroner på tørlastflåden.\", \"facts\": [1]}, {\"s\": \"Ifølge Rederiet Tangholm nedjusterer koncernen forventningen til årets resultat før afskrivninger fra 1,4 til 1,6 milliarder kroner til 1,0 til 1,2 milliarder kroner.\", \"facts\": [2]}, {\"s\": \"Periodens resultat blev et underskud på 1.050 millioner kroner mod et overskud på 210 millioner kroner sidste år.\", \"facts\": [5]}]}\n",
+  "parsed": {
+    "angle": "Tangholm nedskriver tørlastflåden med 1,2 mia. og sænker forventningerne",
+    "web": [
+      {
+        "s": "Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge Rederiet Tangholm A/S nedjusterer koncernen forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Omsætningen i kvartalet var 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.",
+        "facts": [
+          5
+        ]
+      },
+      {
+        "s": "Ledelsen i Rederiet Tangholm A/S venter fortsat lave rater i tørlastmarkedet resten af året.",
+        "facts": [
+          3
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Tangholm nedskriver tørlastflåden med 1,2 mia. kr. og nedjusterer forventningerne",
+      "facts": [
+        1,
+        2
+      ]
+    },
+    "audio": [
+      {
+        "s": "Koncernen har i kvartalet foretaget en nedskrivning på 1,2 milliarder kroner på tørlastflåden.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge Rederiet Tangholm nedjusterer koncernen forventningen til årets resultat før afskrivninger fra 1,4 til 1,6 milliarder kroner til 1,0 til 1,2 milliarder kroner.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Periodens resultat blev et underskud på 1.050 millioner kroner mod et overskud på 210 millioner kroner sidste år.",
+        "facts": [
+          5
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "8193deee08498bab4121580b92e908be80b08955f4366073f220c61264a425e0",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:04+00:00",
+  "id": "D-019",
+  "reply": "{\"scores\": {\"F\": 5, \"M\": 7, \"E\": 6}, \"why\": {\"F\": \"Helligdagsåbning rammer forbrugere, men sagen er et tilbagetrukket forslag, ikke en ændring.\", \"M\": \"Minister dropper lovforslag uden flertal; politik og forvaltning på landsplan.\", \"E\": \"Regulering af butikkers åbningstid berører detailhandlen; forslaget er dog droppet.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 5,
+      "M": 7,
+      "E": 6
+    },
+    "why": {
+      "F": "Helligdagsåbning rammer forbrugere, men sagen er et tilbagetrukket forslag, ikke en ændring.",
+      "M": "Minister dropper lovforslag uden flertal; politik og forvaltning på landsplan.",
+      "E": "Regulering af butikkers åbningstid berører detailhandlen; forslaget er dog droppet."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

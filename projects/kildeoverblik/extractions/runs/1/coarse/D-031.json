@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "e1989f4b2cbe893463e3774180f47b5f1053d07425cf1305cbaeee34f2b36da9",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:54+00:00",
+  "id": "D-031",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Genåbnet motorvej, kø afvikles på en halv time; kun lille trafikmelding.\", \"M\": \"Enkeltstående trafikmelding uden politisk eller forvaltningsmæssig vinkel.\", \"E\": \"Lastbilsuheld genåbnet; ingen angivet driftspåvirkning for virksomheder eller transport.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Genåbnet motorvej, kø afvikles på en halv time; kun lille trafikmelding.",
+      "M": "Enkeltstående trafikmelding uden politisk eller forvaltningsmæssig vinkel.",
+      "E": "Lastbilsuheld genåbnet; ingen angivet driftspåvirkning for virksomheder eller transport."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

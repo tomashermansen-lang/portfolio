@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "6415602e582d3bb0206f47e2295932e763aa9635db96b13811dc0ef2fe36c2ec",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:05+00:00",
+  "from": "D-028",
+  "to": "A-022",
+  "shared": "Nørrevang Idrætshal",
+  "reply": "{\"related\": false, \"why\": \"Dagens telegram handler om et evakueringscenter i hallen under en evakuering ved Nørrevang Strand, mens arkivdokumentet handler om udskiftning af hallens gulv i sommeren 2025, så de deler kun stedsnavnet.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens telegram handler om et evakueringscenter i hallen under en evakuering ved Nørrevang Strand, mens arkivdokumentet handler om udskiftning af hallens gulv i sommeren 2025, så de deler kun stedsnavnet.",
+    "facts": []
+  },
+  "parse_error": null
+}

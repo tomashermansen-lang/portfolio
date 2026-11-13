@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "8cbac4b3ab698d336e87b19f17fa3b3678f758bad783261b931a21efe20c82e0",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:19+00:00",
+  "id": "N-056",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig fornyelse af lokal vandindvindingstilladelse, ingen berørte læsere eller kuriøst element.\", \"M\": \"Kommunal forvaltning, men ren fornyelse uden ændring og kun lokal betydning.\", \"E\": \"Uændret tilladelse til én landbrugsejendom, ingen regulering eller erhvervspåvirkning at se.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig fornyelse af lokal vandindvindingstilladelse, ingen berørte læsere eller kuriøst element.",
+      "M": "Kommunal forvaltning, men ren fornyelse uden ændring og kun lokal betydning.",
+      "E": "Uændret tilladelse til én landbrugsejendom, ingen regulering eller erhvervspåvirkning at se."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,130 @@
+{
+  "prompt_sha256": "1e162ce050789b4aa69757160999ac097d12c3bb60a6643958340250ef5f0cec",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:06+00:00",
+  "desk": "F",
+  "group": 11,
+  "finds": [
+    "N-067"
+  ],
+  "facts": [
+    {
+      "text": "Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.",
+      "quote": "Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-067",
+      "no": 1
+    },
+    {
+      "text": "Kundechef Anne-Mette Højlund siger, at trampoliner, havemøbler og parasoller oftest flytter sig, når det blæser.",
+      "quote": "Trampoliner, havemøbler og parasoller er det, der oftest flytter sig, når det blæser.",
+      "statement": true,
+      "speaker": "Anne-Mette Højlund, kundechef i Forsikringsselskabet Vesterhede",
+      "accuses": null,
+      "find": "N-067",
+      "no": 2
+    },
+    {
+      "text": "Selskabet råder til at sætte havemøbler, grill og krukker ind og lægge trampolinen ned eller binde den til et træ.",
+      "quote": "Sæt havemøbler, grill og krukker ind. Læg trampolinen ned, eller bind den til et træ.",
+      "statement": true,
+      "speaker": "Forsikringsselskabet Vesterhede",
+      "accuses": null,
+      "find": "N-067",
+      "no": 3
+    },
+    {
+      "text": "Selskabet råder til at lukke vinduer, døre og porte, også i drivhuset og skuret.",
+      "quote": "Luk vinduer, døre og porte, også i drivhuset og skuret.",
+      "statement": true,
+      "speaker": "Forsikringsselskabet Vesterhede",
+      "accuses": null,
+      "find": "N-067",
+      "no": 4
+    },
+    {
+      "text": "Selskabet råder til at tage billeder af huset og haven.",
+      "quote": "Tag billeder af huset og haven, så du ved, hvordan det så ud.",
+      "statement": true,
+      "speaker": "Forsikringsselskabet Vesterhede",
+      "accuses": null,
+      "find": "N-067",
+      "no": 5
+    },
+    {
+      "text": "Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.",
+      "quote": "Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-067",
+      "no": 6
+    }
+  ],
+  "reply": "{\"angle\":\"Forsikringsselskab opfordrer husejere til en halv time i haven før storm\",\"web\":[{\"s\":\"Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.\",\"facts\":[1]},{\"s\":\"Kundechef Anne-Mette Højlund siger, at trampoliner, havemøbler og parasoller oftest flytter sig, når det blæser.\",\"facts\":[2]},{\"s\":\"Selskabet råder til at sætte havemøbler, grill og krukker ind og lægge trampolinen ned eller binde den til et træ.\",\"facts\":[3]},{\"s\":\"Selskabet råder desuden til at lukke vinduer, døre og porte, også i drivhuset og skuret, og til at tage billeder af huset og haven.\",\"facts\":[4,5]},{\"s\":\"Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.\",\"facts\":[6]}],\"notification\":{\"s\":\"Vesterhede opfordrer husejere til at bruge en halv time i haven før stormen i aften\",\"facts\":[1]},\"audio\":[{\"s\":\"Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.\",\"facts\":[1]},{\"s\":\"Selskabet råder til at sætte havemøbler, grill og krukker ind og lægge trampolinen ned eller binde den til et træ.\",\"facts\":[3]},{\"s\":\"Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.\",\"facts\":[6]}]}\n",
+  "parsed": {
+    "angle": "Forsikringsselskab opfordrer husejere til en halv time i haven før storm",
+    "web": [
+      {
+        "s": "Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Kundechef Anne-Mette Højlund siger, at trampoliner, havemøbler og parasoller oftest flytter sig, når det blæser.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Selskabet råder til at sætte havemøbler, grill og krukker ind og lægge trampolinen ned eller binde den til et træ.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Selskabet råder desuden til at lukke vinduer, døre og porte, også i drivhuset og skuret, og til at tage billeder af huset og haven.",
+        "facts": [
+          4,
+          5
+        ]
+      },
+      {
+        "s": "Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.",
+        "facts": [
+          6
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Vesterhede opfordrer husejere til at bruge en halv time i haven før stormen i aften",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Selskabet råder til at sætte havemøbler, grill og krukker ind og lægge trampolinen ned eller binde den til et træ.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.",
+        "facts": [
+          6
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

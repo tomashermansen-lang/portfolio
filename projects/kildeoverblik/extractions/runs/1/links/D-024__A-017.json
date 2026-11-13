@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "7e322cdca6c4330141ab40929b5d1b593a3eb7314d860c9889865c320becb01e",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:51+00:00",
+  "from": "D-024",
+  "to": "A-017",
+  "shared": "Sydhavnen",
+  "reply": "{\"related\": false, \"why\": \"Arkivdokumentet er en pressemeddelelse om fabrikkens miljøcertificering i 2025 og siger intet om lukningen, de 240 job eller fagforeningens krav, så det deler kun virksomhed og sted med dagens kilde.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Arkivdokumentet er en pressemeddelelse om fabrikkens miljøcertificering i 2025 og siger intet om lukningen, de 240 job eller fagforeningens krav, så det deler kun virksomhed og sted med dagens kilde.",
+    "facts": []
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "0cf76f9cae6c1085b2effcfa019f7331153e6ddd764d06b36b102ad7c89767a9",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:51+00:00",
+  "id": "N-072",
+  "reply": "{\"scores\": {\"F\": 6, \"M\": 3, \"E\": 4}, \"why\": {\"F\": \"Storm aflyser færge i dag fra middag; rammer øboere, men kun lokalt.\", \"M\": \"Enkeltstående lokal trafikmelding uden myndighedssvigt eller bredere politisk rækkevidde.\", \"E\": \"Færgedrift stoppet i et døgn, men intet om virksomheder eller omfang.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 6,
+      "M": 3,
+      "E": 4
+    },
+    "why": {
+      "F": "Storm aflyser færge i dag fra middag; rammer øboere, men kun lokalt.",
+      "M": "Enkeltstående lokal trafikmelding uden myndighedssvigt eller bredere politisk rækkevidde.",
+      "E": "Færgedrift stoppet i et døgn, men intet om virksomheder eller omfang."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

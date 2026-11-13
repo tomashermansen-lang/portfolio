@@ -1,0 +1,666 @@
+{
+  "_note": "The product backlog of the handover: user stories derived from the prototype, grouped by epic (a capability of the product). Each links to requirements in spec/requirements-ears.md Part A by their R key and to scenarios in spec/features/ by their S key (the @S-nn tag, stable; the name may change). phase says when the team needs it: pilot (the additions that let the prototype run on three real contracts) or build (the product). The discovery, the prototype and this page, is closed by the list of what it delivered above the table, not by stories. The page derives the Prototype column from spec/spec-results.json: Shown when every linked scenario passed, Partly when some did, Not built otherwise; nothing here is built for production. A story with no requirement or scenario yet carries a note saying where it is written. Every requirement of Part A belongs to at least one story; the page says so, and lists any that does not.",
+  "stories": [
+    {
+      "epic": "Cases and documents",
+      "phase": "build",
+      "priority": "must",
+      "story": "As an analyst, I want every case listed with the status of its key terms and its last activity, so that I see where each contract stands before I open it.",
+      "requirements": [
+        "R-65",
+        "R-70",
+        "R-70b"
+      ],
+      "acceptance": [
+        "S-61"
+      ]
+    },
+    {
+      "epic": "Cases and documents",
+      "phase": "build",
+      "priority": "must",
+      "story": "As an analyst, I want to load a contract version into its case and see what was read, so that every figure later traces back to exactly that text.",
+      "requirements": [
+        "R-10",
+        "R-65a"
+      ],
+      "acceptance": [
+        "S-61",
+        "S-06"
+      ]
+    },
+    {
+      "epic": "Cases and documents",
+      "phase": "build",
+      "priority": "must",
+      "story": "As an analyst, I want the five steps in one frame, each with one action that unlocks the next, so that a contract cannot skip a step on its way to the committee.",
+      "requirements": [
+        "R-65b",
+        "R-65c",
+        "R-65d"
+      ],
+      "acceptance": [
+        "S-61"
+      ]
+    },
+    {
+      "epic": "Cases and documents",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the analyst, I want every contract in the pipeline loaded from the document system into its case, so that nothing is uploaded by hand.",
+      "requirements": [
+        "R-84"
+      ],
+      "acceptance": [
+        "S-72",
+        "S-99"
+      ]
+    },
+    {
+      "epic": "Cases and documents",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the analyst, I want a contract loaded as PDF or DOCX with the page of every sentence kept, and a scan without a text layer or a missing annex rejected by name, so that a real contract can enter the pilot at all.",
+      "requirements": [
+        "R-91"
+      ],
+      "acceptance": [
+        "S-83"
+      ]
+    },
+    {
+      "epic": "Extraction",
+      "phase": "build",
+      "priority": "must",
+      "story": "As an analyst, I want the model to read the whole contract and give me the twelve terms, each with the sentence it rests on, so that I review answers instead of reading from the first page.",
+      "requirements": [
+        "R-06",
+        "R-07",
+        "R-08",
+        "R-09",
+        "R-66"
+      ],
+      "acceptance": [
+        "S-61",
+        "S-02",
+        "S-03",
+        "S-04",
+        "S-05"
+      ]
+    },
+    {
+      "epic": "Extraction",
+      "phase": "build",
+      "priority": "must",
+      "story": "As a product manager, I want every run recorded with its model, time, run number and document hash, and the raw reply kept, so that what the product shows can be verified.",
+      "requirements": [
+        "R-10",
+        "R-11",
+        "R-12"
+      ],
+      "acceptance": [
+        "S-06",
+        "S-07"
+      ]
+    },
+    {
+      "epic": "Extraction",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the pilot team, I want the three real contracts read through the firm's approved path to the model, with the firm's keys, so that no document leaves the agreed boundary.",
+      "requirements": [
+        "R-83"
+      ],
+      "acceptance": [
+        "S-72",
+        "S-100"
+      ]
+    },
+    {
+      "epic": "Extraction",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the pilot team, I want contracts of 80 to 130 pages read whole, so that the length risk named in v1 is tested.",
+      "requirements": [
+        "R-88"
+      ],
+      "acceptance": [
+        "S-72",
+        "S-101"
+      ]
+    },
+    {
+      "epic": "Extraction",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the analyst, I want a failed or unreadable model call retried once and then shown as not read with the reason, and a re-read to become the current run for that version, so that no case silently lacks a record and no stale run is shown as current.",
+      "requirements": [
+        "R-95",
+        "R-96"
+      ],
+      "acceptance": [
+        "S-86",
+        "S-87"
+      ]
+    },
+    {
+      "epic": "Extraction",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the product manager, I want an instruction planted inside a contract treated as contract text, and one such document in the data room, so that the eval scores the trap before a real contract springs it.",
+      "requirements": [
+        "R-97"
+      ],
+      "acceptance": [
+        "S-89"
+      ]
+    },
+    {
+      "epic": "Checks",
+      "phase": "build",
+      "priority": "must",
+      "story": "As an analyst, I want code to check what code can check (the quote is in the text, the cited clause exists, what changed since the draft) and flag it on my list, so that I read the doubtful terms first.",
+      "requirements": [
+        "R-21",
+        "R-22",
+        "R-24",
+        "R-25",
+        "R-26",
+        "R-67"
+      ],
+      "acceptance": [
+        "S-18",
+        "S-20",
+        "S-23",
+        "S-61",
+        "S-19",
+        "S-24",
+        "S-25",
+        "S-80"
+      ]
+    },
+    {
+      "epic": "Checks",
+      "phase": "build",
+      "priority": "should",
+      "story": "As a product manager, I want the checks to run with nothing but the standard library, on the desk and in the browser, so that the team can run them anywhere without a model.",
+      "requirements": [
+        "R-20"
+      ],
+      "acceptance": [
+        "S-17"
+      ]
+    },
+    {
+      "epic": "Checks",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the pilot team, I want the papers on file, counsel's summary and the draft committee paper, checked against each pilot contract on the desk, so that paper errors are counted on real documents, not planted ones.",
+      "requirements": [
+        "R-23"
+      ],
+      "acceptance": [
+        "S-21",
+        "S-22"
+      ]
+    },
+    {
+      "epic": "Review",
+      "phase": "build",
+      "priority": "must",
+      "story": "As an analyst, I want each term's answer beside the contract's own sentence, with citations I can click, so that I confirm a figure against the text in seconds.",
+      "requirements": [
+        "R-27",
+        "R-28",
+        "R-29",
+        "R-30",
+        "R-31",
+        "R-32",
+        "R-38",
+        "R-38a"
+      ],
+      "acceptance": [
+        "S-51",
+        "S-52",
+        "S-54",
+        "S-59",
+        "S-53",
+        "S-58",
+        "S-60"
+      ]
+    },
+    {
+      "epic": "Review",
+      "phase": "build",
+      "priority": "must",
+      "story": "As an analyst, I want to confirm a term or flag it with a note, and never edit a figure by hand, so that the committee only sees figures that code and I have checked.",
+      "requirements": [
+        "R-33",
+        "R-34",
+        "R-35",
+        "R-37"
+      ],
+      "acceptance": [
+        "S-55",
+        "S-57",
+        "S-56"
+      ]
+    },
+    {
+      "epic": "Committee pages",
+      "phase": "build",
+      "priority": "must",
+      "story": "As a committee member, I want the pages with the headline figures first, every term with its full answer and its clause, and the open points last, so that I can decide on the page and check any figure against the contract.",
+      "requirements": [
+        "R-39",
+        "R-39a",
+        "R-39b",
+        "R-39c",
+        "R-40",
+        "R-40a",
+        "R-41",
+        "R-42",
+        "R-43"
+      ],
+      "acceptance": [
+        "S-63",
+        "S-64",
+        "S-65",
+        "S-47"
+      ]
+    },
+    {
+      "epic": "Committee pages",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the committee, I want the pages produced in the house's paper template and workflow, so that the section lands in the paper without retyping.",
+      "requirements": [],
+      "acceptance": [],
+      "note": "requirement written at the build"
+    },
+    {
+      "epic": "Committee pages",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the analyst, I want the reviewed figures to go into the financial model without retyping, one row per term with its source reference, so that the model's inputs carry the same sentence the committee saw.",
+      "requirements": [
+        "R-43a"
+      ],
+      "acceptance": [
+        "S-82"
+      ]
+    },
+    {
+      "epic": "Committee pages",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the committee, I want pages built from a version with unreviewed terms to say DRAFT on every page and not be printable, so that no table reaches us before the analyst has been through it.",
+      "requirements": [
+        "R-92"
+      ],
+      "acceptance": [
+        "S-84"
+      ]
+    },
+    {
+      "epic": "Measurement",
+      "phase": "build",
+      "priority": "should",
+      "story": "As a product manager, I want the working data in SQL with a baseline that states its basis, so that the pilot's figures can be queried and compared honestly against today.",
+      "requirements": [
+        "R-44",
+        "R-45",
+        "R-46",
+        "R-47",
+        "R-48",
+        "R-49"
+      ],
+      "acceptance": [
+        "S-26",
+        "S-27",
+        "S-28",
+        "S-29"
+      ]
+    },
+    {
+      "epic": "Measurement",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the governance board, I want business case v2 to report the pilot's KPIs against v1 (terms read right, terms confirmed or flagged, minutes, days, cost), each with its basis, so that the build decision rests on measured figures.",
+      "requirements": [
+        "R-49a",
+        "R-49b",
+        "R-49c",
+        "R-49d",
+        "R-75",
+        "R-76",
+        "R-77",
+        "R-78",
+        "R-79",
+        "R-80",
+        "R-81"
+      ],
+      "acceptance": [
+        "S-66",
+        "S-31",
+        "S-32",
+        "S-16",
+        "S-33",
+        "S-34",
+        "S-35",
+        "S-36",
+        "S-81"
+      ]
+    },
+    {
+      "epic": "Measurement",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the analyst, I want a time log per contract and the dates of the last twelve cases, so that the baseline is measured and not assumed.",
+      "requirements": [
+        "R-75",
+        "R-76"
+      ],
+      "acceptance": [
+        "S-33",
+        "S-34"
+      ],
+      "note": "scenario written at the pilot"
+    },
+    {
+      "epic": "Measurement",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the pilot team, I want tokens and price recorded per document on the pilot's runs, so that model cost per contract is measured, not read off a price list.",
+      "requirements": [
+        "R-63",
+        "R-79"
+      ],
+      "acceptance": [
+        "S-45",
+        "S-35"
+      ]
+    },
+    {
+      "epic": "Measurement",
+      "phase": "build",
+      "priority": "could",
+      "story": "As the product manager, I want cycle time from the deal pipeline and the document system, so that it comes from data that already exists.",
+      "requirements": [],
+      "acceptance": [],
+      "note": "requirement written at the build"
+    },
+    {
+      "epic": "Measurement",
+      "phase": "build",
+      "priority": "could",
+      "story": "As the product manager, I want an event log of who opened what and what was exported, so that adoption is a number.",
+      "requirements": [],
+      "acceptance": [],
+      "note": "requirement written at the build"
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "build",
+      "priority": "must",
+      "story": "As a product manager, I want the twelve terms defined once and every synthetic document checked against the data room's rules, so that the test set is built once and holds together.",
+      "requirements": [
+        "R-01",
+        "R-02",
+        "R-03",
+        "R-04",
+        "R-05"
+      ],
+      "acceptance": [
+        "S-01",
+        "S-08",
+        "S-09"
+      ]
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "build",
+      "priority": "must",
+      "story": "As a product manager, I want every run scored against the key by rules anyone can read (figures present, quote verbatim, blank where the contract is silent, papers read as written), so that the score means the same on every run.",
+      "requirements": [
+        "R-14",
+        "R-15",
+        "R-16",
+        "R-17",
+        "R-18",
+        "R-19"
+      ],
+      "acceptance": [
+        "S-10",
+        "S-11",
+        "S-12",
+        "S-13",
+        "S-14",
+        "S-15"
+      ]
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "build",
+      "priority": "should",
+      "story": "As a product manager, I want every change to the prompt, the definitions or the model scored against the key before it is used, with the key versioned and fed by the analysts' flags, so that the method stays as good as it was measured.",
+      "requirements": [
+        "R-54",
+        "R-55",
+        "R-56",
+        "R-57",
+        "R-58",
+        "R-59",
+        "R-60",
+        "R-60a",
+        "R-61",
+        "R-62",
+        "R-63a",
+        "R-64"
+      ],
+      "acceptance": [
+        "S-37",
+        "S-38",
+        "S-39",
+        "S-40",
+        "S-41",
+        "S-42",
+        "S-79",
+        "S-43",
+        "S-44",
+        "S-78"
+      ]
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "pilot",
+      "priority": "must",
+      "story": "As the product manager, I want the real contracts scored against a key written before the run, so that the error rate on real documents is known before real use.",
+      "requirements": [
+        "R-61",
+        "R-61a"
+      ],
+      "acceptance": [
+        "S-43",
+        "S-76"
+      ]
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the product manager, I want the definitions and the prompt versioned, extractions made with an earlier version marked stale until re-read, and rollback to mean pinning the previous version, so that a change is visible on every case it touches.",
+      "requirements": [
+        "R-101"
+      ],
+      "acceptance": [
+        "S-93"
+      ]
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the unit, I want the operational error rate owned by the product manager and, while it exceeds the threshold in the business case, a warning on the committee pages and a decision on whether the method stays in use, so that an error rate has a consequence.",
+      "requirements": [
+        "R-103"
+      ],
+      "acceptance": [
+        "S-95"
+      ]
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the product manager, I want the regression suite run in the firm's pipeline before every release of the prompt, the definitions or the model, with a regression from correct blocking the release until I write the reason, so that no change ships unscored.",
+      "requirements": [
+        "R-104"
+      ],
+      "acceptance": [
+        "S-96"
+      ]
+    },
+    {
+      "epic": "Evaluation",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the team that builds it, I want the handover to say which scenarios carry over unchanged as the regression suite and which are rewritten against the house's test runner, so that the build starts with its tests.",
+      "requirements": [
+        "R-105"
+      ],
+      "acceptance": [
+        "S-97"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the firm, I want identity and access on the cases, extractions and review log, so that only the people allowed to see a contract see its figures.",
+      "requirements": [
+        "R-84a",
+        "R-98"
+      ],
+      "acceptance": [
+        "S-72",
+        "S-90"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the deal lead, I want decisions and flags stored beyond the browser tab with an audit trail, so that a review is a record.",
+      "requirements": [
+        "R-85",
+        "R-89"
+      ],
+      "acceptance": [
+        "S-72",
+        "S-102"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the product manager, I want the model version and the prompt version pinned on every record, and the checks runnable in a standard runtime, so that a change in either is visible in the evaluation and the firm can run the checks on any machine.",
+      "requirements": [
+        "R-86",
+        "R-90"
+      ],
+      "acceptance": [
+        "S-72",
+        "S-103"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the product manager, I want a monthly cost ceiling and a queue for the model calls, so that cost is bounded and a long contract still comes back within ten minutes.",
+      "requirements": [
+        "R-87",
+        "R-102"
+      ],
+      "acceptance": [
+        "S-72",
+        "S-94"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "could",
+      "story": "As the investment team, I want questions across all contracts' extracted terms, so that a portfolio question takes seconds.",
+      "requirements": [
+        "R-46",
+        "R-47"
+      ],
+      "acceptance": [
+        "S-30"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the firm, I want no more than the contract text and the twelve definitions sent to the model, with a record per call of what was sent, so that what leaves the house is known and bounded.",
+      "requirements": [
+        "R-93"
+      ],
+      "acceptance": [
+        "S-85"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "must",
+      "story": "As the deal lead, I want every decision kept as a new row with the document version, never updated or deleted, so that the log is a record and the current decision is its latest row.",
+      "requirements": [
+        "R-94"
+      ],
+      "acceptance": [
+        "S-88"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the firm's audit function, I want every read of a review log or an export logged with who and when, readable without the application, so that access is a record, not a trust.",
+      "requirements": [
+        "R-99"
+      ],
+      "acceptance": [
+        "S-91"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the analyst, I want the case to say which step cannot run and why when the document system or the model is down, and still open the last reviewed table, so that an outage is a delay, not a loss.",
+      "requirements": [
+        "R-100"
+      ],
+      "acceptance": [
+        "S-92"
+      ]
+    },
+    {
+      "epic": "Platform",
+      "phase": "build",
+      "priority": "should",
+      "story": "As the deal lead, I want decisions on an earlier version kept and shown as made on that version when a new one is loaded, and every case exportable as one file at decommissioning, so that nothing is lost when a contract or the product moves on.",
+      "requirements": [
+        "R-106"
+      ],
+      "acceptance": [
+        "S-98"
+      ]
+    }
+  ]
+}

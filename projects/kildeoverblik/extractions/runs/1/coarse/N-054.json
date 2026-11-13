@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "6d246ffb14cb83ec6821c55dec90c004dfa1092294a2c34dd856f45595954946",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:12+00:00",
+  "id": "N-054",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 2, \"E\": 2}, \"why\": {\"F\": \"Storm i nat er relevant, men meldingen er blot, at vagten er normalt bemandet.\", \"M\": \"Rutinemelding fra lokalt netselskab uden myndighedssvigt eller bredere forvaltningssag.\", \"E\": \"Driften er upåvirket; ingen afvigelse, nedbrud eller regulering i det viste uddrag.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 2,
+      "E": 2
+    },
+    "why": {
+      "F": "Storm i nat er relevant, men meldingen er blot, at vagten er normalt bemandet.",
+      "M": "Rutinemelding fra lokalt netselskab uden myndighedssvigt eller bredere forvaltningssag.",
+      "E": "Driften er upåvirket; ingen afvigelse, nedbrud eller regulering i det viste uddrag."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

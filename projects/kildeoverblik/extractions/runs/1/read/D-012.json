@@ -1,0 +1,71 @@
+{
+  "prompt_sha256": "a8e4336d47a28531ac9932d8cdee10caa0c655c2fc7c934187758b4006e61589",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:18+00:00",
+  "id": "D-012",
+  "reply": "{\"summary\": \"Motorvej 21 er spærret nordgående ved Egeby efter en væltet lastbil, og spærringen ventes at vare til omkring kl. 09.\", \"facts\": [{\"text\": \"Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.\", \"quote\": \"Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Ingen er kommet til skade.\", \"quote\": \"Ingen er kommet til skade.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Der er kø på otte kilometer.\", \"quote\": \"Der er kø på otte kilometer.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Trafikken ledes fra ved afkørsel 41.\", \"quote\": \"Trafikken ledes fra ved afkørsel 41.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Spærringen ventes at vare til omkring kl. 09.\", \"quote\": \"Spærringen ventes at vare til omkring kl. 09.\", \"statement\": true, \"speaker\": \"Trafikcentralen\", \"accuses\": null}], \"places\": [\"Motorvej 21\", \"Egeby\", \"Egeby Syd\", \"Egeby Centrum\"], \"orgs\": [\"Trafikcentralen\"], \"values\": {\"F\": {\"value\": 5, \"why\": \"Morgenspærring med otte kilometers kø rammer pendlere i dag, men uden personskade og begrænset til én motorvejsstrækning.\"}, \"M\": {\"value\": 2, \"why\": \"Enkeltstående trafikmelding uden myndighedssvigt eller politisk dimension; ingen tilskadekomne.\"}, \"E\": {\"value\": 3, \"why\": \"Motorvejsspærring kan forsinke transport, men kilden nævner ingen ramte virksomheder eller driftsproblemer.\"}}}\n",
+  "parsed": {
+    "summary": "Motorvej 21 er spærret nordgående ved Egeby efter en væltet lastbil, og spærringen ventes at vare til omkring kl. 09.",
+    "facts": [
+      {
+        "text": "Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.",
+        "quote": "Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Ingen er kommet til skade.",
+        "quote": "Ingen er kommet til skade.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Der er kø på otte kilometer.",
+        "quote": "Der er kø på otte kilometer.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Trafikken ledes fra ved afkørsel 41.",
+        "quote": "Trafikken ledes fra ved afkørsel 41.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Spærringen ventes at vare til omkring kl. 09.",
+        "quote": "Spærringen ventes at vare til omkring kl. 09.",
+        "statement": true,
+        "speaker": "Trafikcentralen",
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Motorvej 21",
+      "Egeby",
+      "Egeby Syd",
+      "Egeby Centrum"
+    ],
+    "orgs": [
+      "Trafikcentralen"
+    ],
+    "values": {
+      "F": {
+        "value": 5,
+        "why": "Morgenspærring med otte kilometers kø rammer pendlere i dag, men uden personskade og begrænset til én motorvejsstrækning."
+      },
+      "M": {
+        "value": 2,
+        "why": "Enkeltstående trafikmelding uden myndighedssvigt eller politisk dimension; ingen tilskadekomne."
+      },
+      "E": {
+        "value": 3,
+        "why": "Motorvejsspærring kan forsinke transport, men kilden nævner ingen ramte virksomheder eller driftsproblemer."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "306f074cd4c9511ec605284d1a077562c8675ee99e729c117c16c38ab349b557",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:40+00:00",
+  "id": "A-028",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Lokalt høringssvar om spildevandsplan; rammer ikke læsere i dag, rutine.\", \"M\": \"Kommunal forvaltning, men lokalt høringssvar fra interesseorganisation og uddraget viser ingen konflikt.\", \"E\": \"Landbrugets høringssvar uden synlig konsekvens for virksomheder; regulering kun lokalt og uklart.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokalt høringssvar om spildevandsplan; rammer ikke læsere i dag, rutine.",
+      "M": "Kommunal forvaltning, men lokalt høringssvar fra interesseorganisation og uddraget viser ingen konflikt.",
+      "E": "Landbrugets høringssvar uden synlig konsekvens for virksomheder; regulering kun lokalt og uklart."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

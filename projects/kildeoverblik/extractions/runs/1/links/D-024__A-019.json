@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "ee998cd2f627eee9b2a1be979f8f8b81d11cf5579a40080a2f980732610d3f1a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:55+00:00",
+  "from": "D-024",
+  "to": "A-019",
+  "shared": "Tangsø Energi",
+  "reply": "{\"related\": false, \"why\": \"Arkivdokumentet handler om Tangsø Energis sponsoraftale med en håndboldklub i 2023, mens dagens kilde handler om fabrikslukning og fagforeningens krav til fratrædelsesvilkår, så de deler kun virksomhedens navn.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Arkivdokumentet handler om Tangsø Energis sponsoraftale med en håndboldklub i 2023, mens dagens kilde handler om fabrikslukning og fagforeningens krav til fratrædelsesvilkår, så de deler kun virksomhedens navn.",
+    "facts": []
+  },
+  "parse_error": null
+}

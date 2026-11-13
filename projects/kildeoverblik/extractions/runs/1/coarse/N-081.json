@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c06469d7fe07757ad86b21bd670a6b52c599406020b5215adf5c87f43be1db68",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:04+00:00",
+  "id": "N-081",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Personlig klumme om strikning fra andet medie; lidt kuriøs, men ingen nyhed.\", \"M\": \"Ingen politik, forvaltning eller myndighedssvigt; ren livsstilsklumme.\", \"E\": \"Ingen erhvervsrelevans; klumme om hobby.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Personlig klumme om strikning fra andet medie; lidt kuriøs, men ingen nyhed.",
+      "M": "Ingen politik, forvaltning eller myndighedssvigt; ren livsstilsklumme.",
+      "E": "Ingen erhvervsrelevans; klumme om hobby."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

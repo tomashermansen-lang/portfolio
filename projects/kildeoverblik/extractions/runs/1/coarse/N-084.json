@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c4dc44a951d1b0edb0ba7df7eee3c1e31054ed478ddb02d616fcd62eab90cffa",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:08+00:00",
+  "id": "N-084",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig lokal dagsorden; parkeringstid på Torvet berører få og haster ikke.\", \"M\": \"Kommunal udvalgsdagsorden, rent lokal; ingen svigt eller sag ud over kommunen synlig.\", \"E\": \"Lokalpolitik uden synlig virksomhedspåvirkning udover mindre handlendes parkeringsønske.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig lokal dagsorden; parkeringstid på Torvet berører få og haster ikke.",
+      "M": "Kommunal udvalgsdagsorden, rent lokal; ingen svigt eller sag ud over kommunen synlig.",
+      "E": "Lokalpolitik uden synlig virksomhedspåvirkning udover mindre handlendes parkeringsønske."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

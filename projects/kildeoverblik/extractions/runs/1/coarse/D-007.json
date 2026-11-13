@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3f9996fa7ad24cbc6c43e791a1f054d3c60a5cd567c66ce0c9a8c230a467dd64",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:29+00:00",
+  "id": "D-007",
+  "reply": "{\"scores\": {\"F\": 6, \"M\": 5, \"E\": 8}, \"why\": {\"F\": \"Højvande i nat og havnelukning i dag, men kun lokalt kendt rammer få læsere.\", \"M\": \"Myndighedsmeddelelse om højvande, men overvejende lokal og uden svigt fra myndigheden.\", \"E\": \"Erhvervshavn, containerterminal og færge lukkes i 12 timer i dag; driften rammes direkte.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 6,
+      "M": 5,
+      "E": 8
+    },
+    "why": {
+      "F": "Højvande i nat og havnelukning i dag, men kun lokalt kendt rammer få læsere.",
+      "M": "Myndighedsmeddelelse om højvande, men overvejende lokal og uden svigt fra myndigheden.",
+      "E": "Erhvervshavn, containerterminal og færge lukkes i 12 timer i dag; driften rammes direkte."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "0aa0096b4ac0c4ee2e88bbd3993bf1117a748485c1a100433ceeea70701d0db7",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:00+00:00",
+  "id": "D-018",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 5, \"E\": 2}, \"why\": {\"F\": \"Høringssvar uden synlig effekt for læsere i dag; kun regionalt og proceduremæssigt.\", \"M\": \"Lægeforening afviser regionsforslag om ventetidsgaranti; offentlig forvaltning, men kun regionalt og uddraget er tyndt.\", \"E\": \"Sundhedspolitisk høringssvar uden synlig virksomhedspåvirkning, regulering eller nøgletal.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 5,
+      "E": 2
+    },
+    "why": {
+      "F": "Høringssvar uden synlig effekt for læsere i dag; kun regionalt og proceduremæssigt.",
+      "M": "Lægeforening afviser regionsforslag om ventetidsgaranti; offentlig forvaltning, men kun regionalt og uddraget er tyndt.",
+      "E": "Sundhedspolitisk høringssvar uden synlig virksomhedspåvirkning, regulering eller nøgletal."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

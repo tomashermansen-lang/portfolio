@@ -1,0 +1,121 @@
+{
+  "prompt_sha256": "45663d8d2905c821b54e4f29be781a982d1e5518a2560cd5f216e76ebe52427f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:29+00:00",
+  "desk": "F",
+  "group": 18,
+  "finds": [
+    "D-012"
+  ],
+  "facts": [
+    {
+      "text": "Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.",
+      "quote": "Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-012",
+      "no": 1
+    },
+    {
+      "text": "Ingen er kommet til skade.",
+      "quote": "Ingen er kommet til skade.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-012",
+      "no": 2
+    },
+    {
+      "text": "Der er kø på otte kilometer.",
+      "quote": "Der er kø på otte kilometer.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-012",
+      "no": 3
+    },
+    {
+      "text": "Trafikken ledes fra ved afkørsel 41.",
+      "quote": "Trafikken ledes fra ved afkørsel 41.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-012",
+      "no": 4
+    },
+    {
+      "text": "Spærringen ventes at vare til omkring kl. 09.",
+      "quote": "Spærringen ventes at vare til omkring kl. 09.",
+      "statement": true,
+      "speaker": "Trafikcentralen",
+      "accuses": null,
+      "find": "D-012",
+      "no": 5
+    }
+  ],
+  "reply": "{\"angle\": \"Væltet lastbil spærrer Motorvej 21 nordgående ved Egeby\", \"web\": [{\"s\": \"Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.\", \"facts\": [1]}, {\"s\": \"Ingen er kommet til skade.\", \"facts\": [2]}, {\"s\": \"Der er kø på otte kilometer.\", \"facts\": [3]}, {\"s\": \"Trafikken ledes fra ved afkørsel 41.\", \"facts\": [4]}, {\"s\": \"Trafikcentralen venter, at spærringen varer til omkring kl. 09.\", \"facts\": [5]}], \"notification\": {\"s\": \"Motorvej 21 spærret nordgående mellem Egeby Syd og Egeby Centrum efter væltet lastbil\", \"facts\": [1]}, \"audio\": [{\"s\": \"Motorvej 21 er spærret i nordgående retning mellem Egeby Syd og Egeby Centrum efter en væltet lastbil.\", \"facts\": [1]}, {\"s\": \"Ingen er kommet til skade, og der er kø på otte kilometer.\", \"facts\": [2, 3]}, {\"s\": \"Trafikcentralen venter, at spærringen varer til omkring klokken ni.\", \"facts\": [5]}]}\n",
+  "parsed": {
+    "angle": "Væltet lastbil spærrer Motorvej 21 nordgående ved Egeby",
+    "web": [
+      {
+        "s": "Motorvej 21 er spærret i nordgående retning mellem afkørsel 41 Egeby Syd og afkørsel 42 Egeby Centrum efter en væltet lastbil.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ingen er kommet til skade.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Der er kø på otte kilometer.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Trafikken ledes fra ved afkørsel 41.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Trafikcentralen venter, at spærringen varer til omkring kl. 09.",
+        "facts": [
+          5
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Motorvej 21 spærret nordgående mellem Egeby Syd og Egeby Centrum efter væltet lastbil",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Motorvej 21 er spærret i nordgående retning mellem Egeby Syd og Egeby Centrum efter en væltet lastbil.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ingen er kommet til skade, og der er kø på otte kilometer.",
+        "facts": [
+          2,
+          3
+        ]
+      },
+      {
+        "s": "Trafikcentralen venter, at spærringen varer til omkring klokken ni.",
+        "facts": [
+          5
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,121 @@
+{
+  "prompt_sha256": "7b96727946c3faab8257eaa8fa63546805ee9d115803cf73441b576e81685b6b",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:01+00:00",
+  "desk": "F",
+  "group": 9,
+  "finds": [
+    "N-051"
+  ],
+  "facts": [
+    {
+      "text": "Stormen når Egeby i aften.",
+      "quote": "Stormen når også Egeby i aften.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-051",
+      "no": 1
+    },
+    {
+      "text": "Bilister bedes om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften til torsdag morgen, hvis det kan undgås.",
+      "quote": "Vi beder derfor bilister om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften og til torsdag morgen, hvis det kan undgås.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-051",
+      "no": 2
+    },
+    {
+      "text": "Borgere opfordres til at tage skraldespande, trampoliner og havemøbler ind eller binde dem fast.",
+      "quote": "Tag også skraldespande, trampoliner og havemøbler ind, eller bind dem fast.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-051",
+      "no": 3
+    },
+    {
+      "text": "Kommunens folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.",
+      "quote": "Vores folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-051",
+      "no": 4
+    },
+    {
+      "text": "Borgere, der ser en gren på en sti, bedes give besked i kommunens app.",
+      "quote": "Ser du en gren på en sti, så giv os besked i kommunens app.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-051",
+      "no": 5
+    }
+  ],
+  "reply": "{\"angle\":\"Stormen når Egeby i aften – bilister bedes ikke parkere under store træer\",\"web\":[{\"s\":\"Stormen når Egeby i aften.\",\"facts\":[1]},{\"s\":\"Bilister bedes om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften til torsdag morgen, hvis det kan undgås.\",\"facts\":[2]},{\"s\":\"Borgere opfordres til at tage skraldespande, trampoliner og havemøbler ind eller binde dem fast.\",\"facts\":[3]},{\"s\":\"Kommunens folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.\",\"facts\":[4]},{\"s\":\"Borgere, der ser en gren på en sti, bedes give besked i kommunens app.\",\"facts\":[5]}],\"notification\":{\"s\":\"Stormen når Egeby i aften: Tag trampoliner og havemøbler ind eller bind dem fast\",\"facts\":[1,3]},\"audio\":[{\"s\":\"Stormen når Egeby i aften.\",\"facts\":[1]},{\"s\":\"Bilister bedes om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften til torsdag morgen, hvis det kan undgås.\",\"facts\":[2]},{\"s\":\"Borgere opfordres til at tage skraldespande, trampoliner og havemøbler ind eller binde dem fast.\",\"facts\":[3]}]}\n",
+  "parsed": {
+    "angle": "Stormen når Egeby i aften – bilister bedes ikke parkere under store træer",
+    "web": [
+      {
+        "s": "Stormen når Egeby i aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Bilister bedes om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften til torsdag morgen, hvis det kan undgås.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Borgere opfordres til at tage skraldespande, trampoliner og havemøbler ind eller binde dem fast.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Kommunens folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Borgere, der ser en gren på en sti, bedes give besked i kommunens app.",
+        "facts": [
+          5
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Stormen når Egeby i aften: Tag trampoliner og havemøbler ind eller bind dem fast",
+      "facts": [
+        1,
+        3
+      ]
+    },
+    "audio": [
+      {
+        "s": "Stormen når Egeby i aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Bilister bedes om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften til torsdag morgen, hvis det kan undgås.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Borgere opfordres til at tage skraldespande, trampoliner og havemøbler ind eller binde dem fast.",
+        "facts": [
+          3
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

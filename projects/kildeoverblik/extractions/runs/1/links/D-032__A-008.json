@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "14738e9b50ecc8784a6791e9ae8323f2c34c0d602d29e08c0627ba527dcb790f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:09+00:00",
+  "from": "D-032",
+  "to": "A-008",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om udlevering af sandsække ved Nørrevang Strand under en stormflods- eller højvandssituation, mens arkivdokumentet blot er en invitation til en årlig frivillig strandrensning i april, så de deler kun stedsnavnet.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om udlevering af sandsække ved Nørrevang Strand under en stormflods- eller højvandssituation, mens arkivdokumentet blot er en invitation til en årlig frivillig strandrensning i april, så de deler kun stedsnavnet.",
+    "facts": []
+  },
+  "parse_error": null
+}

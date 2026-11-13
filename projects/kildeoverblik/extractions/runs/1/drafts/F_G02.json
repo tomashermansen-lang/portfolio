@@ -1,0 +1,230 @@
+{
+  "prompt_sha256": "ab7fcbce561e2661251e5da6a22ca9e5bf25aed98294a4d31fed8c7cb8771828",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:30+00:00",
+  "desk": "F",
+  "group": 2,
+  "finds": [
+    "D-006",
+    "D-028"
+  ],
+  "facts": [
+    {
+      "text": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.",
+      "quote": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.",
+      "statement": true,
+      "speaker": "Karen Lyngsø, operationschef i Beredskab Vest",
+      "accuses": null,
+      "find": "D-006",
+      "no": 1
+    },
+    {
+      "text": "Operationschefen siger, at diget ved Nørrevang Strand er det sted på kysten, beredskabet er mest bekymret for.",
+      "quote": "Diget ved Nørrevang Strand er det sted på kysten, vi er mest bekymrede for.",
+      "statement": true,
+      "speaker": "Karen Lyngsø, operationschef i Beredskab Vest",
+      "accuses": null,
+      "find": "D-006",
+      "no": 2
+    },
+    {
+      "text": "Operationschefen siger, at vandet vil stå ind i boligområdet bag diget, hvis diget ikke holder.",
+      "quote": "Holder det ikke, står vandet ind i boligområdet bag det",
+      "statement": true,
+      "speaker": "Karen Lyngsø, operationschef i Beredskab Vest",
+      "accuses": null,
+      "find": "D-006",
+      "no": 3
+    },
+    {
+      "text": "Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.",
+      "quote": "Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.",
+      "statement": true,
+      "speaker": "Beredskab Vest",
+      "accuses": null,
+      "find": "D-006",
+      "no": 4
+    },
+    {
+      "text": "Beredskabet begynder onsdag formiddag at udlevere sandsække.",
+      "quote": "Beredskabet begynder onsdag formiddag at udlevere sandsække.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-006",
+      "no": 5
+    },
+    {
+      "text": "Politiet i Vest vil i løbet af dagen tage stilling til, om beboerne skal evakueres.",
+      "quote": "Politiet i Vest vil i løbet af dagen tage stilling til, om beboerne skal evakueres.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-006",
+      "no": 6
+    },
+    {
+      "text": "Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.",
+      "quote": "Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.",
+      "statement": true,
+      "speaker": "Nørrevang Kommune",
+      "accuses": null,
+      "find": "D-028",
+      "no": 7
+    },
+    {
+      "text": "Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20.",
+      "quote": "Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20.",
+      "statement": true,
+      "speaker": "Politiet i Vest",
+      "accuses": null,
+      "find": "D-028",
+      "no": 8
+    },
+    {
+      "text": "Evakueringen er foreløbig frivillig.",
+      "quote": "Evakueringen er foreløbig frivillig.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-028",
+      "no": 9
+    },
+    {
+      "text": "Kommunen har siden 2022 givet digelaget tre påbud om at udbedre diget ved Nørrevang Strand.",
+      "quote": "Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 10
+    },
+    {
+      "text": "Ifølge sagsfremstillingen er påbuddene ikke blevet efterkommet.",
+      "quote": "Påbuddene er ikke efterkommet.",
+      "statement": true,
+      "speaker": "Forvaltningen i Nørrevang Kommune",
+      "accuses": "digelaget",
+      "find": "A-001",
+      "no": 11
+    },
+    {
+      "text": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+      "quote": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 12
+    },
+    {
+      "text": "Udbedringen af diget er anslået til at koste 11,5 mio. kr.",
+      "quote": "Udbedringen er anslået til 11,5 mio. kr.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 13
+    },
+    {
+      "text": "Kommunen har siden 2022 givet digelaget tre påbud om at udbedre diget ved Nørrevang Strand, og påbuddene er ikke efterkommet.",
+      "quote": "Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand. Påbuddene er ikke efterkommet.",
+      "statement": true,
+      "speaker": "Nørrevang Kommune (sagsfremstilling til Teknisk Udvalg)",
+      "accuses": "digelaget",
+      "find": "A-001",
+      "no": 14
+    },
+    {
+      "text": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+      "quote": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+      "statement": true,
+      "speaker": "Forvaltningen i Nørrevang Kommune",
+      "accuses": null,
+      "find": "A-001",
+      "no": 15
+    },
+    {
+      "text": "Udbedringen af diget er anslået til 11,5 mio. kr.",
+      "quote": "Udbedringen er anslået til 11,5 mio. kr.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 16
+    },
+    {
+      "text": "Teknisk Udvalg skal på mødet den 17. november 2026 drøfte status på kystsikringen.",
+      "quote": "Punkt 14. Status på kystsikring.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 17
+    }
+  ],
+  "reply": "{\"angle\":\"Frygt for dige ved Nørrevang Strand – tre påbud ikke efterkommet\",\"web\":[{\"s\":\"Operationschef Karen Lyngsø siger, at Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.\",\"facts\":[1]},{\"s\":\"Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.\",\"facts\":[4]},{\"s\":\"Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.\",\"facts\":[7]},{\"s\":\"Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20, mens evakueringen foreløbig er frivillig.\",\"facts\":[8,9]},{\"s\":\"Ifølge en sagsfremstilling fra Nørrevang Kommune til Teknisk Udvalg har kommunen siden 2022 givet digelaget tre påbud om at udbedre diget, og påbuddene er ikke efterkommet.\",\"facts\":[14]}],\"notification\":{\"s\":\"Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til stormflod\",\"facts\":[1]},\"audio\":[{\"s\":\"Operationschef Karen Lyngsø siger, at Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.\",\"facts\":[1]},{\"s\":\"Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.\",\"facts\":[4]},{\"s\":\"Politiet i Vest anbefaler, at beboerne forlader deres hjem senest klokken 20.\",\"facts\":[8]}]}\n",
+  "parsed": {
+    "angle": "Frygt for dige ved Nørrevang Strand – tre påbud ikke efterkommet",
+    "web": [
+      {
+        "s": "Operationschef Karen Lyngsø siger, at Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Nørrevang Kommune åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal for beboere fra området bag diget ved Nørrevang Strand.",
+        "facts": [
+          7
+        ]
+      },
+      {
+        "s": "Politiet i Vest anbefaler, at beboerne forlader deres hjem senest kl. 20, mens evakueringen foreløbig er frivillig.",
+        "facts": [
+          8,
+          9
+        ]
+      },
+      {
+        "s": "Ifølge en sagsfremstilling fra Nørrevang Kommune til Teknisk Udvalg har kommunen siden 2022 givet digelaget tre påbud om at udbedre diget, og påbuddene er ikke efterkommet.",
+        "facts": [
+          14
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til stormflod",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Operationschef Karen Lyngsø siger, at Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge Beredskab Vest ligger omkring 300 boliger bag diget.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Politiet i Vest anbefaler, at beboerne forlader deres hjem senest klokken 20.",
+        "facts": [
+          8
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "e7a94ec56933f73f36cb67dfebbabe4e72d129374b20f6a2cebaa9e476f594e3",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:07+00:00",
+  "id": "D-002",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 3}, \"why\": {\"F\": \"Rutinemæssig kontraktbekendtgørelse om vintervedligeholdelse; ingen akut effekt på læsere i dag.\", \"M\": \"Kommunalt udbud, lokalt og rutinepræget; ingen tegn på fejl eller forvaltningssvigt i uddraget.\", \"E\": \"Kontrakt med ukendt leverandør og værdi; lokal og lav erhvervsrelevans ud fra uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 3
+    },
+    "why": {
+      "F": "Rutinemæssig kontraktbekendtgørelse om vintervedligeholdelse; ingen akut effekt på læsere i dag.",
+      "M": "Kommunalt udbud, lokalt og rutinepræget; ingen tegn på fejl eller forvaltningssvigt i uddraget.",
+      "E": "Kontrakt med ukendt leverandør og værdi; lokal og lav erhvervsrelevans ud fra uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

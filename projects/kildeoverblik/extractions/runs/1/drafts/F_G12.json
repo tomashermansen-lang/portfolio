@@ -1,0 +1,107 @@
+{
+  "prompt_sha256": "4d0a94a8bc5337738334feb88e05dd8955415c943c9921632a9fd90a919c2c3f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:07+00:00",
+  "desk": "F",
+  "group": 12,
+  "finds": [
+    "D-016"
+  ],
+  "facts": [
+    {
+      "text": "Videoen viser et fladt butikstag, der giver efter og styrter sammen i kraftig blæst.",
+      "quote": "et fladt butikstag giver efter og styrter sammen i kraftig blæst",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-016",
+      "no": 1
+    },
+    {
+      "text": "Opslagets tekst siger, at det er i gang i Tangsø.",
+      "quote": "Så er det i gang i Tangsø!!",
+      "statement": true,
+      "speaker": "Profilen kystliv_vest",
+      "accuses": null,
+      "find": "D-016",
+      "no": 2
+    },
+    {
+      "text": "Opslaget opfordrer til at passe på.",
+      "quote": "Pas på derude.",
+      "statement": true,
+      "speaker": "Profilen kystliv_vest",
+      "accuses": null,
+      "find": "D-016",
+      "no": 3
+    },
+    {
+      "text": "Opslaget er delt 1.900 gange på en time.",
+      "quote": "Delt 1.900 gange på en time.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-016",
+      "no": 4
+    }
+  ],
+  "reply": "{\"angle\": \"Opslag med sammenstyrtet butikstag delt 1.900 gange på en time\", \"web\": [{\"s\": \"En video viser et fladt butikstag, der giver efter og styrter sammen i kraftig blæst.\", \"facts\": [1]}, {\"s\": \"Profilen kystliv_vest skriver i opslaget, at det er i gang i Tangsø.\", \"facts\": [2]}, {\"s\": \"Profilen opfordrer i opslaget til at passe på.\", \"facts\": [3]}, {\"s\": \"Opslaget er delt 1.900 gange på en time.\", \"facts\": [4]}], \"notification\": {\"s\": \"Butikstag styrter sammen i blæst på video – opslaget delt 1.900 gange på en time\", \"facts\": [1, 4]}, \"audio\": [{\"s\": \"En video viser et fladt butikstag, der giver efter og styrter sammen i kraftig blæst.\", \"facts\": [1]}, {\"s\": \"Profilen kystliv_vest skriver i opslaget, at det er i gang i Tangsø, og opfordrer til at passe på.\", \"facts\": [2, 3]}, {\"s\": \"Opslaget er delt 1.900 gange på en time.\", \"facts\": [4]}]}\n",
+  "parsed": {
+    "angle": "Opslag med sammenstyrtet butikstag delt 1.900 gange på en time",
+    "web": [
+      {
+        "s": "En video viser et fladt butikstag, der giver efter og styrter sammen i kraftig blæst.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Profilen kystliv_vest skriver i opslaget, at det er i gang i Tangsø.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Profilen opfordrer i opslaget til at passe på.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Opslaget er delt 1.900 gange på en time.",
+        "facts": [
+          4
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Butikstag styrter sammen i blæst på video – opslaget delt 1.900 gange på en time",
+      "facts": [
+        1,
+        4
+      ]
+    },
+    "audio": [
+      {
+        "s": "En video viser et fladt butikstag, der giver efter og styrter sammen i kraftig blæst.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Profilen kystliv_vest skriver i opslaget, at det er i gang i Tangsø, og opfordrer til at passe på.",
+        "facts": [
+          2,
+          3
+        ]
+      },
+      {
+        "s": "Opslaget er delt 1.900 gange på en time.",
+        "facts": [
+          4
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

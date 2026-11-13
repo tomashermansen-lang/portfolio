@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "96472fd15457decbbbb59bcef20571c3ebba2e44a51cc7a240df5142b54dcc85",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:23+00:00",
+  "id": "N-058",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Rutinemæssigt dagsoverblik uden konkret nyhed for mange læsere.\", \"M\": \"Udvalgsmøde i regionen nævnt, men uden dagsorden eller konkret sag.\", \"E\": \"Erhvervsforeningsmøde om generationsskifte er lokalt og uden konkret nyhedsværdi.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinemæssigt dagsoverblik uden konkret nyhed for mange læsere.",
+      "M": "Udvalgsmøde i regionen nævnt, men uden dagsorden eller konkret sag.",
+      "E": "Erhvervsforeningsmøde om generationsskifte er lokalt og uden konkret nyhedsværdi."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

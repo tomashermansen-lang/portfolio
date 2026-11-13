@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "b36fb9214b41825a56506b270539998cbd5bbfd641787f35606335a3ecb42473",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:04+00:00",
+  "id": "N-082",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal aftenskoles kursusprogram; kuriøst præg, men intet der rammer mange læsere i dag.\", \"M\": \"Rutinemeddelelse fra lokal aftenskole uden forvaltnings- eller politisk vinkel.\", \"E\": \"Kursusprogram uden betydning for erhvervsliv, regulering eller drift.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal aftenskoles kursusprogram; kuriøst præg, men intet der rammer mange læsere i dag.",
+      "M": "Rutinemeddelelse fra lokal aftenskole uden forvaltnings- eller politisk vinkel.",
+      "E": "Kursusprogram uden betydning for erhvervsliv, regulering eller drift."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

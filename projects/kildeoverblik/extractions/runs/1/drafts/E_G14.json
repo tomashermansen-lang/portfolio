@@ -1,0 +1,267 @@
+{
+  "prompt_sha256": "5c9ca829e0d30f1c8779714b36dec4b5b920a8c8b9c718854cff057df2d49763",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:16+00:00",
+  "desk": "E",
+  "group": 14,
+  "finds": [
+    "D-010",
+    "D-024"
+  ],
+  "facts": [
+    {
+      "text": "Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.",
+      "quote": "Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-010",
+      "no": 1
+    },
+    {
+      "text": "Lukningen sker ifølge virksomheden med udgangen af marts 2027.",
+      "quote": "lukningen sker ifølge virksomheden med udgangen af marts 2027",
+      "statement": true,
+      "speaker": "Tangsø Energi",
+      "accuses": null,
+      "find": "D-010",
+      "no": 2
+    },
+    {
+      "text": "Medarbejderne fik beskeden om lukningen på et møde kl. 06.",
+      "quote": "Medarbejderne fik beskeden på et møde kl. 06",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-010",
+      "no": 3
+    },
+    {
+      "text": "Flere medarbejdere kalder beskeden et chok.",
+      "quote": "flere medarbejdere, der kalder beskeden et chok",
+      "statement": true,
+      "speaker": "flere medarbejdere",
+      "accuses": null,
+      "find": "D-010",
+      "no": 4
+    },
+    {
+      "text": "Fabrikken er byens næststørste private arbejdsplads.",
+      "quote": "Fabrikken er byens næststørste private arbejdsplads.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-010",
+      "no": 5
+    },
+    {
+      "text": "Tangsø Energis fabrik i Sydhavnen lukkes.",
+      "quote": "Lukningen af Tangsø Energis fabrik i Sydhavnen",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-024",
+      "no": 6
+    },
+    {
+      "text": "240 kolleger står uden job.",
+      "quote": "240 kolleger står uden job",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-024",
+      "no": 7
+    },
+    {
+      "text": "Formand Poul Riis kalder lukningen et hårdt slag for 240 kolleger og for hele Tangsø.",
+      "quote": "Lukningen af Tangsø Energis fabrik i Sydhavnen er et hårdt slag for 240 kolleger og for hele Tangsø.",
+      "statement": true,
+      "speaker": "Poul Riis, formand, Metalarbejdernes Fagforening Vest",
+      "accuses": null,
+      "find": "D-024",
+      "no": 8
+    },
+    {
+      "text": "Fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel.",
+      "quote": "Fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel",
+      "statement": true,
+      "speaker": "Metalarbejdernes Fagforening Vest",
+      "accuses": "Tangsø Energi",
+      "find": "D-024",
+      "no": 9
+    },
+    {
+      "text": "Fagforeningen minder om, at havnen i 2024 betalte for en ny kaj for at holde fabrikken i byen.",
+      "quote": "havnen så sent som i 2024 betalte for en ny kaj for at holde fabrikken i byen",
+      "statement": true,
+      "speaker": "Metalarbejdernes Fagforening Vest",
+      "accuses": null,
+      "find": "D-024",
+      "no": 10
+    },
+    {
+      "text": "Forhandlingerne om fratrædelsesvilkår begynder fredag.",
+      "quote": "Forhandlingerne om fratrædelsesvilkår begynder fredag.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-024",
+      "no": 11
+    },
+    {
+      "text": "Byrådet besluttede i december 2024, at Tangsø Havn skulle investere 30 mio. kr. i en ny kaj ved Tangsø Energis fabrik i Sydhavnen.",
+      "quote": "Byrådet besluttede med 17 stemmer mod 4, at Tangsø Havn investerer 30 mio. kr. i en ny kaj ved Tangsø Energi A/S' fabrik i Sydhavnen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-005",
+      "no": 12
+    },
+    {
+      "text": "Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.",
+      "quote": "Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-005",
+      "no": 13
+    },
+    {
+      "text": "Hvis driften ophører før tid, skal virksomheden betale den uafskrevne del af investeringen.",
+      "quote": "Ophører driften før, skal virksomheden betale den uafskrevne del af investeringen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-005",
+      "no": 14
+    },
+    {
+      "text": "Byrådet besluttede i december 2024, at Tangsø Havn skulle investere 30 mio. kr. i en ny kaj ved Tangsø Energis fabrik i Sydhavnen.",
+      "quote": "Byrådet besluttede med 17 stemmer mod 4, at Tangsø Havn investerer 30 mio. kr. i en ny kaj ved Tangsø Energi A/S' fabrik i Sydhavnen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-005",
+      "no": 15
+    },
+    {
+      "text": "Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.",
+      "quote": "Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-005",
+      "no": 16
+    },
+    {
+      "text": "Hvis driften ophører før 2030, skal virksomheden betale den uafskrevne del af investeringen.",
+      "quote": "Ophører driften før, skal virksomheden betale den uafskrevne del af investeringen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-005",
+      "no": 17
+    },
+    {
+      "text": "Tangsø Energis omsætning steg i 2024 med 6 procent til 1.184 mio. kr.",
+      "quote": "Koncernens omsætning steg med 6 procent til 1.184 mio. kr. mod 1.117 mio. kr. i 2023.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-018",
+      "no": 18
+    },
+    {
+      "text": "Resultatet før skat var 71 mio. kr. i 2024 mod 64 mio. kr. året før.",
+      "quote": "Resultatet før skat blev 71 mio. kr. mod 64 mio. kr. året før.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-018",
+      "no": 19
+    },
+    {
+      "text": "Ledelsen forventede i marts 2025 en omsætning og et resultat for 2025 på niveau med 2024.",
+      "quote": "For 2025 forventer ledelsen en omsætning og et resultat på niveau med 2024.",
+      "statement": true,
+      "speaker": "Tangsø Energis ledelse",
+      "accuses": null,
+      "find": "A-018",
+      "no": 20
+    },
+    {
+      "text": "Bestyrelsen indstillede et udbytte på 20 mio. kr. for 2024.",
+      "quote": "Bestyrelsen indstiller til generalforsamlingen, at der udbetales et udbytte på 20 mio. kr.",
+      "statement": true,
+      "speaker": "Bestyrelsen i Tangsø Energi",
+      "accuses": null,
+      "find": "A-018",
+      "no": 21
+    }
+  ],
+  "reply": "{\"angle\": \"240 job forsvinder i Tangsø, mens lejeaftale forudsætter 200 arbejdspladser til 2030\", \"web\": [{\"s\": \"Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.\", \"facts\": [1]}, {\"s\": \"Ifølge virksomheden sker lukningen med udgangen af marts 2027.\", \"facts\": [2]}, {\"s\": \"Formand Poul Riis fra Metalarbejdernes Fagforening Vest kalder lukningen et hårdt slag for 240 kolleger og for hele Tangsø, og fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel.\", \"facts\": [8, 9]}, {\"s\": \"Fagforeningen minder om, at havnen så sent som i 2024 betalte for en ny kaj for at holde fabrikken i byen.\", \"facts\": [10]}, {\"s\": \"Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030, og hvis driften ophører før tid, skal virksomheden betale den uafskrevne del af investeringen.\", \"facts\": [13, 14]}], \"notification\": {\"s\": \"Tangsø Energi lukker fabrik i Sydhavnen: 240 medarbejdere mister deres job\", \"facts\": [1]}, \"audio\": [{\"s\": \"Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.\", \"facts\": [1]}, {\"s\": \"Ifølge virksomheden sker lukningen med udgangen af marts 2027.\", \"facts\": [2]}, {\"s\": \"Forhandlingerne om fratrædelsesvilkår begynder fredag.\", \"facts\": [11]}]}\n",
+  "parsed": {
+    "angle": "240 job forsvinder i Tangsø, mens lejeaftale forudsætter 200 arbejdspladser til 2030",
+    "web": [
+      {
+        "s": "Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge virksomheden sker lukningen med udgangen af marts 2027.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Formand Poul Riis fra Metalarbejdernes Fagforening Vest kalder lukningen et hårdt slag for 240 kolleger og for hele Tangsø, og fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel.",
+        "facts": [
+          8,
+          9
+        ]
+      },
+      {
+        "s": "Fagforeningen minder om, at havnen så sent som i 2024 betalte for en ny kaj for at holde fabrikken i byen.",
+        "facts": [
+          10
+        ]
+      },
+      {
+        "s": "Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030, og hvis driften ophører før tid, skal virksomheden betale den uafskrevne del af investeringen.",
+        "facts": [
+          13,
+          14
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Tangsø Energi lukker fabrik i Sydhavnen: 240 medarbejdere mister deres job",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge virksomheden sker lukningen med udgangen af marts 2027.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Forhandlingerne om fratrædelsesvilkår begynder fredag.",
+        "facts": [
+          11
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

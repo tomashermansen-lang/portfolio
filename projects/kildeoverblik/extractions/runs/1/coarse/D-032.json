@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "61c21e6b07a4478367e61f04ada14669bd4ed638f56e7d772f1e14e4cd0ca9fb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:00+00:00",
+  "id": "D-032",
+  "reply": "{\"scores\": {\"F\": 8, \"M\": 6, \"E\": 4}, \"why\": {\"F\": \"Sandsække udleveres i dag, ekstra mandskab kl. 16: tydeligt tegn på forventet oversvømmelse, rammer husstande.\", \"M\": \"Myndigheds beredskab og borgerrettet advarsel, men lokalt; rækker ud over lokalt, hvis stormflod er stor.\", \"E\": \"Lystbådehavn nævnt, men ingen drift eller virksomheder rammes endnu i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 8,
+      "M": 6,
+      "E": 4
+    },
+    "why": {
+      "F": "Sandsække udleveres i dag, ekstra mandskab kl. 16: tydeligt tegn på forventet oversvømmelse, rammer husstande.",
+      "M": "Myndigheds beredskab og borgerrettet advarsel, men lokalt; rækker ud over lokalt, hvis stormflod er stor.",
+      "E": "Lystbådehavn nævnt, men ingen drift eller virksomheder rammes endnu i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

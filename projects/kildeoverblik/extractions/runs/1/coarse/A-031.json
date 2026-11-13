@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "6582267fac8d15badc822a24c054ec5151ed3b46d40ddffbf5341f60233b8545",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:43+00:00",
+  "id": "A-031",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinereferat fra lokalt udvalgsmøde, intet der rammer læsere; dokumentet er fra 2023.\", \"M\": \"Lokalt udvalgsreferat med kun formalia og elevtal; ingen sag eller myndighedssvigt synlig i uddraget.\", \"E\": \"Ingen virksomhedsrelevans; kommunalt skoleudvalg uden regulering, regnskab eller erhvervsforhold.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinereferat fra lokalt udvalgsmøde, intet der rammer læsere; dokumentet er fra 2023.",
+      "M": "Lokalt udvalgsreferat med kun formalia og elevtal; ingen sag eller myndighedssvigt synlig i uddraget.",
+      "E": "Ingen virksomhedsrelevans; kommunalt skoleudvalg uden regulering, regnskab eller erhvervsforhold."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

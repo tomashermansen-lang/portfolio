@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "13bfaa26eba436eff948e05f88cdb3371c4b17e8b71205780447c40bd04e67df",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:02+00:00",
+  "from": "D-028",
+  "to": "A-007",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens telegram handler om en evakuering af beboere bag diget ved Nørrevang Strand, mens arkivdokumentet er et udvalgsreferat om nye bænke og en ny badebro samme sted, så de deler kun stedet og handler om hver sit.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens telegram handler om en evakuering af beboere bag diget ved Nørrevang Strand, mens arkivdokumentet er et udvalgsreferat om nye bænke og en ny badebro samme sted, så de deler kun stedet og handler om hver sit.",
+    "facts": []
+  },
+  "parse_error": null
+}

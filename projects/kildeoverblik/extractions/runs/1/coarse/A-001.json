@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "d7a0849bc32f418e31166c563944857f9dacabeead3e30bc329e00b36b9a9474",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:09+00:00",
+  "id": "A-001",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig dagsorden for udvalgsmøde, ingen synlig nyhed for læserne.\", \"M\": \"Kommunal dagsorden, kun formalia som godkendelse af dagsorden og referat i uddraget.\", \"E\": \"Lokalpolitisk mødedagsorden uden synlig virksomhedsrelevans.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig dagsorden for udvalgsmøde, ingen synlig nyhed for læserne.",
+      "M": "Kommunal dagsorden, kun formalia som godkendelse af dagsorden og referat i uddraget.",
+      "E": "Lokalpolitisk mødedagsorden uden synlig virksomhedsrelevans."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

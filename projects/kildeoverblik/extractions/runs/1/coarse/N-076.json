@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "afb4fb712ca8934c3f96bc2b0290208dcef5b92e33550ace5812bcc680a220cd",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:57+00:00",
+  "id": "N-076",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Rutinereferat fra lokalt udvalg uden synlig effekt på mange læsere.\", \"M\": \"Kommunalt udvalgsreferat, lokalt og uden synlig sag i uddraget; afkortet ved fordeling.\", \"E\": \"Ingen erhvervsrelevans synlig; tilskudsfordeling til foreninger er lokal rutine.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinereferat fra lokalt udvalg uden synlig effekt på mange læsere.",
+      "M": "Kommunalt udvalgsreferat, lokalt og uden synlig sag i uddraget; afkortet ved fordeling.",
+      "E": "Ingen erhvervsrelevans synlig; tilskudsfordeling til foreninger er lokal rutine."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

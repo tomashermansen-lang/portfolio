@@ -1,0 +1,44 @@
+{
+  "prompt_sha256": "a2935f7ec282f497fb118895bbb8f3009eb3861a8e17d83ba506027875ba8da0",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:33+00:00",
+  "from": "D-006",
+  "to": "A-001",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": true, \"why\": \"Arkivdokumentet viser, at kommunen siden 2022 har pålagt digelaget at udbedre netop det dige ved Nørrevang Strand, som Beredskab Vest i dag frygter vil briste, og at påbuddene ikke er efterkommet.\", \"facts\": [{\"text\": \"Kommunen har siden 2022 givet digelaget tre påbud om at udbedre diget ved Nørrevang Strand.\", \"quote\": \"Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Ifølge sagsfremstillingen er påbuddene ikke blevet efterkommet.\", \"quote\": \"Påbuddene er ikke efterkommet.\", \"statement\": true, \"speaker\": \"Forvaltningen i Nørrevang Kommune\", \"accuses\": \"digelaget\"}, {\"text\": \"Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.\", \"quote\": \"Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Udbedringen af diget er anslået til at koste 11,5 mio. kr.\", \"quote\": \"Udbedringen er anslået til 11,5 mio. kr.\", \"statement\": false, \"speaker\": null, \"accuses\": null}]}\n",
+  "parsed": {
+    "related": true,
+    "why": "Arkivdokumentet viser, at kommunen siden 2022 har pålagt digelaget at udbedre netop det dige ved Nørrevang Strand, som Beredskab Vest i dag frygter vil briste, og at påbuddene ikke er efterkommet.",
+    "facts": [
+      {
+        "text": "Kommunen har siden 2022 givet digelaget tre påbud om at udbedre diget ved Nørrevang Strand.",
+        "quote": "Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Ifølge sagsfremstillingen er påbuddene ikke blevet efterkommet.",
+        "quote": "Påbuddene er ikke efterkommet.",
+        "statement": true,
+        "speaker": "Forvaltningen i Nørrevang Kommune",
+        "accuses": "digelaget"
+      },
+      {
+        "text": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+        "quote": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Udbedringen af diget er anslået til at koste 11,5 mio. kr.",
+        "quote": "Udbedringen er anslået til 11,5 mio. kr.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ]
+  },
+  "parse_error": null
+}

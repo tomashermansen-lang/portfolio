@@ -1,0 +1,37 @@
+{
+  "prompt_sha256": "5db68befbfdc97f6ea1dfc7c0383dbe742e86ddd36ad5287e5c807c7a0248ada",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:39+00:00",
+  "from": "D-010",
+  "to": "A-005",
+  "shared": "Sydhavnen",
+  "reply": "{\"related\":true,\"why\":\"Byrådet besluttede i 2024 at investere 30 mio. kr. i en kaj ved Tangsø Energis fabrik mod en lejeaftale, der kræver mindst 200 arbejdspladser til og med 2030 og gør virksomheden betalingspligtig ved tidligere lukning, så dagens lukning i marts 2027 med 240 job berører direkte denne aftale.\",\"facts\":[{\"text\":\"Byrådet besluttede i december 2024, at Tangsø Havn skulle investere 30 mio. kr. i en ny kaj ved Tangsø Energis fabrik i Sydhavnen.\",\"quote\":\"Byrådet besluttede med 17 stemmer mod 4, at Tangsø Havn investerer 30 mio. kr. i en ny kaj ved Tangsø Energi A/S' fabrik i Sydhavnen.\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.\",\"quote\":\"Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Hvis driften ophører før tid, skal virksomheden betale den uafskrevne del af investeringen.\",\"quote\":\"Ophører driften før, skal virksomheden betale den uafskrevne del af investeringen.\",\"statement\":false,\"speaker\":null,\"accuses\":null}]}\n",
+  "parsed": {
+    "related": true,
+    "why": "Byrådet besluttede i 2024 at investere 30 mio. kr. i en kaj ved Tangsø Energis fabrik mod en lejeaftale, der kræver mindst 200 arbejdspladser til og med 2030 og gør virksomheden betalingspligtig ved tidligere lukning, så dagens lukning i marts 2027 med 240 job berører direkte denne aftale.",
+    "facts": [
+      {
+        "text": "Byrådet besluttede i december 2024, at Tangsø Havn skulle investere 30 mio. kr. i en ny kaj ved Tangsø Energis fabrik i Sydhavnen.",
+        "quote": "Byrådet besluttede med 17 stemmer mod 4, at Tangsø Havn investerer 30 mio. kr. i en ny kaj ved Tangsø Energi A/S' fabrik i Sydhavnen.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.",
+        "quote": "Lejeaftalen forudsætter mindst 200 arbejdspladser på fabrikken til og med 2030.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Hvis driften ophører før tid, skal virksomheden betale den uafskrevne del af investeringen.",
+        "quote": "Ophører driften før, skal virksomheden betale den uafskrevne del af investeringen.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,55 @@
+{
+  "prompt_sha256": "f04aefa7ed3a0c7e991a89d4e7994d54ba7d597f4799ae6932dbfa865a031a9d",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:47+00:00",
+  "id": "D-021",
+  "reply": "{\"summary\": \"Varslingstjenesten oplyser, at vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag, med op til 3,6 meter over normalen ved Nørrevang, og at varslet på højeste niveau er uændret.\", \"facts\": [{\"text\": \"Vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag.\", \"quote\": \"Vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag\", \"statement\": true, \"speaker\": \"Varslingstjenesten\", \"accuses\": null}, {\"text\": \"Det højeste niveau ventes ved Nørrevang med op til 3,6 meter over normalen.\", \"quote\": \"Det højeste niveau ventes ved Nørrevang med op til 3,6 meter over normalen.\", \"statement\": true, \"speaker\": \"Varslingstjenesten\", \"accuses\": null}, {\"text\": \"Varslet på højeste niveau er uændret.\", \"quote\": \"Varslet på højeste niveau er uændret.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"vestkysten\", \"Nørrevang\"], \"orgs\": [\"Varslingstjenesten\"], \"values\": {\"F\": {\"value\": 7, \"why\": \"Vandstandsvarsel med top i nat på vestkysten; rammer læsere i nat, men kilden nævner ingen konkrete skader eller antal berørte.\"}, \"M\": {\"value\": 3, \"why\": \"Myndighedsvarsel uden politisk dimension eller svigt; opdateringen er uændret varselsniveau og primært lokal til vestkysten.\"}, \"E\": {\"value\": 3, \"why\": \"Vejr vægtes lavt; kilden nævner ingen havne, transport, energi eller virksomheder, der rammes.\"}}}\n",
+  "parsed": {
+    "summary": "Varslingstjenesten oplyser, at vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag, med op til 3,6 meter over normalen ved Nørrevang, og at varslet på højeste niveau er uændret.",
+    "facts": [
+      {
+        "text": "Vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag.",
+        "quote": "Vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag",
+        "statement": true,
+        "speaker": "Varslingstjenesten",
+        "accuses": null
+      },
+      {
+        "text": "Det højeste niveau ventes ved Nørrevang med op til 3,6 meter over normalen.",
+        "quote": "Det højeste niveau ventes ved Nørrevang med op til 3,6 meter over normalen.",
+        "statement": true,
+        "speaker": "Varslingstjenesten",
+        "accuses": null
+      },
+      {
+        "text": "Varslet på højeste niveau er uændret.",
+        "quote": "Varslet på højeste niveau er uændret.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "vestkysten",
+      "Nørrevang"
+    ],
+    "orgs": [
+      "Varslingstjenesten"
+    ],
+    "values": {
+      "F": {
+        "value": 7,
+        "why": "Vandstandsvarsel med top i nat på vestkysten; rammer læsere i nat, men kilden nævner ingen konkrete skader eller antal berørte."
+      },
+      "M": {
+        "value": 3,
+        "why": "Myndighedsvarsel uden politisk dimension eller svigt; opdateringen er uændret varselsniveau og primært lokal til vestkysten."
+      },
+      "E": {
+        "value": 3,
+        "why": "Vejr vægtes lavt; kilden nævner ingen havne, transport, energi eller virksomheder, der rammes."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "715dd9cbb97fa5deafac3de15ea528c925c10f12405d6e35a27ba53603d4893f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:38+00:00",
+  "id": "N-030",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Venligt lokalportræt af urmager; kuriøst præg, men ingen bred relevans eller hast.\", \"M\": \"Lokalt personportræt uden forvaltning, politik eller myndighedssvigt.\", \"E\": \"Enkeltmandsforretning fylder 75; ingen lukning, regnskab eller erhvervsmæssig betydning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Venligt lokalportræt af urmager; kuriøst præg, men ingen bred relevans eller hast.",
+      "M": "Lokalt personportræt uden forvaltning, politik eller myndighedssvigt.",
+      "E": "Enkeltmandsforretning fylder 75; ingen lukning, regnskab eller erhvervsmæssig betydning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

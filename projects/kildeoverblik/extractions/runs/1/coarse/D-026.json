@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "a213a978bfc9d402958b4cdc41ea1c9e1cf3e760daa5425d1ed9ebeebc713276",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:36+00:00",
+  "id": "D-026",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 6, \"E\": 2}, \"why\": {\"F\": \"Politisk partiskifte i en enkelt kommune; rammer ikke læsere direkte i dag.\", \"M\": \"Borgmester forlader parti over kommuneøkonomi; konflikt med landsledelsen rækker ud over det lokale.\", \"E\": \"Kommunal politik uden direkte virkning på virksomheder; kun svag økonomi-vinkel.\"}, \"unverified\": true}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 6,
+      "E": 2
+    },
+    "why": {
+      "F": "Politisk partiskifte i en enkelt kommune; rammer ikke læsere direkte i dag.",
+      "M": "Borgmester forlader parti over kommuneøkonomi; konflikt med landsledelsen rækker ud over det lokale.",
+      "E": "Kommunal politik uden direkte virkning på virksomheder; kun svag økonomi-vinkel."
+    },
+    "unverified": true
+  },
+  "parse_error": null
+}

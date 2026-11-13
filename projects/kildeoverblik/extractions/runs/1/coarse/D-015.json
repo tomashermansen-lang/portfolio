@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "e0f8681636d882fa96d23e7f6b553f3e83743c18127ea42bd20dcfa788750cde",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:52+00:00",
+  "id": "D-015",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 4, \"E\": 2}, \"why\": {\"F\": \"Rutinemæssig kvartalsrapport med nøgletal; uddraget viser ingen konkret nyhed for læserne.\", \"M\": \"Offentlig institution og akutområdet kan give historie, men uddraget viser kun fast rapport.\", \"E\": \"Sundhedsnøgletal uden synlig erhvervsvinkel, regulering eller driftsproblem.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 4,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinemæssig kvartalsrapport med nøgletal; uddraget viser ingen konkret nyhed for læserne.",
+      "M": "Offentlig institution og akutområdet kan give historie, men uddraget viser kun fast rapport.",
+      "E": "Sundhedsnøgletal uden synlig erhvervsvinkel, regulering eller driftsproblem."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

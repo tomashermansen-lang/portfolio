@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "cd54d440e9d543c0f96b2b7e214c8fc752a1b2f1accdb53b857cbe3ad7050aca",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:33+00:00",
+  "id": "A-023",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig lokal udvalgsdagsorden uden synlig effekt på mange læsere.\", \"M\": \"Lokalt udvalgsmøde; kun godkendelsespunkter synlige, punkt 3 om biblioteket afbrudt.\", \"E\": \"Ingen erhvervsrelevans; lokal kultur- og fritidsdagsorden.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig lokal udvalgsdagsorden uden synlig effekt på mange læsere.",
+      "M": "Lokalt udvalgsmøde; kun godkendelsespunkter synlige, punkt 3 om biblioteket afbrudt.",
+      "E": "Ingen erhvervsrelevans; lokal kultur- og fritidsdagsorden."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

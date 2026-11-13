@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "fa274242e66e9ad89559872e1a0c0894a2ad0818fbab51c278d53e4d3ec3e4a6",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:57+00:00",
+  "from": "D-026",
+  "to": "A-005",
+  "shared": "byrådet",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om borgmesteren i Sønderholt, der melder sig ud af sit parti, mens arkivdokumentet er et referat fra byrådet i Tangsø Kommune om en kaj-investering, så de handler om hver sin kommune og sag.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om borgmesteren i Sønderholt, der melder sig ud af sit parti, mens arkivdokumentet er et referat fra byrådet i Tangsø Kommune om en kaj-investering, så de handler om hver sin kommune og sag.",
+    "facts": []
+  },
+  "parse_error": null
+}

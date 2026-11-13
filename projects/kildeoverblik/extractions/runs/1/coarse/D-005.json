@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "54ae6f0aae9d2f350b2aecb326a517aa0ee3f238b42a1d6d80acb799c889ef67",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:24+00:00",
+  "id": "D-005",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 4}, \"why\": {\"F\": \"Vag virksomhedsstrategi uden konkret konsekvens for almindelige læsere i dag.\", \"M\": \"Intern strategimeddelelse fra energiselskab uden synlig offentlig eller forvaltningsmæssig vinkel.\", \"E\": \"Energiselskabs strategi mod 2030 kan blive erhvervsstof, men uddraget er indholdsløst.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 4
+    },
+    "why": {
+      "F": "Vag virksomhedsstrategi uden konkret konsekvens for almindelige læsere i dag.",
+      "M": "Intern strategimeddelelse fra energiselskab uden synlig offentlig eller forvaltningsmæssig vinkel.",
+      "E": "Energiselskabs strategi mod 2030 kan blive erhvervsstof, men uddraget er indholdsløst."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "00923a193e4fc1b77ead28968322b171a8e82da9bfe746881faa688879aa88fe",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:11+00:00",
+  "id": "N-053",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Rejsetillæg om vandretur på hede; blød vejledning uden aktualitet eller bred påvirkning.\", \"M\": \"Turistanbefaling uden politik, forvaltning eller myndighedssvigt.\", \"E\": \"Ingen erhvervsvinkel; rejsestof uden virksomheder, regulering eller drift.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Rejsetillæg om vandretur på hede; blød vejledning uden aktualitet eller bred påvirkning.",
+      "M": "Turistanbefaling uden politik, forvaltning eller myndighedssvigt.",
+      "E": "Ingen erhvervsvinkel; rejsestof uden virksomheder, regulering eller drift."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

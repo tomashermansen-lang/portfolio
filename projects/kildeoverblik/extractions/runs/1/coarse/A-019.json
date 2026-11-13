@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "b6f48ed8c3aea4e0d34ae4996223c6eb40e02e34b0336f345d4c7dec573f700a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:29+00:00",
+  "id": "A-019",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Lokal sponsoraftale for håndboldklub; rammer ikke mange læsere, ingen kuriositet.\", \"M\": \"Privat sponsorat uden politik, forvaltning eller svigt fra myndighed.\", \"E\": \"Lille lokal sponsoraftale; ingen regnskab, lukning eller regulering, kun svag energiknytning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokal sponsoraftale for håndboldklub; rammer ikke mange læsere, ingen kuriositet.",
+      "M": "Privat sponsorat uden politik, forvaltning eller svigt fra myndighed.",
+      "E": "Lille lokal sponsoraftale; ingen regnskab, lukning eller regulering, kun svag energiknytning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

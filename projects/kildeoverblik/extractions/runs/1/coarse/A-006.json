@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "7a6e6e228e07e906e12cc91dfd949146bb19d9f9b8003e72cd208fa973e912f0",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:16+00:00",
+  "id": "A-006",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 7, \"E\": 2}, \"why\": {\"F\": \"Lokalt plejecenter; kan røre pårørende, men ingen akut fare for mange læsere i dag.\", \"M\": \"Myndighed konstaterer, at påbud om medicinhåndtering og natbemanding ikke er efterlevet; forvaltningssvigt.\", \"E\": \"Offentligt plejecenter, ingen tydelig virksomheds- eller reguleringsvinkel i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 7,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokalt plejecenter; kan røre pårørende, men ingen akut fare for mange læsere i dag.",
+      "M": "Myndighed konstaterer, at påbud om medicinhåndtering og natbemanding ikke er efterlevet; forvaltningssvigt.",
+      "E": "Offentligt plejecenter, ingen tydelig virksomheds- eller reguleringsvinkel i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

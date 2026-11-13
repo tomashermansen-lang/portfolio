@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "f448c61c1ed9e75ce67e68928754657beeffa5b098057f533eb007c422b16301",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:28+00:00",
+  "id": "A-018",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 3}, \"why\": {\"F\": \"Rutinemæssigt regnskab uden læserrelevans i dag; regnskaber vægtes lavt.\", \"M\": \"Almindelig regnskabsmeddelelse uden politisk eller forvaltningsmæssigt aspekt.\", \"E\": \"Energiregnskab med stabil fremgang og ingen afvigelser i uddraget; kun kort notits.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 3
+    },
+    "why": {
+      "F": "Rutinemæssigt regnskab uden læserrelevans i dag; regnskaber vægtes lavt.",
+      "M": "Almindelig regnskabsmeddelelse uden politisk eller forvaltningsmæssigt aspekt.",
+      "E": "Energiregnskab med stabil fremgang og ingen afvigelser i uddraget; kun kort notits."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

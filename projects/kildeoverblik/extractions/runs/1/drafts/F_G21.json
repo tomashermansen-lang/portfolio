@@ -1,0 +1,132 @@
+{
+  "prompt_sha256": "b4cfe816e888355cc058bb6f51ac9f290eeba042acd9725847e85f7db33d9d0e",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:40+00:00",
+  "desk": "F",
+  "group": 21,
+  "finds": [
+    "D-020"
+  ],
+  "facts": [
+    {
+      "text": "Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, i parti L2611 og L2612.",
+      "quote": "Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, parti L2611 og L2612",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-020",
+      "no": 1
+    },
+    {
+      "text": "Tilbagekaldelsen sker efter fund af listeria i en stikprøve.",
+      "quote": "efter fund af listeria i en stikprøve",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-020",
+      "no": 2
+    },
+    {
+      "text": "De berørte partier har sidste anvendelsesdato 13.11.2026 og 14.11.2026.",
+      "quote": "med sidste anvendelsesdato 13.11.2026 og 14.11.2026",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-020",
+      "no": 3
+    },
+    {
+      "text": "Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i regionen.",
+      "quote": "Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i hele regionen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-020",
+      "no": 4
+    },
+    {
+      "text": "Forbrugere, der har købt produktet, opfordres til at kassere det eller levere det tilbage til butikken.",
+      "quote": "Forbrugere, der har købt produktet, bør kassere det eller levere det tilbage til butikken.",
+      "statement": true,
+      "speaker": "Fødevaretilsynet Vest",
+      "accuses": null,
+      "find": "D-020",
+      "no": 5
+    },
+    {
+      "text": "Listeria kan være alvorlig for gravide, ældre og personer med svækket immunforsvar.",
+      "quote": "Listeria kan være alvorlig for gravide, ældre og personer med svækket immunforsvar.",
+      "statement": true,
+      "speaker": "Fødevaretilsynet Vest",
+      "accuses": null,
+      "find": "D-020",
+      "no": 6
+    }
+  ],
+  "reply": "{\"angle\": \"Madhuset tilbagekalder kyllingesalat med karry efter listeria-fund i 87 butikker\", \"web\": [{\"s\": \"Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, i parti L2611 og L2612 efter fund af listeria i en stikprøve.\", \"facts\": [1, 2]}, {\"s\": \"De berørte partier har sidste anvendelsesdato 13.11.2026 og 14.11.2026.\", \"facts\": [3]}, {\"s\": \"Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i hele regionen.\", \"facts\": [4]}, {\"s\": \"Fødevaretilsynet Vest siger, at forbrugere, der har købt produktet, bør kassere det eller levere det tilbage til butikken.\", \"facts\": [5]}, {\"s\": \"Ifølge Fødevaretilsynet Vest kan listeria være alvorlig for gravide, ældre og personer med svækket immunforsvar.\", \"facts\": [6]}], \"notification\": {\"s\": \"Madhuset tilbagekalder kyllingesalat med karry efter fund af listeria\", \"facts\": [1, 2]}, \"audio\": [{\"s\": \"Madhuset tilbagekalder Kyllingesalat med karry, 200 gram, i parti L2611 og L2612 efter fund af listeria i en stikprøve.\", \"facts\": [1, 2]}, {\"s\": \"Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i hele regionen.\", \"facts\": [4]}, {\"s\": \"Fødevaretilsynet Vest siger, at forbrugere, der har købt produktet, bør kassere det eller levere det tilbage til butikken.\", \"facts\": [5]}]}\n",
+  "parsed": {
+    "angle": "Madhuset tilbagekalder kyllingesalat med karry efter listeria-fund i 87 butikker",
+    "web": [
+      {
+        "s": "Madhuset A/S tilbagekalder Kyllingesalat med karry, 200 g, i parti L2611 og L2612 efter fund af listeria i en stikprøve.",
+        "facts": [
+          1,
+          2
+        ]
+      },
+      {
+        "s": "De berørte partier har sidste anvendelsesdato 13.11.2026 og 14.11.2026.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i hele regionen.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Fødevaretilsynet Vest siger, at forbrugere, der har købt produktet, bør kassere det eller levere det tilbage til butikken.",
+        "facts": [
+          5
+        ]
+      },
+      {
+        "s": "Ifølge Fødevaretilsynet Vest kan listeria være alvorlig for gravide, ældre og personer med svækket immunforsvar.",
+        "facts": [
+          6
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Madhuset tilbagekalder kyllingesalat med karry efter fund af listeria",
+      "facts": [
+        1,
+        2
+      ]
+    },
+    "audio": [
+      {
+        "s": "Madhuset tilbagekalder Kyllingesalat med karry, 200 gram, i parti L2611 og L2612 efter fund af listeria i en stikprøve.",
+        "facts": [
+          1,
+          2
+        ]
+      },
+      {
+        "s": "Produktet er solgt i 87 butikker i kæderne Købmandsgården og Daglivest i hele regionen.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Fødevaretilsynet Vest siger, at forbrugere, der har købt produktet, bør kassere det eller levere det tilbage til butikken.",
+        "facts": [
+          5
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5735331df060f17868c4546c9e825a9a499f9e7adc9ff1f41563916403dfaf51",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:34+00:00",
+  "id": "N-064",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt kulturprogram for foråret; ingen akut eller bred læserrelevans, kun lidt service.\", \"M\": \"Rutinemæssig pressemeddelelse om koncertprogram uden politisk eller forvaltningsmæssig vinkel.\", \"E\": \"Kulturprogram uden erhvervsmæssig nyhed, regnskab, fyring eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt kulturprogram for foråret; ingen akut eller bred læserrelevans, kun lidt service.",
+      "M": "Rutinemæssig pressemeddelelse om koncertprogram uden politisk eller forvaltningsmæssig vinkel.",
+      "E": "Kulturprogram uden erhvervsmæssig nyhed, regnskab, fyring eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

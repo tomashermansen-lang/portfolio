@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "ce87d43887e64208c6f26517f697aef4875453a0c107e1f12037272b6a71f2bc",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:26+00:00",
+  "id": "D-006",
+  "reply": "{\"scores\": {\"F\": 9, \"M\": 7, \"E\": 5}, \"why\": {\"F\": \"Stormflod i nat, digebrud truer kyststrækning; rammer mange og haster, advarsel til læsere.\", \"M\": \"Beredskab og myndigheder, risiko for borgere; lokalt udgangspunkt, men alvorlig beredskabssag.\", \"E\": \"Digebrud kan ramme havne, transport og virksomheder ved kysten, men uddraget nævner ingen.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 9,
+      "M": 7,
+      "E": 5
+    },
+    "why": {
+      "F": "Stormflod i nat, digebrud truer kyststrækning; rammer mange og haster, advarsel til læsere.",
+      "M": "Beredskab og myndigheder, risiko for borgere; lokalt udgangspunkt, men alvorlig beredskabssag.",
+      "E": "Digebrud kan ramme havne, transport og virksomheder ved kysten, men uddraget nævner ingen."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

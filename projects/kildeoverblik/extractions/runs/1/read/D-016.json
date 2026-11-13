@@ -1,0 +1,59 @@
+{
+  "prompt_sha256": "9ac6f4d1856478cddd39ab8fa640e5d0f322ee05259849468999302ab04e9d1c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:25+00:00",
+  "id": "D-016",
+  "reply": "{\"summary\":\"Et opslag på sociale medier fra profilen kystliv_vest viser en 14 sekunder lang video af et fladt butikstag, der styrter sammen i kraftig blæst, og skriver, at det er i gang i Tangsø.\",\"facts\":[{\"text\":\"Videoen viser et fladt butikstag, der giver efter og styrter sammen i kraftig blæst.\",\"quote\":\"et fladt butikstag giver efter og styrter sammen i kraftig blæst\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Opslagets tekst siger, at det er i gang i Tangsø.\",\"quote\":\"Så er det i gang i Tangsø!!\",\"statement\":true,\"speaker\":\"Profilen kystliv_vest\",\"accuses\":null},{\"text\":\"Opslaget opfordrer til at passe på.\",\"quote\":\"Pas på derude.\",\"statement\":true,\"speaker\":\"Profilen kystliv_vest\",\"accuses\":null},{\"text\":\"Opslaget er delt 1.900 gange på en time.\",\"quote\":\"Delt 1.900 gange på en time.\",\"statement\":false,\"speaker\":null,\"accuses\":null}],\"places\":[\"Tangsø\"],\"orgs\":[],\"values\":{\"F\":{\"value\":6,\"why\":\"Kraftig blæst og advarsel spreder sig hurtigt, men uverificeret enkeltvideo uden oplyste skader eller omfang.\"},\"M\":{\"value\":2,\"why\":\"Enkeltstående lokal hændelse uden oplyst myndighedssvigt eller bred påvirkning af borgere.\"},\"E\":{\"value\":3,\"why\":\"Et butikstag kan ramme en virksomhed, men der er ingen bekræftelse, ejer eller økonomiske konsekvenser.\"}}}\n",
+  "parsed": {
+    "summary": "Et opslag på sociale medier fra profilen kystliv_vest viser en 14 sekunder lang video af et fladt butikstag, der styrter sammen i kraftig blæst, og skriver, at det er i gang i Tangsø.",
+    "facts": [
+      {
+        "text": "Videoen viser et fladt butikstag, der giver efter og styrter sammen i kraftig blæst.",
+        "quote": "et fladt butikstag giver efter og styrter sammen i kraftig blæst",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Opslagets tekst siger, at det er i gang i Tangsø.",
+        "quote": "Så er det i gang i Tangsø!!",
+        "statement": true,
+        "speaker": "Profilen kystliv_vest",
+        "accuses": null
+      },
+      {
+        "text": "Opslaget opfordrer til at passe på.",
+        "quote": "Pas på derude.",
+        "statement": true,
+        "speaker": "Profilen kystliv_vest",
+        "accuses": null
+      },
+      {
+        "text": "Opslaget er delt 1.900 gange på en time.",
+        "quote": "Delt 1.900 gange på en time.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Tangsø"
+    ],
+    "orgs": [],
+    "values": {
+      "F": {
+        "value": 6,
+        "why": "Kraftig blæst og advarsel spreder sig hurtigt, men uverificeret enkeltvideo uden oplyste skader eller omfang."
+      },
+      "M": {
+        "value": 2,
+        "why": "Enkeltstående lokal hændelse uden oplyst myndighedssvigt eller bred påvirkning af borgere."
+      },
+      "E": {
+        "value": 3,
+        "why": "Et butikstag kan ramme en virksomhed, men der er ingen bekræftelse, ejer eller økonomiske konsekvenser."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,73 @@
+{
+  "prompt_sha256": "6267f1d00b6104e58aa944c53f70e7a45fa92ed0b4a00655a0488d4167c9b21a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:20+00:00",
+  "id": "N-034",
+  "reply": "{\"summary\": \"Egeby Dyreinternat opfordrer kat- og kaninejere til at tage dyrene ind, før stormen tager til i aften, og minder om mærkning og registrering af katte.\", \"facts\": [{\"text\": \"Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, før stormen tager til i aften.\", \"quote\": \"Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, inden stormen tager til i aften.\", \"statement\": true, \"speaker\": \"Egeby Dyreinternat\", \"accuses\": null}, {\"text\": \"Internatet mener, at kaninbure i haven bør flyttes ind i garagen eller et skur.\", \"quote\": \"kaninbure i haven bør flyttes ind i garagen eller et skur\", \"statement\": true, \"speaker\": \"Egeby Dyreinternat\", \"accuses\": null}, {\"text\": \"Internatets leder, Pernille Aaby, siger, at internatet hvert år efter blæsevejr får opkald om katte, der ikke er kommet hjem.\", \"quote\": \"Hvert år efter blæsevejr får vi opkald om katte, der ikke er kommet hjem.\", \"statement\": true, \"speaker\": \"Pernille Aaby\", \"accuses\": null}, {\"text\": \"Pernille Aaby siger, at langt de fleste af kattene dukker op af sig selv efter et par dage.\", \"quote\": \"Langt de fleste dukker op af sig selv efter et par dage,\", \"statement\": true, \"speaker\": \"Pernille Aaby\", \"accuses\": null}, {\"text\": \"Internatet minder om, at katte skal være mærket og registreret, så de kan findes igen.\", \"quote\": \"katte skal være mærket og registreret, så de kan findes igen\", \"statement\": true, \"speaker\": \"Egeby Dyreinternat\", \"accuses\": null}, {\"text\": \"Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.\", \"quote\": \"Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [], \"orgs\": [\"Egeby Dyreinternat\"], \"values\": {\"F\": {\"value\": 5, \"why\": \"Stormråd til kat- og kaninejere i aften har læsernære servicepotentiale, men er en lokal pressemeddelelse uden selvstændig advarsel.\"}, \"M\": {\"value\": 1, \"why\": \"Ingen politik, forvaltning eller svigt; kun almindelige dyrepassråd fra et lokalt internat.\"}, \"E\": {\"value\": 1, \"why\": \"Ingen virksomheder, regnskaber eller drift berørt; kun råd til private dyreejere om storm.\"}}}\n",
+  "parsed": {
+    "summary": "Egeby Dyreinternat opfordrer kat- og kaninejere til at tage dyrene ind, før stormen tager til i aften, og minder om mærkning og registrering af katte.",
+    "facts": [
+      {
+        "text": "Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, før stormen tager til i aften.",
+        "quote": "Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, inden stormen tager til i aften.",
+        "statement": true,
+        "speaker": "Egeby Dyreinternat",
+        "accuses": null
+      },
+      {
+        "text": "Internatet mener, at kaninbure i haven bør flyttes ind i garagen eller et skur.",
+        "quote": "kaninbure i haven bør flyttes ind i garagen eller et skur",
+        "statement": true,
+        "speaker": "Egeby Dyreinternat",
+        "accuses": null
+      },
+      {
+        "text": "Internatets leder, Pernille Aaby, siger, at internatet hvert år efter blæsevejr får opkald om katte, der ikke er kommet hjem.",
+        "quote": "Hvert år efter blæsevejr får vi opkald om katte, der ikke er kommet hjem.",
+        "statement": true,
+        "speaker": "Pernille Aaby",
+        "accuses": null
+      },
+      {
+        "text": "Pernille Aaby siger, at langt de fleste af kattene dukker op af sig selv efter et par dage.",
+        "quote": "Langt de fleste dukker op af sig selv efter et par dage,",
+        "statement": true,
+        "speaker": "Pernille Aaby",
+        "accuses": null
+      },
+      {
+        "text": "Internatet minder om, at katte skal være mærket og registreret, så de kan findes igen.",
+        "quote": "katte skal være mærket og registreret, så de kan findes igen",
+        "statement": true,
+        "speaker": "Egeby Dyreinternat",
+        "accuses": null
+      },
+      {
+        "text": "Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.",
+        "quote": "Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [],
+    "orgs": [
+      "Egeby Dyreinternat"
+    ],
+    "values": {
+      "F": {
+        "value": 5,
+        "why": "Stormråd til kat- og kaninejere i aften har læsernære servicepotentiale, men er en lokal pressemeddelelse uden selvstændig advarsel."
+      },
+      "M": {
+        "value": 1,
+        "why": "Ingen politik, forvaltning eller svigt; kun almindelige dyrepassråd fra et lokalt internat."
+      },
+      "E": {
+        "value": 1,
+        "why": "Ingen virksomheder, regnskaber eller drift berørt; kun råd til private dyreejere om storm."
+      }
+    }
+  },
+  "parse_error": null
+}

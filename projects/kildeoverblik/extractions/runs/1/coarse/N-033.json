@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "4c4477363d08c3982da36e5da05b74cb8751e6056b4eba1ab7c68d0918a51071",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:42+00:00",
+  "id": "N-033",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal julestemning, tænding om to uger; kun lille læserinteresse, ikke akut.\", \"M\": \"Lokal begivenhed fra cityforening, ingen forvaltning eller myndighedssvigt.\", \"E\": \"Ingen erhvervsmæssig vinkel; rutinemeddelelse om pynt og arrangement.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal julestemning, tænding om to uger; kun lille læserinteresse, ikke akut.",
+      "M": "Lokal begivenhed fra cityforening, ingen forvaltning eller myndighedssvigt.",
+      "E": "Ingen erhvervsmæssig vinkel; rutinemeddelelse om pynt og arrangement."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

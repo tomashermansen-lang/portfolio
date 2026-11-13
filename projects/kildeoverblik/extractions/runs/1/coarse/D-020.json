@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c6241e282f46a1992e278ab89c59dd1ecccdeee3814db4cfc6faa64ac711310b",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:12+00:00",
+  "id": "D-020",
+  "reply": "{\"scores\": {\"F\": 8, \"M\": 6, \"E\": 6}, \"why\": {\"F\": \"Listeria-tilbagekaldelse i 87 butikker, forbrugeradvarsel, sidste dato i dag/i morgen rammer mange.\", \"M\": \"Fødevaresikkerhed og tilsyn, mange borgere berørt, men virksomhedens tilbagekaldelse er rutinepræget.\", \"E\": \"Tilbagekaldelse rammer Madhuset A/S og to kæder; driftsmæssig og økonomisk konsekvens uklar.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 8,
+      "M": 6,
+      "E": 6
+    },
+    "why": {
+      "F": "Listeria-tilbagekaldelse i 87 butikker, forbrugeradvarsel, sidste dato i dag/i morgen rammer mange.",
+      "M": "Fødevaresikkerhed og tilsyn, mange borgere berørt, men virksomhedens tilbagekaldelse er rutinepræget.",
+      "E": "Tilbagekaldelse rammer Madhuset A/S og to kæder; driftsmæssig og økonomisk konsekvens uklar."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

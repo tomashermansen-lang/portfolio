@@ -1,0 +1,62 @@
+{
+  "prompt_sha256": "df6efeab83f62ceefa1fea92321f23e3c4e15c99823dea9c1983839a639ca53d",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:24+00:00",
+  "id": "D-014",
+  "reply": "{\"summary\": \"Dagbladet Tiden skriver, at varslet for nattens stormflod på vestkysten er hævet til højeste niveau, og at vandstanden ventes at nå op til 3,6 meter over normalen.\", \"facts\": [{\"text\": \"Vestkysten forbereder sig på nattens stormflod, efter at varslet onsdag morgen er hævet til højeste niveau.\", \"quote\": \"Vestkysten forbereder sig på nattens stormflod, efter at varslet onsdag morgen er hævet til højeste niveau\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Vandstanden ventes at nå op til 3,6 meter over normalen.\", \"quote\": \"Vandstanden ventes at nå op til 3,6 meter over normalen.\", \"statement\": true, \"speaker\": null, \"accuses\": null}, {\"text\": \"Butiksejere langs havnen i Tangsø vil sætte plader for vinduerne i løbet af dagen.\", \"quote\": \"butiksejere langs havnen i Tangsø, som vil sætte plader for vinduerne i løbet af dagen\", \"statement\": true, \"speaker\": \"butiksejere langs havnen i Tangsø\", \"accuses\": null}, {\"text\": \"Vandet stod senest så højt i 2013.\", \"quote\": \"Senest vandet stod så højt, var i 2013.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Vestkysten\", \"Tangsø\"], \"orgs\": [\"Dagbladet Tiden\"], \"values\": {\"F\": {\"value\": 8, \"why\": \"Højeste varselsniveau for stormflod i nat på vestkysten rammer mange og er et vejr- og sikkerhedsemne for læserne.\"}, \"M\": {\"value\": 4, \"why\": \"Rammer borgere på vestkysten, men ingen myndighed beskyldes for svigt, og sagen er regional; kilden nævner ingen forvaltning.\"}, \"E\": {\"value\": 4, \"why\": \"Butikker ved havnen i Tangsø forbereder sig, men kilden angiver ingen driftsstop, tab eller regulering; vejr vægtes lavt.\"}}}\n",
+  "parsed": {
+    "summary": "Dagbladet Tiden skriver, at varslet for nattens stormflod på vestkysten er hævet til højeste niveau, og at vandstanden ventes at nå op til 3,6 meter over normalen.",
+    "facts": [
+      {
+        "text": "Vestkysten forbereder sig på nattens stormflod, efter at varslet onsdag morgen er hævet til højeste niveau.",
+        "quote": "Vestkysten forbereder sig på nattens stormflod, efter at varslet onsdag morgen er hævet til højeste niveau",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Vandstanden ventes at nå op til 3,6 meter over normalen.",
+        "quote": "Vandstanden ventes at nå op til 3,6 meter over normalen.",
+        "statement": true,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Butiksejere langs havnen i Tangsø vil sætte plader for vinduerne i løbet af dagen.",
+        "quote": "butiksejere langs havnen i Tangsø, som vil sætte plader for vinduerne i løbet af dagen",
+        "statement": true,
+        "speaker": "butiksejere langs havnen i Tangsø",
+        "accuses": null
+      },
+      {
+        "text": "Vandet stod senest så højt i 2013.",
+        "quote": "Senest vandet stod så højt, var i 2013.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Vestkysten",
+      "Tangsø"
+    ],
+    "orgs": [
+      "Dagbladet Tiden"
+    ],
+    "values": {
+      "F": {
+        "value": 8,
+        "why": "Højeste varselsniveau for stormflod i nat på vestkysten rammer mange og er et vejr- og sikkerhedsemne for læserne."
+      },
+      "M": {
+        "value": 4,
+        "why": "Rammer borgere på vestkysten, men ingen myndighed beskyldes for svigt, og sagen er regional; kilden nævner ingen forvaltning."
+      },
+      "E": {
+        "value": 4,
+        "why": "Butikker ved havnen i Tangsø forbereder sig, men kilden angiver ingen driftsstop, tab eller regulering; vejr vægtes lavt."
+      }
+    }
+  },
+  "parse_error": null
+}

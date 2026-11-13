@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5576178197bb9a7f3309d3882f6b3111ef5edd6693d1fd7ea44f077fd606bbcc",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:59+00:00",
+  "id": "N-077",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig retsliste med små færdselssager, ingen kendte navne eller bredere relevans.\", \"M\": \"Lokale færdselssager uden forvaltningsmæssig eller politisk dimension; ren rutine.\", \"E\": \"Ingen virksomhedsrelevans; almindelige bødesager og spirituskørsel.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig retsliste med små færdselssager, ingen kendte navne eller bredere relevans.",
+      "M": "Lokale færdselssager uden forvaltningsmæssig eller politisk dimension; ren rutine.",
+      "E": "Ingen virksomhedsrelevans; almindelige bødesager og spirituskørsel."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

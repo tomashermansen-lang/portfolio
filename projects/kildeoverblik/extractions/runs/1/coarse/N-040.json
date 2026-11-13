@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5f9acceb70882b053d9db0a644faf0a9703fbe25051f6ecfbdd0eb08036627d6",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:53+00:00",
+  "id": "N-040",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Intern ledelsesrokade i lille it-firma rammer ingen læsere.\", \"M\": \"Ingen offentlig forvaltning eller borgerrelevans; ren virksomhedspromovering.\", \"E\": \"Lille virksomheds ansættelse af salgschef; ingen fyringer, regnskab eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Intern ledelsesrokade i lille it-firma rammer ingen læsere.",
+      "M": "Ingen offentlig forvaltning eller borgerrelevans; ren virksomhedspromovering.",
+      "E": "Lille virksomheds ansættelse af salgschef; ingen fyringer, regnskab eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

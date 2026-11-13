@@ -1,0 +1,69 @@
+{
+  "prompt_sha256": "ca5fee67d554af05b0d2a20ef154a86fdc7e55aee4818b71f5cb82efe433e480",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:50+00:00",
+  "id": "D-007",
+  "reply": "{\"summary\": \"Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08 på grund af varslet højvande, og havnemyndigheden venter, at 14 anløb må udskydes.\", \"facts\": [{\"text\": \"Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08 på grund af det varslede højvande.\", \"quote\": \"På grund af det varslede højvande lukker Tangsø Havn for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.\", \"quote\": \"Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.\", \"quote\": \"Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Havnemyndigheden forventer, at 14 anløb må udskydes.\", \"quote\": \"Havnemyndigheden forventer, at 14 anløb må udskydes\", \"statement\": true, \"speaker\": \"Havnemyndigheden\", \"accuses\": null}, {\"text\": \"Havnemyndigheden forventer, at terminalen først er i normal drift torsdag eftermiddag.\", \"quote\": \"at terminalen først er i normal drift torsdag eftermiddag\", \"statement\": true, \"speaker\": \"Havnemyndigheden\", \"accuses\": null}], \"places\": [\"Tangsø Havn\"], \"orgs\": [\"Havnemyndigheden i Tangsø\", \"Tangsø Havn\"], \"values\": {\"F\": {\"value\": 4, \"why\": \"Højvandsvarsel og lukning i nat, men kilden beskriver kun driftsforstyrrelse i havnen, ikke konsekvenser for mange læsere.\"}, \"M\": {\"value\": 3, \"why\": \"Enkeltstående lokal driftsmeddelelse fra havnemyndighed uden beskrevet svigt eller bredere politisk eller forvaltningsmæssig rækkevidde.\"}, \"E\": {\"value\": 8, \"why\": \"Havn og transport rammes direkte: erhvervshavn, containerterminal og færgeleje lukker, 14 anløb udskydes, normal drift først torsdag eftermiddag.\"}}}\n",
+  "parsed": {
+    "summary": "Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08 på grund af varslet højvande, og havnemyndigheden venter, at 14 anløb må udskydes.",
+    "facts": [
+      {
+        "text": "Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08 på grund af det varslede højvande.",
+        "quote": "På grund af det varslede højvande lukker Tangsø Havn for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.",
+        "quote": "Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.",
+        "quote": "Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Havnemyndigheden forventer, at 14 anløb må udskydes.",
+        "quote": "Havnemyndigheden forventer, at 14 anløb må udskydes",
+        "statement": true,
+        "speaker": "Havnemyndigheden",
+        "accuses": null
+      },
+      {
+        "text": "Havnemyndigheden forventer, at terminalen først er i normal drift torsdag eftermiddag.",
+        "quote": "at terminalen først er i normal drift torsdag eftermiddag",
+        "statement": true,
+        "speaker": "Havnemyndigheden",
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Tangsø Havn"
+    ],
+    "orgs": [
+      "Havnemyndigheden i Tangsø",
+      "Tangsø Havn"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "Højvandsvarsel og lukning i nat, men kilden beskriver kun driftsforstyrrelse i havnen, ikke konsekvenser for mange læsere."
+      },
+      "M": {
+        "value": 3,
+        "why": "Enkeltstående lokal driftsmeddelelse fra havnemyndighed uden beskrevet svigt eller bredere politisk eller forvaltningsmæssig rækkevidde."
+      },
+      "E": {
+        "value": 8,
+        "why": "Havn og transport rammes direkte: erhvervshavn, containerterminal og færgeleje lukker, 14 anløb udskydes, normal drift først torsdag eftermiddag."
+      }
+    }
+  },
+  "parse_error": null
+}

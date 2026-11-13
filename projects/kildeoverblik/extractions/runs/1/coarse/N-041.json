@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "aa458715332f9d561a4b0eadb50ad38bab2e0f9a247ba1e1ff01a6f70d9c92b9",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:54+00:00",
+  "id": "N-041",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt signalanlæg, kort fejl, rammer få; haster men lille rækkevidde.\", \"M\": \"Enkeltstående trafikmelding, lokal og uden forvaltningssag; vægtes lavt.\", \"E\": \"Lokal trafikfejl uden virksomhedspåvirkning, transport ikke reelt ramt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt signalanlæg, kort fejl, rammer få; haster men lille rækkevidde.",
+      "M": "Enkeltstående trafikmelding, lokal og uden forvaltningssag; vægtes lavt.",
+      "E": "Lokal trafikfejl uden virksomhedspåvirkning, transport ikke reelt ramt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

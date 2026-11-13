@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "acd91874d6c952c0d2a978cc94cc91f7b9b5edfb0e304771fcb0148b2bbc3494",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:18+00:00",
+  "id": "D-022",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 4, \"E\": 1}, \"why\": {\"F\": \"Lokal omlægning på ét plejecenter, rammer få læsere, uden konkret ulykke eller kuriosum.\", \"M\": \"Kommunal forvaltning og ældrepleje, men uddraget er vagt og lokalt; uklart hvorfor omlægningen sker.\", \"E\": \"Ingen virksomheder, regnskaber eller fyringer synlige; kommunal drift uden erhvervsvinkel.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 4,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal omlægning på ét plejecenter, rammer få læsere, uden konkret ulykke eller kuriosum.",
+      "M": "Kommunal forvaltning og ældrepleje, men uddraget er vagt og lokalt; uklart hvorfor omlægningen sker.",
+      "E": "Ingen virksomheder, regnskaber eller fyringer synlige; kommunal drift uden erhvervsvinkel."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "e37d7be5ee507c4762889948fc5637e6a4b380f753d01349510cddcd0b0ea115",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:33+00:00",
+  "id": "A-022",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal hallukning i sommerferien, rammer få og haster ikke.\", \"M\": \"Rutinemæssig kommunal renovering, lokal og uden forvaltningssvigt.\", \"E\": \"Ingen erhvervsrelevans; kommunalt gulvskifte uden virksomhedspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal hallukning i sommerferien, rammer få og haster ikke.",
+      "M": "Rutinemæssig kommunal renovering, lokal og uden forvaltningssvigt.",
+      "E": "Ingen erhvervsrelevans; kommunalt gulvskifte uden virksomhedspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

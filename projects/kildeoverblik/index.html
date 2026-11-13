@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FAF8F5">
+  <meta name="robots" content="noindex">
+  <title>Kildeoverblik: en use case med en prototype | Tomas Hermansen</title>
+  <meta name="description" content="En use case med en prototype: en sprogmodel læser en nyhedsredaktions kilder, foreslår historier og skriver udkast, kode tjekker citaterne, og mennesker beslutter.">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../../assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="stylesheet" href="../../style.css?v=8">
+  <link rel="stylesheet" href="app/app.css?v=20261113a">
+  <style>
+    [hidden] { display: none !important; }
+    .text { max-width: 760px; margin: 0 auto; padding: 0 var(--space-lg); }
+    .doc-head { padding-top: calc(60px + var(--space-3xl)); margin-bottom: var(--space-xl); }
+    .doc-head .hero__title { margin-bottom: var(--space-md); }
+    .doc-head .hero__subtitle { max-width: none; }
+    .meta { font-size: var(--text-sm); color: var(--text-secondary); margin-top: var(--space-md); }
+    .doc section { padding: 0; margin: 0 0 var(--space-xl); min-height: 0; }
+    .doc h2 { font-family: var(--font-serif); font-size: var(--text-xl); font-weight: 400; letter-spacing: -0.02em; line-height: 1.2; color: var(--text-primary); margin: 0 0 var(--space-md); padding-bottom: var(--space-sm); border-bottom: 1px solid var(--border); }
+    .doc p, .doc li { color: var(--text-primary); }
+    .doc p + p { margin-top: var(--space-md); }
+    .doc ul { padding-left: 1.25rem; margin: var(--space-sm) 0 var(--space-md); }
+    .doc li { margin-bottom: var(--space-xs); }
+    .stage { padding: var(--space-lg) var(--space-lg) var(--space-xl); overflow-x: auto; background: var(--bg-secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin: var(--space-xl) 0; }
+    .go--inline { font-size: var(--text-sm); padding: 0 8px; margin: 0 0 0 var(--space-xs); vertical-align: baseline; }
+    .flow li br + .by { margin-top: 6px; }
+    .stage { scroll-margin-top: 60px; }
+    .back { position: fixed; right: 16px; bottom: 16px; z-index: 50; font: inherit; font-size: var(--text-sm); font-weight: 600; color: #fff; background: var(--accent-terracotta); border: 0; border-radius: 20px; padding: 10px 16px; box-shadow: 0 4px 14px rgba(0, 0, 0, .25); cursor: pointer; -webkit-appearance: none; appearance: none; white-space: nowrap; line-height: 1.2; margin: 0; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
+    .back[hidden] { display: none; }
+    @media (hover: hover) and (pointer: fine) { .back::before { content: "\21A9\FE0E"; margin-right: 6px; } }
+    .appfit { overflow: hidden; max-width: 1560px; margin: 0 auto; }
+    .turn { display: none; }
+    .stage .demo, .stage .app, .stage .hint { max-width: 1560px; margin-left: auto; margin-right: auto; }
+    .stage .demo { margin-bottom: 12px; font-family: var(--font-sans); font-size: var(--text-sm); color: var(--text-secondary); }
+    .stage .demo button { font: inherit; cursor: pointer; }
+    .stage .demo input[type=range] { flex: 1; accent-color: var(--accent-terracotta); }
+    .stage .hint { font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-sm); }
+    .after { padding-bottom: var(--space-2xl); }
+    .flow { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+    .flow li { counter-increment: step; padding: var(--space-sm) 0 var(--space-sm) 2rem; border-bottom: 1px solid var(--border); position: relative; margin: 0; }
+    .flow li::before { content: counter(step); position: absolute; left: 0; color: var(--text-secondary); font-family: var(--font-mono); font-size: var(--text-sm); }
+    .by { display: inline-block; font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: .04em; padding: 1px 8px; border-radius: 3px; margin-right: var(--space-sm); }
+    .by.model { background: #E8EEF7; color: #24457A; } .by.code { background: var(--bg-accent); color: var(--text-primary); } .by.human { background: #E4EBDF; color: #3F4C36; }
+    .go { font: inherit; font-weight: 600; color: var(--accent-terracotta); background: none; border: 1px solid var(--accent-terracotta); border-radius: 4px; padding: 2px 10px; margin-right: var(--space-sm); cursor: pointer; }
+    @media (max-width: 1100px) { .stage { padding-left: var(--space-sm); padding-right: var(--space-sm); } .stage .demo { flex-wrap: wrap; row-gap: 8px; } }
+    @media (max-width: 700px) and (orientation: portrait) { .turn { display: block; } }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="../../index.html" class="nav__name">Tomas Hermansen</a>
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="../../about.html">About</a></li>
+        <li><a href="../../index.html#projects">Projects and cases</a></li>
+        <li><a href="../../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="text">
+      <header class="doc-head">
+        <a href="../../index.html#projects" class="back-link">&larr; Projects and cases</a>
+        <p class="hero__kicker">Use case med en prototype</p>
+        <h1 class="hero__title hero__title--project">Kildeoverblik</h1>
+        <p class="hero__subtitle">En sprogmodel læser en nyhedsredaktions kilder, foreslår historier og skriver udkast. Kode tjekker citaterne, og mennesker beslutter.</p>
+        <p class="meta">Tomas Hermansen · november 2026 · eksempel på prototype med syntetiske data. Bygget med Claude Code Fable 5.2.<br>Jeg har ikke arbejdet på en nyhedsredaktion, så ord, roller og arbejdsgang er antagelser.</p>
+      </header>
+
+      <div class="doc" id="before">
+        <section id="usecase">
+          <h2>Use casen</h2>
+          <p>En nyhedsredaktion får flere kilder ind, end nogen kan læse. Få er historier, og nogle står langt nede i en tekst med en kedelig overskrift.</p>
+          <p>Use casen er at hjælpe journalister på flere redaktioner med at opdage historierne hurtigere, uden at drukne dem i forslag eller miste de vigtige historier.</p>
+        </section>
+
+        <section id="lead">
+          <h2>Prototypen</h2>
+          <p>Prototypen viser en morgen på 3 nyhedsredaktioner på en fælles kildeplatform. Fra kl. 6 til 9 kommer over hundrede pressemeddelelser, telegrammer og offentlige dokumenter ind. En sprogmodel læser dem og foreslår, hvilke der er historier.</p>
+          <p>Skærmen har tre kolonner: til venstre et kontinuerligt feed af potentielt kildemateriale, der kommer ind fra forskellige kildekanaler. I midten de nyhedshistorier, modellen foreslår. Til højre ét forslag med de relevante kilder bag.</p>
+          <p>Fem steder at starte udforskningen af prototypen. Klik på en knap:</p>
+          <ul>
+            <li><button class="go" data-go="desk=F&amp;play=1" data-goatcounter-click="kildeoverblik-morgen" data-goatcounter-title="Kildeoverblik: En morgen">En morgen</button> Se, hvordan kildemateriale bliver hentet og prioriteret fra kl. 6 til 9.</li>
+            <li><button class="go" data-go="desk=F&amp;sel=G02" data-goatcounter-click="kildeoverblik-forslag" data-goatcounter-title="Kildeoverblik: Et forslag">Et forslag</button> Modellen har fundet en dagsorden i arkivet, der hører til en nyhed fra i dag.</li>
+            <li><button class="go" data-go="desk=F&amp;cycle=1" data-goatcounter-click="kildeoverblik-redaktioner" data-goatcounter-title="Kildeoverblik: Forskellige redaktioner">Forskellige redaktioner</button> Redaktionerne får vist de historier, der er relevante for det specifikke medie.</li>
+            <li><button class="go" data-go="desk=F&amp;tour=udkast" data-goatcounter-click="kildeoverblik-udkast" data-goatcounter-title="Kildeoverblik: Et udkast">Et udkast</button> Samme historie i tre udgaver. Hver sætning viser, hvilken kilde den bygger på.</li>
+            <li><button class="go" data-go="desk=F&amp;view=maal&amp;tour=maal" data-goatcounter-click="kildeoverblik-maal" data-goatcounter-title="Kildeoverblik: Mål">Mål</button> En skitse af, hvordan det kunne følges, om platformen bliver brugt, om forslagene rammer, om den ændrer arbejdet, og hvad den koster at køre.</li>
+          </ul>
+          <p>Den er ikke et forslag til et færdigt produkt, men et eksempel på et værktøj til at præcisere krav sammen med journalister og redaktører.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="demo">
+        <span class="lbl">Afspilning</span>
+        <button class="dbtn play" id="play">▶ Afspil morgenen</button>
+        <span id="from"></span>
+        <input type="range" id="range" step="1" aria-label="Klokkeslæt">
+        <span id="to"></span>
+        <button class="dbtn" id="end">Spring til slutningen</button>
+        <b id="clock"></b>
+        <span class="rec" id="recnote"></span>
+      </div>
+      <p class="hint">Knapper og menupunkter med stiplet kant virker ikke i prototypen. Hold musen over en af dem for at se, hvad den ville gøre i drift.</p>
+      <p class="hint" id="smallnote" hidden>Prototypen er skaleret ned til din skærm. Den fungerer bedst på en større skærm.</p>
+      <p class="hint turn">Drej telefonen for at se den større.</p>
+      <div class="appfit" id="appfit"><div class="app" id="app">Henter data …</div></div>
+    </div>
+
+    <div class="text after">
+      <div class="doc" id="after">
+        <section id="measure">
+          <h2>Brugerne giver feedback til kalibrering af sprogmodellen</h2>
+          <p>Hvad der er en historie, afgør redaktionen, ikke modellen. Prototypen viser derfor, hvordan redaktionens tilbagemeldinger samles, så de kan bruges til at forbedre systemet, enten ved konfigurering eller ved udvikling.</p>
+          <p>Hvor langt modellen indledningsvist er fra at svare rigtigt, målte jeg med en simpel eval-suite: en liste over morgenens nyhedshistorier og hvilke redaktioner hver af dem er en historie for, skrevet før modellen læste noget.</p>
+          <p id="result"></p>
+          <p>To eksempler:</p>
+          <ul>
+            <li><button class="go" data-go="desk=F&amp;view=feedback&amp;mark=D-004" data-goatcounter-click="kildeoverblik-overset" data-goatcounter-title="Kildeoverblik: En overset historie">En overset historie</button> En journalist melder, at en skolelukning manglede. Den stod i andet afsnit af en kommunal meddelelse, og modellen havde kun set begyndelsen. Det er en opgave til udvikling: modellen skal se hele teksten.</li>
+            <li><button class="go" data-go="desk=F&amp;view=feedback&amp;mark=N-034,N-067" data-goatcounter-click="kildeoverblik-fravalg" data-goatcounter-title="Kildeoverblik: Et fravalg">Et fravalg</button> Den vagthavende redaktør fravælger to forslag med gode råd før stormen og skriver hvorfor. Det er konfigurering: redaktionen foreslår en ændring af sine kriterier.</li>
+          </ul>
+          <p>En ændring gælder ikke med det samme, hverken i konfigurering eller udvikling. Den prøves først mod en omfattende eval-suite og de seneste ugers kildemateriale, så redaktionen kan se, hvilke forslag der ville komme til, og hvilke der ville forsvinde. Derefter godkendes den af redaktionen og platformejeren.</p>
+        </section>
+
+        <section id="how">
+          <h2>Hvad sprogmodellen gør, og hvad kode og mennesker gør</h2>
+          <p>Arbejdsfordelingen som den er tænkt i prototypen: Sprogmodellen bruges kun, hvor der skal læses og vurderes. Det, der kan slås op eller regnes efter, gør kode, og beslutningerne træffer mennesker.</p>
+          <ol class="flow">
+            <li><span class="by code">kode</span>Henter kildematerialet fra kildekanalerne, for eksempel et nyhedsbureaus API, kommunernes hjemmesider og pressemeddelelser på mail. Tip og personlige kilder er ikke med; de er journalistens og beskyttet.</li>
+            <li><span class="by model">sprogmodel</span>Sorterer: giver hver kilde et tal for, hvor relevant den er for hver redaktion.</li>
+            <li><span class="by model">sprogmodel</span>Læser de mest relevante kilder helt og trækker fakta ud med citat fra kilden. Fakta trækkes ud én gang og bruges i alle udgaver og hos alle redaktioner. Mærker fakta, der kritiserer nogen, som ikke forelagt: den kritiserede er ikke hørt endnu.</li>
+            <li><span class="by model">sprogmodel</span>Samler kilder om samme nyhedshistorie ud fra overskrift og resumé: samme begivenhed, ikke blot samme by.</li>
+            <li><span class="by code">kode</span>Slår arkivet op på navne og steder.<br><span class="by model">sprogmodel</span>Vurderer, om et arkivdokument hører til historien.</li>
+            <li><span class="by model">sprogmodel</span>Skriver udkast ud fra fakta.<br><span class="by code">kode</span>Tjekker, at citater og tal står i kilden. <button class="go go--inline" data-go="desk=F&amp;view=udkast&amp;cue=check" data-goatcounter-click="kildeoverblik-tjek" data-goatcounter-title="Kildeoverblik: Afprøv tjekket">Afprøv tjekket</button></li>
+            <li><span class="by human">menneske</span>Den vagthavende redaktør prioriterer og tildeler forslagene. En journalist kan også selv tage et forslag.</li>
+            <li><span class="by human">menneske</span>Journalisten forelægger de mærkede fakta for den, kritikken rammer, og henter svaret.</li>
+            <li><span class="by human">menneske</span>Journalisten skriver historien færdig, og en redaktør læser og godkender den, før den udgives.</li>
+            <li><span class="by human">menneske</span>Journalister og redaktører giver feedback undervejs: de fravælger forslag og melder oversete historier. Feedbacken bruges til at kalibrere sprogmodellen.</li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <button class="back" id="back" hidden>Tilbage til teksten</button>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>&copy; 2026 Tomas Hermansen &middot; case, opdigtede data</span>
+    </div>
+  </footer>
+
+  <script>window.goatcounter = { path: function () { return location.pathname.replace(/\/index\.html$/, "/"); } };</script>
+  <script data-goatcounter="https://tomashermansen.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="app/core.js?v=20261113a"></script>
+  <script src="app/app.js?v=20261113a"></script>
+</body>
+</html>

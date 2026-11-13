@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c26ea23c0f007ebc539bef0d8ba50e17829536db456f1a962be6637a15dc89af",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:25+00:00",
+  "id": "A-015",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssigt lokalt tilsyn; uddraget viser kun metode, ingen fund eller konsekvens for læsere.\", \"M\": \"Offentligt tilsyn med plejecenter, men uddraget viser ingen kritik, og sagen er lokal.\", \"E\": \"Ingen erhvervsvinkel; plejecentertilsyn uden synlige økonomiske eller regulatoriske konsekvenser.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssigt lokalt tilsyn; uddraget viser kun metode, ingen fund eller konsekvens for læsere.",
+      "M": "Offentligt tilsyn med plejecenter, men uddraget viser ingen kritik, og sagen er lokal.",
+      "E": "Ingen erhvervsvinkel; plejecentertilsyn uden synlige økonomiske eller regulatoriske konsekvenser."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

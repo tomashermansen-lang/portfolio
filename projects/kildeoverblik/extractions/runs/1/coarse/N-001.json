@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "d71851520be5326d7561b51924eae4a8a2797bd971bf976b988670789d173210",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:02+00:00",
+  "id": "N-001",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Almindelig vejrmelding med byger og tiltagende blæst; regionalt, ingen varsling set i uddraget.\", \"M\": \"Rutinemæssig vejrmelding uden politisk eller forvaltningsmæssig vinkel.\", \"E\": \"Ingen virksomheder, transport eller energi nævnt; vejret rammer ikke drift.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Almindelig vejrmelding med byger og tiltagende blæst; regionalt, ingen varsling set i uddraget.",
+      "M": "Rutinemæssig vejrmelding uden politisk eller forvaltningsmæssig vinkel.",
+      "E": "Ingen virksomheder, transport eller energi nævnt; vejret rammer ikke drift."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

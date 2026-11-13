@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "e7acb73baeaaaf2fb80b76e8743c07b764ec5a791c10de5172a3de846b875f85",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:40+00:00",
+  "from": "D-010",
+  "to": "A-017",
+  "shared": "Sydhavnen",
+  "reply": "{\"related\": false, \"why\": \"Arkivdokumentet er en pressemeddelelse om en miljøcertificering, som kun nævner fabrikken i Sydhavnen i forbifarten, og det siger intet om lukningen, fyringerne eller deres baggrund.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Arkivdokumentet er en pressemeddelelse om en miljøcertificering, som kun nævner fabrikken i Sydhavnen i forbifarten, og det siger intet om lukningen, fyringerne eller deres baggrund.",
+    "facts": []
+  },
+  "parse_error": null
+}

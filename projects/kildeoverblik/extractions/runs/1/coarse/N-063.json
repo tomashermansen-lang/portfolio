@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "9dbaedb2f24b1c69fa134535a1722cff2e1813bffe4c090a1735ac1ec4b85972",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:32+00:00",
+  "id": "N-063",
+  "reply": "{\"scores\": {\"F\": 7, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Storm i aften rammer mange læsere; praktisk vejledning er brugbar service, men andet medie har den.\", \"M\": \"Serviceguide uden myndighedsvinkel; kun relevant hvis beredskab eller forvaltning fejler.\", \"E\": \"Vejr og husråd rammer ikke virksomheder; ingen erhvervsvinkel i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 7,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Storm i aften rammer mange læsere; praktisk vejledning er brugbar service, men andet medie har den.",
+      "M": "Serviceguide uden myndighedsvinkel; kun relevant hvis beredskab eller forvaltning fejler.",
+      "E": "Vejr og husråd rammer ikke virksomheder; ingen erhvervsvinkel i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

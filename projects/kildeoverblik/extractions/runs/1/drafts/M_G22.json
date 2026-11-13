@@ -1,0 +1,122 @@
+{
+  "prompt_sha256": "064ea780f713c1ed6f60bda29e551e8946b386c52b42b52a0de81b9c6c67d3ba",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:44+00:00",
+  "desk": "M",
+  "group": 22,
+  "finds": [
+    "D-023"
+  ],
+  "facts": [
+    {
+      "text": "Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.",
+      "quote": "Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-023",
+      "no": 1
+    },
+    {
+      "text": "Stigningen i forbrugerpriserne var 2,6 procent i september.",
+      "quote": "I september var stigningen 2,6 procent.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-023",
+      "no": 2
+    },
+    {
+      "text": "Oktobers årsstigning er den højeste siden marts 2024.",
+      "quote": "Det er den højeste årsstigning siden marts 2024.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-023",
+      "no": 3
+    },
+    {
+      "text": "Ifølge kilden skyldes stigningen især højere priser på fødevarer, som steg 5,1 procent, og på el og varme.",
+      "quote": "Stigningen skyldes især højere priser på fødevarer, der steg 5,1 procent, og på el og varme.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-023",
+      "no": 4
+    },
+    {
+      "text": "Kerneinflationen, renset for energi og uforarbejdede fødevarer, var 2,9 procent.",
+      "quote": "Kerneinflationen, der er renset for energi og uforarbejdede fødevarer, var 2,9 procent.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-023",
+      "no": 5
+    }
+  ],
+  "reply": "{\"angle\": \"Forbrugerpriserne steg 3,4 procent i oktober – højeste siden marts 2024\", \"web\": [{\"s\": \"Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.\", \"facts\": [1]}, {\"s\": \"I september var stigningen 2,6 procent.\", \"facts\": [2]}, {\"s\": \"Oktobers årsstigning er den højeste siden marts 2024.\", \"facts\": [3]}, {\"s\": \"Ifølge kilden skyldes stigningen især højere priser på fødevarer, som steg 5,1 procent, og på el og varme.\", \"facts\": [4]}, {\"s\": \"Kerneinflationen, renset for energi og uforarbejdede fødevarer, var 2,9 procent.\", \"facts\": [5]}], \"notification\": {\"s\": \"Forbrugerpriserne steg 3,4 pct. i oktober – højeste årsstigning siden marts 2024\", \"facts\": [1, 3]}, \"audio\": [{\"s\": \"Forbrugerpriserne steg i oktober med 3,4 procent i forhold til samme måned sidste år, mod 2,6 procent i september.\", \"facts\": [1, 2]}, {\"s\": \"Det er den højeste årsstigning siden marts 2024.\", \"facts\": [3]}, {\"s\": \"Ifølge kilden skyldes stigningen især højere priser på fødevarer og på el og varme.\", \"facts\": [4]}]}\n",
+  "parsed": {
+    "angle": "Forbrugerpriserne steg 3,4 procent i oktober – højeste siden marts 2024",
+    "web": [
+      {
+        "s": "Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "I september var stigningen 2,6 procent.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Oktobers årsstigning er den højeste siden marts 2024.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Ifølge kilden skyldes stigningen især højere priser på fødevarer, som steg 5,1 procent, og på el og varme.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Kerneinflationen, renset for energi og uforarbejdede fødevarer, var 2,9 procent.",
+        "facts": [
+          5
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Forbrugerpriserne steg 3,4 pct. i oktober – højeste årsstigning siden marts 2024",
+      "facts": [
+        1,
+        3
+      ]
+    },
+    "audio": [
+      {
+        "s": "Forbrugerpriserne steg i oktober med 3,4 procent i forhold til samme måned sidste år, mod 2,6 procent i september.",
+        "facts": [
+          1,
+          2
+        ]
+      },
+      {
+        "s": "Det er den højeste årsstigning siden marts 2024.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Ifølge kilden skyldes stigningen især højere priser på fødevarer og på el og varme.",
+        "facts": [
+          4
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

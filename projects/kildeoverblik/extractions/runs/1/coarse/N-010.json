@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "af6c3b35628252b922c8f1f54300e48dad6003b272008526445bd10e9d7e6332",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:23+00:00",
+  "id": "N-010",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 3}, \"why\": {\"F\": \"Rutinestatistik med lille stigning på 1,2 procent; ingen akut eller kuriøs vinkel.\", \"M\": \"Turismestatistik uden politisk eller forvaltningsmæssig vinkel; rutine.\", \"E\": \"Nøgletal for overnatninger i turistbranchen, men beskeden ændring og ingen afvigelse.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 3
+    },
+    "why": {
+      "F": "Rutinestatistik med lille stigning på 1,2 procent; ingen akut eller kuriøs vinkel.",
+      "M": "Turismestatistik uden politisk eller forvaltningsmæssig vinkel; rutine.",
+      "E": "Nøgletal for overnatninger i turistbranchen, men beskeden ændring og ingen afvigelse."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

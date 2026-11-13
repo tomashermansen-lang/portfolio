@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "b875064f19ad968cb0521c3328d4c507d1aa1f87a5f06b2017e0aeb949d5dfa4",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:01+00:00",
+  "id": "N-046",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal serie 1-kamp uden nyhed, uafgjort 1-1; ramte ikke mange læsere.\", \"M\": \"Lokal amatørfodbold uden forvaltning, politik eller myndighedsansvar.\", \"E\": \"Ingen erhvervsmæssig vinkel; amatørfodbold uden betydning for virksomheder.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal serie 1-kamp uden nyhed, uafgjort 1-1; ramte ikke mange læsere.",
+      "M": "Lokal amatørfodbold uden forvaltning, politik eller myndighedsansvar.",
+      "E": "Ingen erhvervsmæssig vinkel; amatørfodbold uden betydning for virksomheder."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

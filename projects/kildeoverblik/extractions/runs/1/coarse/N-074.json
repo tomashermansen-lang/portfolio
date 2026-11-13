@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3ebdfb455797f54cea78d7edd7f3157d74cff1a1cd3d54a1f732f9874b6223f7",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:56+00:00",
+  "id": "N-074",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Hyggelig lokal sæsonhistorie fra andet medie; let kuriøst, men ingen rekord eller haster.\", \"M\": \"Lokal, ingen myndighed, forvaltning eller borgerrelevans.\", \"E\": \"Hobbybiavler, ingen erhvervsmæssig eller regulatorisk vinkel i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Hyggelig lokal sæsonhistorie fra andet medie; let kuriøst, men ingen rekord eller haster.",
+      "M": "Lokal, ingen myndighed, forvaltning eller borgerrelevans.",
+      "E": "Hobbybiavler, ingen erhvervsmæssig eller regulatorisk vinkel i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

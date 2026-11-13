@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "12785fce5469725e19a45bed6b079960859af4cea04ca4df1d57f6af465943ec",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:34+00:00",
+  "id": "A-024",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Lokal affaldsordning fra 2022; ingen aktuel effekt på læsere i dag.\", \"M\": \"Kommunalt udvalgsreferat, lokalt og fire år gammelt; uddraget viser ingen svigt.\", \"E\": \"Ingen virksomhedsvinkel i uddraget; rutinemæssig lokalpolitik uden driftspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal affaldsordning fra 2022; ingen aktuel effekt på læsere i dag.",
+      "M": "Kommunalt udvalgsreferat, lokalt og fire år gammelt; uddraget viser ingen svigt.",
+      "E": "Ingen virksomhedsvinkel i uddraget; rutinemæssig lokalpolitik uden driftspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "1c75e7bd19671633dd8a2bbf1f9d76d01537fbaf88ed126948f3654917554389",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:10+00:00",
+  "id": "N-009",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal amatørrevy-anmeldelse fra anden avis; kuriøst, men rammer ingen og haster ikke.\", \"M\": \"Kulturanmeldelse af lokal amatørscene; ingen forvaltning, politik eller svigt.\", \"E\": \"Ingen erhvervsvinkel; amatørteater uden betydning for virksomheder eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal amatørrevy-anmeldelse fra anden avis; kuriøst, men rammer ingen og haster ikke.",
+      "M": "Kulturanmeldelse af lokal amatørscene; ingen forvaltning, politik eller svigt.",
+      "E": "Ingen erhvervsvinkel; amatørteater uden betydning for virksomheder eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

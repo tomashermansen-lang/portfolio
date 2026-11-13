@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "a03f71f9eb1d65475a940642b46913583c0fc90ce9283eed4bfbb02fd48b76fd",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:05+00:00",
+  "id": "N-083",
+  "reply": "{\"scores\": {\"F\": 8, \"M\": 5, \"E\": 3}, \"why\": {\"F\": \"Storm i dag: praktisk advarsel og udlevering af sandsække fra kl. 09 rammer mange borgere.\", \"M\": \"Kommunalt beredskab med konkret borgerservice, men lokalt; interessant som del af stormdækning.\", \"E\": \"Lokalt beredskab; kun relevant hvis havnen eller virksomheder rammes af stormen.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 8,
+      "M": 5,
+      "E": 3
+    },
+    "why": {
+      "F": "Storm i dag: praktisk advarsel og udlevering af sandsække fra kl. 09 rammer mange borgere.",
+      "M": "Kommunalt beredskab med konkret borgerservice, men lokalt; interessant som del af stormdækning.",
+      "E": "Lokalt beredskab; kun relevant hvis havnen eller virksomheder rammes af stormen."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

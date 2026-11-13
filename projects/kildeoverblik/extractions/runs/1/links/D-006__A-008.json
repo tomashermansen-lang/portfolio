@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "1b6ebb9ffeed360476011bfdf3cf94c42c04252475f97f30b9bf4342cc15074c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:33+00:00",
+  "from": "D-006",
+  "to": "A-008",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens telegram handler om frygt for digebrud og stormflod ved Nørrevang Strand, mens arkivdokumentet er en pressemeddelelse om en årlig frivillig strandrensning i april, så de deler kun stedsnavnet.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens telegram handler om frygt for digebrud og stormflod ved Nørrevang Strand, mens arkivdokumentet er en pressemeddelelse om en årlig frivillig strandrensning i april, så de deler kun stedsnavnet.",
+    "facts": []
+  },
+  "parse_error": null
+}

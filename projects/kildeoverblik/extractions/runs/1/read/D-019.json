@@ -1,0 +1,61 @@
+{
+  "prompt_sha256": "f37b8f3762af96906bc3aa079a78d2e0061cfec36dc50238c51577b4d0bedfdf",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:38+00:00",
+  "id": "D-019",
+  "reply": "{\"summary\": \"Erhvervsministeren trækker forslaget om en ny lukkelov tilbage, fordi der ikke kunne samles flertal, og vil indkalde til nye forhandlinger efter nytår.\", \"facts\": [{\"text\": \"Erhvervsministeren trækker forslaget om en ny lukkelov tilbage, efter at der ikke kunne samles flertal for det.\", \"quote\": \"Erhvervsministeren trækker forslaget om en ny lukkelov tilbage, efter at der ikke kunne samles flertal for det.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Forslaget ville have givet alle butikker lov til at holde åbent på helligdage fra 2027.\", \"quote\": \"Forslaget ville have givet alle butikker lov til at holde åbent på helligdage fra 2027\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Forslaget har været omstridt i både detailhandlen og fagbevægelsen.\", \"quote\": \"har været omstridt i både detailhandlen og fagbevægelsen\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Ministeren vil indkalde til nye forhandlinger efter nytår.\", \"quote\": \"Ministeren vil nu indkalde til nye forhandlinger efter nytår\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [], \"orgs\": [\"ministeriet\", \"detailhandlen\", \"fagbevægelsen\"], \"values\": {\"F\": {\"value\": 4, \"why\": \"Berører butiksåbning på helligdage, men intet ændres nu, og sagen er politisk proces uden akut virkning i dag.\"}, \"M\": {\"value\": 6, \"why\": \"Regeringsforslag falder på manglende flertal og kommer i nye forhandlinger; landsdækkende lovgivning, men ingen myndighedsforsømmelse.\"}, \"E\": {\"value\": 7, \"why\": \"Regulering af åbningstider rammer detailhandlen direkte; tilbagetrækningen udskyder afklaringen for virksomhederne til efter nytår.\"}}}\n",
+  "parsed": {
+    "summary": "Erhvervsministeren trækker forslaget om en ny lukkelov tilbage, fordi der ikke kunne samles flertal, og vil indkalde til nye forhandlinger efter nytår.",
+    "facts": [
+      {
+        "text": "Erhvervsministeren trækker forslaget om en ny lukkelov tilbage, efter at der ikke kunne samles flertal for det.",
+        "quote": "Erhvervsministeren trækker forslaget om en ny lukkelov tilbage, efter at der ikke kunne samles flertal for det.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Forslaget ville have givet alle butikker lov til at holde åbent på helligdage fra 2027.",
+        "quote": "Forslaget ville have givet alle butikker lov til at holde åbent på helligdage fra 2027",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Forslaget har været omstridt i både detailhandlen og fagbevægelsen.",
+        "quote": "har været omstridt i både detailhandlen og fagbevægelsen",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Ministeren vil indkalde til nye forhandlinger efter nytår.",
+        "quote": "Ministeren vil nu indkalde til nye forhandlinger efter nytår",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [],
+    "orgs": [
+      "ministeriet",
+      "detailhandlen",
+      "fagbevægelsen"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "Berører butiksåbning på helligdage, men intet ændres nu, og sagen er politisk proces uden akut virkning i dag."
+      },
+      "M": {
+        "value": 6,
+        "why": "Regeringsforslag falder på manglende flertal og kommer i nye forhandlinger; landsdækkende lovgivning, men ingen myndighedsforsømmelse."
+      },
+      "E": {
+        "value": 7,
+        "why": "Regulering af åbningstider rammer detailhandlen direkte; tilbagetrækningen udskyder afklaringen for virksomhederne til efter nytår."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "37fdd9bbc1562bc8c74eb5890d1868a25855f8127e2e84f4a2dd5059869bf084",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:03+00:00",
+  "id": "N-048",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 1, \"E\": 3}, \"why\": {\"F\": \"Rutinemæssig delårsrapport fra lille møbelfirma, ingen læserrelevans.\", \"M\": \"Ingen politisk eller forvaltningsmæssig vinkel, kun virksomhedens egne tal.\", \"E\": \"Regnskab uden afvigelser, i tråd med forventninger; minimal ændring, ingen fyringer.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 1,
+      "E": 3
+    },
+    "why": {
+      "F": "Rutinemæssig delårsrapport fra lille møbelfirma, ingen læserrelevans.",
+      "M": "Ingen politisk eller forvaltningsmæssig vinkel, kun virksomhedens egne tal.",
+      "E": "Regnskab uden afvigelser, i tråd med forventninger; minimal ændring, ingen fyringer."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

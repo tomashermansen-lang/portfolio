@@ -1,0 +1,73 @@
+{
+  "prompt_sha256": "c4e1228720b3f3a4d8c5d5808eede3f39bd824352fede98539034d65a38a401f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:34+00:00",
+  "id": "N-067",
+  "reply": "{\"summary\": \"Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at sikre have og hus, inden en storm kommer i aften, og giver praktiske råd.\", \"facts\": [{\"text\": \"Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.\", \"quote\": \"Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Kundechef Anne-Mette Højlund siger, at trampoliner, havemøbler og parasoller oftest flytter sig, når det blæser.\", \"quote\": \"Trampoliner, havemøbler og parasoller er det, der oftest flytter sig, når det blæser.\", \"statement\": true, \"speaker\": \"Anne-Mette Højlund, kundechef i Forsikringsselskabet Vesterhede\", \"accuses\": null}, {\"text\": \"Selskabet råder til at sætte havemøbler, grill og krukker ind og lægge trampolinen ned eller binde den til et træ.\", \"quote\": \"Sæt havemøbler, grill og krukker ind. Læg trampolinen ned, eller bind den til et træ.\", \"statement\": true, \"speaker\": \"Forsikringsselskabet Vesterhede\", \"accuses\": null}, {\"text\": \"Selskabet råder til at lukke vinduer, døre og porte, også i drivhuset og skuret.\", \"quote\": \"Luk vinduer, døre og porte, også i drivhuset og skuret.\", \"statement\": true, \"speaker\": \"Forsikringsselskabet Vesterhede\", \"accuses\": null}, {\"text\": \"Selskabet råder til at tage billeder af huset og haven.\", \"quote\": \"Tag billeder af huset og haven, så du ved, hvordan det så ud.\", \"statement\": true, \"speaker\": \"Forsikringsselskabet Vesterhede\", \"accuses\": null}, {\"text\": \"Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.\", \"quote\": \"Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [], \"orgs\": [\"Forsikringsselskabet Vesterhede\"], \"values\": {\"F\": {\"value\": 5, \"why\": \"Stormadvarsel til forbrugere i aften har læserrelevans, men kilden er en forsikringspressemeddelelse uden vejrdata, styrke eller tydelig afgrænsning af området.\"}, \"M\": {\"value\": 2, \"why\": \"Kommerciel pressemeddelelse med forbrugerråd; ingen myndighed, forvaltning eller svigt involveret, og kun en uspecificeret region nævnes.\"}, \"E\": {\"value\": 2, \"why\": \"Forsikringsselskabets rådgivning til private husejere; ingen driftsforstyrrelser, regnskaber, regulering eller virksomhedspåvirkning nævnt.\"}}}\n",
+  "parsed": {
+    "summary": "Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at sikre have og hus, inden en storm kommer i aften, og giver praktiske råd.",
+    "facts": [
+      {
+        "text": "Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.",
+        "quote": "Forsikringsselskabet Vesterhede opfordrer husejere i regionen til at bruge en halv time i haven, inden stormen kommer i aften.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kundechef Anne-Mette Højlund siger, at trampoliner, havemøbler og parasoller oftest flytter sig, når det blæser.",
+        "quote": "Trampoliner, havemøbler og parasoller er det, der oftest flytter sig, når det blæser.",
+        "statement": true,
+        "speaker": "Anne-Mette Højlund, kundechef i Forsikringsselskabet Vesterhede",
+        "accuses": null
+      },
+      {
+        "text": "Selskabet råder til at sætte havemøbler, grill og krukker ind og lægge trampolinen ned eller binde den til et træ.",
+        "quote": "Sæt havemøbler, grill og krukker ind. Læg trampolinen ned, eller bind den til et træ.",
+        "statement": true,
+        "speaker": "Forsikringsselskabet Vesterhede",
+        "accuses": null
+      },
+      {
+        "text": "Selskabet råder til at lukke vinduer, døre og porte, også i drivhuset og skuret.",
+        "quote": "Luk vinduer, døre og porte, også i drivhuset og skuret.",
+        "statement": true,
+        "speaker": "Forsikringsselskabet Vesterhede",
+        "accuses": null
+      },
+      {
+        "text": "Selskabet råder til at tage billeder af huset og haven.",
+        "quote": "Tag billeder af huset og haven, så du ved, hvordan det så ud.",
+        "statement": true,
+        "speaker": "Forsikringsselskabet Vesterhede",
+        "accuses": null
+      },
+      {
+        "text": "Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.",
+        "quote": "Selskabets telefoner er åbne torsdag fra kl. 08 som på en almindelig hverdag.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [],
+    "orgs": [
+      "Forsikringsselskabet Vesterhede"
+    ],
+    "values": {
+      "F": {
+        "value": 5,
+        "why": "Stormadvarsel til forbrugere i aften har læserrelevans, men kilden er en forsikringspressemeddelelse uden vejrdata, styrke eller tydelig afgrænsning af området."
+      },
+      "M": {
+        "value": 2,
+        "why": "Kommerciel pressemeddelelse med forbrugerråd; ingen myndighed, forvaltning eller svigt involveret, og kun en uspecificeret region nævnes."
+      },
+      "E": {
+        "value": 2,
+        "why": "Forsikringsselskabets rådgivning til private husejere; ingen driftsforstyrrelser, regnskaber, regulering eller virksomhedspåvirkning nævnt."
+      }
+    }
+  },
+  "parse_error": null
+}

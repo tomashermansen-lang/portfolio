@@ -1,0 +1,70 @@
+{
+  "prompt_sha256": "aac716d7818e0f08e6cd7d1703385e3f7f34b5f77876ab062420a97fcdc9402c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:06+00:00",
+  "id": "D-010",
+  "reply": "{\"summary\": \"Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø med udgangen af marts 2027, og 240 medarbejdere mister deres job, skriver Vestposten.\", \"facts\": [{\"text\": \"Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.\", \"quote\": \"Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Lukningen sker ifølge virksomheden med udgangen af marts 2027.\", \"quote\": \"lukningen sker ifølge virksomheden med udgangen af marts 2027\", \"statement\": true, \"speaker\": \"Tangsø Energi\", \"accuses\": null}, {\"text\": \"Medarbejderne fik beskeden om lukningen på et møde kl. 06.\", \"quote\": \"Medarbejderne fik beskeden på et møde kl. 06\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Flere medarbejdere kalder beskeden et chok.\", \"quote\": \"flere medarbejdere, der kalder beskeden et chok\", \"statement\": true, \"speaker\": \"flere medarbejdere\", \"accuses\": null}, {\"text\": \"Fabrikken er byens næststørste private arbejdsplads.\", \"quote\": \"Fabrikken er byens næststørste private arbejdsplads.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Sydhavnen\", \"Tangsø\"], \"orgs\": [\"Tangsø Energi\", \"Vestposten\"], \"values\": {\"F\": {\"value\": 4, \"why\": \"240 mister jobbet, men sagen er lokal og rammer ikke mange læsere i dag eller i nat.\"}, \"M\": {\"value\": 3, \"why\": \"Lokal fyring uden oplyst myndighedssvigt eller politisk dimension, men en stor lokal arbejdsplads.\"}, \"E\": {\"value\": 8, \"why\": \"Fabrikslukning med 240 fyringer hos en energivirksomhed, og fabrikken er byens næststørste private arbejdsplads.\"}}}\n",
+  "parsed": {
+    "summary": "Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø med udgangen af marts 2027, og 240 medarbejdere mister deres job, skriver Vestposten.",
+    "facts": [
+      {
+        "text": "Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.",
+        "quote": "Tangsø Energi lukker sin fabrik i Sydhavnen i Tangsø, og 240 medarbejdere mister deres job.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Lukningen sker ifølge virksomheden med udgangen af marts 2027.",
+        "quote": "lukningen sker ifølge virksomheden med udgangen af marts 2027",
+        "statement": true,
+        "speaker": "Tangsø Energi",
+        "accuses": null
+      },
+      {
+        "text": "Medarbejderne fik beskeden om lukningen på et møde kl. 06.",
+        "quote": "Medarbejderne fik beskeden på et møde kl. 06",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Flere medarbejdere kalder beskeden et chok.",
+        "quote": "flere medarbejdere, der kalder beskeden et chok",
+        "statement": true,
+        "speaker": "flere medarbejdere",
+        "accuses": null
+      },
+      {
+        "text": "Fabrikken er byens næststørste private arbejdsplads.",
+        "quote": "Fabrikken er byens næststørste private arbejdsplads.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Sydhavnen",
+      "Tangsø"
+    ],
+    "orgs": [
+      "Tangsø Energi",
+      "Vestposten"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "240 mister jobbet, men sagen er lokal og rammer ikke mange læsere i dag eller i nat."
+      },
+      "M": {
+        "value": 3,
+        "why": "Lokal fyring uden oplyst myndighedssvigt eller politisk dimension, men en stor lokal arbejdsplads."
+      },
+      "E": {
+        "value": 8,
+        "why": "Fabrikslukning med 240 fyringer hos en energivirksomhed, og fabrikken er byens næststørste private arbejdsplads."
+      }
+    }
+  },
+  "parse_error": null
+}

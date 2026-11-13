@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "fd0acc6662c6d23d1ed613d53f5113a78415afeff3542df06fa91ce8d76ccc3c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:49+00:00",
+  "id": "N-071",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal velgørenhed, lille beløb, rammer ingen læsere; blød lokalstof på højst.\", \"M\": \"Lokal donation uden forvaltning, myndighed eller samfundsrelevans.\", \"E\": \"Lille lokal erhvervsklub-donation; ingen regnskab, lukning, regulering eller drift.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal velgørenhed, lille beløb, rammer ingen læsere; blød lokalstof på højst.",
+      "M": "Lokal donation uden forvaltning, myndighed eller samfundsrelevans.",
+      "E": "Lille lokal erhvervsklub-donation; ingen regnskab, lukning, regulering eller drift."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

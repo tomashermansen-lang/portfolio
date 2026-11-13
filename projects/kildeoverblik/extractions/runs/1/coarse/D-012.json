@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "7a6f2d899a618ab3ee95eb84959a1f1c0b983f025c9d40821fd988442f4a1b82",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:45+00:00",
+  "id": "D-012",
+  "reply": "{\"scores\": {\"F\": 6, \"M\": 2, \"E\": 3}, \"why\": {\"F\": \"Motorvejsspærring med otte km kø rammer morgenpendlere i dag; ingen tilskadekomne.\", \"M\": \"Enkeltstående trafikmelding uden myndighedssvigt eller bredere forvaltningsvinkel.\", \"E\": \"Transportdrift ramt, men kun en enkelt lastbil; ingen kendt erhvervskonsekvens.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 6,
+      "M": 2,
+      "E": 3
+    },
+    "why": {
+      "F": "Motorvejsspærring med otte km kø rammer morgenpendlere i dag; ingen tilskadekomne.",
+      "M": "Enkeltstående trafikmelding uden myndighedssvigt eller bredere forvaltningsvinkel.",
+      "E": "Transportdrift ramt, men kun en enkelt lastbil; ingen kendt erhvervskonsekvens."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

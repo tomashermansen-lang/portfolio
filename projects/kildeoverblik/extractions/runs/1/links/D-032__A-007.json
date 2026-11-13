@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "e31c0eb1549f9332c97386c095d19ad12556e486d12d0eeaa76865f432145769",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:08+00:00",
+  "from": "D-032",
+  "to": "A-007",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens pressemeddelelse handler om udlevering af sandsække ved Nørrevang Strand i en vejrsituation, mens arkivreferatet fra 2025 handler om nye bænke og en ny badebro samme sted, så de deler kun stedsnavnet.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens pressemeddelelse handler om udlevering af sandsække ved Nørrevang Strand i en vejrsituation, mens arkivreferatet fra 2025 handler om nye bænke og en ny badebro samme sted, så de deler kun stedsnavnet.",
+    "facts": []
+  },
+  "parse_error": null
+}

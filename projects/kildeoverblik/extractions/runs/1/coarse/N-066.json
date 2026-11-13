@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "899fc083c0d070277858c76824604f410051083e922009fde5e1c6f10c8c0b9c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:25+00:00",
+  "id": "N-066",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Rutinemæssig kvartalsstatistik med minimale ændringer, rammer ingen læsere i dag.\", \"M\": \"Befolkningsstatistik for fem kommuner, lokalt og uden tegn på politisk eller forvaltningsmæssig sag.\", \"E\": \"Folketal uden erhvervsvinkel; ingen regnskaber, lukninger eller regulering i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinemæssig kvartalsstatistik med minimale ændringer, rammer ingen læsere i dag.",
+      "M": "Befolkningsstatistik for fem kommuner, lokalt og uden tegn på politisk eller forvaltningsmæssig sag.",
+      "E": "Folketal uden erhvervsvinkel; ingen regnskaber, lukninger eller regulering i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,77 @@
+{
+  "prompt_sha256": "d0df2f9bbf91856640f074c36755ad0a68fb30b8f27e5f0e9fc7c25a44e6291b",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:57+00:00",
+  "id": "D-024",
+  "reply": "{\"summary\":\"Metalarbejdernes Fagforening Vest kræver, at Tangsø Energi betaler for efteruddannelse og forlænget opsigelsesvarsel til 240 ansatte efter lukningen af fabrikken i Sydhavnen, og forhandlingerne om fratrædelsesvilkår begynder fredag.\",\"facts\":[{\"text\":\"Tangsø Energis fabrik i Sydhavnen lukkes.\",\"quote\":\"Lukningen af Tangsø Energis fabrik i Sydhavnen\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"240 kolleger står uden job.\",\"quote\":\"240 kolleger står uden job\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Formand Poul Riis kalder lukningen et hårdt slag for 240 kolleger og for hele Tangsø.\",\"quote\":\"Lukningen af Tangsø Energis fabrik i Sydhavnen er et hårdt slag for 240 kolleger og for hele Tangsø.\",\"statement\":true,\"speaker\":\"Poul Riis, formand, Metalarbejdernes Fagforening Vest\",\"accuses\":null},{\"text\":\"Fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel.\",\"quote\":\"Fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel\",\"statement\":true,\"speaker\":\"Metalarbejdernes Fagforening Vest\",\"accuses\":\"Tangsø Energi\"},{\"text\":\"Fagforeningen minder om, at havnen i 2024 betalte for en ny kaj for at holde fabrikken i byen.\",\"quote\":\"havnen så sent som i 2024 betalte for en ny kaj for at holde fabrikken i byen\",\"statement\":true,\"speaker\":\"Metalarbejdernes Fagforening Vest\",\"accuses\":null},{\"text\":\"Forhandlingerne om fratrædelsesvilkår begynder fredag.\",\"quote\":\"Forhandlingerne om fratrædelsesvilkår begynder fredag.\",\"statement\":false,\"speaker\":null,\"accuses\":null}],\"places\":[\"Sydhavnen\",\"Tangsø\"],\"orgs\":[\"Tangsø Energi\",\"Metalarbejdernes Fagforening Vest\"],\"values\":{\"F\":{\"value\":4,\"why\":\"240 mister jobbet, men det er en lokal lukning, som ikke rammer mange læsere i dag eller i nat.\"},\"M\":{\"value\":4,\"why\":\"Overvejende lokal sag. Havnens betaling for en kaj i 2024 giver en offentlig vinkel, men der oplyses ingen forsømmelse.\"},\"E\":{\"value\":8,\"why\":\"Fabrikslukning i en energivirksomhed med 240 tabte job og forhandlinger om fratrædelsesvilkår, som begynder fredag.\"}}}\n",
+  "parsed": {
+    "summary": "Metalarbejdernes Fagforening Vest kræver, at Tangsø Energi betaler for efteruddannelse og forlænget opsigelsesvarsel til 240 ansatte efter lukningen af fabrikken i Sydhavnen, og forhandlingerne om fratrædelsesvilkår begynder fredag.",
+    "facts": [
+      {
+        "text": "Tangsø Energis fabrik i Sydhavnen lukkes.",
+        "quote": "Lukningen af Tangsø Energis fabrik i Sydhavnen",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "240 kolleger står uden job.",
+        "quote": "240 kolleger står uden job",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Formand Poul Riis kalder lukningen et hårdt slag for 240 kolleger og for hele Tangsø.",
+        "quote": "Lukningen af Tangsø Energis fabrik i Sydhavnen er et hårdt slag for 240 kolleger og for hele Tangsø.",
+        "statement": true,
+        "speaker": "Poul Riis, formand, Metalarbejdernes Fagforening Vest",
+        "accuses": null
+      },
+      {
+        "text": "Fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel.",
+        "quote": "Fagforeningen kræver, at virksomheden betaler for efteruddannelse og forlænget opsigelsesvarsel",
+        "statement": true,
+        "speaker": "Metalarbejdernes Fagforening Vest",
+        "accuses": "Tangsø Energi"
+      },
+      {
+        "text": "Fagforeningen minder om, at havnen i 2024 betalte for en ny kaj for at holde fabrikken i byen.",
+        "quote": "havnen så sent som i 2024 betalte for en ny kaj for at holde fabrikken i byen",
+        "statement": true,
+        "speaker": "Metalarbejdernes Fagforening Vest",
+        "accuses": null
+      },
+      {
+        "text": "Forhandlingerne om fratrædelsesvilkår begynder fredag.",
+        "quote": "Forhandlingerne om fratrædelsesvilkår begynder fredag.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Sydhavnen",
+      "Tangsø"
+    ],
+    "orgs": [
+      "Tangsø Energi",
+      "Metalarbejdernes Fagforening Vest"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "240 mister jobbet, men det er en lokal lukning, som ikke rammer mange læsere i dag eller i nat."
+      },
+      "M": {
+        "value": 4,
+        "why": "Overvejende lokal sag. Havnens betaling for en kaj i 2024 giver en offentlig vinkel, men der oplyses ingen forsømmelse."
+      },
+      "E": {
+        "value": 8,
+        "why": "Fabrikslukning i en energivirksomhed med 240 tabte job og forhandlinger om fratrædelsesvilkår, som begynder fredag."
+      }
+    }
+  },
+  "parse_error": null
+}

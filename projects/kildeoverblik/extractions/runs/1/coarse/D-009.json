@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "6b29056bc9f71cf8c8e28ac5b5c8c4547cd843d342d0ae99948d2c4673792ed2",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:35+00:00",
+  "id": "D-009",
+  "reply": "{\"scores\": {\"F\": 8, \"M\": 5, \"E\": 7}, \"why\": {\"F\": \"Storm og stormflod i dag; togdrift indstilles kl. 18, rammer pendlere på kyststrækningen.\", \"M\": \"Rammer mange borgere, men er primært en trafikmelding om vejrlukning uden forvaltningssvigt.\", \"E\": \"Transportdriften indstilles på hel strækning; påvirker pendling og gods, omfang uklart.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 8,
+      "M": 5,
+      "E": 7
+    },
+    "why": {
+      "F": "Storm og stormflod i dag; togdrift indstilles kl. 18, rammer pendlere på kyststrækningen.",
+      "M": "Rammer mange borgere, men er primært en trafikmelding om vejrlukning uden forvaltningssvigt.",
+      "E": "Transportdriften indstilles på hel strækning; påvirker pendling og gods, omfang uklart."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

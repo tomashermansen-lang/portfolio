@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "1c61da3c111f7f52d3b0c1c2365e63af81a167b274383668b76ecf6c80006fd9",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:22+00:00",
+  "id": "N-019",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Boganmeldelse af en regional roman; ingen bred læserrelevans i dag, lidt kulturstof.\", \"M\": \"Kulturanmeldelse fra andet medie uden politik, forvaltning eller svigt.\", \"E\": \"Ingen erhvervsmæssig vinkel; almindelig boganmeldelse.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Boganmeldelse af en regional roman; ingen bred læserrelevans i dag, lidt kulturstof.",
+      "M": "Kulturanmeldelse fra andet medie uden politik, forvaltning eller svigt.",
+      "E": "Ingen erhvervsmæssig vinkel; almindelig boganmeldelse."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

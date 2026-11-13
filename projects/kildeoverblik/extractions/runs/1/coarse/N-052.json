@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "b47167fe377cb83d28b4b25fd0814c050ba5cd1ce53cfe44494dcb1e6d1e728a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:10+00:00",
+  "id": "N-052",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal kuriøs, hyggelig sag med lille tilskud; rammer få læsere.\", \"M\": \"Lille lokalt fondstilskud, ingen forvaltningssag eller myndighedssvigt.\", \"E\": \"Ingen erhvervsmæssig vinkel; småt kulturtilskud til frivillig forening.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal kuriøs, hyggelig sag med lille tilskud; rammer få læsere.",
+      "M": "Lille lokalt fondstilskud, ingen forvaltningssag eller myndighedssvigt.",
+      "E": "Ingen erhvervsmæssig vinkel; småt kulturtilskud til frivillig forening."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

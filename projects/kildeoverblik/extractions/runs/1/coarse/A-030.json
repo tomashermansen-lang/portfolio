@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "f2a1ac982744a9d61530d00eb44cd0a1c592ec281578791e0d0bb791403f49ad",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:42+00:00",
+  "id": "A-030",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal kuriøs flytning af arkiv; rammer få læsere, ingen hast.\", \"M\": \"Lokal kommunal/kulturinstitution uden rækkevidde ud over det lokale.\", \"E\": \"Ingen erhvervsvinkel; ingen lukning, regulering eller driftsproblem.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal kuriøs flytning af arkiv; rammer få læsere, ingen hast.",
+      "M": "Lokal kommunal/kulturinstitution uden rækkevidde ud over det lokale.",
+      "E": "Ingen erhvervsvinkel; ingen lukning, regulering eller driftsproblem."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

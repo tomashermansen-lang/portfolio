@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "484ed59b7546a6a64ea7f6e361b29e30cdffce12cd597e1944d63a1edcab55f0",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:02+00:00",
+  "id": "N-002",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt indbrud i haveforening med småtyveri; ingen bred rækkevidde eller kuriøst element i uddraget.\", \"M\": \"Rutinemæssigt lokalt indbrud, ingen myndighedssvigt eller bredere samfundsmæssig relevans.\", \"E\": \"Småindbrud i private havehuse uden erhvervsrelevans.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt indbrud i haveforening med småtyveri; ingen bred rækkevidde eller kuriøst element i uddraget.",
+      "M": "Rutinemæssigt lokalt indbrud, ingen myndighedssvigt eller bredere samfundsmæssig relevans.",
+      "E": "Småindbrud i private havehuse uden erhvervsrelevans."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

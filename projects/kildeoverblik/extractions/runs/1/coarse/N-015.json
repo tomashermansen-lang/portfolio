@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "40c0fbcc1169fee2bc831568f61b2c88208d6541c11bcf5c1905d2614ba32fc5",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:17+00:00",
+  "id": "N-015",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinereferat fra lokalt udvalg; uændret vandkvalitet og gadelamper rammer ingen i dag.\", \"M\": \"Lokalt udvalgsreferat uden tydelig sag; intet tegn på svigt eller bredere rækkevidde.\", \"E\": \"Ingen virksomhedsrelevans i uddraget; kommunal drift og lokalpolitik vægtes lavt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinereferat fra lokalt udvalg; uændret vandkvalitet og gadelamper rammer ingen i dag.",
+      "M": "Lokalt udvalgsreferat uden tydelig sag; intet tegn på svigt eller bredere rækkevidde.",
+      "E": "Ingen virksomhedsrelevans i uddraget; kommunal drift og lokalpolitik vægtes lavt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

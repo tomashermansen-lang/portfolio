@@ -1,0 +1,64 @@
+{
+  "prompt_sha256": "86d15be6ef406021b30c9c5dc01494a80659621a5e51f57c42a3b3a548a6dc90",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:31+00:00",
+  "id": "D-018",
+  "reply": "{\"summary\": \"Lægernes Forening Vest kan ikke støtte regionsrådets forslag til en ny model for ventetidsgaranti og advarer om, at den vil forlænge ventetiden for de sygeste patienter.\", \"facts\": [{\"text\": \"Lægernes Forening Vest har afgivet høringssvar til Region Vest, Sundhedsplanlægning, om regionsrådets forslag til en ny model for ventetidsgaranti (sagsnr. 26/4410).\", \"quote\": \"Til Region Vest, Sundhedsplanlægning. Sagsnr. 26/4410. Lægernes Forening Vest takker for muligheden for at afgive høringssvar til regionsrådets forslag om en ny model for ventetidsgaranti.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Foreningen kan ikke støtte forslaget i dets nuværende form.\", \"quote\": \"Foreningen kan ikke støtte forslaget i dets nuværende form.\", \"statement\": true, \"speaker\": \"Lægernes Forening Vest\", \"accuses\": null}, {\"text\": \"Efter foreningens vurdering vil modellen flytte speciallæger fra de akutte funktioner til planlagte behandlinger, og foreningen advarer om, at det vil forlænge ventetiden for de sygeste patienter.\", \"quote\": \"Efter vores vurdering vil modellen flytte speciallæger fra de akutte funktioner til planlagte behandlinger, og vi advarer om, at det vil forlænge ventetiden for de sygeste patienter.\", \"statement\": true, \"speaker\": \"Lægernes Forening Vest\", \"accuses\": \"regionsrådet\"}, {\"text\": \"Foreningen anbefaler, at forslaget udskydes, til konsekvenserne for akutområdet er belyst, og at garantien i stedet differentieres efter sygdommens alvor.\", \"quote\": \"Vi anbefaler, at forslaget udskydes, til konsekvenserne for akutområdet er belyst, og at garantien i stedet differentieres efter sygdommens alvor.\", \"statement\": true, \"speaker\": \"Lægernes Forening Vest\", \"accuses\": null}], \"places\": [\"Region Vest\"], \"orgs\": [\"Lægernes Forening Vest\", \"Region Vest\", \"Sundhedsplanlægning\", \"regionsrådet\"], \"values\": {\"F\": {\"value\": 3, \"why\": \"Høringssvar vægtes lavt; advarslen om ventetid er en forening vurdering af et forslag, ikke en akut hændelse.\"}, \"M\": {\"value\": 6, \"why\": \"Regional sundhedspolitik og forvaltning, hvor lægerne advarer om konsekvenser for akutområdet og de sygeste patienter.\"}, \"E\": {\"value\": 2, \"why\": \"Ingen regnskaber, lukninger eller regulering af virksomheder; kun en regional sundhedsmodel og en fagforenings høringssvar.\"}}}\n",
+  "parsed": {
+    "summary": "Lægernes Forening Vest kan ikke støtte regionsrådets forslag til en ny model for ventetidsgaranti og advarer om, at den vil forlænge ventetiden for de sygeste patienter.",
+    "facts": [
+      {
+        "text": "Lægernes Forening Vest har afgivet høringssvar til Region Vest, Sundhedsplanlægning, om regionsrådets forslag til en ny model for ventetidsgaranti (sagsnr. 26/4410).",
+        "quote": "Til Region Vest, Sundhedsplanlægning. Sagsnr. 26/4410. Lægernes Forening Vest takker for muligheden for at afgive høringssvar til regionsrådets forslag om en ny model for ventetidsgaranti.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Foreningen kan ikke støtte forslaget i dets nuværende form.",
+        "quote": "Foreningen kan ikke støtte forslaget i dets nuværende form.",
+        "statement": true,
+        "speaker": "Lægernes Forening Vest",
+        "accuses": null
+      },
+      {
+        "text": "Efter foreningens vurdering vil modellen flytte speciallæger fra de akutte funktioner til planlagte behandlinger, og foreningen advarer om, at det vil forlænge ventetiden for de sygeste patienter.",
+        "quote": "Efter vores vurdering vil modellen flytte speciallæger fra de akutte funktioner til planlagte behandlinger, og vi advarer om, at det vil forlænge ventetiden for de sygeste patienter.",
+        "statement": true,
+        "speaker": "Lægernes Forening Vest",
+        "accuses": "regionsrådet"
+      },
+      {
+        "text": "Foreningen anbefaler, at forslaget udskydes, til konsekvenserne for akutområdet er belyst, og at garantien i stedet differentieres efter sygdommens alvor.",
+        "quote": "Vi anbefaler, at forslaget udskydes, til konsekvenserne for akutområdet er belyst, og at garantien i stedet differentieres efter sygdommens alvor.",
+        "statement": true,
+        "speaker": "Lægernes Forening Vest",
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Region Vest"
+    ],
+    "orgs": [
+      "Lægernes Forening Vest",
+      "Region Vest",
+      "Sundhedsplanlægning",
+      "regionsrådet"
+    ],
+    "values": {
+      "F": {
+        "value": 3,
+        "why": "Høringssvar vægtes lavt; advarslen om ventetid er en forening vurdering af et forslag, ikke en akut hændelse."
+      },
+      "M": {
+        "value": 6,
+        "why": "Regional sundhedspolitik og forvaltning, hvor lægerne advarer om konsekvenser for akutområdet og de sygeste patienter."
+      },
+      "E": {
+        "value": 2,
+        "why": "Ingen regnskaber, lukninger eller regulering af virksomheder; kun en regional sundhedsmodel og en fagforenings høringssvar."
+      }
+    }
+  },
+  "parse_error": null
+}
