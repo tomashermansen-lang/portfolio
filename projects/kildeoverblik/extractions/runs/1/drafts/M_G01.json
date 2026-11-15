@@ -1,0 +1,185 @@
+{
+  "prompt_sha256": "64040b211cfc6f1373b7b433d181d537da8dc9967eaf58ac0982ac0cf582f8fd",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:30+00:00",
+  "desk": "M",
+  "group": 1,
+  "finds": [
+    "D-001",
+    "D-014",
+    "D-021"
+  ],
+  "facts": [
+    {
+      "text": "Varslingstjenesten har hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.",
+      "quote": "Varslingstjenesten har onsdag morgen hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-001",
+      "no": 1
+    },
+    {
+      "text": "Vandstanden ventes at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.",
+      "quote": "Vandstanden ventes at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.",
+      "statement": true,
+      "speaker": "Varslingstjenesten",
+      "accuses": null,
+      "find": "D-001",
+      "no": 2
+    },
+    {
+      "text": "Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.",
+      "quote": "Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-001",
+      "no": 3
+    },
+    {
+      "text": "Vinden ventes at nå stormstyrke fra vest i løbet af aftenen.",
+      "quote": "Vinden ventes at nå stormstyrke fra vest i løbet af aftenen.",
+      "statement": true,
+      "speaker": "Varslingstjenesten",
+      "accuses": null,
+      "find": "D-001",
+      "no": 4
+    },
+    {
+      "text": "Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.",
+      "quote": "Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.",
+      "statement": true,
+      "speaker": "Varslingstjenesten",
+      "accuses": null,
+      "find": "D-001",
+      "no": 5
+    },
+    {
+      "text": "Vestkysten forbereder sig på nattens stormflod, efter at varslet onsdag morgen er hævet til højeste niveau.",
+      "quote": "Vestkysten forbereder sig på nattens stormflod, efter at varslet onsdag morgen er hævet til højeste niveau",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-014",
+      "no": 6
+    },
+    {
+      "text": "Vandstanden ventes at nå op til 3,6 meter over normalen.",
+      "quote": "Vandstanden ventes at nå op til 3,6 meter over normalen.",
+      "statement": true,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-014",
+      "no": 7
+    },
+    {
+      "text": "Butiksejere langs havnen i Tangsø vil sætte plader for vinduerne i løbet af dagen.",
+      "quote": "butiksejere langs havnen i Tangsø, som vil sætte plader for vinduerne i løbet af dagen",
+      "statement": true,
+      "speaker": "butiksejere langs havnen i Tangsø",
+      "accuses": null,
+      "find": "D-014",
+      "no": 8
+    },
+    {
+      "text": "Vandet stod senest så højt i 2013.",
+      "quote": "Senest vandet stod så højt, var i 2013.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-014",
+      "no": 9
+    },
+    {
+      "text": "Vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag.",
+      "quote": "Vandstanden på vestkysten ventes at toppe omkring kl. 02 natten til torsdag",
+      "statement": true,
+      "speaker": "Varslingstjenesten",
+      "accuses": null,
+      "find": "D-021",
+      "no": 10
+    },
+    {
+      "text": "Det højeste niveau ventes ved Nørrevang med op til 3,6 meter over normalen.",
+      "quote": "Det højeste niveau ventes ved Nørrevang med op til 3,6 meter over normalen.",
+      "statement": true,
+      "speaker": "Varslingstjenesten",
+      "accuses": null,
+      "find": "D-021",
+      "no": 11
+    },
+    {
+      "text": "Varslet på højeste niveau er uændret.",
+      "quote": "Varslet på højeste niveau er uændret.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-021",
+      "no": 12
+    }
+  ],
+  "reply": "{\"angle\": \"Stormflodsvarsel på højeste niveau: Vestkysten forbereder sig på natten\", \"web\": [{\"s\": \"Varslingstjenesten har onsdag morgen hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.\", \"facts\": [1]}, {\"s\": \"Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.\", \"facts\": [3]}, {\"s\": \"Ifølge Varslingstjenesten ventes vandstanden at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.\", \"facts\": [2]}, {\"s\": \"Varslingstjenesten venter, at vandstanden på vestkysten topper omkring kl. 02 natten til torsdag.\", \"facts\": [10]}, {\"s\": \"Butiksejere langs havnen i Tangsø vil sætte plader for vinduerne i løbet af dagen.\", \"facts\": [8]}], \"notification\": {\"s\": \"Varslet om stormflod på vestkysten er hævet til højeste niveau for natten til torsdag\", \"facts\": [1]}, \"audio\": [{\"s\": \"Varslet om stormflod på vestkysten er onsdag morgen hævet til højeste niveau for natten til torsdag.\", \"facts\": [1]}, {\"s\": \"Varslingstjenesten venter, at vandstanden topper omkring klokken to natten til torsdag.\", \"facts\": [10]}, {\"s\": \"Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.\", \"facts\": [5]}]}\n",
+  "parsed": {
+    "angle": "Stormflodsvarsel på højeste niveau: Vestkysten forbereder sig på natten",
+    "web": [
+      {
+        "s": "Varslingstjenesten har onsdag morgen hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Ifølge Varslingstjenesten ventes vandstanden at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Varslingstjenesten venter, at vandstanden på vestkysten topper omkring kl. 02 natten til torsdag.",
+        "facts": [
+          10
+        ]
+      },
+      {
+        "s": "Butiksejere langs havnen i Tangsø vil sætte plader for vinduerne i løbet af dagen.",
+        "facts": [
+          8
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Varslet om stormflod på vestkysten er hævet til højeste niveau for natten til torsdag",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Varslet om stormflod på vestkysten er onsdag morgen hævet til højeste niveau for natten til torsdag.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Varslingstjenesten venter, at vandstanden topper omkring klokken to natten til torsdag.",
+        "facts": [
+          10
+        ]
+      },
+      {
+        "s": "Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.",
+        "facts": [
+          5
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

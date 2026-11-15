@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "ab5cd5aa8d1b9fdf0596c0e2248e9cd86a9aa2ec64d7b605143cf159985fc8bb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:56+00:00",
+  "id": "N-043",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssigt lokalt bevillingsreferat uden læserrelevans eller kuriøst element.\", \"M\": \"Lokalt nævnsreferat med rutinemæssige bevillinger; ingen myndighedssvigt eller bredere politisk relevans synlig.\", \"E\": \"Enkelte alkoholbevillinger til café og vinbar; ingen regulering, lukning eller større virksomhedspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssigt lokalt bevillingsreferat uden læserrelevans eller kuriøst element.",
+      "M": "Lokalt nævnsreferat med rutinemæssige bevillinger; ingen myndighedssvigt eller bredere politisk relevans synlig.",
+      "E": "Enkelte alkoholbevillinger til café og vinbar; ingen regulering, lukning eller større virksomhedspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

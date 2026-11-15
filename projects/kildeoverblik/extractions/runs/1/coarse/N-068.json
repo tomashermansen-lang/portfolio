@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "58551b2757262deaf89c0f6fd2786cdb19b789b480ba8a84730e661dd8c93b52",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:40+00:00",
+  "id": "N-068",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Lokalt høringssvar fra 11 lodsejere om et vandløb; rammer ingen læsere i dag.\", \"M\": \"Kommunal forvaltning, men lokal og et rutinemæssigt høringssvar uden synlig konflikt.\", \"E\": \"Lille landbrugsinteresse i lokalt regulativ; ingen synlig virksomhedspåvirkning i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt høringssvar fra 11 lodsejere om et vandløb; rammer ingen læsere i dag.",
+      "M": "Kommunal forvaltning, men lokal og et rutinemæssigt høringssvar uden synlig konflikt.",
+      "E": "Lille landbrugsinteresse i lokalt regulativ; ingen synlig virksomhedspåvirkning i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

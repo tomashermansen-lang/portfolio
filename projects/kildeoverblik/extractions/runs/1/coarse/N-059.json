@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "24c3fd882d1e6ab6409512eb8be63e2f50855488de9cfa940a620c3cb962e1e5",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:25+00:00",
+  "id": "N-059",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal trafikmelding, ryddes inden en halv time; rammer få og er ikke kuriøs nok.\", \"M\": \"Enkeltstående trafikmelding uden forvaltningsvinkel eller bredere betydning.\", \"E\": \"Ingen virksomheder, havne eller transportdrift rammes; rutinemelding.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal trafikmelding, ryddes inden en halv time; rammer få og er ikke kuriøs nok.",
+      "M": "Enkeltstående trafikmelding uden forvaltningsvinkel eller bredere betydning.",
+      "E": "Ingen virksomheder, havne eller transportdrift rammes; rutinemelding."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

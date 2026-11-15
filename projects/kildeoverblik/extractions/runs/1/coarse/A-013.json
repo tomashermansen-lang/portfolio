@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "610bd79a088b84f1b24b1d645f94a164655c5d73526294a9368b3db8779a2a64",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:23+00:00",
+  "id": "A-013",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 4, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssigt tilsyn på ét plejecenter, intet i uddraget rammer mange læsere i dag.\", \"M\": \"Offentligt tilsyn med plejecenter kan give historie, men uddraget viser kun metode, ingen fund.\", \"E\": \"Plejecenter-tilsyn uden erhvervsvinkel; ingen regulering, lukning eller fyringer i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 4,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssigt tilsyn på ét plejecenter, intet i uddraget rammer mange læsere i dag.",
+      "M": "Offentligt tilsyn med plejecenter kan give historie, men uddraget viser kun metode, ingen fund.",
+      "E": "Plejecenter-tilsyn uden erhvervsvinkel; ingen regulering, lukning eller fyringer i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

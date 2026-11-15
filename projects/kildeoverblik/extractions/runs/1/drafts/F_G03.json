@@ -1,0 +1,224 @@
+{
+  "prompt_sha256": "8499866af7d7e9fb5daa819abce29834f83a58bae4aa405c84edc3eeb163d50b",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:40+00:00",
+  "desk": "F",
+  "group": 3,
+  "finds": [
+    "D-032",
+    "N-083"
+  ],
+  "facts": [
+    {
+      "text": "Beredskab Vest udleverer sandsække fra onsdag kl. 09 ved Nørrevang Strand og ved lystbådehavnen i Tangsø.",
+      "quote": "Beredskab Vest udleverer sandsække fra onsdag kl. 09 ved Nørrevang Strand og ved lystbådehavnen i Tangsø.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-032",
+      "no": 1
+    },
+    {
+      "text": "Hver husstand kan hente op til 20 sække.",
+      "quote": "Hver husstand kan hente op til 20 sække.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-032",
+      "no": 2
+    },
+    {
+      "text": "Der er indsat ekstra mandskab fra kl. 16.",
+      "quote": "Der er indsat ekstra mandskab fra kl. 16.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-032",
+      "no": 3
+    },
+    {
+      "text": "Borgere opfordres til at sikre løse genstande og holde sig væk fra moler og diger i nat.",
+      "quote": "Borgere opfordres til at sikre løse genstande og holde sig væk fra moler og diger i nat.",
+      "statement": true,
+      "speaker": "Beredskab Vest",
+      "accuses": null,
+      "find": "D-032",
+      "no": 4
+    },
+    {
+      "text": "Beredskab Vest udleverer sandsække fra kl. 09 i dag ved lystbådehavnen i Tangsø og ved Nørrevang Strand.",
+      "quote": "Beredskab Vest udleverer sandsække fra kl. 09 i dag ved lystbådehavnen i Tangsø og ved Nørrevang Strand.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-083",
+      "no": 5
+    },
+    {
+      "text": "Hver husstand kan hente op til 20 sandsække.",
+      "quote": "Hver husstand kan hente op til 20 sække.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-083",
+      "no": 6
+    },
+    {
+      "text": "Kommunen kører ikke sandsække ud til borgerne.",
+      "quote": "Kommunen kører ikke sække ud",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-083",
+      "no": 7
+    },
+    {
+      "text": "Kommunen opfordrer borgere til at tage en trailer med eller hjælpe en nabo uden bil.",
+      "quote": "tag en trailer med eller hjælp en nabo, der ikke selv har bil",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-083",
+      "no": 8
+    },
+    {
+      "text": "Kommunen har siden 2022 givet digelaget tre påbud om udbedring af diget ved Nørrevang Strand.",
+      "quote": "Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 9
+    },
+    {
+      "text": "Ifølge forvaltningens sagsfremstilling er påbuddene ikke efterkommet.",
+      "quote": "Påbuddene er ikke efterkommet.",
+      "statement": true,
+      "speaker": "Nørrevang Kommunes forvaltning",
+      "accuses": "digelaget",
+      "find": "A-001",
+      "no": 10
+    },
+    {
+      "text": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+      "quote": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 11
+    },
+    {
+      "text": "Udbedringen af diget er anslået til 11,5 mio. kr.",
+      "quote": "Udbedringen er anslået til 11,5 mio. kr.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 12
+    },
+    {
+      "text": "Kommunens forvaltning skriver, at digelaget siden 2022 har fået tre påbud om at udbedre diget ved Nørrevang Strand, og at påbuddene ikke er efterkommet.",
+      "quote": "Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand. Påbuddene er ikke efterkommet.",
+      "statement": true,
+      "speaker": "Nørrevang Kommunes forvaltning",
+      "accuses": "digelaget",
+      "find": "A-001",
+      "no": 13
+    },
+    {
+      "text": "Forvaltningen har to gange udskudt at lade udbedringen udføre på digelagets regning, med henvisning til anlægsrammen.",
+      "quote": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 14
+    },
+    {
+      "text": "Udbedringen af diget er anslået til at koste 11,5 mio. kr.",
+      "quote": "Udbedringen er anslået til 11,5 mio. kr.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 15
+    },
+    {
+      "text": "Sagen om kystsikring står på dagsordenen for Teknisk Udvalgs møde den 17. november 2026.",
+      "quote": "Dagsorden for møde i Teknisk Udvalg tirsdag den 17. november 2026 kl. 16.00",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "A-001",
+      "no": 16
+    }
+  ],
+  "reply": "{\"angle\": \"Sandsække udleveres ved Nørrevang Strand; digepåbud ikke efterkommet, siger forvaltning\", \"web\": [{\"s\": \"Beredskab Vest udleverer sandsække fra onsdag kl. 09 ved Nørrevang Strand og ved lystbådehavnen i Tangsø, og hver husstand kan hente op til 20 sække.\", \"facts\": [1, 2]}, {\"s\": \"Kommunen kører ikke sække ud og opfordrer borgere til at tage en trailer med eller hjælpe en nabo uden bil.\", \"facts\": [7, 8]}, {\"s\": \"Kommunens forvaltning skriver, at digelaget siden 2022 har fået tre påbud om at udbedre diget ved Nørrevang Strand, og at påbuddene ikke er efterkommet.\", \"facts\": [13]}, {\"s\": \"Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen, og udbedringen er anslået til 11,5 mio. kr.\", \"facts\": [11, 12]}, {\"s\": \"Sagen om kystsikring står på dagsordenen for Teknisk Udvalgs møde den 17. november 2026.\", \"facts\": [16]}], \"notification\": {\"s\": \"Sandsække udleveres fra kl. 09 ved Nørrevang Strand og lystbådehavnen i Tangsø\", \"facts\": [1]}, \"audio\": [{\"s\": \"Beredskab Vest udleverer sandsække fra onsdag klokken ni ved Nørrevang Strand og ved lystbådehavnen i Tangsø.\", \"facts\": [1]}, {\"s\": \"Hver husstand kan hente op til 20 sække, men kommunen kører ikke sække ud.\", \"facts\": [2, 7]}, {\"s\": \"Kommunens forvaltning skriver, at digelaget siden 2022 har fået tre påbud om at udbedre diget ved Nørrevang Strand, og at påbuddene ikke er efterkommet.\", \"facts\": [13]}]}\n",
+  "parsed": {
+    "angle": "Sandsække udleveres ved Nørrevang Strand; digepåbud ikke efterkommet, siger forvaltning",
+    "web": [
+      {
+        "s": "Beredskab Vest udleverer sandsække fra onsdag kl. 09 ved Nørrevang Strand og ved lystbådehavnen i Tangsø, og hver husstand kan hente op til 20 sække.",
+        "facts": [
+          1,
+          2
+        ]
+      },
+      {
+        "s": "Kommunen kører ikke sække ud og opfordrer borgere til at tage en trailer med eller hjælpe en nabo uden bil.",
+        "facts": [
+          7,
+          8
+        ]
+      },
+      {
+        "s": "Kommunens forvaltning skriver, at digelaget siden 2022 har fået tre påbud om at udbedre diget ved Nørrevang Strand, og at påbuddene ikke er efterkommet.",
+        "facts": [
+          13
+        ]
+      },
+      {
+        "s": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen, og udbedringen er anslået til 11,5 mio. kr.",
+        "facts": [
+          11,
+          12
+        ]
+      },
+      {
+        "s": "Sagen om kystsikring står på dagsordenen for Teknisk Udvalgs møde den 17. november 2026.",
+        "facts": [
+          16
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Sandsække udleveres fra kl. 09 ved Nørrevang Strand og lystbådehavnen i Tangsø",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Beredskab Vest udleverer sandsække fra onsdag klokken ni ved Nørrevang Strand og ved lystbådehavnen i Tangsø.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Hver husstand kan hente op til 20 sække, men kommunen kører ikke sække ud.",
+        "facts": [
+          2,
+          7
+        ]
+      },
+      {
+        "s": "Kommunens forvaltning skriver, at digelaget siden 2022 har fået tre påbud om at udbedre diget ved Nørrevang Strand, og at påbuddene ikke er efterkommet.",
+        "facts": [
+          13
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

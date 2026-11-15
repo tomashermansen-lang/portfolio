@@ -1,0 +1,162 @@
+{
+  "prompt_sha256": "878d3b96bbe9dd8eff3f6c8a33d80fba9f43bca90f8e510b9c772856c11f17fd",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:51+00:00",
+  "desk": "E",
+  "group": 5,
+  "finds": [
+    "D-009",
+    "D-011"
+  ],
+  "facts": [
+    {
+      "text": "Vestkysttog indstiller al togdrift mellem Tangsø og Nørrevang fra onsdag kl. 18, og begrundelsen er den varslede storm og stormflod.",
+      "quote": "Vestkysttog indstiller al togdrift på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18 på grund af den varslede storm og stormflod",
+      "statement": true,
+      "speaker": "Lise Thorup, pressechef",
+      "accuses": null,
+      "find": "D-009",
+      "no": 1
+    },
+    {
+      "text": "Selskabet forventer at genoptage driften torsdag formiddag, når sporene er efterset.",
+      "quote": "Selskabet regner med at genoptage driften torsdag formiddag, når sporene er efterset",
+      "statement": true,
+      "speaker": "Vestkysttog",
+      "accuses": null,
+      "find": "D-009",
+      "no": 2
+    },
+    {
+      "text": "Omkring 6.000 daglige rejsende berøres af driftsstoppet.",
+      "quote": "Omkring 6.000 daglige rejsende berøres",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-009",
+      "no": 3
+    },
+    {
+      "text": "Vestkysttog indstiller togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18.",
+      "quote": "indstiller Vestkysttog togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-011",
+      "no": 4
+    },
+    {
+      "text": "Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31.",
+      "quote": "Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-011",
+      "no": 5
+    },
+    {
+      "text": "Der indsættes ikke togbusser på strækningen.",
+      "quote": "Der indsættes ikke togbusser",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-011",
+      "no": 6
+    },
+    {
+      "text": "Vestkysttog venter, at kystvejen bliver lukket.",
+      "quote": "da kystvejen ventes lukket",
+      "statement": true,
+      "speaker": "Vestkysttog",
+      "accuses": null,
+      "find": "D-011",
+      "no": 7
+    },
+    {
+      "text": "Billetter og periodekort til strækningen kan refunderes.",
+      "quote": "Billetter og periodekort til strækningen kan refunderes.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-011",
+      "no": 8
+    },
+    {
+      "text": "Vestkysttog begrunder indstillingen med hensyn til passagerernes og personalets sikkerhed.",
+      "quote": "Af hensyn til passagerernes og personalets sikkerhed",
+      "statement": true,
+      "speaker": "Vestkysttog",
+      "accuses": null,
+      "find": "D-011",
+      "no": 9
+    }
+  ],
+  "reply": "{\"angle\": \"Vestkysttog stopper kystdrift fra onsdag kl. 18 uden togbusser\", \"web\": [{\"s\": \"Vestkysttog indstiller al togdrift på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18.\", \"facts\": [1, 4]}, {\"s\": \"Ifølge pressechef Lise Thorup sker det på grund af den varslede storm og stormflod.\", \"facts\": [1]}, {\"s\": \"Omkring 6.000 daglige rejsende berøres af driftsstoppet.\", \"facts\": [3]}, {\"s\": \"Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31, og der indsættes ikke togbusser på strækningen.\", \"facts\": [5, 6]}, {\"s\": \"Vestkysttog regner med at genoptage driften torsdag formiddag, når sporene er efterset.\", \"facts\": [2]}], \"notification\": {\"s\": \"Vestkysttog indstiller al togdrift mellem Tangsø og Nørrevang fra onsdag kl. 18\", \"facts\": [1, 4]}, \"audio\": [{\"s\": \"Vestkysttog indstiller al togdrift på kyststrækningen mellem Tangsø og Nørrevang fra onsdag klokken 18.\", \"facts\": [1, 4]}, {\"s\": \"Der indsættes ikke togbusser på strækningen, og billetter og periodekort kan refunderes.\", \"facts\": [6, 8]}, {\"s\": \"Vestkysttog regner med at genoptage driften torsdag formiddag, når sporene er efterset.\", \"facts\": [2]}]}\n",
+  "parsed": {
+    "angle": "Vestkysttog stopper kystdrift fra onsdag kl. 18 uden togbusser",
+    "web": [
+      {
+        "s": "Vestkysttog indstiller al togdrift på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18.",
+        "facts": [
+          1,
+          4
+        ]
+      },
+      {
+        "s": "Ifølge pressechef Lise Thorup sker det på grund af den varslede storm og stormflod.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Omkring 6.000 daglige rejsende berøres af driftsstoppet.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31, og der indsættes ikke togbusser på strækningen.",
+        "facts": [
+          5,
+          6
+        ]
+      },
+      {
+        "s": "Vestkysttog regner med at genoptage driften torsdag formiddag, når sporene er efterset.",
+        "facts": [
+          2
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Vestkysttog indstiller al togdrift mellem Tangsø og Nørrevang fra onsdag kl. 18",
+      "facts": [
+        1,
+        4
+      ]
+    },
+    "audio": [
+      {
+        "s": "Vestkysttog indstiller al togdrift på kyststrækningen mellem Tangsø og Nørrevang fra onsdag klokken 18.",
+        "facts": [
+          1,
+          4
+        ]
+      },
+      {
+        "s": "Der indsættes ikke togbusser på strækningen, og billetter og periodekort kan refunderes.",
+        "facts": [
+          6,
+          8
+        ]
+      },
+      {
+        "s": "Vestkysttog regner med at genoptage driften torsdag formiddag, når sporene er efterset.",
+        "facts": [
+          2
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,158 @@
+{
+  "prompt_sha256": "d7cf8a1d34c747f9627b28b6155554598deebc9aa662e1bc35b5b652e2a937ab",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:00+00:00",
+  "reply": "{\"groups\":[{\"finds\":[\"D-001\",\"D-014\",\"D-021\"],\"label\":\"Stormflodsvarsel hævet til højeste niveau på vestkysten\"},{\"finds\":[\"D-006\",\"D-028\"],\"label\":\"Digebrud-frygt og evakuering ved Nørrevang Strand\"},{\"finds\":[\"D-032\",\"N-083\"],\"label\":\"Udlevering af sandsække ved Nørrevang og Tangsø\"},{\"finds\":[\"D-007\"],\"label\":\"Tangsø Havn lukker for skibstrafik\"},{\"finds\":[\"D-009\",\"D-011\"],\"label\":\"Togdrift indstilles mellem Tangsø og Nørrevang\"},{\"finds\":[\"N-072\"],\"label\":\"Færgen til Grimsø aflyst på grund af storm\"},{\"finds\":[\"N-080\"],\"label\":\"Trafikcentralen advarer om kraftig sidevind\"},{\"finds\":[\"N-034\"],\"label\":\"Dyreinternat opfordrer: hold katte inde\"},{\"finds\":[\"N-051\"],\"label\":\"Egeby Kommune: undgå parkering under store træer\"},{\"finds\":[\"N-063\"],\"label\":\"Vestpostens guide til at stormsikre huset\"},{\"finds\":[\"N-067\"],\"label\":\"Forsikringsselskab giver råd før stormen\"},{\"finds\":[\"D-016\"],\"label\":\"Video af sammenstyrtet butikstag fra sociale medier\"},{\"finds\":[\"D-003\"],\"label\":\"Elprisen topper onsdag aften\"},{\"finds\":[\"D-010\",\"D-024\"],\"label\":\"Tangsø Energi lukker fabrik, 240 mister job\"},{\"finds\":[\"D-013\",\"D-027\"],\"label\":\"Halvor & Søn A/S i Lindholt erklæret konkurs\"},{\"finds\":[\"D-008\",\"D-034\"],\"label\":\"Uhentet lottogevinst på 42 mio. kr. i Lindholt\"},{\"finds\":[\"D-017\",\"D-030\"],\"label\":\"Tangholm nedskriver tørlastflåden med 1,2 mia. kr.\"},{\"finds\":[\"D-012\"],\"label\":\"Væltet lastbil spærrer motorvej 21 ved Egeby\"},{\"finds\":[\"D-018\"],\"label\":\"Lægernes Forening Vest afviser ny ventetidsgaranti-model\"},{\"finds\":[\"D-019\"],\"label\":\"Erhvervsministeren trækker ny lukkelov tilbage\"},{\"finds\":[\"D-020\"],\"label\":\"Madhuset tilbagekalder kyllingesalat pga. listeria\"},{\"finds\":[\"D-023\"],\"label\":\"Forbrugerpriserne steg 3,4 procent i oktober\"},{\"finds\":[\"D-026\"],\"label\":\"Borgmester Thybo i Sønderholt melder sig ud af parti\"}]}\n",
+  "parsed": {
+    "groups": [
+      {
+        "finds": [
+          "D-001",
+          "D-014",
+          "D-021"
+        ],
+        "label": "Stormflodsvarsel hævet til højeste niveau på vestkysten"
+      },
+      {
+        "finds": [
+          "D-006",
+          "D-028"
+        ],
+        "label": "Digebrud-frygt og evakuering ved Nørrevang Strand"
+      },
+      {
+        "finds": [
+          "D-032",
+          "N-083"
+        ],
+        "label": "Udlevering af sandsække ved Nørrevang og Tangsø"
+      },
+      {
+        "finds": [
+          "D-007"
+        ],
+        "label": "Tangsø Havn lukker for skibstrafik"
+      },
+      {
+        "finds": [
+          "D-009",
+          "D-011"
+        ],
+        "label": "Togdrift indstilles mellem Tangsø og Nørrevang"
+      },
+      {
+        "finds": [
+          "N-072"
+        ],
+        "label": "Færgen til Grimsø aflyst på grund af storm"
+      },
+      {
+        "finds": [
+          "N-080"
+        ],
+        "label": "Trafikcentralen advarer om kraftig sidevind"
+      },
+      {
+        "finds": [
+          "N-034"
+        ],
+        "label": "Dyreinternat opfordrer: hold katte inde"
+      },
+      {
+        "finds": [
+          "N-051"
+        ],
+        "label": "Egeby Kommune: undgå parkering under store træer"
+      },
+      {
+        "finds": [
+          "N-063"
+        ],
+        "label": "Vestpostens guide til at stormsikre huset"
+      },
+      {
+        "finds": [
+          "N-067"
+        ],
+        "label": "Forsikringsselskab giver råd før stormen"
+      },
+      {
+        "finds": [
+          "D-016"
+        ],
+        "label": "Video af sammenstyrtet butikstag fra sociale medier"
+      },
+      {
+        "finds": [
+          "D-003"
+        ],
+        "label": "Elprisen topper onsdag aften"
+      },
+      {
+        "finds": [
+          "D-010",
+          "D-024"
+        ],
+        "label": "Tangsø Energi lukker fabrik, 240 mister job"
+      },
+      {
+        "finds": [
+          "D-013",
+          "D-027"
+        ],
+        "label": "Halvor & Søn A/S i Lindholt erklæret konkurs"
+      },
+      {
+        "finds": [
+          "D-008",
+          "D-034"
+        ],
+        "label": "Uhentet lottogevinst på 42 mio. kr. i Lindholt"
+      },
+      {
+        "finds": [
+          "D-017",
+          "D-030"
+        ],
+        "label": "Tangholm nedskriver tørlastflåden med 1,2 mia. kr."
+      },
+      {
+        "finds": [
+          "D-012"
+        ],
+        "label": "Væltet lastbil spærrer motorvej 21 ved Egeby"
+      },
+      {
+        "finds": [
+          "D-018"
+        ],
+        "label": "Lægernes Forening Vest afviser ny ventetidsgaranti-model"
+      },
+      {
+        "finds": [
+          "D-019"
+        ],
+        "label": "Erhvervsministeren trækker ny lukkelov tilbage"
+      },
+      {
+        "finds": [
+          "D-020"
+        ],
+        "label": "Madhuset tilbagekalder kyllingesalat pga. listeria"
+      },
+      {
+        "finds": [
+          "D-023"
+        ],
+        "label": "Forbrugerpriserne steg 3,4 procent i oktober"
+      },
+      {
+        "finds": [
+          "D-026"
+        ],
+        "label": "Borgmester Thybo i Sønderholt melder sig ud af parti"
+      }
+    ]
+  },
+  "parse_error": null
+}

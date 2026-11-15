@@ -1,0 +1,93 @@
+{
+ "document_id": "havrebakke-ic-key-terms",
+ "model": "claude-sonnet-5-5",
+ "run": 3,
+ "run_at": "2026-10-29T10:05:27+00:00",
+ "source_sha256": "9a4991f0571c42ba564274962701802e8312fc8109cafba015e7c972339ce225",
+ "terms": {
+  "1_parties_and_buyer_credit": {
+   "found": true,
+   "value": "The Buyer is Jutland Board & Packaging A/S, which is unrated. Jutland Industri Holding A/S gives a parent guarantee.",
+   "quote": "Buyer Jutland Board & Packaging A/S, unrated; parent guarantee from Jutland Industri Holding A/S",
+   "clause": "Section 4.2, key terms table, row 1",
+   "note": "The Seller is not named in the document. The guarantee amount, cap, duration and any rating trigger are not stated. The source is a due diligence summary, not the contract itself."
+  },
+  "2_facility": {
+   "found": true,
+   "value": "Onshore wind farm of 8 turbines and 48.0 MW in Ringkøbing-Skjern, Denmark, in bidding zone DK1.",
+   "quote": "8 turbines, 48.0 MW, Ringkøbing-Skjern, DK1",
+   "clause": "Section 4.2, key terms table, row 2; project header line",
+   "note": "A single MW figure is given. The document does not say whether it is AC or DC. No site coordinates or exact site address are given."
+  },
+  "3_supply_period": {
+   "found": true,
+   "value": "The supply period is 10 years from commercial operation date (COD).",
+   "quote": "10 years from COD",
+   "clause": "Section 4.2, key terms table, row 3",
+   "note": "The modelling note is consistent with this: the base case runs the contract price for ten years, then merchant prices."
+  },
+  "4_cod_and_delay": {
+   "found": true,
+   "value": "Target COD is 1 October 2027 and the longstop date is 31 March 2028. Delay liquidated damages are EUR 9,600 per day, capped at EUR 1.75m.",
+   "quote": "Target COD 1 Oct 2027; longstop 31 Mar 2028; LDs EUR 9,600/day, cap EUR 1.75m",
+   "clause": "Section 4.2, key terms table, row 4",
+   "note": "The consequence of passing the longstop date, such as a termination right, is not stated."
+  },
+  "5_price_and_indexation": {
+   "found": true,
+   "value": "The contract price is EUR 54.50/MWh. 30 % of the price is CPI-indexed from 2029.",
+   "quote": "EUR 54.50/MWh; 30 % CPI-indexed from 2029",
+   "clause": "Section 4.2, key terms table, row 5",
+   "note": "The price is taken from the committee paper table, which is based on the legal due diligence summary and financial model v7. The contract clause is not cited. The CPI index used and the base date are not stated."
+  },
+  "6_volume_and_performance": {
+   "found": true,
+   "value": "Pay-as-produced, with 100 % of output sold to the Buyer. Expected annual production (P50) is 158 GWh/yr and the minimum is 118.5 GWh/yr.",
+   "quote": "Pay-as-produced, 100 % of output; P50 158 GWh/yr; minimum 118.5 GWh/yr",
+   "clause": "Section 4.2, key terms table, row 6",
+   "note": "The remedy if production falls below the 118.5 GWh/yr minimum is not stated. It is also not stated whether the minimum is a guarantee or only a modelling floor. No availability guarantee is mentioned."
+  },
+  "7_product_and_certificates": {
+   "found": true,
+   "value": "The Seller sells electricity and all guarantees of origin (GoOs) to the Buyer.",
+   "quote": "Electricity + all GoOs to buyer",
+   "clause": "Section 4.2, key terms table, row 7",
+   "note": "The GoO amount and any separate price or cost are not stated. Capacity or other attributes are not mentioned."
+  },
+  "8_curtailment": {
+   "found": true,
+   "value": "The Buyer may curtail up to 150 hours per year and is compensated at the contract price. Curtailment ordered by the TSO is uncompensated.",
+   "quote": "Buyer right 150 h/yr, compensated at contract price; TSO curtailment uncompensated",
+   "clause": "Section 4.2, key terms table, row 8",
+   "note": "The treatment of negative prices is not addressed. The wording 'compensated at contract price' is read as deemed-delivery payment. The document does not use the term 'deemed delivered'."
+  },
+  "9_delivery_point_and_balancing": {
+   "found": true,
+   "value": "Physical settlement at the 60 kV Havrebakke substation. The Buyer is balance responsible (BRP) and bears imbalance cost.",
+   "quote": "Physical, 60 kV Havrebakke substation; buyer is BRP and bears imbalance",
+   "clause": "Section 4.2, key terms table, row 9",
+   "note": "No reference price is needed because settlement is physical."
+  },
+  "10_credit_support": {
+   "found": true,
+   "value": "The Seller provides a bank guarantee of EUR 2,500,000, running until COD plus 12 months. The Buyer provides a letter of credit (LC) covering 9 months of payments.",
+   "quote": "Seller bank guarantee EUR 2,500,000 to COD + 12 months; buyer LC 9 months of payments",
+   "clause": "Section 4.2, key terms table, row 10",
+   "note": "The Buyer's LC is sized as 9 months of payments, with no amount in EUR. Its duration is not stated."
+  },
+  "11_default_and_termination": {
+   "found": true,
+   "value": "The termination amount is calculated as mark-to-market against the forward curve for the remaining term.",
+   "quote": "Mark-to-market vs forward curve for remaining term",
+   "clause": "Section 4.2, key terms table, row 11",
+   "note": "The document lists no events of default. The calculation is described only in outline: the forward curve source, who determines the amount, and whether it is two-way are not stated."
+  },
+  "12_change_in_law_and_force_majeure": {
+   "found": true,
+   "value": "A change in law costing above EUR 250k/yr triggers renegotiation, then a mutual termination right without a termination amount. Force majeure lasting more than 180 days gives a termination right.",
+   "quote": "Renegotiation above EUR 250k/yr, then mutual termination right without termination amount; FM > 180 days termination right",
+   "clause": "Section 4.2, key terms table, row 12",
+   "note": "The document does not say who bears the cost of a change in law below the EUR 250k/yr threshold. It also does not say which party holds the force majeure termination right, or whether that termination carries a termination amount."
+  }
+ }
+}

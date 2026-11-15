@@ -1,0 +1,72 @@
+{
+  "prompt_sha256": "93cd73bdee6b4dc0651ab0ddcf05add3c155f0420ace29b768043612e88690ec",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:19+00:00",
+  "id": "D-013",
+  "reply": "{\"summary\":\"Skifteretten i Egeby har afsagt konkursdekret over Halvor & Søn A/S i Lindholt, og kreditorer skal anmelde krav til kurator advokat Morten Skov.\",\"facts\":[{\"text\":\"Skifteretten i Egeby afsagde den 10. november 2026 konkursdekret over Halvor & Søn A/S.\",\"quote\":\"Skifteretten i Egeby har den 10. november 2026 afsagt konkursdekret over Halvor & Søn A/S\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Virksomheden har adressen Industrivej 14 i Lindholt og CVR-nummer 99 00 14 21.\",\"quote\":\"CVR-nr. 99 00 14 21, Industrivej 14, Lindholt\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Fristdagen i sagen er den 2. november 2026.\",\"quote\":\"Fristdag er den 2. november 2026.\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Kurator i konkursboet er advokat Morten Skov, Torvet 3, Egeby.\",\"quote\":\"Kurator: advokat Morten Skov, Torvet 3, Egeby.\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Krav i boet skal anmeldes til kurator.\",\"quote\":\"Krav anmeldes til kurator.\",\"statement\":false,\"speaker\":null,\"accuses\":null}],\"places\":[\"Egeby\",\"Lindholt\",\"Industrivej 14\",\"Torvet 3\"],\"orgs\":[\"Skifteretten i Egeby\",\"Halvor & Søn A/S\"],\"values\":{\"F\":{\"value\":1,\"why\":\"Lokal konkursbekendtgørelse uden oplysninger om ansatte eller andre konsekvenser for mange læsere.\"},\"M\":{\"value\":2,\"why\":\"Rutinemæssig retlig bekendtgørelse; ingen myndighed har svigtet, og sagen rækker ikke ud over det lokale.\"},\"E\":{\"value\":5,\"why\":\"Konkurs i et A/S er relevant, men kilden oplyser intet om størrelse, ansatte, branche eller kreditorer.\"}}}\n",
+  "parsed": {
+    "summary": "Skifteretten i Egeby har afsagt konkursdekret over Halvor & Søn A/S i Lindholt, og kreditorer skal anmelde krav til kurator advokat Morten Skov.",
+    "facts": [
+      {
+        "text": "Skifteretten i Egeby afsagde den 10. november 2026 konkursdekret over Halvor & Søn A/S.",
+        "quote": "Skifteretten i Egeby har den 10. november 2026 afsagt konkursdekret over Halvor & Søn A/S",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Virksomheden har adressen Industrivej 14 i Lindholt og CVR-nummer 99 00 14 21.",
+        "quote": "CVR-nr. 99 00 14 21, Industrivej 14, Lindholt",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Fristdagen i sagen er den 2. november 2026.",
+        "quote": "Fristdag er den 2. november 2026.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kurator i konkursboet er advokat Morten Skov, Torvet 3, Egeby.",
+        "quote": "Kurator: advokat Morten Skov, Torvet 3, Egeby.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Krav i boet skal anmeldes til kurator.",
+        "quote": "Krav anmeldes til kurator.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Egeby",
+      "Lindholt",
+      "Industrivej 14",
+      "Torvet 3"
+    ],
+    "orgs": [
+      "Skifteretten i Egeby",
+      "Halvor & Søn A/S"
+    ],
+    "values": {
+      "F": {
+        "value": 1,
+        "why": "Lokal konkursbekendtgørelse uden oplysninger om ansatte eller andre konsekvenser for mange læsere."
+      },
+      "M": {
+        "value": 2,
+        "why": "Rutinemæssig retlig bekendtgørelse; ingen myndighed har svigtet, og sagen rækker ikke ud over det lokale."
+      },
+      "E": {
+        "value": 5,
+        "why": "Konkurs i et A/S er relevant, men kilden oplyser intet om størrelse, ansatte, branche eller kreditorer."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,1421 @@
+{
+ "runs": {
+  "python": {
+   "results": [
+    {
+     "feature": "Extraction records",
+     "file": "extraction.feature",
+     "scenario": "Twelve terms, defined once",
+     "tags": [
+      "@S-01",
+      "@R-01",
+      "@R-02"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Extraction records",
+     "file": "extraction.feature",
+     "scenario": "A found term carries its evidence",
+     "tags": [
+      "@S-02",
+      "@R-07",
+      "@R-26"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Extraction records",
+     "file": "extraction.feature",
+     "scenario": "A silent contract is left blank",
+     "tags": [
+      "@S-03",
+      "@R-08"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Extraction records",
+     "file": "extraction.feature",
+     "scenario": "A term defined by reference to a missing annex is not found",
+     "tags": [
+      "@S-04",
+      "@R-09"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Extraction records",
+     "file": "extraction.feature",
+     "scenario": "The price is read from the annex the body refers to",
+     "tags": [
+      "@S-05",
+      "@R-06"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Extraction records",
+     "file": "extraction.feature",
+     "scenario": "Every record says which model, when, and on which text",
+     "tags": [
+      "@S-06",
+      "@R-10",
+      "@R-11"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Extraction records",
+     "file": "extraction.feature",
+     "scenario": "The raw reply is kept beside the parsed record",
+     "tags": [
+      "@S-07",
+      "@R-12"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Scoring against the answer key",
+     "file": "evaluation.feature",
+     "scenario": "A term is right when its figures are present and its quote is verbatim",
+     "tags": [
+      "@S-10",
+      "@R-14",
+      "@R-15"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Scoring against the answer key",
+     "file": "evaluation.feature",
+     "scenario": "Number words count as figures",
+     "tags": [
+      "@S-11",
+      "@R-15"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Scoring against the answer key",
+     "file": "evaluation.feature",
+     "scenario": "An absent term is right only when reported not found",
+     "tags": [
+      "@S-12",
+      "@R-16"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Scoring against the answer key",
+     "file": "evaluation.feature",
+     "scenario": "A verbatim quote from another sentence is right, and flagged",
+     "tags": [
+      "@S-13",
+      "@R-17"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Scoring against the answer key",
+     "file": "evaluation.feature",
+     "scenario": "The recorded runs score the same and the misses are named",
+     "tags": [
+      "@S-14",
+      "@R-14",
+      "@R-18"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Scoring against the answer key",
+     "file": "evaluation.feature",
+     "scenario": "A committee paper is read as written, errors included",
+     "tags": [
+      "@S-15",
+      "@R-19"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Scoring against the answer key",
+     "file": "evaluation.feature",
+     "scenario": "Every run's score is available to the business case",
+     "tags": [
+      "@S-16",
+      "@R-81",
+      "@R-64"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "The checks need nothing but the standard library",
+     "tags": [
+      "@S-17",
+      "@R-20",
+      "@R-90"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "Every quote of run 1 is in its document",
+     "tags": [
+      "@S-18",
+      "@R-21"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "A paraphrased quote is a finding",
+     "tags": [
+      "@S-19",
+      "@R-21"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "Citations must point at clauses that exist",
+     "tags": [
+      "@S-20",
+      "@R-22"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "The committee paper disagrees with the contract on two figures and nothing else",
+     "tags": [
+      "@S-21",
+      "@R-23"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "The legal summary disagrees on one figure",
+     "tags": [
+      "@S-22",
+      "@R-23"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "The draft and the signed version differ on the negotiated terms",
+     "tags": [
+      "@S-23",
+      "@R-24"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "A figure the model's wording dropped is not a change when the contract still states it",
+     "tags": [
+      "@S-80",
+      "@R-24"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "The document diff shows the negotiated changes without a model",
+     "tags": [
+      "@S-24",
+      "@R-25"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Deterministic checks",
+     "file": "checks.feature",
+     "scenario": "A malformed record is a shape finding",
+     "tags": [
+      "@S-25",
+      "@R-26"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "Every run has twelve rows per document",
+     "tags": [
+      "@S-26",
+      "@R-44"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "The baseline states its basis and is NULL where not measured",
+     "tags": [
+      "@S-27",
+      "@R-45"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "Against the baseline, one row per metric, each with its basis",
+     "tags": [
+      "@S-28",
+      "@R-47",
+      "@R-49",
+      "@R-75",
+      "@R-76"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "No committee date is invented",
+     "tags": [
+      "@S-29",
+      "@R-48"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "The extracted figures can be asked across contracts",
+     "tags": [
+      "@S-30",
+      "@R-46",
+      "@R-47"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "Effort per contract counts the two decisions and the minutes",
+     "tags": [
+      "@S-31",
+      "@R-47",
+      "@R-75",
+      "@R-77"
+     ],
+     "steps": 6,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "The findings per term come from the checks table",
+     "tags": [
+      "@S-32",
+      "@R-78"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "A second decision on a term is a new row, and the later one counts",
+     "tags": [
+      "@S-88",
+      "@R-94"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "Analyst minutes are timed from load to the last decision",
+     "tags": [
+      "@S-33",
+      "@R-75",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "Days to a reviewed table are dated from the data-room event to the last decision",
+     "tags": [
+      "@S-34",
+      "@R-76",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "The confirmed and flagged counts come from decisions stored beyond the browser tab",
+     "tags": [
+      "@S-81",
+      "@R-77",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "Model cost per contract is recorded with the extraction",
+     "tags": [
+      "@S-35",
+      "@R-79",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Measurement",
+     "file": "measurement.feature",
+     "scenario": "The operational error rate is measured monthly and stored with basis measured",
+     "tags": [
+      "@S-36",
+      "@R-80",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "Every recorded run is scored and shown, not only the best",
+     "tags": [
+      "@S-37",
+      "@R-64",
+      "@R-18"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "A term wrong in every run is a definition defect, a term wrong in some runs is routed to a check or a reviewer",
+     "tags": [
+      "@S-38",
+      "@R-58",
+      "@R-59"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "Stability rests on at least three runs",
+     "tags": [
+      "@S-39",
+      "@R-57"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "The key is versioned and the evaluation records the version",
+     "tags": [
+      "@S-40",
+      "@R-54",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "A change to the prompt is scored against the previous run before use",
+     "tags": [
+      "@S-41",
+      "@R-55",
+      "@R-56",
+      "@pending"
+     ],
+     "steps": 4,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "A reviewer's flag becomes a candidate change to the key",
+     "tags": [
+      "@S-42",
+      "@R-60",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "A reviewed contract enters the suite only through a key written blind",
+     "tags": [
+      "@S-79",
+      "@R-60a",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "Scored on a real contract before real use",
+     "tags": [
+      "@S-43",
+      "@R-61",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "The suite covers the pipeline, and says where it does not",
+     "tags": [
+      "@S-76",
+      "@R-61a",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "An operational error rate is measured monthly",
+     "tags": [
+      "@S-44",
+      "@R-62",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "Cost per contract is recorded with every run",
+     "tags": [
+      "@S-45",
+      "@R-63",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Continuous evaluation",
+     "file": "continuous_evaluation.feature",
+     "scenario": "A model judges the wording of a term only after calibration against a person",
+     "tags": [
+      "@S-78",
+      "@R-63a",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The data room",
+     "file": "dataroom.feature",
+     "scenario": "Every document passes the validator",
+     "tags": [
+      "@S-08",
+      "@R-03",
+      "@R-04"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The data room",
+     "file": "dataroom.feature",
+     "scenario": "A document that breaks a rule is reported with the rule",
+     "tags": [
+      "@S-09",
+      "@R-05"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A real contract enters as PDF or DOCX, with its pages kept and its gaps named",
+     "tags": [
+      "@S-83",
+      "@R-91",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "No more than the contract text and the twelve definitions leave for the model",
+     "tags": [
+      "@S-85",
+      "@R-93",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A failed or unreadable model call is retried once and then shown on the case",
+     "tags": [
+      "@S-86",
+      "@R-95",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A re-read becomes the current run for that version, and earlier runs stay on file",
+     "tags": [
+      "@S-87",
+      "@R-96",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "An instruction planted inside a contract is read as contract text",
+     "tags": [
+      "@S-89",
+      "@R-97",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A person without access to the deal does not see the case",
+     "tags": [
+      "@S-90",
+      "@R-98",
+      "@R-84a",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "Every read of a review log or an export is logged for the audit function",
+     "tags": [
+      "@S-91",
+      "@R-99",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "When the document system or the model is down, the case says which step cannot run",
+     "tags": [
+      "@S-92",
+      "@R-100",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A change of definitions or prompt marks earlier extractions stale until re-read",
+     "tags": [
+      "@S-93",
+      "@R-101",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "At the cost ceiling the model is not called and the analyst is told",
+     "tags": [
+      "@S-94",
+      "@R-102",
+      "@R-87",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "An error rate above the threshold puts a warning on the committee pages",
+     "tags": [
+      "@S-95",
+      "@R-103",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A regression from correct blocks a release until its reason is written",
+     "tags": [
+      "@S-96",
+      "@R-104",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "The handover names the scenarios that carry over and the ones rewritten",
+     "tags": [
+      "@S-97",
+      "@R-105",
+      "@pending"
+     ],
+     "steps": 1,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "Decisions on an earlier version are kept, and a case can leave as one file",
+     "tags": [
+      "@S-98",
+      "@R-106",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A contract in the pipeline appears in its case without a copy leaving the document store",
+     "tags": [
+      "@S-99",
+      "@R-84",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A document goes only to the approved model deployment",
+     "tags": [
+      "@S-100",
+      "@R-83",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A 130-page contract is read within ten minutes, or the analyst is told",
+     "tags": [
+      "@S-101",
+      "@R-88",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "A decision outlives the browser tab and the audit trail names who, when and on which version",
+     "tags": [
+      "@S-102",
+      "@R-85",
+      "@R-89",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "Intake, platform and lifecycle",
+     "file": "platform.feature",
+     "scenario": "Every record carries the model version and the prompt version",
+     "tags": [
+      "@S-103",
+      "@R-86",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The page itself",
+     "file": "page.feature",
+     "scenario": "The page calls no model and sends nothing to a server",
+     "tags": [
+      "@S-46",
+      "@R-13",
+      "@R-36"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The page itself",
+     "file": "page.feature",
+     "scenario": "The committee pages print in A4 landscape",
+     "tags": [
+      "@S-47",
+      "@R-43"
+     ],
+     "steps": 1,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The page itself",
+     "file": "page.feature",
+     "scenario": "The recording comes first, the live run second",
+     "tags": [
+      "@S-48",
+      "@R-51"
+     ],
+     "steps": 1,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The page itself",
+     "file": "page.feature",
+     "scenario": "The wireframes are the four screens the prototype has",
+     "tags": [
+      "@S-49",
+      "@R-74"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    }
+   ]
+  },
+  "node": {
+   "results": [
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "Terms with a finding come first, then not found, then the rest",
+     "tags": [
+      "@S-51",
+      "@R-27"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "Selecting a term shows the answer and highlights the sentence in the contract",
+     "tags": [
+      "@S-52",
+      "@R-28",
+      "@R-29"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "A term not found highlights nothing and says so",
+     "tags": [
+      "@S-53",
+      "@R-30"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "Citations are links, and a missing annex is marked missing",
+     "tags": [
+      "@S-54",
+      "@R-31",
+      "@R-32"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "Confirm and flag are recorded, counted and shown to the committee",
+     "tags": [
+      "@S-55",
+      "@R-33",
+      "@R-35",
+      "@R-42"
+     ],
+     "steps": 8,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "The export carries every term with its review",
+     "tags": [
+      "@S-56",
+      "@R-37"
+     ],
+     "steps": 6,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "A flag needs a note",
+     "tags": [
+      "@S-57",
+      "@R-34"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "The signed version marks what changed since the draft",
+     "tags": [
+      "@S-58",
+      "@R-38"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "Any version of the contract can be chosen from a list and read with its own sentence marked",
+     "tags": [
+      "@S-59",
+      "@R-38a"
+     ],
+     "steps": 6,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "A version that does not state the term says so",
+     "tags": [
+      "@S-60",
+      "@R-38a",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "The product starts on a workbench, and its five actions run in order",
+     "tags": [
+      "@S-61",
+      "@R-65",
+      "@R-65a",
+      "@R-65b",
+      "@R-65c",
+      "@R-65d",
+      "@R-65e",
+      "@R-66",
+      "@R-66a",
+      "@R-67",
+      "@R-67a",
+      "@R-68",
+      "@R-70",
+      "@R-70b"
+     ],
+     "steps": 12,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The review screen",
+     "file": "review_screen.feature",
+     "scenario": "Start over clears every case",
+     "tags": [
+      "@S-62",
+      "@R-72"
+     ],
+     "steps": 6,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The committee page",
+     "file": "committee_page.feature",
+     "scenario": "A summary first, the twelve terms in full over as many pages as they need, open points last",
+     "tags": [
+      "@S-63",
+      "@R-39",
+      "@R-39a",
+      "@R-39b",
+      "@R-39c"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The committee page",
+     "file": "committee_page.feature",
+     "scenario": "A citation that does not exist is an open point",
+     "tags": [
+      "@S-64",
+      "@R-40",
+      "@R-40a",
+      "@R-39b"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The committee page",
+     "file": "committee_page.feature",
+     "scenario": "Every page states its provenance",
+     "tags": [
+      "@S-65",
+      "@R-41"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The committee page",
+     "file": "committee_page.feature",
+     "scenario": "Version 2 of the business case asks the board for the next decision",
+     "tags": [
+      "@S-66",
+      "@R-49a",
+      "@R-49b",
+      "@R-49c",
+      "@R-49d",
+      "@R-77",
+      "@R-81"
+     ],
+     "steps": 4,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The committee page",
+     "file": "committee_page.feature",
+     "scenario": "Pages of a version with unreviewed terms are a draft, and can be printed only when every term is reviewed",
+     "tags": [
+      "@S-84",
+      "@R-92"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The committee page",
+     "file": "committee_page.feature",
+     "scenario": "The reviewed figures leave the product for the financial model without retyping",
+     "tags": [
+      "@S-82",
+      "@R-43a",
+      "@pending"
+     ],
+     "steps": 3,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The committee page",
+     "file": "committee_page.feature",
+     "scenario": "The handover holds the package with its evidence, the reasoning sits behind the case",
+     "tags": [
+      "@S-67",
+      "@R-69",
+      "@R-69a"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "Every story links to a requirement and to a scenario that exist",
+     "tags": [
+      "@S-69",
+      "@R-73",
+      "@R-73a",
+      "@R-73c"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "The phase filter narrows the table to the stories of one phase",
+     "tags": [
+      "@S-73",
+      "@R-73b"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "Sorting by priority lists every Must story before any Should or Could",
+     "tags": [
+      "@S-75",
+      "@R-73b"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "The discovery is closed by its deliverables, and the backlog holds only the phases that follow",
+     "tags": [
+      "@S-74",
+      "@R-73d",
+      "@R-73c"
+     ],
+     "steps": 5,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "The code that runs is shown as it is on disk",
+     "tags": [
+      "@S-70",
+      "@R-50"
+     ],
+     "steps": 2,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "The scorer is shown as it is on disk in the eval fold, with its recorded run",
+     "tags": [
+      "@S-77",
+      "@R-50a"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "A replay says on its first line that it is a recording",
+     "tags": [
+      "@S-71",
+      "@R-52"
+     ],
+     "steps": 3,
+     "status": "passed",
+     "failed_step": null,
+     "error": null
+    },
+    {
+     "feature": "The handover and what the page runs",
+     "file": "handover.feature",
+     "scenario": "The technical requirements name what is decided and what the architect decides",
+     "tags": [
+      "@S-72",
+      "@R-83",
+      "@R-84",
+      "@R-84a",
+      "@R-85",
+      "@R-86",
+      "@R-87",
+      "@R-88",
+      "@R-89",
+      "@R-90",
+      "@pending"
+     ],
+     "steps": 2,
+     "status": "pending",
+     "failed_step": null,
+     "error": null
+    }
+   ]
+  }
+ },
+ "written_at": "2026-10-31T15:50:58.102Z"
+}

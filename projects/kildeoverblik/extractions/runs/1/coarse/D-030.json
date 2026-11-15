@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "57f295ea72e0ced5756b140b116a1d152042ea872e2f31f8ebb17c345275481c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:48+00:00",
+  "id": "D-030",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 3, \"E\": 8}, \"why\": {\"F\": \"Regnskabsstof uden meldt jobtab; rammer ikke mange læsere direkte i dag.\", \"M\": \"Virksomhedssag uden politisk eller forvaltningsmæssig vinkel i uddraget.\", \"E\": \"Stor nedskrivning og nedjustering i rederi; aktien ventes at falde ved åbning i dag.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 3,
+      "E": 8
+    },
+    "why": {
+      "F": "Regnskabsstof uden meldt jobtab; rammer ikke mange læsere direkte i dag.",
+      "M": "Virksomhedssag uden politisk eller forvaltningsmæssig vinkel i uddraget.",
+      "E": "Stor nedskrivning og nedjustering i rederi; aktien ventes at falde ved åbning i dag."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

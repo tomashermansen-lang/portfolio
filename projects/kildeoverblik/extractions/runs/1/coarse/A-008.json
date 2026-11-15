@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "04df6db56ebf97c9e17f03fb9e433bf57d5e87f885f0657c404eb2f9e28e7013",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:17+00:00",
+  "id": "A-008",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal frivillig strandrensning om elleve dage; lav bredde, ingen hast eller kuriøs vinkel.\", \"M\": \"Lokalt foreningsarrangement uden forvaltning, myndighedssvigt eller politisk rækkevidde.\", \"E\": \"Ingen erhvervsmæssig, regulatorisk eller driftsmæssig relevans.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal frivillig strandrensning om elleve dage; lav bredde, ingen hast eller kuriøs vinkel.",
+      "M": "Lokalt foreningsarrangement uden forvaltning, myndighedssvigt eller politisk rækkevidde.",
+      "E": "Ingen erhvervsmæssig, regulatorisk eller driftsmæssig relevans."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

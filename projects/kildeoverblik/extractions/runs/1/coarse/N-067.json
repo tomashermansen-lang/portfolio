@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "844783d71f449fd690e079343e23a08c703f87031301a44a1acfbb141d56eefc",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:39+00:00",
+  "id": "N-067",
+  "reply": "{\"scores\": {\"F\": 6, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Storm i aften rammer regionen; forbrugerråd, men selve pressemeddelelsen er rutinetips.\", \"M\": \"Forsikringsselskabets almindelige råd, ingen myndighedsvinkel eller svigt i det viste.\", \"E\": \"Ingen virksomhedsramme, drift eller regulering i uddraget; kun havemøbelråd.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 6,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Storm i aften rammer regionen; forbrugerråd, men selve pressemeddelelsen er rutinetips.",
+      "M": "Forsikringsselskabets almindelige råd, ingen myndighedsvinkel eller svigt i det viste.",
+      "E": "Ingen virksomhedsramme, drift eller regulering i uddraget; kun havemøbelråd."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

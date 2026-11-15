@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "8989d6116cc6160ccb0a29654e9ff2ae9e5bd4222fcff6afcb9015944e9b2a06",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:24+00:00",
+  "id": "N-021",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Julebryg-lancering fredag; let forbrugerstof, kun 4.000 flasker, ren pressemeddelelse.\", \"M\": \"Ingen politik, forvaltning eller myndighedsforhold; ren produktlancering.\", \"E\": \"Lille bryggeri, begrænset produktnyhed uden regnskab, lukning eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Julebryg-lancering fredag; let forbrugerstof, kun 4.000 flasker, ren pressemeddelelse.",
+      "M": "Ingen politik, forvaltning eller myndighedsforhold; ren produktlancering.",
+      "E": "Lille bryggeri, begrænset produktnyhed uden regnskab, lukning eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

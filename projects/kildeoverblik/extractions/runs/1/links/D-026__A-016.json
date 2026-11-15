@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "3eceee94bdff09b8bf2e96180d9302caf94b6f06eeb75c4caeae86372453d5a6",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:58+00:00",
+  "from": "D-026",
+  "to": "A-016",
+  "shared": "byrådet",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om borgmesteren i Sønderholt, der melder sig ud af sit parti, mens arkivdokumentet er et mødereferat fra Tangsø Kommune om blandt andet en lokalplan, så de deler kun ordet byråd.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om borgmesteren i Sønderholt, der melder sig ud af sit parti, mens arkivdokumentet er et mødereferat fra Tangsø Kommune om blandt andet en lokalplan, så de deler kun ordet byråd.",
+    "facts": []
+  },
+  "parse_error": null
+}

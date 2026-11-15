@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3ac2ba721dbe57788dc02c8e170977b40fce83df53aac018c32f0c1bf182d816",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:16+00:00",
+  "id": "N-055",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal cykeltyveri, tre anmeldelser; rammer få og har ingen kuriøs vinkel.\", \"M\": \"Enkeltstående lokal kriminalitet uden myndighedssvigt eller bredere forvaltningsvinkel.\", \"E\": \"Småkriminalitet uden erhvervsmæssig betydning eller driftspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal cykeltyveri, tre anmeldelser; rammer få og har ingen kuriøs vinkel.",
+      "M": "Enkeltstående lokal kriminalitet uden myndighedssvigt eller bredere forvaltningsvinkel.",
+      "E": "Småkriminalitet uden erhvervsmæssig betydning eller driftspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,105 @@
+{
+  "prompt_sha256": "4faeca2a5214952a2d9f32c370faded58d272ef760597361e1ed8d57d45ccf55",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:57+00:00",
+  "desk": "F",
+  "group": 7,
+  "finds": [
+    "N-080"
+  ],
+  "facts": [
+    {
+      "text": "Trafikcentralen venter kraftig sidevind på åbne strækninger og broer i regionen fra onsdag aften.",
+      "quote": "der ventes kraftig sidevind på åbne strækninger og broer i regionen fra onsdag aften",
+      "statement": true,
+      "speaker": "Trafikcentralen",
+      "accuses": null,
+      "find": "N-080",
+      "no": 1
+    },
+    {
+      "text": "Vinden ventes at tage til mod storm.",
+      "quote": "når vinden tager til mod storm",
+      "statement": true,
+      "speaker": "Trafikcentralen",
+      "accuses": null,
+      "find": "N-080",
+      "no": 2
+    },
+    {
+      "text": "Biler med trailer, campingvogn eller tagboks bør køre langsomt eller vente til torsdag.",
+      "quote": "Biler med trailer, campingvogn eller tagboks bør køre langsomt eller vente til torsdag",
+      "statement": true,
+      "speaker": "Trafikcentralen",
+      "accuses": null,
+      "find": "N-080",
+      "no": 3
+    },
+    {
+      "text": "Der er aktuelt ingen spærringer som følge af vinden.",
+      "quote": "Der er aktuelt ingen spærringer som følge af vinden.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-080",
+      "no": 4
+    }
+  ],
+  "reply": "{\"angle\": \"Kraftig sidevind på broer og åbne strækninger fra onsdag aften\", \"web\": [{\"s\": \"Trafikcentralen venter kraftig sidevind på åbne strækninger og broer i regionen fra onsdag aften.\", \"facts\": [1]}, {\"s\": \"Ifølge Trafikcentralen ventes vinden at tage til mod storm.\", \"facts\": [2]}, {\"s\": \"Trafikcentralen mener, at biler med trailer, campingvogn eller tagboks bør køre langsomt eller vente til torsdag.\", \"facts\": [3]}, {\"s\": \"Der er aktuelt ingen spærringer som følge af vinden.\", \"facts\": [4]}], \"notification\": {\"s\": \"Trafikcentralen venter kraftig sidevind på broer fra onsdag aften\", \"facts\": [1]}, \"audio\": [{\"s\": \"Trafikcentralen venter kraftig sidevind på åbne strækninger og broer i regionen fra onsdag aften.\", \"facts\": [1]}, {\"s\": \"Ifølge Trafikcentralen bør biler med trailer, campingvogn eller tagboks køre langsomt eller vente til torsdag.\", \"facts\": [3]}, {\"s\": \"Der er aktuelt ingen spærringer som følge af vinden.\", \"facts\": [4]}]}\n",
+  "parsed": {
+    "angle": "Kraftig sidevind på broer og åbne strækninger fra onsdag aften",
+    "web": [
+      {
+        "s": "Trafikcentralen venter kraftig sidevind på åbne strækninger og broer i regionen fra onsdag aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge Trafikcentralen ventes vinden at tage til mod storm.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Trafikcentralen mener, at biler med trailer, campingvogn eller tagboks bør køre langsomt eller vente til torsdag.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Der er aktuelt ingen spærringer som følge af vinden.",
+        "facts": [
+          4
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Trafikcentralen venter kraftig sidevind på broer fra onsdag aften",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Trafikcentralen venter kraftig sidevind på åbne strækninger og broer i regionen fra onsdag aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Ifølge Trafikcentralen bør biler med trailer, campingvogn eller tagboks køre langsomt eller vente til torsdag.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Der er aktuelt ingen spærringer som følge af vinden.",
+        "facts": [
+          4
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

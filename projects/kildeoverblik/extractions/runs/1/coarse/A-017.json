@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "19d80f82a2a775024f5f436daf7758817684722490e9bb89fcc46f4cf167a2ed",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:27+00:00",
+  "id": "A-017",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 3}, \"why\": {\"F\": \"Rutinemæssig certificering, rammer ingen læsere i dag eller i nat.\", \"M\": \"Intet myndighedssvigt eller politisk emne; almindelig virksomhedsnyhed.\", \"E\": \"Erhvervsrelateret, men blot en certificering uden regnskab, lukning eller driftsproblem.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 3
+    },
+    "why": {
+      "F": "Rutinemæssig certificering, rammer ingen læsere i dag eller i nat.",
+      "M": "Intet myndighedssvigt eller politisk emne; almindelig virksomhedsnyhed.",
+      "E": "Erhvervsrelateret, men blot en certificering uden regnskab, lukning eller driftsproblem."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

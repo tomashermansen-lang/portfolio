@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "cecee5ed3bfe1c2c33c03a79ef67e29a8e090ee61330c9f261399b73cd380e1a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:33+00:00",
+  "from": "D-006",
+  "to": "A-007",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens telegram handler om frygt for digebrud og en mulig evakuering af ca. 300 boliger ved Nørrevang Strand, mens arkivdokumentet er et udvalgsreferat om bænke og en ny badebro samme sted, så de deler kun stedsnavnet.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens telegram handler om frygt for digebrud og en mulig evakuering af ca. 300 boliger ved Nørrevang Strand, mens arkivdokumentet er et udvalgsreferat om bænke og en ny badebro samme sted, så de deler kun stedsnavnet.",
+    "facts": []
+  },
+  "parse_error": null
+}

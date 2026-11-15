@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "458983935777dce0cb63f6ae28ed49901f47e1823e2e7f5421d0a0a24a9a2058",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:13+00:00",
+  "id": "N-011",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Lokal cykelstiindvielse på fredag; rammer få læsere og er ingen akut nyhed.\", \"M\": \"Kommunal pressemeddelelse, rent lokalt, ingen forvaltningssag eller svigt der rækker ud over kommunen.\", \"E\": \"Lokal infrastruktur uden betydning for erhvervsliv, regulering eller drift.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal cykelstiindvielse på fredag; rammer få læsere og er ingen akut nyhed.",
+      "M": "Kommunal pressemeddelelse, rent lokalt, ingen forvaltningssag eller svigt der rækker ud over kommunen.",
+      "E": "Lokal infrastruktur uden betydning for erhvervsliv, regulering eller drift."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

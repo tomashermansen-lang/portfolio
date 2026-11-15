@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "afca54497433f0778713ac54e55474d04917174d1ed32e17a4eb7bec54e8d5fc",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:14+00:00",
+  "id": "N-013",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 3}, \"why\": {\"F\": \"Intern direktørskifte på lille mejeri; rammer ikke læsere i dag.\", \"M\": \"Ingen politik eller myndighedssvigt; rent lokalt personaleskifte uden bredere relevans.\", \"E\": \"Direktørskifte i lille andelsmejeri med 34 ansatte; rutine, ingen lukning eller afvigelse.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 3
+    },
+    "why": {
+      "F": "Intern direktørskifte på lille mejeri; rammer ikke læsere i dag.",
+      "M": "Ingen politik eller myndighedssvigt; rent lokalt personaleskifte uden bredere relevans.",
+      "E": "Direktørskifte i lille andelsmejeri med 34 ansatte; rutine, ingen lukning eller afvigelse."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

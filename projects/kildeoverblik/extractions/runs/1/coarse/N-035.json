@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5f5d114137a536b39a536745f0306edc95e8373f1ccb030c353427ed88e257d7",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:45+00:00",
+  "id": "N-035",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 3}, \"why\": {\"F\": \"Månedlig branchestatistik med små ændringer; ingen læserpåvirkning i dag.\", \"M\": \"Rutinestatistik fra brancheforening uden politisk eller forvaltningsmæssig vinkel.\", \"E\": \"Nøgletal for bilsalg, men små udsving og kun regionalt; elbilandel kan give let vinkel.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 3
+    },
+    "why": {
+      "F": "Månedlig branchestatistik med små ændringer; ingen læserpåvirkning i dag.",
+      "M": "Rutinestatistik fra brancheforening uden politisk eller forvaltningsmæssig vinkel.",
+      "E": "Nøgletal for bilsalg, men små udsving og kun regionalt; elbilandel kan give let vinkel."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

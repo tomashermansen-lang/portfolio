@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "847629c084d64fe140f46337f1e12aedde5f830d37a3d757f0039c5aa656d341",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:37+00:00",
+  "id": "A-026",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Guldmedalje er en gevinst, men lille lokal mejerihistorie uden bred rækkevidde.\", \"M\": \"Ingen politik, forvaltning eller svigt; kun lokal pris til en privat virksomhed.\", \"E\": \"Lille gårdmejeri med branchepris; ingen regnskab, lukning, fyring eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Guldmedalje er en gevinst, men lille lokal mejerihistorie uden bred rækkevidde.",
+      "M": "Ingen politik, forvaltning eller svigt; kun lokal pris til en privat virksomhed.",
+      "E": "Lille gårdmejeri med branchepris; ingen regnskab, lukning, fyring eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "313339dbdc527d6420d4191a2edcd3259c6c8c70a171fd812e4a16ac58a2abdc",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:59+00:00",
+  "id": "N-045",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Små civile sager om istandsættelse og havetraktor; kun kuriøst lokalt, rammer ingen læsere bredt.\", \"M\": \"Rutinemæssig retsliste med småsager; ingen myndighedssvigt eller bredere forvaltningsspor i uddraget.\", \"E\": \"Små privatretlige tvister med beløb under 20.000 kr.; ingen virksomhedsrelevans.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Små civile sager om istandsættelse og havetraktor; kun kuriøst lokalt, rammer ingen læsere bredt.",
+      "M": "Rutinemæssig retsliste med småsager; ingen myndighedssvigt eller bredere forvaltningsspor i uddraget.",
+      "E": "Små privatretlige tvister med beløb under 20.000 kr.; ingen virksomhedsrelevans."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c590371f37322ab591f1dfffe8acc94ad3f9f034c99e7b190a020eca830e21bc",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:10+00:00",
+  "id": "D-033",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 4, \"E\": 3}, \"why\": {\"F\": \"Dagsoverblik; forbrugerpriser og landsting er rutine, intet konkret ramt i dag.\", \"M\": \"Landstingets spørgetime og afstemninger er politisk relevante, men kun en kalenderoversigt.\", \"E\": \"Inflationstal for oktober er nøgletal for virksomheder, men uddraget har ingen afvigelse.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 4,
+      "E": 3
+    },
+    "why": {
+      "F": "Dagsoverblik; forbrugerpriser og landsting er rutine, intet konkret ramt i dag.",
+      "M": "Landstingets spørgetime og afstemninger er politisk relevante, men kun en kalenderoversigt.",
+      "E": "Inflationstal for oktober er nøgletal for virksomheder, men uddraget har ingen afvigelse."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

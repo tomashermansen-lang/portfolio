@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "752f0cd56f09aa9d616a85637582f089497754167484771a33ec91bbd6f64448",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:49+00:00",
+  "from": "D-024",
+  "to": "A-016",
+  "shared": "Sydhavnen",
+  "reply": "{\"related\": false, \"why\": \"Arkivdokumentet er et byrådsreferat om lokalplan 214 og en stiføring, hvor Tangsø Energi blot var ét af ni høringssvar, og det siger intet om fabrikslukningen, de 240 job eller fagforeningens krav.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Arkivdokumentet er et byrådsreferat om lokalplan 214 og en stiføring, hvor Tangsø Energi blot var ét af ni høringssvar, og det siger intet om fabrikslukningen, de 240 job eller fagforeningens krav.",
+    "facts": []
+  },
+  "parse_error": null
+}

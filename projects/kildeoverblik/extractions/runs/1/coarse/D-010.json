@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "97c1115efd5af06422efd8c3212b5348930c4a5860f351c21c2a9b3e6160d57c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:38+00:00",
+  "id": "D-010",
+  "reply": "{\"scores\": {\"F\": 5, \"M\": 5, \"E\": 8}, \"why\": {\"F\": \"240 jobs væk i Tangsø er stort lokalt, men rammer ikke mange læsere i dag.\", \"M\": \"Større fyring, men privat virksomhed og lokalt; politisk eller forvaltningsmæssig vinkel er uset.\", \"E\": \"Fabrikslukning og 240 fyringer i energisektoren er kerneemne, og beskeden kom i morges.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 5,
+      "M": 5,
+      "E": 8
+    },
+    "why": {
+      "F": "240 jobs væk i Tangsø er stort lokalt, men rammer ikke mange læsere i dag.",
+      "M": "Større fyring, men privat virksomhed og lokalt; politisk eller forvaltningsmæssig vinkel er uset.",
+      "E": "Fabrikslukning og 240 fyringer i energisektoren er kerneemne, og beskeden kom i morges."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

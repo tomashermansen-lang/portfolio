@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5f2cf85c5130f33af3f34fe30dbe95ddb4cb17ac466c9e9e113853f701900608",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:49+00:00",
+  "id": "N-037",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Hyggelig lokal omtale af en frivillig, men ingen bred rækkevidde eller kuriøs vinkel.\", \"M\": \"Lokal pris uden forvaltningsmæssig sag eller bredere samfundsrelevans.\", \"E\": \"Ingen erhvervsmæssig vinkel, regulering eller driftspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Hyggelig lokal omtale af en frivillig, men ingen bred rækkevidde eller kuriøs vinkel.",
+      "M": "Lokal pris uden forvaltningsmæssig sag eller bredere samfundsrelevans.",
+      "E": "Ingen erhvervsmæssig vinkel, regulering eller driftspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

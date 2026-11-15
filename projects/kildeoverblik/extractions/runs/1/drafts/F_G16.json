@@ -1,0 +1,178 @@
+{
+  "prompt_sha256": "a78872f9d61ef66d5abdfd327b4eac2beb75eb419817f7ff0aa15fa89f25f916",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:16+00:00",
+  "desk": "F",
+  "group": 16,
+  "finds": [
+    "D-008",
+    "D-034"
+  ],
+  "facts": [
+    {
+      "text": "En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er endnu ikke hentet.",
+      "quote": "En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er stadig ikke hentet.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-008",
+      "no": 1
+    },
+    {
+      "text": "Kuponen blev købt i en kiosk i Lindholt.",
+      "quote": "Kuponen blev købt i en kiosk i Lindholt",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-008",
+      "no": 2
+    },
+    {
+      "text": "Vinderen har frist til lørdag den 14. november kl. 12 til at melde sig.",
+      "quote": "vinderen har frist til lørdag den 14. november kl. 12 til at melde sig",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-008",
+      "no": 3
+    },
+    {
+      "text": "Efter fristen går beløbet tilbage i puljen.",
+      "quote": "Derefter går beløbet tilbage i puljen.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-008",
+      "no": 4
+    },
+    {
+      "text": "Vestlotteriet oplyser, at det er den største uafhentede gevinst i lotteriets historie.",
+      "quote": "Det er den største uafhentede gevinst i lotteriets historie.",
+      "statement": true,
+      "speaker": "Vestlotteriet",
+      "accuses": null,
+      "find": "D-008",
+      "no": 5
+    },
+    {
+      "text": "Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.",
+      "quote": "Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-008",
+      "no": 6
+    },
+    {
+      "text": "Lottokuponen har vundet 42 mio. kr. og er endnu ikke indløst.",
+      "quote": "den lottokupon, der har vundet 42 mio. kr., og som stadig ikke er indløst",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-034",
+      "no": 7
+    },
+    {
+      "text": "Kuponen blev solgt i august af kioskejer Samir Haddad i Lindholt.",
+      "quote": "Kioskejer Samir Haddad i Lindholt solgte i august den lottokupon",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-034",
+      "no": 8
+    },
+    {
+      "text": "Fristen for at indløse kuponen udløber lørdag.",
+      "quote": "Fristen udløber lørdag.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-034",
+      "no": 9
+    },
+    {
+      "text": "Kioskejeren har hængt et skilt op i vinduet.",
+      "quote": "Kioskejeren har hængt et skilt i vinduet",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-034",
+      "no": 10
+    },
+    {
+      "text": "Ifølge kioskejeren tømmer kunderne i disse dage skuffer og jakkelommer.",
+      "quote": "kunderne i disse dage tømmer skuffer og jakkelommer",
+      "statement": true,
+      "speaker": "Samir Haddad",
+      "accuses": null,
+      "find": "D-034",
+      "no": 11
+    }
+  ],
+  "reply": "{\"angle\":\"Uhentet gevinst på 42 millioner: Fristen udløber lørdag\",\"web\":[{\"s\":\"En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er endnu ikke hentet.\",\"facts\":[1]},{\"s\":\"Vinderen har frist til lørdag den 14. november kl. 12 til at melde sig, og efter fristen går beløbet tilbage i puljen.\",\"facts\":[3,4]},{\"s\":\"Vestlotteriet oplyser, at det er den største uafhentede gevinst i lotteriets historie.\",\"facts\":[5]},{\"s\":\"Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.\",\"facts\":[6]},{\"s\":\"Ifølge kioskejer Samir Haddad tømmer kunderne i disse dage skuffer og jakkelommer.\",\"facts\":[8,11]}],\"notification\":{\"s\":\"Uhentet gevinst på 42 mio. kr.: Fristen udløber lørdag\",\"facts\":[1,9]},\"audio\":[{\"s\":\"En gevinst på 42 millioner kroner fra Vestlotteriets trækning den 15. august er endnu ikke hentet.\",\"facts\":[1]},{\"s\":\"Vinderen har frist til lørdag den 14. november klokken 12 til at melde sig.\",\"facts\":[3]},{\"s\":\"Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.\",\"facts\":[6]}]}\n",
+  "parsed": {
+    "angle": "Uhentet gevinst på 42 millioner: Fristen udløber lørdag",
+    "web": [
+      {
+        "s": "En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er endnu ikke hentet.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Vinderen har frist til lørdag den 14. november kl. 12 til at melde sig, og efter fristen går beløbet tilbage i puljen.",
+        "facts": [
+          3,
+          4
+        ]
+      },
+      {
+        "s": "Vestlotteriet oplyser, at det er den største uafhentede gevinst i lotteriets historie.",
+        "facts": [
+          5
+        ]
+      },
+      {
+        "s": "Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.",
+        "facts": [
+          6
+        ]
+      },
+      {
+        "s": "Ifølge kioskejer Samir Haddad tømmer kunderne i disse dage skuffer og jakkelommer.",
+        "facts": [
+          8,
+          11
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Uhentet gevinst på 42 mio. kr.: Fristen udløber lørdag",
+      "facts": [
+        1,
+        9
+      ]
+    },
+    "audio": [
+      {
+        "s": "En gevinst på 42 millioner kroner fra Vestlotteriets trækning den 15. august er endnu ikke hentet.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Vinderen har frist til lørdag den 14. november klokken 12 til at melde sig.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.",
+        "facts": [
+          6
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

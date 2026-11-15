@@ -1,0 +1,280 @@
+{
+ "1_review_effort_per_contract": {
+  "columns": [
+   "document",
+   "project",
+   "terms",
+   "confirmed",
+   "flagged",
+   "first_pass_pct",
+   "review_minutes"
+  ],
+  "values": [
+   [
+    "lichtung-offshore-ppa-execution",
+    "Lichtung Offshore",
+    12,
+    9,
+    3,
+    75.0,
+    69.0
+   ],
+   [
+    "havrebakke-ppa-v2-execution",
+    "Havrebakke Wind Farm",
+    12,
+    10,
+    2,
+    83.0,
+    60.0
+   ],
+   [
+    "havrebakke-ppa-v1-draft",
+    "Havrebakke Wind Farm",
+    12,
+    12,
+    0,
+    100.0,
+    42.0
+   ],
+   [
+    "olivos-solar-ppa-execution",
+    "Valdeolivos Solar",
+    12,
+    12,
+    0,
+    100.0,
+    42.0
+   ]
+  ]
+ },
+ "2_cycle_time_to_committee": {
+  "columns": [
+   "project",
+   "dataroom_received",
+   "days_to_reviewed_table",
+   "days_to_committee"
+  ],
+  "values": [
+   [
+    "Lichtung Offshore",
+    "2025-11-03",
+    2.0,
+    null
+   ],
+   [
+    "Valdeolivos Solar",
+    "2026-02-14",
+    2.0,
+    null
+   ],
+   [
+    "Havrebakke Wind Farm",
+    "2026-05-28",
+    2.0,
+    21.0
+   ]
+  ]
+ },
+ "3_terms_that_need_a_human": {
+  "columns": [
+   "ord",
+   "term",
+   "runs",
+   "model_right_pct",
+   "flagged",
+   "check_findings"
+  ],
+  "values": [
+   [
+    12,
+    "Change in law and force majeure allocation",
+    5,
+    75.0,
+    1,
+    0
+   ],
+   [
+    7,
+    "Product and certificates",
+    5,
+    80.0,
+    1,
+    0
+   ],
+   [
+    3,
+    "Supply period and its start",
+    5,
+    100.0,
+    1,
+    3
+   ],
+   [
+    10,
+    "Credit support from each party",
+    5,
+    100.0,
+    1,
+    2
+   ],
+   [
+    11,
+    "Events of default, termination and termination amount",
+    5,
+    100.0,
+    1,
+    2
+   ],
+   [
+    1,
+    "Parties and buyer credit standing",
+    5,
+    100.0,
+    0,
+    0
+   ],
+   [
+    2,
+    "Facility: technology, capacity, location",
+    5,
+    100.0,
+    0,
+    0
+   ],
+   [
+    4,
+    "Commercial operation date, longstop and delay damages",
+    5,
+    100.0,
+    0,
+    1
+   ],
+   [
+    5,
+    "Contract price and indexation",
+    5,
+    100.0,
+    0,
+    2
+   ],
+   [
+    6,
+    "Volume structure, expected production and performance guarantee",
+    5,
+    100.0,
+    0,
+    0
+   ],
+   [
+    8,
+    "Curtailment: who may curtail, cap, deemed delivery",
+    5,
+    100.0,
+    0,
+    1
+   ],
+   [
+    9,
+    "Delivery point, settlement type and balancing responsibility",
+    5,
+    100.0,
+    0,
+    0
+   ]
+  ]
+ },
+ "4_time_saved_against_baseline": {
+  "columns": [
+   "metric",
+   "unit",
+   "before",
+   "after",
+   "change",
+   "before_basis",
+   "source"
+  ],
+  "values": [
+   [
+    "minutes_per_contract",
+    "minutes",
+    240.0,
+    53.3,
+    -186.8,
+    "assumed",
+    "a careful analyst, about four hours per contract; to be replaced by a time log on the pilot's three contracts"
+   ],
+   [
+    "days_to_reviewed_table",
+    "days",
+    5.0,
+    2.0,
+    -3.0,
+    "assumed",
+    "from data room to a table the team trusts; to be replaced by the dates in the last twelve cases"
+   ],
+   [
+    "discrepancies_per_paper",
+    "findings per committee paper",
+    null,
+    1.5,
+    null,
+    "not measured",
+    "no record exists of a paper disagreeing with its contract, because no one compared them"
+   ],
+   [
+    "contracts_processed",
+    "contracts",
+    0.0,
+    4.0,
+    4.0,
+    "measured",
+    "no tool in use before the prototype; counts document versions put through the method, not contracts per month"
+   ]
+  ]
+ },
+ "5_a_portfolio_question": {
+  "columns": [
+   "contract",
+   "technology",
+   "price_eur_per_mwh",
+   "supply_years",
+   "curtailment_cap_hours",
+   "delay_damages_cap_eur"
+  ],
+  "values": [
+   [
+    "lichtung-offshore-ppa-execution",
+    "offshore wind",
+    72.0,
+    15,
+    null,
+    6000000.0
+   ],
+   [
+    "olivos-solar-ppa-execution",
+    "solar PV",
+    38.75,
+    12,
+    null,
+    1500000.0
+   ],
+   [
+    "havrebakke-ppa-v1-draft",
+    "onshore wind",
+    58.0,
+    10,
+    null,
+    1750000.0
+   ],
+   [
+    "havrebakke-ppa-v2-execution",
+    "onshore wind",
+    54.5,
+    12,
+    150,
+    1750000.0
+   ]
+  ]
+ }
+}

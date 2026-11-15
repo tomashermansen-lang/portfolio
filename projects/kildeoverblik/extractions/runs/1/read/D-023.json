@@ -1,0 +1,66 @@
+{
+  "prompt_sha256": "b4787d94af62b25919555dd7d01baf436e7910ab479bbd7822cf11233372701f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:52+00:00",
+  "id": "D-023",
+  "reply": "{\"summary\": \"Forbrugerpriserne steg 3,4 procent i oktober 2026 på årsbasis, den højeste årsstigning siden marts 2024, og fødevarer steg 5,1 procent.\", \"facts\": [{\"text\": \"Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.\", \"quote\": \"Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Stigningen i forbrugerpriserne var 2,6 procent i september.\", \"quote\": \"I september var stigningen 2,6 procent.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Oktobers årsstigning er den højeste siden marts 2024.\", \"quote\": \"Det er den højeste årsstigning siden marts 2024.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Ifølge kilden skyldes stigningen især højere priser på fødevarer, som steg 5,1 procent, og på el og varme.\", \"quote\": \"Stigningen skyldes især højere priser på fødevarer, der steg 5,1 procent, og på el og varme.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Kerneinflationen, renset for energi og uforarbejdede fødevarer, var 2,9 procent.\", \"quote\": \"Kerneinflationen, der er renset for energi og uforarbejdede fødevarer, var 2,9 procent.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [], \"orgs\": [\"Statistikkontoret\"], \"values\": {\"F\": {\"value\": 4, \"why\": \"Statistik vægtes lavt, men højere fødevarepriser rammer mange læsere i hverdagen og er højeste stigning i over to år.\"}, \"M\": {\"value\": 5, \"why\": \"Prisstigning rammer alle borgere, men ingen myndighed har forsømt noget, og kilden er ren statistik.\"}, \"E\": {\"value\": 7, \"why\": \"Centralt nøgletal, højeste årsstigning siden marts 2024, drevet af fødevarer og el og varme, påvirker virksomheders omkostninger.\"}}}\n",
+  "parsed": {
+    "summary": "Forbrugerpriserne steg 3,4 procent i oktober 2026 på årsbasis, den højeste årsstigning siden marts 2024, og fødevarer steg 5,1 procent.",
+    "facts": [
+      {
+        "text": "Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.",
+        "quote": "Forbrugerpriserne steg i oktober 2026 med 3,4 procent i forhold til samme måned sidste år.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Stigningen i forbrugerpriserne var 2,6 procent i september.",
+        "quote": "I september var stigningen 2,6 procent.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Oktobers årsstigning er den højeste siden marts 2024.",
+        "quote": "Det er den højeste årsstigning siden marts 2024.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Ifølge kilden skyldes stigningen især højere priser på fødevarer, som steg 5,1 procent, og på el og varme.",
+        "quote": "Stigningen skyldes især højere priser på fødevarer, der steg 5,1 procent, og på el og varme.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kerneinflationen, renset for energi og uforarbejdede fødevarer, var 2,9 procent.",
+        "quote": "Kerneinflationen, der er renset for energi og uforarbejdede fødevarer, var 2,9 procent.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [],
+    "orgs": [
+      "Statistikkontoret"
+    ],
+    "values": {
+      "F": {
+        "value": 4,
+        "why": "Statistik vægtes lavt, men højere fødevarepriser rammer mange læsere i hverdagen og er højeste stigning i over to år."
+      },
+      "M": {
+        "value": 5,
+        "why": "Prisstigning rammer alle borgere, men ingen myndighed har forsømt noget, og kilden er ren statistik."
+      },
+      "E": {
+        "value": 7,
+        "why": "Centralt nøgletal, højeste årsstigning siden marts 2024, drevet af fødevarer og el og varme, påvirker virksomheders omkostninger."
+      }
+    }
+  },
+  "parse_error": null
+}

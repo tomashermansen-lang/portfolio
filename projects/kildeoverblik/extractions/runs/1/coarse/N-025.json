@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "aa3bbd79c8ca88e87d4ab60d63b9862a65d334f5bf4824fcfd6de5b5b4ee2033",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:31+00:00",
+  "id": "N-025",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"To ekstra hverdagsafgange på én buslinje; lille lokal effekt, ingen akut værdi.\", \"M\": \"Lokal busudvidelse, overdrevet 'historisk' i pressemeddelelse; rækker ikke ud over det lokale.\", \"E\": \"Ingen virksomheder, drift eller regulering berørt; marginal lokal trafikændring.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "To ekstra hverdagsafgange på én buslinje; lille lokal effekt, ingen akut værdi.",
+      "M": "Lokal busudvidelse, overdrevet 'historisk' i pressemeddelelse; rækker ikke ud over det lokale.",
+      "E": "Ingen virksomheder, drift eller regulering berørt; marginal lokal trafikændring."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

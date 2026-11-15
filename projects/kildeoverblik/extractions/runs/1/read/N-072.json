@@ -1,0 +1,69 @@
+{
+  "prompt_sha256": "5e384f6655b0809182b8e6e4c6e3eae6acd392de6d9494ec4408e30bd572d086",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:37+00:00",
+  "id": "N-072",
+  "reply": "{\"summary\": \"Færgen mellem Sønderholt Odde og Grimsø sejler ikke fra onsdag kl. 12 og foreløbig til torsdag kl. 12 på grund af stormen, oplyser færgeselskabet Grimsø Overfart.\", \"facts\": [{\"text\": \"Færgen mellem Sønderholt Odde og Grimsø sejler ikke fra onsdag kl. 12 og foreløbig til torsdag kl. 12 på grund af stormen, oplyser færgeselskabet.\", \"quote\": \"Færgen mellem Sønderholt Odde og øen Grimsø sejler ikke fra onsdag kl. 12 og foreløbig til torsdag kl. 12 på grund af stormen.\", \"statement\": true, \"speaker\": \"Grimsø Overfart\", \"accuses\": null}, {\"text\": \"Sidste afgang fra Grimsø er kl. 11.15.\", \"quote\": \"Sidste afgang fra øen er kl. 11.15.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Grimsø har 74 fastboende.\", \"quote\": \"Grimsø har 74 fastboende\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Ifølge færgeselskabet sker det tre til fire gange hver vinter, at færgen må blive i havn.\", \"quote\": \"ifølge færgeselskabet sker det tre til fire gange hver vinter, at færgen må blive i havn\", \"statement\": true, \"speaker\": \"Grimsø Overfart\", \"accuses\": null}, {\"text\": \"Selskabet oplyser om genoptagelsen af sejladsen på sin hjemmeside.\", \"quote\": \"Selskabet oplyser om genoptagelsen på sin hjemmeside.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Sønderholt Odde\", \"Grimsø\"], \"orgs\": [\"Grimsø Overfart\"], \"values\": {\"F\": {\"value\": 3, \"why\": \"Stormrelateret aflysning, men rammer kun øens 74 fastboende og ikke mange læsere i landet.\"}, \"M\": {\"value\": 2, \"why\": \"Lokal trafikmelding uden politisk eller forvaltningsmæssig vinkel; ingen myndighed har svigtet.\"}, \"E\": {\"value\": 3, \"why\": \"Færgedriften er ramt, men kun midlertidigt og i lille skala; ingen virksomheder nævnes som berørt.\"}}}\n",
+  "parsed": {
+    "summary": "Færgen mellem Sønderholt Odde og Grimsø sejler ikke fra onsdag kl. 12 og foreløbig til torsdag kl. 12 på grund af stormen, oplyser færgeselskabet Grimsø Overfart.",
+    "facts": [
+      {
+        "text": "Færgen mellem Sønderholt Odde og Grimsø sejler ikke fra onsdag kl. 12 og foreløbig til torsdag kl. 12 på grund af stormen, oplyser færgeselskabet.",
+        "quote": "Færgen mellem Sønderholt Odde og øen Grimsø sejler ikke fra onsdag kl. 12 og foreløbig til torsdag kl. 12 på grund af stormen.",
+        "statement": true,
+        "speaker": "Grimsø Overfart",
+        "accuses": null
+      },
+      {
+        "text": "Sidste afgang fra Grimsø er kl. 11.15.",
+        "quote": "Sidste afgang fra øen er kl. 11.15.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Grimsø har 74 fastboende.",
+        "quote": "Grimsø har 74 fastboende",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Ifølge færgeselskabet sker det tre til fire gange hver vinter, at færgen må blive i havn.",
+        "quote": "ifølge færgeselskabet sker det tre til fire gange hver vinter, at færgen må blive i havn",
+        "statement": true,
+        "speaker": "Grimsø Overfart",
+        "accuses": null
+      },
+      {
+        "text": "Selskabet oplyser om genoptagelsen af sejladsen på sin hjemmeside.",
+        "quote": "Selskabet oplyser om genoptagelsen på sin hjemmeside.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Sønderholt Odde",
+      "Grimsø"
+    ],
+    "orgs": [
+      "Grimsø Overfart"
+    ],
+    "values": {
+      "F": {
+        "value": 3,
+        "why": "Stormrelateret aflysning, men rammer kun øens 74 fastboende og ikke mange læsere i landet."
+      },
+      "M": {
+        "value": 2,
+        "why": "Lokal trafikmelding uden politisk eller forvaltningsmæssig vinkel; ingen myndighed har svigtet."
+      },
+      "E": {
+        "value": 3,
+        "why": "Færgedriften er ramt, men kun midlertidigt og i lille skala; ingen virksomheder nævnes som berørt."
+      }
+    }
+  },
+  "parse_error": null
+}

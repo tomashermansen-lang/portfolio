@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "80381ea639360318cd2f6f6f1062c566ed0ab809f155f4b87a6cb263bf8ee8fd",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:33+00:00",
+  "from": "D-007",
+  "to": "A-005",
+  "shared": "Tangsø Havn",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om en midlertidig lukning af havnen på grund af højvande, mens arkivdokumentet handler om byrådets beslutning om at investere i en ny kaj til en virksomhed, så de deler kun havnens navn.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om en midlertidig lukning af havnen på grund af højvande, mens arkivdokumentet handler om byrådets beslutning om at investere i en ny kaj til en virksomhed, så de deler kun havnens navn.",
+    "facts": []
+  },
+  "parse_error": null
+}

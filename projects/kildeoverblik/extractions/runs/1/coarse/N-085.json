@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "0f80e794853278a4ec17b2957b5e557dacc0a5200f6416cfe8bfeba1fd6e0330",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:08+00:00",
+  "id": "N-085",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal kirkenyhed om nyt orgel; kuriøst, men rammer ingen i dag.\", \"M\": \"Lokalt og uden forvaltningsmæssig vinkel; ingen myndighed der svigter.\", \"E\": \"Ingen erhvervsvinkel ud over et lille orgelbyggeri; ingen drift eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal kirkenyhed om nyt orgel; kuriøst, men rammer ingen i dag.",
+      "M": "Lokalt og uden forvaltningsmæssig vinkel; ingen myndighed der svigter.",
+      "E": "Ingen erhvervsvinkel ud over et lille orgelbyggeri; ingen drift eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

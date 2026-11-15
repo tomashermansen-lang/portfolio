@@ -1,0 +1,93 @@
+{
+ "document_id": "lichtung-offshore-ppa-execution",
+ "model": "claude-sonnet-5-5",
+ "run": 2,
+ "run_at": "2026-10-29T10:03:34+00:00",
+ "source_sha256": "77988855b6d1abbd79337b5645d8122ba14797248b379ced51f6c98ba41a3a92",
+ "terms": {
+  "1_parties_and_buyer_credit": {
+   "found": true,
+   "value": "Seller is Lichtung Offshore Wind GmbH & Co. KG (Emden), a single-purpose project company. Buyer is Rheintal Spezialchemie AG (Worms), rated BBB+ at signing. No guarantor of the Buyer is named. The Buyer's credit protection is a rating trigger: if its rating falls below BBB- (or is withdrawn), it must post a EUR 20,000,000 letter of credit.",
+   "quote": "On the Signing Date the Buyer holds a long-term credit rating of BBB+ from a recognised rating agency.",
+   "clause": "Part I, Parties; Part II, section 9.3",
+   "note": "The Seller's credit support provider is Lichtung Energie Holding GmbH, Hamburg (ultimate parent of the Seller). It supports the Seller, not the Buyer. No parent guarantee of the Buyer appears in the document."
+  },
+  "2_facility": {
+   "found": true,
+   "value": "Offshore wind farm of 300 MW installed capacity in the German North Sea, about 60 km north-west of Borkum. It has twenty 15 MW turbines on monopile foundations and is connected through the transmission system operator's offshore grid connection system.",
+   "quote": "The Facility is an offshore wind farm with an installed capacity of 300 MW located in the German North Sea approximately 60 km north-west of Borkum, consisting of twenty (20) wind turbine generators of 15 MW each on monopile foundations, one offshore substation and the inter-array cables, connected to the onshore transmission grid through the offshore grid connection system of the transmission system operator.",
+   "clause": "Part I, Facility; Annex 1",
+   "note": "Only one capacity figure (300 MW) is given; the document does not split it into AC and DC. The bidding zone is not stated for the Facility itself. DE-LU is the zone of the Reference Price and of the Buyer's production sites, and section 11.4(b) refers to the area in which the Facility is located."
+  },
+  "3_supply_period": {
+   "found": true,
+   "value": "Supply Period of fifteen years from the Start Date of 1 January 2029, ending on 31 December 2043. It is not extended by any delay in commissioning.",
+   "quote": "Supply Period: fifteen (15) years commencing on the Start Date of 1 January 2029.",
+   "clause": "Part I, Supply Period; Part II, section 1.1 (Start Date, Contract Year)",
+   "note": "The period runs from a fixed calendar date, not from commissioning. Settlement starts only from the later of the Start Date and the day after the Commissioning Date (section 4.1). Sections 4, 7 and 8 take effect only once the Conditions Precedent in section 2.1 are met."
+  },
+  "4_cod_and_delay": {
+   "found": true,
+   "value": "The Seller uses reasonable endeavours to commission by the Start Date, 1 January 2029. After that it owes delay compensation of EUR 40,000 per day, capped at EUR 6,000,000. The Longstop Commissioning Date is 1 July 2029, after which the Buyer may terminate with no Termination Amount payable.",
+   "quote": "If the Facility has not been commissioned by the Start Date, the Seller shall pay the Buyer delay compensation of EUR 40,000 for each day from the Start Date until the Facility is commissioned, up to an aggregate cap of EUR 6,000,000 (Delay Compensation).",
+   "clause": "Part II, sections 3.1(d), 3.2, 3.3, 3.4 and 1.1 (Longstop Commissioning Date)",
+   "note": "Commissioning requires turbines totalling at least 240 MW (80% of 300 MW) to have passed take-over tests and be capable of exporting (section 3.2). At EUR 40,000 per day the cap is reached after 150 days, before the longstop date. Delay compensation is the Buyer's sole financial remedy for late commissioning. Force Majeure suspends its accrual but does not extend the longstop date."
+  },
+  "5_price_and_indexation": {
+   "found": true,
+   "value": "Strike Price of EUR 72.00 per MWh in the first Contract Year (2029), stated in Part I and in section 7.1. It rises by 2% on 1 January of each Contract Year from the second (2030) onwards, applied to the whole price and compounding: EUR 73.44 in 2030, EUR 74.91 in 2031.",
+   "quote": "Strike Price: EUR 72.00 per MWh, increased by two per cent (2%) on 1 January of each Contract Year from the second Contract Year onwards.",
+   "clause": "Part I, Price; Part II, section 7.1",
+   "note": "This is a contract for difference. The Strike Price is settled against the hourly DE-LU day-ahead Reference Price rather than paid as a delivered-energy price. It includes the consideration for the Guarantees of Origin (section 7.1)."
+  },
+  "6_volume_and_performance": {
+   "found": true,
+   "value": "Fixed baseload volume of 1,000,000 MWh per Contract Year in equal hourly quantities, independent of actual output. The Seller's P50 estimate is about 1,280,000 MWh a year, so the Contract Quantity is about 78% of P50. The Seller gives no availability or production guarantee, so there is no performance remedy.",
+   "quote": "Contract Quantity: 1,000,000 MWh per Contract Year, delivered as a baseload profile in equal hourly quantities.",
+   "clause": "Part I, Contract Quantity; Part II, sections 4.1, 5.3, 5.5; Annex 1, paragraph 5",
+   "note": "Section 5.5 states: \"The Seller gives no guarantee of availability or production.\" Outages do not reduce the Contract Quantity (section 5.3). The P50 figure is stated not to be a warranty. The Contract Quantity is reduced for the first Contract Year if commissioning is late (section 4.5) and in proportion to capacity lost to Force Majeure (section 10.4)."
+  },
+  "7_product_and_certificates": {
+   "found": true,
+   "value": "The product is financial settlement of the Contract Quantity against the Reference Price, plus transfer of Guarantees of Origin equal to the Contract Quantity each Contract Year. No electricity is sold or delivered. The Guarantee of Origin price is included in the Strike Price. The Seller bears issuing fees and the Buyer bears cancellation fees.",
+   "quote": "Product: (a) the financial settlement of the Contract Quantity against the Reference Price under section 4, and (b) the transfer to the Buyer of Guarantees of Origin in a quantity equal to the Contract Quantity under section 8.",
+   "clause": "Part I, Product and Certificates; Part II, sections 4.6, 7.1, 8.1 to 8.4",
+   "note": "If the Facility generates less than the Contract Quantity, the Seller must procure the Guarantee of Origin shortfall from other German offshore wind facilities at its own cost (section 8.2). Capacity or other attributes are not mentioned anywhere in the document."
+  },
+  "8_curtailment": {
+   "found": true,
+   "value": "Curtailment is instructed by the transmission system operator, and the document gives the Buyer no right to curtail. Curtailment does not reduce the Seller's Contract Quantity obligations unless it is Force Majeure; congestion, redispatch, system security and market-related curtailment are expressly not Force Majeure. Compensation from the operator belongs to the Seller. No hours or MWh cap is stated. Hours with a negative Reference Price produce no settlement amount.",
+   "quote": "5.4 The Seller's obligations in respect of the Contract Quantity shall not be reduced by any curtailment of the Facility's output instructed by the transmission system operator, save where such curtailment constitutes Force Majeure.",
+   "clause": "Part II, sections 5.4, 4.1, 4.4, 10.1, 10.2",
+   "note": "The document has no separate deemed-delivery clause. The Contract Quantity is settled whether or not the Facility generates (section 4.1), which has the same effect. Negative Price Hours: no Settlement Amount is payable, but the Guarantee of Origin quantity is not reduced (section 4.4). Curtailment resulting from an event that is itself Force Majeure is covered by section 10.1, and section 10.4 then reduces the Hourly Quantity in proportion to the capacity unavailable."
+  },
+  "9_delivery_point_and_balancing": {
+   "found": true,
+   "value": "Settlement is financial and there is no Delivery Point (stated as not applicable). The Reference Price is the hourly day-ahead price for the DE-LU bidding zone. The Seller remains balance responsible for the Facility and bears all imbalance costs; the Buyer balances its own consumption.",
+   "quote": "5.2 The Seller shall remain responsible for the balancing of the Facility and shall bear all imbalance costs.",
+   "clause": "Part I, Delivery Point and Balancing, and Settlement; Part II, sections 1.1 (Reference Price), 4, 5.2",
+   "note": "The Seller sells the Facility's physical output in the market for its own account. It must do so without claiming a statutory market premium, so that Guarantees of Origin can be issued (section 4.6)."
+  },
+  "10_credit_support": {
+   "found": true,
+   "value": "Seller: a EUR 25,000,000 parent company guarantee from Lichtung Energie Holding GmbH, delivered within 10 Business Days after signing and kept until 12 months after the Supply Period ends or earlier discharge. Buyer: none at signing; a EUR 20,000,000 letter of credit is due within 20 Business Days if its rating falls below BBB- or is withdrawn, and is returned after six consecutive months at BBB- or above.",
+   "quote": "Seller: parent company guarantee from Lichtung Energie Holding GmbH in the amount of EUR 25,000,000 in the form of Annex 4 (section 9.1).",
+   "clause": "Part I, Credit Support; Part II, sections 9.1 to 9.4; Annexes 3 and 4",
+   "note": "If the guarantor becomes insolvent, ceases to be an affiliate or disputes the guarantee, the Seller must replace it within 20 Business Days with a EUR 25,000,000 letter of credit from a bank rated at least A- (section 9.2). Letters of credit expire not earlier than 12 months after issue and extend automatically (Annex 3). The guarantee also covers any Termination Amount payable by the Seller (Annex 4, paragraph 1)."
+  },
+  "11_default_and_termination": {
+   "found": false,
+   "value": null,
+   "quote": null,
+   "clause": "Part II, sections 12.1 and 13.3; Annex 5 (not attached)",
+   "note": "The Termination Amount is defined only by reference to Annex 5, which is not attached. Section 13.3 states: \"The Termination Amount shall be calculated in accordance with Annex 5 (Termination Amount Methodology).\" The annex list ends with: \"Annex 5 — Termination Amount Methodology [to be agreed prior to Financial Close]\". Attaching it is also a Condition Precedent (section 2.1(d)). The events of default are listed in section 12.1(a) to (h): non-payment (10 Business Days after notice), failure to provide credit support (10 Business Days), insolvency, other material breach (30 days), repudiation, Seller abandonment for 90 days, Seller failure to transfer Guarantees of Origin within 120 days, and breach of the assignment or change-of-control rules. No Termination Amount is payable on termination under sections 2.2, 3.4, 10.5 or 11.2 (section 13.5)."
+  },
+  "12_change_in_law_and_force_majeure": {
+   "found": true,
+   "value": "A change in law is borne by the Party on whom the cost or benefit falls, with no adjustment of the Strike Price or Contract Quantity. If the Product can no longer exist or be delivered, the Parties negotiate in good faith for 90 days, after which either may terminate with no Termination Amount. Either Party may terminate if Force Majeure lasts more than 180 consecutive days.",
+   "quote": "11.3 Any other Change in Law, including one that changes the cost of Guarantees of Origin, grid charges or levies, is borne by the Party on whom the cost or benefit falls.",
+   "clause": "Part II, sections 11.1 to 11.3, 10.5, 17.3",
+   "note": "No monetary threshold applies to a change in law. The renegotiation right applies only where the Product, or a material part of it, no longer exists (section 11.2). Levies or revenue caps imposed by a public authority stay with the Party on whom they are imposed (section 17.3). Force Majeure termination (section 10.5) carries no Termination Amount."
+  }
+ }
+}

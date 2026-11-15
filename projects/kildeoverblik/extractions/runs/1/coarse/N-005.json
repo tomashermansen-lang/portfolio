@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "4b24198ec4dbc40f56324f628bcba607eeed8354ce435ee86d7e2878d48955bb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:07+00:00",
+  "id": "N-005",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig lokal udvalgsdagsorden, rammer ingen læsere i dag.\", \"M\": \"Lokalt udvalgsmøde næste uge; uddraget viser kun formalia, ingen sag.\", \"E\": \"Ingen erhvervsrelevans; kun godkendelse af dagsorden og meddelelser.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig lokal udvalgsdagsorden, rammer ingen læsere i dag.",
+      "M": "Lokalt udvalgsmøde næste uge; uddraget viser kun formalia, ingen sag.",
+      "E": "Ingen erhvervsrelevans; kun godkendelse af dagsorden og meddelelser."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

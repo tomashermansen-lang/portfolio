@@ -1,0 +1,68 @@
+{
+  "prompt_sha256": "302aa0991eb8e216fa4de1b079d2862099fa82ce425a9114d28ca008fb542eeb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:28+00:00",
+  "id": "D-017",
+  "reply": "{\"summary\": \"Rederiet Tangholm A/S har i 3. kvartal 2026 nedskrevet tørlastflåden med 1,2 mia. kr., nedjusteret forventningen til årets resultat før afskrivninger og fået et underskud på 1.050 mio. kr.\", \"facts\": [{\"text\": \"Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden.\", \"quote\": \"Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Koncernen nedjusterer forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.\", \"quote\": \"nedjusterer forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.\", \"statement\": true, \"speaker\": \"Rederiet Tangholm A/S\", \"accuses\": null}, {\"text\": \"Ledelsen venter fortsat lave rater i tørlastmarkedet resten af året.\", \"quote\": \"Ledelsen venter fortsat lave rater i tørlastmarkedet resten af året.\", \"statement\": true, \"speaker\": \"Ledelsen i Rederiet Tangholm A/S\", \"accuses\": null}, {\"text\": \"Omsætningen i kvartalet var 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.\", \"quote\": \"Omsætningen udgjorde 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.\", \"quote\": \"Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Tangsø\"], \"orgs\": [\"Rederiet Tangholm A/S\"], \"values\": {\"F\": {\"value\": 2, \"why\": \"Regnskab og statistik uden omtalt jobtab eller direkte konsekvenser for mange læsere i dag.\"}, \"M\": {\"value\": 2, \"why\": \"Virksomhedsregnskab uden politisk eller forvaltningsmæssig vinkel og uden myndighedssvigt.\"}, \"E\": {\"value\": 8, \"why\": \"Nedskrivning på 1,2 mia. kr., nedjusteret forventning og underskud hos et større rederi i et svagt tørlastmarked.\"}}}\n",
+  "parsed": {
+    "summary": "Rederiet Tangholm A/S har i 3. kvartal 2026 nedskrevet tørlastflåden med 1,2 mia. kr., nedjusteret forventningen til årets resultat før afskrivninger og fået et underskud på 1.050 mio. kr.",
+    "facts": [
+      {
+        "text": "Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden.",
+        "quote": "Koncernen har i kvartalet foretaget en nedskrivning på 1,2 mia. kr. på tørlastflåden",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Koncernen nedjusterer forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.",
+        "quote": "nedjusterer forventningen til årets resultat før afskrivninger fra 1,4-1,6 mia. kr. til 1,0-1,2 mia. kr.",
+        "statement": true,
+        "speaker": "Rederiet Tangholm A/S",
+        "accuses": null
+      },
+      {
+        "text": "Ledelsen venter fortsat lave rater i tørlastmarkedet resten af året.",
+        "quote": "Ledelsen venter fortsat lave rater i tørlastmarkedet resten af året.",
+        "statement": true,
+        "speaker": "Ledelsen i Rederiet Tangholm A/S",
+        "accuses": null
+      },
+      {
+        "text": "Omsætningen i kvartalet var 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.",
+        "quote": "Omsætningen udgjorde 2.940 mio. kr. mod 3.310 mio. kr. i samme kvartal sidste år.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.",
+        "quote": "Periodens resultat blev et underskud på 1.050 mio. kr. mod et overskud på 210 mio. kr. sidste år.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Tangsø"
+    ],
+    "orgs": [
+      "Rederiet Tangholm A/S"
+    ],
+    "values": {
+      "F": {
+        "value": 2,
+        "why": "Regnskab og statistik uden omtalt jobtab eller direkte konsekvenser for mange læsere i dag."
+      },
+      "M": {
+        "value": 2,
+        "why": "Virksomhedsregnskab uden politisk eller forvaltningsmæssig vinkel og uden myndighedssvigt."
+      },
+      "E": {
+        "value": 8,
+        "why": "Nedskrivning på 1,2 mia. kr., nedjusteret forventning og underskud hos et større rederi i et svagt tørlastmarked."
+      }
+    }
+  },
+  "parse_error": null
+}

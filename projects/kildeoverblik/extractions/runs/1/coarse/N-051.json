@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "f17d5bf536daf3b4ad263af3d4959e052a8172f6591ed4db8e6b340e12ac3d53",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:08+00:00",
+  "id": "N-051",
+  "reply": "{\"scores\": {\"F\": 6, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Storm i nat, lokal parkeringsadvarsel fra kommune; haster, men kun én kommune rammes.\", \"M\": \"Lokal kommunal opfordring uden sagsindhold; rækker ikke ud over det lokale.\", \"E\": \"Vejradvarsel uden synlig virksomhedspåvirkning; lavt vægtet for erhverv.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 6,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Storm i nat, lokal parkeringsadvarsel fra kommune; haster, men kun én kommune rammes.",
+      "M": "Lokal kommunal opfordring uden sagsindhold; rækker ikke ud over det lokale.",
+      "E": "Vejradvarsel uden synlig virksomhedspåvirkning; lavt vægtet for erhverv."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

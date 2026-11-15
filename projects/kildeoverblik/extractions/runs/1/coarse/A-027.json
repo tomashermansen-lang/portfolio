@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "6adf945f0daa93a4346c919375ed11ba28d92199075bdd1713ef26c5d3e9fabf",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:37+00:00",
+  "id": "A-027",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 3, \"E\": 3}, \"why\": {\"F\": \"Lokalt forsyningsskifte, rammer få og først fra oktober; ingen akut effekt.\", \"M\": \"Kommunal forsyning, lokal sag uden myndighedssvigt eller bredere politisk rækkevidde.\", \"E\": \"Rutinemæssig investering hos lille forsyning; ingen drift ramt, ingen regnskabsafvigelse.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 3,
+      "E": 3
+    },
+    "why": {
+      "F": "Lokalt forsyningsskifte, rammer få og først fra oktober; ingen akut effekt.",
+      "M": "Kommunal forsyning, lokal sag uden myndighedssvigt eller bredere politisk rækkevidde.",
+      "E": "Rutinemæssig investering hos lille forsyning; ingen drift ramt, ingen regnskabsafvigelse."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

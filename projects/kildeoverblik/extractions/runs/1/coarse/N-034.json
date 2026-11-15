@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3cea25dc21bec3b1b9b5cc183467e59bc66ae55ae809bbaa4a672209033c0f6d",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:44+00:00",
+  "id": "N-034",
+  "reply": "{\"scores\": {\"F\": 6, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Storm i aften rammer mange; kæledyrsråd er et læsernært og hastende vinkel.\", \"M\": \"Lokalt dyreinternat og praktiske kæledyrsråd; ingen myndighedsvinkel i uddraget.\", \"E\": \"Ingen virksomhedsvinkel; kæledyrsråd op til storm uden erhvervsmæssig relevans.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 6,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Storm i aften rammer mange; kæledyrsråd er et læsernært og hastende vinkel.",
+      "M": "Lokalt dyreinternat og praktiske kæledyrsråd; ingen myndighedsvinkel i uddraget.",
+      "E": "Ingen virksomhedsvinkel; kæledyrsråd op til storm uden erhvervsmæssig relevans."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

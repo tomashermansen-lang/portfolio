@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "d0d0c73d924c78e64c676e4d377ce9ede067c2c76aeced484b0cdd329f1b742f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:40+00:00",
+  "id": "D-029",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 3, \"E\": 4}, \"why\": {\"F\": \"Højere fødevarepriser rammer mange, men er statistik og en bankøkonoms kommentar.\", \"M\": \"Bankøkonoms kommentar til offentliggjort tal; ingen forvaltning eller myndighedssvigt i uddraget.\", \"E\": \"Inflationstal er nøgletal, men kommentaren er fra en bank og tilføjer lidt nyt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 3,
+      "E": 4
+    },
+    "why": {
+      "F": "Højere fødevarepriser rammer mange, men er statistik og en bankøkonoms kommentar.",
+      "M": "Bankøkonoms kommentar til offentliggjort tal; ingen forvaltning eller myndighedssvigt i uddraget.",
+      "E": "Inflationstal er nøgletal, men kommentaren er fra en bank og tilføjer lidt nyt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "e4db9c47d5464f3e0980da72f5ec81cff3f8022916ec0f638bb192ab03c9ea5c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:59+00:00",
+  "id": "N-044",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal hal åbner igen mandag; kun få berørt, ingen nyhed ud over rutine.\", \"M\": \"Lokal idrætsfacilitet uden offentlig forvaltning eller sag ud over det lokale.\", \"E\": \"Ingen erhvervsmæssig vinkel; almindelig lokal renovering af idrætshal.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal hal åbner igen mandag; kun få berørt, ingen nyhed ud over rutine.",
+      "M": "Lokal idrætsfacilitet uden offentlig forvaltning eller sag ud over det lokale.",
+      "E": "Ingen erhvervsmæssig vinkel; almindelig lokal renovering af idrætshal."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

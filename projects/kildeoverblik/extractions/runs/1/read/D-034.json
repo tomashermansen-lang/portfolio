@@ -1,0 +1,68 @@
+{
+  "prompt_sha256": "56aa3e6870bc59518ef2becd71e02b49076b6b8021882e3610ef2774c6fb4137",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:19+00:00",
+  "id": "D-034",
+  "reply": "{\"summary\":\"En lottokupon med 42 mio. kr. i gevinst, solgt i august i en kiosk i Lindholt, er stadig ikke indløst, og fristen udløber lørdag.\",\"facts\":[{\"text\":\"Lottokuponen har vundet 42 mio. kr. og er endnu ikke indløst.\",\"quote\":\"den lottokupon, der har vundet 42 mio. kr., og som stadig ikke er indløst\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Kuponen blev solgt i august af kioskejer Samir Haddad i Lindholt.\",\"quote\":\"Kioskejer Samir Haddad i Lindholt solgte i august den lottokupon\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Fristen for at indløse kuponen udløber lørdag.\",\"quote\":\"Fristen udløber lørdag.\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Kioskejeren har hængt et skilt op i vinduet.\",\"quote\":\"Kioskejeren har hængt et skilt i vinduet\",\"statement\":false,\"speaker\":null,\"accuses\":null},{\"text\":\"Ifølge kioskejeren tømmer kunderne i disse dage skuffer og jakkelommer.\",\"quote\":\"kunderne i disse dage tømmer skuffer og jakkelommer\",\"statement\":true,\"speaker\":\"Samir Haddad\",\"accuses\":null}],\"places\":[\"Lindholt\"],\"orgs\":[\"Vestposten\"],\"values\":{\"F\":{\"value\":7,\"why\":\"Stor uafhentet gevinst med frist lørdag; kuriøs sag, der får læsere til at lede efter kuponen.\"},\"M\":{\"value\":2,\"why\":\"Kuriøs sag uden forvaltningsmæssig eller politisk vinkel og med lokalt udgangspunkt.\"},\"E\":{\"value\":1,\"why\":\"Ingen virksomhedsmæssig, regulatorisk eller økonomisk betydning ud over en enkelt lottogevinst.\"}}}\n",
+  "parsed": {
+    "summary": "En lottokupon med 42 mio. kr. i gevinst, solgt i august i en kiosk i Lindholt, er stadig ikke indløst, og fristen udløber lørdag.",
+    "facts": [
+      {
+        "text": "Lottokuponen har vundet 42 mio. kr. og er endnu ikke indløst.",
+        "quote": "den lottokupon, der har vundet 42 mio. kr., og som stadig ikke er indløst",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kuponen blev solgt i august af kioskejer Samir Haddad i Lindholt.",
+        "quote": "Kioskejer Samir Haddad i Lindholt solgte i august den lottokupon",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Fristen for at indløse kuponen udløber lørdag.",
+        "quote": "Fristen udløber lørdag.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kioskejeren har hængt et skilt op i vinduet.",
+        "quote": "Kioskejeren har hængt et skilt i vinduet",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Ifølge kioskejeren tømmer kunderne i disse dage skuffer og jakkelommer.",
+        "quote": "kunderne i disse dage tømmer skuffer og jakkelommer",
+        "statement": true,
+        "speaker": "Samir Haddad",
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Lindholt"
+    ],
+    "orgs": [
+      "Vestposten"
+    ],
+    "values": {
+      "F": {
+        "value": 7,
+        "why": "Stor uafhentet gevinst med frist lørdag; kuriøs sag, der får læsere til at lede efter kuponen."
+      },
+      "M": {
+        "value": 2,
+        "why": "Kuriøs sag uden forvaltningsmæssig eller politisk vinkel og med lokalt udgangspunkt."
+      },
+      "E": {
+        "value": 1,
+        "why": "Ingen virksomhedsmæssig, regulatorisk eller økonomisk betydning ud over en enkelt lottogevinst."
+      }
+    }
+  },
+  "parse_error": null
+}

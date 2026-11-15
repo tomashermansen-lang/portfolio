@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "cacedcf101e58949aa1eec75f8c663d7c177c8797a023f4c8f935d8e35e5d136",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:50+00:00",
+  "id": "N-038",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal lukning af borgerservice næste uge; rammer få, ikke akut i dag.\", \"M\": \"Rutinemeddelelse fra kommune om personalemøde; ingen forvaltningssvigt, kun lokalt.\", \"E\": \"Ingen erhvervsrelevans; kommunal servicemeddelelse uden påvirkning af virksomheder.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal lukning af borgerservice næste uge; rammer få, ikke akut i dag.",
+      "M": "Rutinemeddelelse fra kommune om personalemøde; ingen forvaltningssvigt, kun lokalt.",
+      "E": "Ingen erhvervsrelevans; kommunal servicemeddelelse uden påvirkning af virksomheder."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

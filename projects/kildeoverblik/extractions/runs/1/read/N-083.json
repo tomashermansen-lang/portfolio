@@ -1,0 +1,63 @@
+{
+  "prompt_sha256": "5c4ee36ad1b3031d7ca273e73e5e65994de2136403923caf1fd1dce1ccfa4cc8",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:45+00:00",
+  "id": "N-083",
+  "reply": "{\"summary\": \"Tangsø Kommune oplyser, at Beredskab Vest i dag fra kl. 09 udleverer sandsække ved lystbådehavnen i Tangsø og ved Nørrevang Strand før en storm.\", \"facts\": [{\"text\": \"Beredskab Vest udleverer sandsække fra kl. 09 i dag ved lystbådehavnen i Tangsø og ved Nørrevang Strand.\", \"quote\": \"Beredskab Vest udleverer sandsække fra kl. 09 i dag ved lystbådehavnen i Tangsø og ved Nørrevang Strand.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Hver husstand kan hente op til 20 sandsække.\", \"quote\": \"Hver husstand kan hente op til 20 sække.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Kommunen kører ikke sandsække ud til borgerne.\", \"quote\": \"Kommunen kører ikke sække ud\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Kommunen opfordrer borgere til at tage en trailer med eller hjælpe en nabo uden bil.\", \"quote\": \"tag en trailer med eller hjælp en nabo, der ikke selv har bil\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Tangsø\", \"Nørrevang Strand\"], \"orgs\": [\"Tangsø Kommune\", \"Beredskab Vest\"], \"values\": {\"F\": {\"value\": 5, \"why\": \"Praktisk advarsel til borgere før storm i dag, men kun lokalt i én kommune, ikke på landsplan.\"}, \"M\": {\"value\": 3, \"why\": \"Kommunal serviceinformation uden fejl fra myndighed eller betydning ud over det lokale.\"}, \"E\": {\"value\": 2, \"why\": \"Vejr og lokal beredskab; ingen oplyst påvirkning af virksomheder, havnedrift eller transport.\"}}}\n",
+  "parsed": {
+    "summary": "Tangsø Kommune oplyser, at Beredskab Vest i dag fra kl. 09 udleverer sandsække ved lystbådehavnen i Tangsø og ved Nørrevang Strand før en storm.",
+    "facts": [
+      {
+        "text": "Beredskab Vest udleverer sandsække fra kl. 09 i dag ved lystbådehavnen i Tangsø og ved Nørrevang Strand.",
+        "quote": "Beredskab Vest udleverer sandsække fra kl. 09 i dag ved lystbådehavnen i Tangsø og ved Nørrevang Strand.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Hver husstand kan hente op til 20 sandsække.",
+        "quote": "Hver husstand kan hente op til 20 sække.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kommunen kører ikke sandsække ud til borgerne.",
+        "quote": "Kommunen kører ikke sække ud",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kommunen opfordrer borgere til at tage en trailer med eller hjælpe en nabo uden bil.",
+        "quote": "tag en trailer med eller hjælp en nabo, der ikke selv har bil",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Tangsø",
+      "Nørrevang Strand"
+    ],
+    "orgs": [
+      "Tangsø Kommune",
+      "Beredskab Vest"
+    ],
+    "values": {
+      "F": {
+        "value": 5,
+        "why": "Praktisk advarsel til borgere før storm i dag, men kun lokalt i én kommune, ikke på landsplan."
+      },
+      "M": {
+        "value": 3,
+        "why": "Kommunal serviceinformation uden fejl fra myndighed eller betydning ud over det lokale."
+      },
+      "E": {
+        "value": 2,
+        "why": "Vejr og lokal beredskab; ingen oplyst påvirkning af virksomheder, havnedrift eller transport."
+      }
+    }
+  },
+  "parse_error": null
+}

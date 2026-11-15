@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "964531656027cf84167522a2321d99a5e42b9194c54476cc0ce9063412c4f307",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:04+00:00",
+  "id": "N-049",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal landzonetilladelse til en lille hestestald; rammer ingen læsere.\", \"M\": \"Rutinemæssig kommunal forvaltningsafgørelse, rent lokal og uden bredere rækkevidde.\", \"E\": \"Privat stald uden erhvervsmæssig eller regulatorisk betydning for virksomheder.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal landzonetilladelse til en lille hestestald; rammer ingen læsere.",
+      "M": "Rutinemæssig kommunal forvaltningsafgørelse, rent lokal og uden bredere rækkevidde.",
+      "E": "Privat stald uden erhvervsmæssig eller regulatorisk betydning for virksomheder."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

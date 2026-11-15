@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3deb8ca3075a956e6cdb97df7d4771c499f6d94f6bb56bc5a9783d992208f75f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:10+00:00",
+  "id": "N-008",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokal museumsudstilling på lørdag; let kuriøs, men rammer få og haster ikke.\", \"M\": \"Lokal kulturnyhed uden forvaltningsmæssig eller politisk rækkevidde.\", \"E\": \"Ingen erhvervsmæssig vinkel; almindelig udstillingsomtale fra et lokalt museum.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal museumsudstilling på lørdag; let kuriøs, men rammer få og haster ikke.",
+      "M": "Lokal kulturnyhed uden forvaltningsmæssig eller politisk rækkevidde.",
+      "E": "Ingen erhvervsmæssig vinkel; almindelig udstillingsomtale fra et lokalt museum."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

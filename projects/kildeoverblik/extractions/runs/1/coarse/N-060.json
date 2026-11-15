@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "6ca2319410a5aa6fa7cc926fdf6744b0dc7d376edea86c52d81b959b32bdb2f0",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:26+00:00",
+  "id": "N-060",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Stormvarsel i nat er relevant, men kilden er et lokalt campingopslag til få gæster.\", \"M\": \"Lokal praktisk besked fra en campingplads; ingen myndighedsvinkel eller svigt.\", \"E\": \"Ingen virksomhedsramme ud over en enkelt campingplads' forberedelser til storm.\"}, \"unverified\": true}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Stormvarsel i nat er relevant, men kilden er et lokalt campingopslag til få gæster.",
+      "M": "Lokal praktisk besked fra en campingplads; ingen myndighedsvinkel eller svigt.",
+      "E": "Ingen virksomhedsramme ud over en enkelt campingplads' forberedelser til storm."
+    },
+    "unverified": true
+  },
+  "parse_error": null
+}

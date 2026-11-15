@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "9163d17d6328f020bdf547658c357eb532c7644977dfc27898d038d296ed64ea",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:27+00:00",
+  "id": "N-023",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Stormen rammer i dag, men selve nyheden er et lokalt biblioteks tidlige lukning.\", \"M\": \"Rent lokal driftsmeddelelse fra et bibliotek, intet forvaltningssvigt eller bredere politisk sag.\", \"E\": \"Ingen erhvervsvinkel; et bibliotek lukker tidligt på grund af vejret.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Stormen rammer i dag, men selve nyheden er et lokalt biblioteks tidlige lukning.",
+      "M": "Rent lokal driftsmeddelelse fra et bibliotek, intet forvaltningssvigt eller bredere politisk sag.",
+      "E": "Ingen erhvervsvinkel; et bibliotek lukker tidligt på grund af vejret."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

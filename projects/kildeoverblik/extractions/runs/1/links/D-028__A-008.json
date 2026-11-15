@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "e9ec452e0d14a5521eab0a56e35578144bf671bc50adcc1ed18756941f09d689",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:02+00:00",
+  "from": "D-028",
+  "to": "A-008",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": false, \"why\": \"Dagens telegram handler om en frivillig evakuering af beboere bag diget ved Nørrevang Strand, mens arkivdokumentet er en pressemeddelelse om en årlig strandrensning, så de deler kun stedsnavnet og handler om hver sit.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens telegram handler om en frivillig evakuering af beboere bag diget ved Nørrevang Strand, mens arkivdokumentet er en pressemeddelelse om en årlig strandrensning, så de deler kun stedsnavnet og handler om hver sit.",
+    "facts": []
+  },
+  "parse_error": null
+}

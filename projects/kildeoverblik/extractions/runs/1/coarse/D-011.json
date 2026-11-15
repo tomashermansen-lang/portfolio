@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c58aa9f28a50581868d70254472586e9cd1f0980d2146260c77ffde6870d5b02",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:42+00:00",
+  "id": "D-011",
+  "reply": "{\"scores\": {\"F\": 8, \"M\": 5, \"E\": 6}, \"why\": {\"F\": \"Togdriften stoppes i aften kl. 18 af sikkerhedshensyn; mange pendlere rammes i dag.\", \"M\": \"Driftsstop på en strækning, men uddraget nævner ingen svigt hos myndighed eller bredere politisk sag.\", \"E\": \"Transportdriften indstilles på en hel strækning fra kl. 18; årsag og omfang er uklare.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 8,
+      "M": 5,
+      "E": 6
+    },
+    "why": {
+      "F": "Togdriften stoppes i aften kl. 18 af sikkerhedshensyn; mange pendlere rammes i dag.",
+      "M": "Driftsstop på en strækning, men uddraget nævner ingen svigt hos myndighed eller bredere politisk sag.",
+      "E": "Transportdriften indstilles på en hel strækning fra kl. 18; årsag og omfang er uklare."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

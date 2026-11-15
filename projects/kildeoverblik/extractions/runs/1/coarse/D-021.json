@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "1fcb68bd28d1da18db220dbde37ff3b89d08c1333922219979519384efece52c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:14+00:00",
+  "id": "D-021",
+  "reply": "{\"scores\": {\"F\": 9, \"M\": 7, \"E\": 5}, \"why\": {\"F\": \"Stormflod topper i nat på vestkysten, højeste varsel, rammer mange læsere.\", \"M\": \"Myndighedsvarsel på højeste niveau, rammer borgere og beredskab i nat.\", \"E\": \"Vejr vægtes lavt; havne og virksomheder kan rammes, men det fremgår ikke.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 9,
+      "M": 7,
+      "E": 5
+    },
+    "why": {
+      "F": "Stormflod topper i nat på vestkysten, højeste varsel, rammer mange læsere.",
+      "M": "Myndighedsvarsel på højeste niveau, rammer borgere og beredskab i nat.",
+      "E": "Vejr vægtes lavt; havne og virksomheder kan rammes, men det fremgår ikke."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

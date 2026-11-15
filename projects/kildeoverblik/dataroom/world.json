@@ -1,0 +1,372 @@
+{
+  "date": "2026-11-11",
+  "weekday": "onsdag",
+  "window": {
+    "from": "06.00",
+    "to": "09.00"
+  },
+  "note": "Alt er opdigtet til prototypen: steder, personer, virksomheder, myndigheder og tal.",
+  "desks": [
+    {
+      "id": "F",
+      "name": "Formiddagsblad",
+      "rules": [
+        "Det, der rammer mange læsere i dag eller i nat, vægtes højt.",
+        "Vejr, ulykker og advarsler til forbrugere vægtes højt, når de rammer mange i landet.",
+        "Gevinster, rekorder og kuriøse sager vægtes højt.",
+        "Regnskaber, statistik og høringssvar vægtes lavt, medmindre mange mister deres job."
+      ]
+    },
+    {
+      "id": "M",
+      "name": "Morgenavis",
+      "rules": [
+        "Politik, forvaltning og offentlige institutioner vægtes højt, når sagen rækker ud over det lokale.",
+        "Sager, hvor en myndighed eller virksomhed ikke har gjort, hvad den skulle, vægtes højt.",
+        "Det, der rammer mange borgere, vægtes højt.",
+        "Kuriøse sager og enkeltstående trafikmeldinger vægtes lavt."
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Erhvervsmedie",
+      "rules": [
+        "Regnskaber med afvigelser, lukninger, fyringer og større konkurser vægtes højt.",
+        "Regulering og nøgletal, der påvirker virksomheder, vægtes højt.",
+        "Havne, transport og energi vægtes højt, når driften rammes.",
+        "Vejr, ulykker og lokalpolitik vægtes lavt, medmindre virksomheder rammes."
+      ]
+    }
+  ],
+  "source_types": [
+    "Telegram",
+    "Pressemeddelelse",
+    "Offentligt dokument",
+    "Andet medie",
+    "Sociale medier",
+    "Trafikmelding",
+    "Døgnrapport",
+    "Retsliste",
+    "Regnskabsmeddelelse",
+    "Offentlig bekendtgørelse",
+    "Brev fra institution",
+    "Statistik",
+    "Høringssvar"
+  ],
+  "places": {
+    "Nørrevang Kommune": "kystkommune på vestkysten; byen Nørrevang, Nørrevang Strand, Nørrevang Skole",
+    "Tangsø Kommune": "havneby på vestkysten; Sydhavnen, Tangsø Havn",
+    "Lindholt Kommune": "indlandskommune; Lindholt by",
+    "Egeby Kommune": "større by mod øst",
+    "Sønderholt Kommune": "landkommune mod syd",
+    "Region Vest": "regionen, der dækker alle fem kommuner; Vestsygehuset i Egeby"
+  },
+  "organisations": {
+    "Varslingstjenesten": "udsender varsler om vejr og vandstand",
+    "Beredskab Vest": "det fælles beredskab",
+    "Trafikcentralen": "trafikmeldinger",
+    "Vestkysttog": "togoperatør på vestkysten",
+    "Tangsø Energi A/S": "energivirksomhed med fabrik i Sydhavnen",
+    "Rederiet Tangholm A/S": "børsnoteret rederi",
+    "Halvor & Søn A/S": "byggefirma i Lindholt",
+    "Vesterfjord Bank": "regional bank",
+    "Statistikkontoret": "offentlig statistik",
+    "Nyhedsbureauet": "telegrambureau",
+    "Vestposten": "andet medie, regionalt",
+    "Dagbladet Tiden": "andet medie, landsdækkende",
+    "Politiet i Vest": "politikredsen; beslutter evakuering",
+    "Tilsynsstyrelsen": "statsligt tilsyn med pleje og sundhed",
+    "Bekendtgørelsesportalen": "offentlige bekendtgørelser, herunder konkursdekreter"
+  },
+  "fixed_considerations": [
+    "Haster: sker i dag eller i nat.",
+    "Ude hos andre medier: vises, ændrer ikke værdien.",
+    "Ubekræftet materiale: går til verifikation, ikke til forslag.",
+    "Ikke forelagt: mærkes; den vagthavende redaktør afgør."
+  ],
+  "threshold": 5,
+  "specific_places": [
+    "Nørrevang Strand",
+    "Sydhavnen",
+    "Tangsø Havn",
+    "Plejecenter Lunden",
+    "Plejecenter Bakkely",
+    "Vestsygehuset",
+    "Nørrevang Skole",
+    "Nørrevang Idrætshal",
+    "Egeby Syd"
+  ],
+  "rules_note": "Reglerne er skrevet til prototypen og er antagelser om tre slags redaktioner. De rigtige regler skriver redaktionen.",
+  "time_note": "Et funds tidspunkt er, hvornår redaktionens system hentede det, ikke hvornår afsenderen skrev det.",
+  "coverage": "Alle tre redaktioner er landsdækkende. Morgenens 120 kilder er det, der kommer ind fra én region, Region Vest, sammen med landsstof fra bureauet. En historie skal række ud over det lokale for at være en historie her.",
+  "scope": [
+    "Én morgen fra kl. 06 til 09.",
+    "120 kilder fra én region og landsstof fra bureauet.",
+    "Tre landsdækkende redaktionstyper.",
+    "Kun begivenheder, der er nye denne morgen; ingen opfølgning på gårsdagens historier.",
+    "Kun kilder i tekst; ingen billeder, lyd eller video."
+  ],
+  "common_names": [
+    "Bekendtgørelsesportalen",
+    "Beredskab Vest",
+    "Dagbladet Tiden",
+    "Egeby",
+    "Egeby Kommune",
+    "Lindholt",
+    "Lindholt Kommune",
+    "Nyhedsbureauet",
+    "Nørrevang",
+    "Nørrevang Kommune",
+    "Politiet i Vest",
+    "Region Vest",
+    "Region Vest",
+    "Statistikkontoret",
+    "Sønderholt",
+    "Sønderholt Kommune",
+    "Tangsø",
+    "Tangsø Kommune",
+    "Tilsynsstyrelsen",
+    "Trafikcentralen",
+    "Varslingstjenesten",
+    "Vestposten"
+  ],
+  "common_names_note": "Navne, der er for almindelige til at koble dokumenter på: kommuner, byer, bureauer, medier og myndigheder, der optræder overalt.",
+  "roles": {
+    "vagtchef": "Vagthavende redaktør",
+    "journalist": "Journalist"
+  },
+  "roles_note": "Betegnelsen for den, der fordeler historierne, er en antagelse.",
+  "users": {
+    "F": {
+      "vagtchef": "R. Kjær",
+      "journalist": "M. Holm"
+    },
+    "M": {
+      "vagtchef": "H. Bay",
+      "journalist": "K. Friis"
+    },
+    "E": {
+      "vagtchef": "T. Skaarup",
+      "journalist": "L. Winther"
+    }
+  },
+  "users_note": "Opdigtede brugere. Den, der er logget ind, afgør, hvilke knapper og hvilke forslag man ser.",
+  "channel_methods": {
+    "Pressemeddelelse": "E-mail",
+    "Telegram": "API",
+    "Offentligt dokument": "Webscrape",
+    "Andet medie": "RSS",
+    "Sociale medier": "API",
+    "Trafikmelding": "API",
+    "Døgnrapport": "Webscrape",
+    "Statistik": "API",
+    "Retsliste": "Webscrape",
+    "Høringssvar": "Webscrape",
+    "Regnskabsmeddelelse": "API",
+    "Offentlig bekendtgørelse": "Webscrape",
+    "Brev fra institution": "E-mail"
+  },
+  "mock_trends": {
+    "note": "Eksempeltal til mock-up'en af mål-skærmen. Ikke målt; prototypen dækker én morgen.",
+    "weeks": [
+      "uge 39",
+      "uge 40",
+      "uge 41",
+      "uge 42",
+      "uge 43",
+      "uge 44",
+      "uge 45",
+      "uge 46"
+    ],
+    "cards": {
+      "use": [
+        {
+          "title": "Andel af forslag, der bliver taget",
+          "unit": "%",
+          "why": "Viser, om forslagene er gode nok til at blive brugt. Falder den, er der for meget støj.",
+          "values": [
+            18,
+            22,
+            25,
+            24,
+            29,
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "title": "Medarbejdere, der bruger platformen hver uge",
+          "unit": "",
+          "why": "Viser, om brugen breder sig ud over de første brugere. Det er udbredelsen, der afgør gevinsten.",
+          "values": [
+            4,
+            6,
+            7,
+            9,
+            9,
+            11,
+            12,
+            12
+          ]
+        }
+      ],
+      "quality": [
+        {
+          "title": "Andel af forslag, redaktionen fravælger",
+          "unit": "%",
+          "why": "Et tidligt varsel: stiger den, er sprogmodellen eller kildematerialet skredet.",
+          "values": [
+            41,
+            38,
+            35,
+            36,
+            31,
+            29,
+            27,
+            25
+          ]
+        },
+        {
+          "title": "Historier meldt som oversete",
+          "unit": "",
+          "why": "Det, platformen ikke fandt. Hver melding bliver et nyt eksempel i eval-suiten.",
+          "values": [
+            9,
+            8,
+            8,
+            6,
+            5,
+            5,
+            4,
+            3
+          ]
+        },
+        {
+          "title": "Andel af udkastets sætninger, der udgives uændret",
+          "unit": "%",
+          "why": "Viser, hvor meget journalisten må rette. En lav andel betyder, at udkastet koster mere tid, end det sparer.",
+          "values": [
+            38,
+            42,
+            45,
+            51,
+            55,
+            58,
+            60,
+            63
+          ]
+        }
+      ],
+      "effect": [
+        {
+          "title": "Minutter fra første kilde til taget historie",
+          "unit": "min.",
+          "why": "Viser, om historierne bliver opdaget hurtigere. Det er use casens mål.",
+          "values": [
+            21,
+            19,
+            16,
+            17,
+            14,
+            12,
+            11,
+            9
+          ]
+        },
+        {
+          "title": "Udgivne historier, der begyndte som forslag",
+          "unit": "",
+          "why": "Viser, om platformen fører til journalistik og ikke kun til forslag.",
+          "values": [
+            3,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            14
+          ]
+        }
+      ],
+      "ops": [
+        {
+          "title": "Pris pr. dag",
+          "unit": "kr.",
+          "why": "Viser, hvad platformen koster at holde kørende, uanset hvor meget den bliver brugt.",
+          "values": [
+            940,
+            910,
+            880,
+            860,
+            790,
+            760,
+            720,
+            690
+          ]
+        },
+        {
+          "title": "Pris pr. taget forslag",
+          "unit": "kr.",
+          "why": "Det tal, der siger, om platformen kan betale sig.",
+          "values": [
+            14,
+            12,
+            11,
+            11,
+            9,
+            8,
+            8,
+            7
+          ]
+        },
+        {
+          "title": "Kald til sprogmodellen pr. kilde",
+          "unit": "",
+          "why": "Skal ligge stabilt, fordi forbruget følger mængden af kildemateriale. Stiger tallet, bruger systemet flere kald på samme mængde, og det er et tegn på en fejl eller en dyrere opsætning.",
+          "values": [
+            1.9,
+            1.9,
+            1.8,
+            1.9,
+            2.0,
+            1.9,
+            1.9,
+            1.9
+          ]
+        },
+        {
+          "title": "Minutter fra kilde til forslag",
+          "unit": "min.",
+          "why": "En nyhed mister værdi med tiden. Stiger svartiden, kommer forslagene for sent.",
+          "values": [
+            6,
+            5,
+            5,
+            4,
+            4,
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "title": "Andel af kald, der fejlede",
+          "unit": "%",
+          "why": "Fejl i driften betyder kilder, der ikke bliver vurderet, uden at nogen ser det.",
+          "values": [
+            4,
+            3,
+            3,
+            2,
+            2,
+            2,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  }
+}

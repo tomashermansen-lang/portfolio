@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "8ff21117b732813dd724bcbdb874c0f24ca54466c0cf2b928dee532937b0986c",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:59+00:00",
+  "id": "N-078",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal skolekonkurrence, tredjeplads; ingen bred rækkevidde eller kuriosum.\", \"M\": \"Ingen politik, forvaltning eller svigt; rent lokalt skolestof.\", \"E\": \"Ingen erhvervsrelevans, regulering eller drift berørt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal skolekonkurrence, tredjeplads; ingen bred rækkevidde eller kuriosum.",
+      "M": "Ingen politik, forvaltning eller svigt; rent lokalt skolestof.",
+      "E": "Ingen erhvervsrelevans, regulering eller drift berørt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

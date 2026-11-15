@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "1dec8e894d6ae65fe093e14f4303d7453a0980a45b5ff537e33862f7ec588dd1",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:35+00:00",
+  "id": "N-065",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt dyrskue med datoer næste år; kuriøst præg, men intet haster eller rammer mange.\", \"M\": \"Ingen politik, forvaltning eller myndighedssvigt; rent lokalt arrangement.\", \"E\": \"Ingen erhvervsmæssig vinkel, regnskab eller regulering; rutinemeddelelse om dyrskue.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt dyrskue med datoer næste år; kuriøst præg, men intet haster eller rammer mange.",
+      "M": "Ingen politik, forvaltning eller myndighedssvigt; rent lokalt arrangement.",
+      "E": "Ingen erhvervsmæssig vinkel, regnskab eller regulering; rutinemeddelelse om dyrskue."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

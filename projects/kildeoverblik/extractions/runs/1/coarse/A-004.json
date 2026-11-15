@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "8be29010ca328b4b6e4a0a5cd694d8707054bf49ded1db576139f4ca25d6dd10",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:13+00:00",
+  "id": "A-004",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Positiv tilsynsrapport om lokalt plejecenter; rammer ikke mange læsere i dag.\", \"M\": \"Offentligt tilsyn, men udtrykket er positivt og lokalt; ingen svigt synlige i uddraget.\", \"E\": \"Ingen erhvervsvinkel; lokalt plejecenter uden regnskab, fyringer eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Positiv tilsynsrapport om lokalt plejecenter; rammer ikke mange læsere i dag.",
+      "M": "Offentligt tilsyn, men udtrykket er positivt og lokalt; ingen svigt synlige i uddraget.",
+      "E": "Ingen erhvervsvinkel; lokalt plejecenter uden regnskab, fyringer eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

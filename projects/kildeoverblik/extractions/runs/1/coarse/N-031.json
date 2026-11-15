@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "8659d71c88f8b10476a2fad2eb67b1b3dcf2a973593a12e0535eb36d00ab55a1",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:38+00:00",
+  "id": "N-031",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt bibliotek-arrangement næste uge; ingen bred påvirkning eller kuriøs vinkel i uddraget.\", \"M\": \"Rutinemæssig kulturinvitation uden forvaltningsmæssigt eller politisk indhold.\", \"E\": \"Ingen erhvervsmæssig vinkel; et forfatterarrangement på et bibliotek.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt bibliotek-arrangement næste uge; ingen bred påvirkning eller kuriøs vinkel i uddraget.",
+      "M": "Rutinemæssig kulturinvitation uden forvaltningsmæssigt eller politisk indhold.",
+      "E": "Ingen erhvervsmæssig vinkel; et forfatterarrangement på et bibliotek."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

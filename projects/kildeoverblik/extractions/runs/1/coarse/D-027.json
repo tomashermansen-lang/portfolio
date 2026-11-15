@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "91bc3196ce021cfff00e9ca8f8fcf6913c081fb98531f9db6a622a2f74a9e43f",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:36+00:00",
+  "id": "D-027",
+  "reply": "{\"scores\": {\"F\": 5, \"M\": 5, \"E\": 8}, \"why\": {\"F\": \"Konkurs med 85 ansatte rammer lokalt; ikke bredt for landets læsere.\", \"M\": \"Lokal konkurs, 85 job; ingen myndighedsvinkel synlig i uddraget.\", \"E\": \"Større konkurs: 85 ansatte, 212 mio. kr. omsætning, kurator bekræfter.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 5,
+      "M": 5,
+      "E": 8
+    },
+    "why": {
+      "F": "Konkurs med 85 ansatte rammer lokalt; ikke bredt for landets læsere.",
+      "M": "Lokal konkurs, 85 job; ingen myndighedsvinkel synlig i uddraget.",
+      "E": "Større konkurs: 85 ansatte, 212 mio. kr. omsætning, kurator bekræfter."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

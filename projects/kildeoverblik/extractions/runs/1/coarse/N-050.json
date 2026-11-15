@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "ae0f5a74ec4f4e5693570e7baf65f660c90a700b922174b64455a01a91ae03b3",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:07+00:00",
+  "id": "N-050",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Tre ladestandere ved rådhuset i en kommune; lokalt og uden bred rækkevidde.\", \"M\": \"Lokal kommunal pressemeddelelse om tre ladestandere; ingen myndighedssvigt eller bredere forvaltningssag.\", \"E\": \"Ingen virksomhedspåvirkning, regulering eller drift; kun små kommunale ladestandere.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Tre ladestandere ved rådhuset i en kommune; lokalt og uden bred rækkevidde.",
+      "M": "Lokal kommunal pressemeddelelse om tre ladestandere; ingen myndighedssvigt eller bredere forvaltningssag.",
+      "E": "Ingen virksomhedspåvirkning, regulering eller drift; kun små kommunale ladestandere."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

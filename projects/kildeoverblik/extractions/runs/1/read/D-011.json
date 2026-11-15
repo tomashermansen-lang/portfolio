@@ -1,0 +1,76 @@
+{
+  "prompt_sha256": "e0dad297692dd84420f51065bc54634999c22abeca4b609ae455b8215ec5d2bf",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:07+00:00",
+  "id": "D-011",
+  "reply": "{\"summary\": \"Vestkysttog indstiller togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18 uden togbusser, fordi kystvejen ventes lukket.\", \"facts\": [{\"text\": \"Vestkysttog indstiller togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18.\", \"quote\": \"indstiller Vestkysttog togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31.\", \"quote\": \"Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Der indsættes ikke togbusser på strækningen.\", \"quote\": \"Der indsættes ikke togbusser\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Vestkysttog venter, at kystvejen bliver lukket.\", \"quote\": \"da kystvejen ventes lukket\", \"statement\": true, \"speaker\": \"Vestkysttog\", \"accuses\": null}, {\"text\": \"Billetter og periodekort til strækningen kan refunderes.\", \"quote\": \"Billetter og periodekort til strækningen kan refunderes.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Vestkysttog begrunder indstillingen med hensyn til passagerernes og personalets sikkerhed.\", \"quote\": \"Af hensyn til passagerernes og personalets sikkerhed\", \"statement\": true, \"speaker\": \"Vestkysttog\", \"accuses\": null}], \"places\": [\"Tangsø\", \"Nørrevang\"], \"orgs\": [\"Vestkysttog\"], \"values\": {\"F\": {\"value\": 6, \"why\": \"Pendlere på kyststrækningen står uden tog fra onsdag kl. 18 og uden togbusser, men det gælder kun én strækning.\"}, \"M\": {\"value\": 3, \"why\": \"Enkeltstående trafikmelding om en regional strækning; ingen myndighedssvigt eller politik i kilden.\"}, \"E\": {\"value\": 5, \"why\": \"Togdriften på en strækning indstilles uden erstatning, men omfanget er lokalt, og kilden nævner ingen virksomhedsramte.\"}}}\n",
+  "parsed": {
+    "summary": "Vestkysttog indstiller togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18 uden togbusser, fordi kystvejen ventes lukket.",
+    "facts": [
+      {
+        "text": "Vestkysttog indstiller togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18.",
+        "quote": "indstiller Vestkysttog togdriften på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31.",
+        "quote": "Sidste afgang fra Tangsø mod nord er kl. 17.24, og sidste afgang fra Nørrevang mod syd er kl. 17.31.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Der indsættes ikke togbusser på strækningen.",
+        "quote": "Der indsættes ikke togbusser",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Vestkysttog venter, at kystvejen bliver lukket.",
+        "quote": "da kystvejen ventes lukket",
+        "statement": true,
+        "speaker": "Vestkysttog",
+        "accuses": null
+      },
+      {
+        "text": "Billetter og periodekort til strækningen kan refunderes.",
+        "quote": "Billetter og periodekort til strækningen kan refunderes.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Vestkysttog begrunder indstillingen med hensyn til passagerernes og personalets sikkerhed.",
+        "quote": "Af hensyn til passagerernes og personalets sikkerhed",
+        "statement": true,
+        "speaker": "Vestkysttog",
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Tangsø",
+      "Nørrevang"
+    ],
+    "orgs": [
+      "Vestkysttog"
+    ],
+    "values": {
+      "F": {
+        "value": 6,
+        "why": "Pendlere på kyststrækningen står uden tog fra onsdag kl. 18 og uden togbusser, men det gælder kun én strækning."
+      },
+      "M": {
+        "value": 3,
+        "why": "Enkeltstående trafikmelding om en regional strækning; ingen myndighedssvigt eller politik i kilden."
+      },
+      "E": {
+        "value": 5,
+        "why": "Togdriften på en strækning indstilles uden erstatning, men omfanget er lokalt, og kilden nævner ingen virksomhedsramte."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,69 @@
+{
+  "prompt_sha256": "6daae532c67a1b79f7e7fb807775fa41bbe141588a4bfc132a317848daa54ef6",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:57+00:00",
+  "id": "D-026",
+  "reply": "{\"summary\": \"Borgmester Jørgen Thybo i Sønderholt har i dag meldt sig ud af sit parti efter 19 års medlemskab, men fortsætter som borgmester uden for partierne og holder pressemøde kl. 11.\", \"facts\": [{\"text\": \"Borgmesteren oplyser, at han i dag har meldt sig ud af sit parti.\", \"quote\": \"har jeg i dag meldt mig ud af mit parti\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Borgmesteren fortsætter i embedet i Sønderholt som løsgænger.\", \"quote\": \"Jeg fortsætter som borgmester i Sønderholt som løsgænger.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Borgmesteren begrunder udmeldelsen med en uenighed med landsledelsen om kommunernes økonomi.\", \"quote\": \"uenigheden med landsledelsen om kommunernes økonomi er blevet for stor\", \"statement\": true, \"speaker\": \"Jørgen Thybo\", \"accuses\": null}, {\"text\": \"Borgmesteren oplyser, at han i morges orienterede byrådets gruppeformænd.\", \"quote\": \"Jeg har orienteret byrådets gruppeformænd i morges\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Borgmesteren vil svare på spørgsmål på et pressemøde på rådhuset kl. 11.\", \"quote\": \"vil svare på spørgsmål på et pressemøde på rådhuset kl. 11\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Sønderholt\"], \"orgs\": [\"byrådet\", \"landsledelsen\"], \"values\": {\"F\": {\"value\": 3, \"why\": \"Partiskifte hos en enkelt borgmester rammer ikke mange læsere i dag; politisk nyhed uden bred hverdagsrelevans.\"}, \"M\": {\"value\": 7, \"why\": \"Borgmester forlader parti i strid med landsledelsen om kommunernes økonomi; pressemøde kl. 11 giver opfølgning.\"}, \"E\": {\"value\": 2, \"why\": \"Politisk partiskifte uden direkte konsekvenser for virksomheder; kommuneøkonomien nævnes kun som baggrund.\"}}}\n",
+  "parsed": {
+    "summary": "Borgmester Jørgen Thybo i Sønderholt har i dag meldt sig ud af sit parti efter 19 års medlemskab, men fortsætter som borgmester uden for partierne og holder pressemøde kl. 11.",
+    "facts": [
+      {
+        "text": "Borgmesteren oplyser, at han i dag har meldt sig ud af sit parti.",
+        "quote": "har jeg i dag meldt mig ud af mit parti",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Borgmesteren fortsætter i embedet i Sønderholt som løsgænger.",
+        "quote": "Jeg fortsætter som borgmester i Sønderholt som løsgænger.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Borgmesteren begrunder udmeldelsen med en uenighed med landsledelsen om kommunernes økonomi.",
+        "quote": "uenigheden med landsledelsen om kommunernes økonomi er blevet for stor",
+        "statement": true,
+        "speaker": "Jørgen Thybo",
+        "accuses": null
+      },
+      {
+        "text": "Borgmesteren oplyser, at han i morges orienterede byrådets gruppeformænd.",
+        "quote": "Jeg har orienteret byrådets gruppeformænd i morges",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Borgmesteren vil svare på spørgsmål på et pressemøde på rådhuset kl. 11.",
+        "quote": "vil svare på spørgsmål på et pressemøde på rådhuset kl. 11",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Sønderholt"
+    ],
+    "orgs": [
+      "byrådet",
+      "landsledelsen"
+    ],
+    "values": {
+      "F": {
+        "value": 3,
+        "why": "Partiskifte hos en enkelt borgmester rammer ikke mange læsere i dag; politisk nyhed uden bred hverdagsrelevans."
+      },
+      "M": {
+        "value": 7,
+        "why": "Borgmester forlader parti i strid med landsledelsen om kommunernes økonomi; pressemøde kl. 11 giver opfølgning."
+      },
+      "E": {
+        "value": 2,
+        "why": "Politisk partiskifte uden direkte konsekvenser for virksomheder; kommuneøkonomien nævnes kun som baggrund."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,184 @@
+[
+ {
+  "time": "06.12",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "take",
+  "find": "D-001",
+  "assign": "M. Holm",
+  "note": "Web ude 06.20 · app 06.21"
+ },
+ {
+  "time": "06.18",
+  "desk": "M",
+  "who": "H. Bay",
+  "action": "take",
+  "find": "D-001",
+  "assign": "K. Friis",
+  "note": "Web ude 06.24"
+ },
+ {
+  "time": "06.41",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "dismiss",
+  "find": "D-003",
+  "why": "Ikke en historie hos os."
+ },
+ {
+  "time": "06.50",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "approve_link",
+  "find": "D-006",
+  "to": "A-001"
+ },
+ {
+  "time": "06.55",
+  "desk": "M",
+  "who": "H. Bay",
+  "action": "approve_link",
+  "find": "D-006",
+  "to": "A-001"
+ },
+ {
+  "time": "06.56",
+  "desk": "F",
+  "who": "M. Holm",
+  "action": "research",
+  "find": "D-006",
+  "text": "Kommunens og digelagets svar på udskydelserne: afventer. M. Holm ringer."
+ },
+ {
+  "time": "07.02",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "take",
+  "find": "D-008",
+  "assign": "S. Krag",
+  "note": "Web planlagt 08.00"
+ },
+ {
+  "time": "07.02",
+  "desk": "E",
+  "who": "T. Skaarup",
+  "action": "dismiss",
+  "find": "D-007",
+  "why": "En regional havn lukket i tolv timer. Højst en notits."
+ },
+ {
+  "time": "07.04",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "take",
+  "find": "D-009",
+  "assign": "P. Lund",
+  "note": "Web ude 07.10"
+ },
+ {
+  "time": "07.08",
+  "desk": "E",
+  "who": "T. Skaarup",
+  "action": "dismiss",
+  "find": "D-009",
+  "why": "Togdrift er ikke erhvervsstof."
+ },
+ {
+  "time": "07.12",
+  "desk": "E",
+  "who": "L. Winther",
+  "action": "take",
+  "find": "D-010",
+  "assign": "L. Winther",
+  "note": "Web ude 07.25"
+ },
+ {
+  "time": "07.14",
+  "desk": "M",
+  "who": "H. Bay",
+  "action": "take",
+  "find": "D-010",
+  "assign": "J. Ravn"
+ },
+ {
+  "time": "07.20",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "dismiss",
+  "find": "D-012",
+  "why": "Lokal trafikmelding."
+ },
+ {
+  "time": "07.33",
+  "desk": "E",
+  "who": "K. Dam",
+  "action": "take",
+  "find": "D-017",
+  "assign": "K. Dam",
+  "note": "Web planlagt 07.45"
+ },
+ {
+  "time": "07.50",
+  "desk": "M",
+  "who": "H. Bay",
+  "action": "dismiss",
+  "find": "D-018",
+  "why": "Høringssvar i én region. Ikke landsstof."
+ },
+ {
+  "time": "08.10",
+  "desk": "F",
+  "who": "M. Holm",
+  "action": "verify_reject",
+  "find": "D-016",
+  "why": "Videoen er fra en anden storm."
+ },
+ {
+  "time": "08.30",
+  "desk": "M",
+  "who": "K. Friis",
+  "action": "missing",
+  "find": "D-015",
+  "why": "Ventetiden på akutmodtagelsen er fordoblet. Det stod midt i en kvartalsrapport."
+ },
+ {
+  "time": "08.35",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "dismiss",
+  "find": "N-034",
+  "why": "Råd fra et dyreinternat. Ikke en historie."
+ },
+ {
+  "time": "08.36",
+  "desk": "F",
+  "who": "R. Kjær",
+  "action": "dismiss",
+  "find": "N-067",
+  "why": "Råd fra et forsikringsselskab. Ikke en historie."
+ },
+ {
+  "time": "08.40",
+  "desk": "F",
+  "who": "S. Krag",
+  "action": "missing",
+  "find": "D-004",
+  "why": "Skolen lukker i to uger. Det stod i andet afsnit."
+ },
+ {
+  "time": "08.45",
+  "desk": "M",
+  "who": "K. Friis",
+  "action": "missing",
+  "find": "D-022",
+  "why": "Afdelingen lukker efter et påbud fra tilsynet. Meddelelsen kaldte det en omlægning."
+ },
+ {
+  "time": "08.50",
+  "desk": "E",
+  "who": "L. Winther",
+  "action": "missing",
+  "find": "D-025",
+  "why": "12 af 31 filialer lukker. Det stod sidst i meddelelsen."
+ }
+]

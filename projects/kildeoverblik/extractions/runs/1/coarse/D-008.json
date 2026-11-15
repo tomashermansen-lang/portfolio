@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "2851409b9d90036a482ee1353d1b7f637612ca2bbeae5494564304643638fb97",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:30+00:00",
+  "id": "D-008",
+  "reply": "{\"scores\": {\"F\": 8, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Uhentet gevinst på 42 mio., frist lørdag, kiosk i Lindholt – klassisk læsertræk.\", \"M\": \"Kuriøs gevinstsag uden forvaltningsvinkel; lav vægt.\", \"E\": \"Lotterigevinst uden erhvervs- eller reguleringsvinkel i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 8,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Uhentet gevinst på 42 mio., frist lørdag, kiosk i Lindholt – klassisk læsertræk.",
+      "M": "Kuriøs gevinstsag uden forvaltningsvinkel; lav vægt.",
+      "E": "Lotterigevinst uden erhvervs- eller reguleringsvinkel i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

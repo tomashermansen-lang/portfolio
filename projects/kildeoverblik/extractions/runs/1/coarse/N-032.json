@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "225a60c8182909d29fd8a8d4664bc3d402a65db12a4375c6474b3c2ff766ab72",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:41+00:00",
+  "id": "N-032",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Rutinemæssig fartkontrol, lokalt, 11 sigtede, højeste 68 km/t; ingen bred relevans.\", \"M\": \"Enkeltstående trafikmelding uden forvaltningsmæssig vinkel eller bredere betydning.\", \"E\": \"Ingen erhvervsvinkel; almindelig færdselskontrol uden påvirkning af virksomheder eller transport.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinemæssig fartkontrol, lokalt, 11 sigtede, højeste 68 km/t; ingen bred relevans.",
+      "M": "Enkeltstående trafikmelding uden forvaltningsmæssig vinkel eller bredere betydning.",
+      "E": "Ingen erhvervsvinkel; almindelig færdselskontrol uden påvirkning af virksomheder eller transport."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,56 @@
+{
+  "prompt_sha256": "4d3d95ceefcd8d57bd3be5f3eedaa254e6455f2ea806a8909aaf4f12a28203a0",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:05+00:00",
+  "id": "D-009",
+  "reply": "{\"summary\": \"Vestkysttog stopper al togdrift mellem Tangsø og Nørrevang fra onsdag kl. 18 på grund af den varslede storm og stormflod, og omkring 6.000 daglige rejsende berøres.\", \"facts\": [{\"text\": \"Vestkysttog indstiller al togdrift mellem Tangsø og Nørrevang fra onsdag kl. 18, og begrundelsen er den varslede storm og stormflod.\", \"quote\": \"Vestkysttog indstiller al togdrift på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18 på grund af den varslede storm og stormflod\", \"statement\": true, \"speaker\": \"Lise Thorup, pressechef\", \"accuses\": null}, {\"text\": \"Selskabet forventer at genoptage driften torsdag formiddag, når sporene er efterset.\", \"quote\": \"Selskabet regner med at genoptage driften torsdag formiddag, når sporene er efterset\", \"statement\": true, \"speaker\": \"Vestkysttog\", \"accuses\": null}, {\"text\": \"Omkring 6.000 daglige rejsende berøres af driftsstoppet.\", \"quote\": \"Omkring 6.000 daglige rejsende berøres\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Tangsø\", \"Nørrevang\"], \"orgs\": [\"Vestkysttog\", \"Nyhedsbureauet\"], \"values\": {\"F\": {\"value\": 7, \"why\": \"Storm og stormflod rammer i nat og i morgen; et driftsstop berører omkring 6.000 daglige rejsende.\"}, \"M\": {\"value\": 4, \"why\": \"Forsigtighedsstop ved storm, ingen myndighedssvigt; regional trafikmelding med lav vægt, men mange borgere berøres.\"}, \"E\": {\"value\": 6, \"why\": \"Togdriften på en hel strækning lukkes midlertidigt; transportdriften rammes, men varslet er kort og afgrænset.\"}}}\n",
+  "parsed": {
+    "summary": "Vestkysttog stopper al togdrift mellem Tangsø og Nørrevang fra onsdag kl. 18 på grund af den varslede storm og stormflod, og omkring 6.000 daglige rejsende berøres.",
+    "facts": [
+      {
+        "text": "Vestkysttog indstiller al togdrift mellem Tangsø og Nørrevang fra onsdag kl. 18, og begrundelsen er den varslede storm og stormflod.",
+        "quote": "Vestkysttog indstiller al togdrift på kyststrækningen mellem Tangsø og Nørrevang fra onsdag kl. 18 på grund af den varslede storm og stormflod",
+        "statement": true,
+        "speaker": "Lise Thorup, pressechef",
+        "accuses": null
+      },
+      {
+        "text": "Selskabet forventer at genoptage driften torsdag formiddag, når sporene er efterset.",
+        "quote": "Selskabet regner med at genoptage driften torsdag formiddag, når sporene er efterset",
+        "statement": true,
+        "speaker": "Vestkysttog",
+        "accuses": null
+      },
+      {
+        "text": "Omkring 6.000 daglige rejsende berøres af driftsstoppet.",
+        "quote": "Omkring 6.000 daglige rejsende berøres",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Tangsø",
+      "Nørrevang"
+    ],
+    "orgs": [
+      "Vestkysttog",
+      "Nyhedsbureauet"
+    ],
+    "values": {
+      "F": {
+        "value": 7,
+        "why": "Storm og stormflod rammer i nat og i morgen; et driftsstop berører omkring 6.000 daglige rejsende."
+      },
+      "M": {
+        "value": 4,
+        "why": "Forsigtighedsstop ved storm, ingen myndighedssvigt; regional trafikmelding med lav vægt, men mange borgere berøres."
+      },
+      "E": {
+        "value": 6,
+        "why": "Togdriften på en hel strækning lukkes midlertidigt; transportdriften rammes, men varslet er kort og afgrænset."
+      }
+    }
+  },
+  "parse_error": null
+}

@@ -1,0 +1,159 @@
+{
+  "prompt_sha256": "d9f6afa928651ac808b89a2366ed377c61d54de7d59df472511fcd8bca85fb53",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:16+00:00",
+  "desk": "E",
+  "group": 15,
+  "finds": [
+    "D-013",
+    "D-027"
+  ],
+  "facts": [
+    {
+      "text": "Skifteretten i Egeby afsagde den 10. november 2026 konkursdekret over Halvor & Søn A/S.",
+      "quote": "Skifteretten i Egeby har den 10. november 2026 afsagt konkursdekret over Halvor & Søn A/S",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-013",
+      "no": 1
+    },
+    {
+      "text": "Virksomheden har adressen Industrivej 14 i Lindholt og CVR-nummer 99 00 14 21.",
+      "quote": "CVR-nr. 99 00 14 21, Industrivej 14, Lindholt",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-013",
+      "no": 2
+    },
+    {
+      "text": "Fristdagen i sagen er den 2. november 2026.",
+      "quote": "Fristdag er den 2. november 2026.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-013",
+      "no": 3
+    },
+    {
+      "text": "Kurator i konkursboet er advokat Morten Skov, Torvet 3, Egeby.",
+      "quote": "Kurator: advokat Morten Skov, Torvet 3, Egeby.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-013",
+      "no": 4
+    },
+    {
+      "text": "Krav i boet skal anmeldes til kurator.",
+      "quote": "Krav anmeldes til kurator.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-013",
+      "no": 5
+    },
+    {
+      "text": "Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs, og kurator Morten Skov bekræfter det over for Nyhedsbureauet.",
+      "quote": "Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs. Det bekræfter kurator Morten Skov over for Nyhedsbureauet.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-027",
+      "no": 6
+    },
+    {
+      "text": "Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.",
+      "quote": "Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-027",
+      "no": 7
+    },
+    {
+      "text": "Medarbejderne blev orienteret tirsdag eftermiddag.",
+      "quote": "Medarbejderne blev orienteret tirsdag eftermiddag.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-027",
+      "no": 8
+    },
+    {
+      "text": "Kurator vil nu undersøge, om dele af virksomheden kan sælges.",
+      "quote": "Kurator vil nu undersøge, om dele af virksomheden kan sælges.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-027",
+      "no": 9
+    }
+  ],
+  "reply": "{\"angle\": \"Halvor & Søn konkurs: Kurator undersøger, om dele kan sælges\", \"web\": [{\"s\": \"Skifteretten i Egeby afsagde den 10. november 2026 konkursdekret over Halvor & Søn A/S.\", \"facts\": [1]}, {\"s\": \"Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs, og det bekræfter kurator Morten Skov over for Nyhedsbureauet.\", \"facts\": [6]}, {\"s\": \"Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.\", \"facts\": [7]}, {\"s\": \"Kurator vil nu undersøge, om dele af virksomheden kan sælges.\", \"facts\": [9]}, {\"s\": \"Krav i boet skal anmeldes til kurator, som er advokat Morten Skov, Torvet 3, Egeby.\", \"facts\": [4, 5]}], \"notification\": {\"s\": \"Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs; 85 ansatte\", \"facts\": [6, 7]}, \"audio\": [{\"s\": \"Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs, og det bekræfter kurator Morten Skov over for Nyhedsbureauet.\", \"facts\": [6]}, {\"s\": \"Firmaet har 85 ansatte og omsatte sidste år for 212 millioner kroner.\", \"facts\": [7]}, {\"s\": \"Kurator vil nu undersøge, om dele af virksomheden kan sælges.\", \"facts\": [9]}]}\n",
+  "parsed": {
+    "angle": "Halvor & Søn konkurs: Kurator undersøger, om dele kan sælges",
+    "web": [
+      {
+        "s": "Skifteretten i Egeby afsagde den 10. november 2026 konkursdekret over Halvor & Søn A/S.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs, og det bekræfter kurator Morten Skov over for Nyhedsbureauet.",
+        "facts": [
+          6
+        ]
+      },
+      {
+        "s": "Firmaet har 85 ansatte og omsatte sidste år for 212 mio. kr.",
+        "facts": [
+          7
+        ]
+      },
+      {
+        "s": "Kurator vil nu undersøge, om dele af virksomheden kan sælges.",
+        "facts": [
+          9
+        ]
+      },
+      {
+        "s": "Krav i boet skal anmeldes til kurator, som er advokat Morten Skov, Torvet 3, Egeby.",
+        "facts": [
+          4,
+          5
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs; 85 ansatte",
+      "facts": [
+        6,
+        7
+      ]
+    },
+    "audio": [
+      {
+        "s": "Byggefirmaet Halvor & Søn i Lindholt er erklæret konkurs, og det bekræfter kurator Morten Skov over for Nyhedsbureauet.",
+        "facts": [
+          6
+        ]
+      },
+      {
+        "s": "Firmaet har 85 ansatte og omsatte sidste år for 212 millioner kroner.",
+        "facts": [
+          7
+        ]
+      },
+      {
+        "s": "Kurator vil nu undersøge, om dele af virksomheden kan sælges.",
+        "facts": [
+          9
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

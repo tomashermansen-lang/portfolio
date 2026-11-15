@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "095ca575e352c3188ff4a7b6b6adae3457366e9c932d739d9aac4cfcd28216c6",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:16+00:00",
+  "id": "A-007",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Rutinereferat fra lokalt udvalgsmøde; intet der rammer læsere i dag.\", \"M\": \"Kun formalia (dagsorden, meddelelser) i uddraget; ingen sag eller forvaltningsfejl synlig.\", \"E\": \"Ingen virksomhedsrelevans, regulering eller nøgletal i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Rutinereferat fra lokalt udvalgsmøde; intet der rammer læsere i dag.",
+      "M": "Kun formalia (dagsorden, meddelelser) i uddraget; ingen sag eller forvaltningsfejl synlig.",
+      "E": "Ingen virksomhedsrelevans, regulering eller nøgletal i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

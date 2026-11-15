@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "5172b2837f7d5e18e26a4aa354501ef3d95d832e7ea4e0a646de3f9a116288ca",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:47+00:00",
+  "from": "D-010",
+  "to": "A-019",
+  "shared": "Tangsø Energi",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om lukningen af Tangsø Energis fabrik og de 240 fyringer, mens arkivdokumentet fra 2023 handler om en toårig sponsoraftale med håndboldklubben, og det uddyber eller ændrer ikke fyringshistorien.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om lukningen af Tangsø Energis fabrik og de 240 fyringer, mens arkivdokumentet fra 2023 handler om en toårig sponsoraftale med håndboldklubben, og det uddyber eller ændrer ikke fyringshistorien.",
+    "facts": []
+  },
+  "parse_error": null
+}

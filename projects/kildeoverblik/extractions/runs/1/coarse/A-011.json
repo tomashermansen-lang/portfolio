@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "cf17dea9c7932e9b4ab9bf31c2a811262adac331a6a8497f31f456832e01f892",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:20+00:00",
+  "id": "A-011",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Lokalt firmajubilæum uden bredere læserinteresse eller kuriøst element.\", \"M\": \"Ingen forvaltning, politik eller myndighedssvigt; rent lokalt jubilæum.\", \"E\": \"Lille entreprenørfirma fylder 25 år; ingen regnskab, lukning eller fyring.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokalt firmajubilæum uden bredere læserinteresse eller kuriøst element.",
+      "M": "Ingen forvaltning, politik eller myndighedssvigt; rent lokalt jubilæum.",
+      "E": "Lille entreprenørfirma fylder 25 år; ingen regnskab, lukning eller fyring."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

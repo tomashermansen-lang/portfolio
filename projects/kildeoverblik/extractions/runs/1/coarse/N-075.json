@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "0c9ed4348fd344156439f566e26d40fb27af23111ca67d648d52faedfeab57b4",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:56+00:00",
+  "id": "N-075",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Kuriøs lokal isnyhed, men kun en produktlancering uden bredere læserrelevans.\", \"M\": \"Ren produktlancering fra lokalt gårdmejeri uden politik eller forvaltning.\", \"E\": \"Småt produktlancering uden økonomisk afvigelse, lukning eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Kuriøs lokal isnyhed, men kun en produktlancering uden bredere læserrelevans.",
+      "M": "Ren produktlancering fra lokalt gårdmejeri uden politik eller forvaltning.",
+      "E": "Småt produktlancering uden økonomisk afvigelse, lukning eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,71 @@
+{
+  "prompt_sha256": "57c819bc7de013756f9dc369c13db7fc436b2d29aec06ed7ed5434c1bbd35feb",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:29+00:00",
+  "id": "N-051",
+  "reply": "{\"summary\": \"Egeby Kommune beder på grund af stormen bilister om at undgå at parkere under store træer på tre steder fra i aften til torsdag morgen.\", \"facts\": [{\"text\": \"Stormen når Egeby i aften.\", \"quote\": \"Stormen når også Egeby i aften.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Bilister bedes om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften til torsdag morgen, hvis det kan undgås.\", \"quote\": \"Vi beder derfor bilister om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften og til torsdag morgen, hvis det kan undgås.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Borgere opfordres til at tage skraldespande, trampoliner og havemøbler ind eller binde dem fast.\", \"quote\": \"Tag også skraldespande, trampoliner og havemøbler ind, eller bind dem fast.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Kommunens folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.\", \"quote\": \"Vores folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Borgere, der ser en gren på en sti, bedes give besked i kommunens app.\", \"quote\": \"Ser du en gren på en sti, så giv os besked i kommunens app.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Egeby\", \"Ringvejen\", \"Anlægsgade\", \"Rådhusparken\"], \"orgs\": [\"Egeby Kommune\"], \"values\": {\"F\": {\"value\": 5, \"why\": \"Stormadvarsel med praktiske råd til bilister og husejere i i nat, men kun én kommune.\"}, \"M\": {\"value\": 3, \"why\": \"Kommunal servicemeddelelse af lokal karakter; ingen svigt eller politik, og parkeringsbeskeder vægtes lavt.\"}, \"E\": {\"value\": 1, \"why\": \"Lokal stormadvarsel til borgere; ingen virksomheder, havne, transport eller energidrift nævnt som ramt.\"}}}\n",
+  "parsed": {
+    "summary": "Egeby Kommune beder på grund af stormen bilister om at undgå at parkere under store træer på tre steder fra i aften til torsdag morgen.",
+    "facts": [
+      {
+        "text": "Stormen når Egeby i aften.",
+        "quote": "Stormen når også Egeby i aften.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Bilister bedes om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften til torsdag morgen, hvis det kan undgås.",
+        "quote": "Vi beder derfor bilister om ikke at parkere under de store træer langs Ringvejen, i Anlægsgade og ved Rådhusparken fra i aften og til torsdag morgen, hvis det kan undgås.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Borgere opfordres til at tage skraldespande, trampoliner og havemøbler ind eller binde dem fast.",
+        "quote": "Tag også skraldespande, trampoliner og havemøbler ind, eller bind dem fast.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kommunens folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.",
+        "quote": "Vores folk kører rundt torsdag morgen og samler grene op fra veje og cykelstier.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Borgere, der ser en gren på en sti, bedes give besked i kommunens app.",
+        "quote": "Ser du en gren på en sti, så giv os besked i kommunens app.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Egeby",
+      "Ringvejen",
+      "Anlægsgade",
+      "Rådhusparken"
+    ],
+    "orgs": [
+      "Egeby Kommune"
+    ],
+    "values": {
+      "F": {
+        "value": 5,
+        "why": "Stormadvarsel med praktiske råd til bilister og husejere i i nat, men kun én kommune."
+      },
+      "M": {
+        "value": 3,
+        "why": "Kommunal servicemeddelelse af lokal karakter; ingen svigt eller politik, og parkeringsbeskeder vægtes lavt."
+      },
+      "E": {
+        "value": 1,
+        "why": "Lokal stormadvarsel til borgere; ingen virksomheder, havne, transport eller energidrift nævnt som ramt."
+      }
+    }
+  },
+  "parse_error": null
+}

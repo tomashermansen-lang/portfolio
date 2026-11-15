@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3752b103e61bb8fb92c80f8087bc94ed18a24ab3aee202e926cd443ca0c80c05",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:07+00:00",
+  "id": "N-006",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokal 2. divisions håndboldresultat fra i går; kun smal interesse, ingen kuriositet eller rekord.\", \"M\": \"Rent sportsreferat uden politik, forvaltning eller borgerrelevans.\", \"E\": \"Sportsresultat uden erhvervsmæssig vinkel.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal 2. divisions håndboldresultat fra i går; kun smal interesse, ingen kuriositet eller rekord.",
+      "M": "Rent sportsreferat uden politik, forvaltning eller borgerrelevans.",
+      "E": "Sportsresultat uden erhvervsmæssig vinkel."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

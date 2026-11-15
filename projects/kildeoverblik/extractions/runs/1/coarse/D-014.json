@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "1bebc1d5686d69f8990d644377e97ad10e96bd9dec0dd9499e34ee57e9543560",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:50+00:00",
+  "id": "D-014",
+  "reply": "{\"scores\":{\"F\":9,\"M\":6,\"E\":6},\"why\":{\"F\":\"Højeste stormflodsvarsel i nat rammer mange langs vestkysten; haster, vejr og advarsel.\",\"M\":\"Myndighedsvarsel og beredskab kan blive stort, men uddraget er mest lokalt og forberedende.\",\"E\":\"Havn og butikker i Tangsø rammes; erhvervspåvirkning mulig, men uddraget viser kun vinduesplader.\"},\"unverified\":false}\n",
+  "parsed": {
+    "scores": {
+      "F": 9,
+      "M": 6,
+      "E": 6
+    },
+    "why": {
+      "F": "Højeste stormflodsvarsel i nat rammer mange langs vestkysten; haster, vejr og advarsel.",
+      "M": "Myndighedsvarsel og beredskab kan blive stort, men uddraget er mest lokalt og forberedende.",
+      "E": "Havn og butikker i Tangsø rammes; erhvervspåvirkning mulig, men uddraget viser kun vinduesplader."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

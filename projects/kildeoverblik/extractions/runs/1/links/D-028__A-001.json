@@ -1,0 +1,44 @@
+{
+  "prompt_sha256": "a906ddee55257d3f55be6c10bafe336bb9167983cd18e33f82924d44860b7205",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:59+00:00",
+  "from": "D-028",
+  "to": "A-001",
+  "shared": "Nørrevang Strand",
+  "reply": "{\"related\": true, \"why\": \"Arkivdokumentet viser, at kommunen gentagne gange har påbudt udbedring af netop det dige ved Nørrevang Strand, som beboerne nu evakueres bagved, og at udbedringen er blevet udskudt, hvilket er direkte baggrund for dagens evakuering.\", \"facts\": [{\"text\": \"Kommunen har siden 2022 givet digelaget tre påbud om at udbedre diget ved Nørrevang Strand, og påbuddene er ikke efterkommet.\", \"quote\": \"Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand. Påbuddene er ikke efterkommet.\", \"statement\": true, \"speaker\": \"Nørrevang Kommune (sagsfremstilling til Teknisk Udvalg)\", \"accuses\": \"digelaget\"}, {\"text\": \"Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.\", \"quote\": \"Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.\", \"statement\": true, \"speaker\": \"Forvaltningen i Nørrevang Kommune\", \"accuses\": null}, {\"text\": \"Udbedringen af diget er anslået til 11,5 mio. kr.\", \"quote\": \"Udbedringen er anslået til 11,5 mio. kr.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Teknisk Udvalg skal på mødet den 17. november 2026 drøfte status på kystsikringen.\", \"quote\": \"Punkt 14. Status på kystsikring.\", \"statement\": false, \"speaker\": null, \"accuses\": null}]}\n",
+  "parsed": {
+    "related": true,
+    "why": "Arkivdokumentet viser, at kommunen gentagne gange har påbudt udbedring af netop det dige ved Nørrevang Strand, som beboerne nu evakueres bagved, og at udbedringen er blevet udskudt, hvilket er direkte baggrund for dagens evakuering.",
+    "facts": [
+      {
+        "text": "Kommunen har siden 2022 givet digelaget tre påbud om at udbedre diget ved Nørrevang Strand, og påbuddene er ikke efterkommet.",
+        "quote": "Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand. Påbuddene er ikke efterkommet.",
+        "statement": true,
+        "speaker": "Nørrevang Kommune (sagsfremstilling til Teknisk Udvalg)",
+        "accuses": "digelaget"
+      },
+      {
+        "text": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+        "quote": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen.",
+        "statement": true,
+        "speaker": "Forvaltningen i Nørrevang Kommune",
+        "accuses": null
+      },
+      {
+        "text": "Udbedringen af diget er anslået til 11,5 mio. kr.",
+        "quote": "Udbedringen er anslået til 11,5 mio. kr.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Teknisk Udvalg skal på mødet den 17. november 2026 drøfte status på kystsikringen.",
+        "quote": "Punkt 14. Status på kystsikring.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ]
+  },
+  "parse_error": null
+}

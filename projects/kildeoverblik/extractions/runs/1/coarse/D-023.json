@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "2b1041964ecf7af3ace3ee93dc5b4b0c095901c930449d02159ba5677a619255",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:21+00:00",
+  "id": "D-023",
+  "reply": "{\"scores\": {\"F\": 7, \"M\": 6, \"E\": 8}, \"why\": {\"F\": \"Inflation hopper fra 2,6 til 3,4 pct., fødevarer dyrere; rammer alle forbrugere.\", \"M\": \"Højeste inflation siden 2024 rammer borgere, men statistik uden politisk eller forvaltningsmæssig vinkel i uddraget.\", \"E\": \"Nøgletal med kraftigt spring i inflation påvirker virksomheder, renter og priser; stærkt erhvervsstof.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 7,
+      "M": 6,
+      "E": 8
+    },
+    "why": {
+      "F": "Inflation hopper fra 2,6 til 3,4 pct., fødevarer dyrere; rammer alle forbrugere.",
+      "M": "Højeste inflation siden 2024 rammer borgere, men statistik uden politisk eller forvaltningsmæssig vinkel i uddraget.",
+      "E": "Nøgletal med kraftigt spring i inflation påvirker virksomheder, renter og priser; stærkt erhvervsstof."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

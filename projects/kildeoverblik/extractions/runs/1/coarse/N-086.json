@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "549ab42f9784d6b5fc535d2c69e5903720aded976754ea1a753315aa3c0b88ac",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:08+00:00",
+  "id": "N-086",
+  "reply": "{\"scores\": {\"F\": 4, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Hyggelig kuriøs dyrehistorie med alpakaunger, men ingen rekord eller stor læserrækkevidde.\", \"M\": \"Lokal dyrepark-nyhed uden politik, forvaltning eller samfundsrelevans.\", \"E\": \"Ingen erhvervsrelevans; ren pressemeddelelse om dyreunger.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 4,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Hyggelig kuriøs dyrehistorie med alpakaunger, men ingen rekord eller stor læserrækkevidde.",
+      "M": "Lokal dyrepark-nyhed uden politik, forvaltning eller samfundsrelevans.",
+      "E": "Ingen erhvervsrelevans; ren pressemeddelelse om dyreunger."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

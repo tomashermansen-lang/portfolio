@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "fc4384e002857dd26f1b9aedb7aee89c6302410684df07ce510961e0ee9d09d9",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:28+00:00",
+  "id": "N-024",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt teaterbilletsalg til børnestykke; ingen bred rækkevidde eller kuriositet.\", \"M\": \"Kulturel pressemeddelelse uden politik, forvaltning eller myndighedssvigt.\", \"E\": \"Ingen erhvervsmæssig vinkel; rutinemæssigt billetsalg for lille teater.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt teaterbilletsalg til børnestykke; ingen bred rækkevidde eller kuriositet.",
+      "M": "Kulturel pressemeddelelse uden politik, forvaltning eller myndighedssvigt.",
+      "E": "Ingen erhvervsmæssig vinkel; rutinemæssigt billetsalg for lille teater."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

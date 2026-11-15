@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "a383e1082c438a56b4d9195e7b8dc6e3d96f4b6890131d2562e933022a146a58",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:17+00:00",
+  "id": "N-014",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Lokalt butiksjubilæum lørdag med dagsarrangement; svag kuriøs værdi, ingen bred rækkevidde.\", \"M\": \"Rutinemæssig pressemeddelelse om jubilæum, ingen forvaltning eller politik.\", \"E\": \"Ingen regnskab, fyring, lukning eller regulering; kun lokal fejring.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt butiksjubilæum lørdag med dagsarrangement; svag kuriøs værdi, ingen bred rækkevidde.",
+      "M": "Rutinemæssig pressemeddelelse om jubilæum, ingen forvaltning eller politik.",
+      "E": "Ingen regnskab, fyring, lukning eller regulering; kun lokal fejring."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

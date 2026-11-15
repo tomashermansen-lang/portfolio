@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "0d4ba744571e753bf32487d651afc6d017cf21766ddf9ca6095d27c872f48cf4",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:30+00:00",
+  "id": "A-020",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 5}, \"why\": {\"F\": \"Rutinemæssig taksregulering på en havn; rammer ikke mange læsere i dag.\", \"M\": \"Lokal havnemyndighed og rutinetakster; ingen tegn på forvaltningssvigt eller bred betydning.\", \"E\": \"Havnetakster berører rederier og vareejere, men uddraget afbrydes og viser kun en lille stigning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 5
+    },
+    "why": {
+      "F": "Rutinemæssig taksregulering på en havn; rammer ikke mange læsere i dag.",
+      "M": "Lokal havnemyndighed og rutinetakster; ingen tegn på forvaltningssvigt eller bred betydning.",
+      "E": "Havnetakster berører rederier og vareejere, men uddraget afbrydes og viser kun en lille stigning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "ab2407e5db0bdac417556e87e66e9d5bb5d205796158ba500a549b9a785c2341",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:21+00:00",
+  "id": "N-018",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Hyggelig lokal pris med 10.000 kr., men rammer få læsere og er ikke kuriøs.\", \"M\": \"Lokal kulturpris uden forvaltningsmæssig eller national rækkevidde.\", \"E\": \"Ingen erhvervsvinkel; en lille biblioteksprI's uden betydning for virksomheder.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Hyggelig lokal pris med 10.000 kr., men rammer få læsere og er ikke kuriøs.",
+      "M": "Lokal kulturpris uden forvaltningsmæssig eller national rækkevidde.",
+      "E": "Ingen erhvervsvinkel; en lille biblioteksprI's uden betydning for virksomheder."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

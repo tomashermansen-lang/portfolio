@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "2290b026eb1a08d486928c6a59e0b43ef17d84c04471ad94ff6504764f162f2a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:36+00:00",
+  "from": "D-007",
+  "to": "A-020",
+  "shared": "Tangsø Havn",
+  "reply": "{\"related\": false, \"why\": \"Dagens kilde handler om en midlertidig lukning af havnen på grund af højvande, mens arkivdokumentet er et takstregulativ for 2026 om afgifter og priser, så de deler kun stedet og afsenderen.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Dagens kilde handler om en midlertidig lukning af havnen på grund af højvande, mens arkivdokumentet er et takstregulativ for 2026 om afgifter og priser, så de deler kun stedet og afsenderen.",
+    "facts": []
+  },
+  "parse_error": null
+}

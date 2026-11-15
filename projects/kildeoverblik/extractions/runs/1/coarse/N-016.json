@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "27603e86035f6884ed80e0e6b08308fb46a25b6513d3c05e0ec319a1d99cde13",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:20+00:00",
+  "id": "N-016",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 1, \"E\": 1}, \"why\": {\"F\": \"Mindre containerbrand i går aftes, ingen skader, rammer ingen læsere i dag.\", \"M\": \"Lokal rutinbrand uden myndighedssvigt eller bredere betydning.\", \"E\": \"Ingen virksomhedspåvirkning; slukket hurtigt uden skade på bygningen.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 1,
+      "E": 1
+    },
+    "why": {
+      "F": "Mindre containerbrand i går aftes, ingen skader, rammer ingen læsere i dag.",
+      "M": "Lokal rutinbrand uden myndighedssvigt eller bredere betydning.",
+      "E": "Ingen virksomhedspåvirkning; slukket hurtigt uden skade på bygningen."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

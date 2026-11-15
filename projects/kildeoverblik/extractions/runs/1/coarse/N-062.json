@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "be07de2eea58d98631831eaaab37cc645f0b3998b5dea6011b1bb96a636fdb75",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:00:28+00:00",
+  "id": "N-062",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Rutinemæssig udvalgsdagsorden om næste uge, intet der rammer læsere i dag.\", \"M\": \"Regional forvaltning, men kun dagsorden med formalia; passagertal-punktet er afskåret og uden nyhed.\", \"E\": \"Orientering om passagertal kan have transportvinkel, men uddraget viser ingen drift eller nøgletal.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinemæssig udvalgsdagsorden om næste uge, intet der rammer læsere i dag.",
+      "M": "Regional forvaltning, men kun dagsorden med formalia; passagertal-punktet er afskåret og uden nyhed.",
+      "E": "Orientering om passagertal kan have transportvinkel, men uddraget viser ingen drift eller nøgletal."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

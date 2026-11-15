@@ -1,0 +1,130 @@
+{
+  "prompt_sha256": "9d70e68e3058f20a5b9788589d5aa066b642d723c17264cf4a4dcfd0f1eeb57e",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:06:01+00:00",
+  "desk": "F",
+  "group": 8,
+  "finds": [
+    "N-034"
+  ],
+  "facts": [
+    {
+      "text": "Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, før stormen tager til i aften.",
+      "quote": "Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, inden stormen tager til i aften.",
+      "statement": true,
+      "speaker": "Egeby Dyreinternat",
+      "accuses": null,
+      "find": "N-034",
+      "no": 1
+    },
+    {
+      "text": "Internatet mener, at kaninbure i haven bør flyttes ind i garagen eller et skur.",
+      "quote": "kaninbure i haven bør flyttes ind i garagen eller et skur",
+      "statement": true,
+      "speaker": "Egeby Dyreinternat",
+      "accuses": null,
+      "find": "N-034",
+      "no": 2
+    },
+    {
+      "text": "Internatets leder, Pernille Aaby, siger, at internatet hvert år efter blæsevejr får opkald om katte, der ikke er kommet hjem.",
+      "quote": "Hvert år efter blæsevejr får vi opkald om katte, der ikke er kommet hjem.",
+      "statement": true,
+      "speaker": "Pernille Aaby",
+      "accuses": null,
+      "find": "N-034",
+      "no": 3
+    },
+    {
+      "text": "Pernille Aaby siger, at langt de fleste af kattene dukker op af sig selv efter et par dage.",
+      "quote": "Langt de fleste dukker op af sig selv efter et par dage,",
+      "statement": true,
+      "speaker": "Pernille Aaby",
+      "accuses": null,
+      "find": "N-034",
+      "no": 4
+    },
+    {
+      "text": "Internatet minder om, at katte skal være mærket og registreret, så de kan findes igen.",
+      "quote": "katte skal være mærket og registreret, så de kan findes igen",
+      "statement": true,
+      "speaker": "Egeby Dyreinternat",
+      "accuses": null,
+      "find": "N-034",
+      "no": 5
+    },
+    {
+      "text": "Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.",
+      "quote": "Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "N-034",
+      "no": 6
+    }
+  ],
+  "reply": "{\"angle\": \"Dyreinternat opfordrer: Tag katte og kaniner ind før stormen\", \"web\": [{\"s\": \"Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, før stormen tager til i aften.\", \"facts\": [1]}, {\"s\": \"Internatet mener, at kaninbure i haven bør flyttes ind i garagen eller et skur.\", \"facts\": [2]}, {\"s\": \"Internatets leder, Pernille Aaby, siger, at internatet hvert år efter blæsevejr får opkald om katte, der ikke er kommet hjem, og at langt de fleste dukker op af sig selv efter et par dage.\", \"facts\": [3, 4]}, {\"s\": \"Internatet minder om, at katte skal være mærket og registreret, så de kan findes igen.\", \"facts\": [5]}, {\"s\": \"Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.\", \"facts\": [6]}], \"notification\": {\"s\": \"Egeby Dyreinternat opfordrer: Tag katte og kaniner ind, før stormen tager til i aften\", \"facts\": [1]}, \"audio\": [{\"s\": \"Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, før stormen tager til i aften.\", \"facts\": [1]}, {\"s\": \"Internatet mener, at kaninbure i haven bør flyttes ind i garagen eller et skur.\", \"facts\": [2]}, {\"s\": \"Internatet minder om, at katte skal være mærket og registreret, så de kan findes igen.\", \"facts\": [5]}]}\n",
+  "parsed": {
+    "angle": "Dyreinternat opfordrer: Tag katte og kaniner ind før stormen",
+    "web": [
+      {
+        "s": "Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, før stormen tager til i aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Internatet mener, at kaninbure i haven bør flyttes ind i garagen eller et skur.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Internatets leder, Pernille Aaby, siger, at internatet hvert år efter blæsevejr får opkald om katte, der ikke er kommet hjem, og at langt de fleste dukker op af sig selv efter et par dage.",
+        "facts": [
+          3,
+          4
+        ]
+      },
+      {
+        "s": "Internatet minder om, at katte skal være mærket og registreret, så de kan findes igen.",
+        "facts": [
+          5
+        ]
+      },
+      {
+        "s": "Åbent hus på internatet søndag den 15. november kl. 11-15 holdes som planlagt.",
+        "facts": [
+          6
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Egeby Dyreinternat opfordrer: Tag katte og kaniner ind, før stormen tager til i aften",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Egeby Dyreinternat opfordrer ejere af katte og kaniner til at tage dyrene ind, før stormen tager til i aften.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Internatet mener, at kaninbure i haven bør flyttes ind i garagen eller et skur.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Internatet minder om, at katte skal være mærket og registreret, så de kan findes igen.",
+        "facts": [
+          5
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

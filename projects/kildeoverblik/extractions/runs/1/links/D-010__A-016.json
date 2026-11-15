@@ -1,0 +1,15 @@
+{
+  "prompt_sha256": "1007eb34d6a973ff30c52245c5d54486d0a4b73f35a8a3fefdfedced058914da",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:04:39+00:00",
+  "from": "D-010",
+  "to": "A-016",
+  "shared": "Sydhavnen",
+  "reply": "{\"related\": false, \"why\": \"Byrådsreferatet handler om vedtagelsen af en lokalplan og en stiføring, hvor Tangsø Energi blot indgav et høringssvar om en indkørsel, og det siger intet om fabrikslukningen eller de 240 job.\", \"facts\": []}\n",
+  "parsed": {
+    "related": false,
+    "why": "Byrådsreferatet handler om vedtagelsen af en lokalplan og en stiføring, hvor Tangsø Energi blot indgav et høringssvar om en indkørsel, og det siger intet om fabrikslukningen eller de 240 job.",
+    "facts": []
+  },
+  "parse_error": null
+}

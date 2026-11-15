@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "094eb68eda5eea90c098c5ec8d9295de04e8d7b91eef1324b8bc4e3353d9a773",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:56+00:00",
+  "id": "N-042",
+  "reply": "{\"scores\": {\"F\": 3, \"M\": 1, \"E\": 2}, \"why\": {\"F\": \"Lokal restaurantanmeldelse fra andet medie; lidt læsernytte, men ingen bred nyhed.\", \"M\": \"Madanmeldelse uden forvaltning, politik eller myndighedssvigt.\", \"E\": \"Enkelt kros anmeldelse; ingen regnskab, lukning eller regulering.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 3,
+      "M": 1,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokal restaurantanmeldelse fra andet medie; lidt læsernytte, men ingen bred nyhed.",
+      "M": "Madanmeldelse uden forvaltning, politik eller myndighedssvigt.",
+      "E": "Enkelt kros anmeldelse; ingen regnskab, lukning eller regulering."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

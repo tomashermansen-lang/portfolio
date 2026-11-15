@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "6b7071bea74cac8e3cf486d30ecb01e5524eb906c938aa63b96d0776f0ea7216",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:33+00:00",
+  "id": "N-026",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Lokalt høringssvar fra grundejerforening om lokalplan; rammer ingen bredt, ingen kuriøs vinkel.\", \"M\": \"Lokal lokalplanshøring i én kommune; ingen tegn på forvaltningssvigt eller bredere rækkevidde.\", \"E\": \"Lokalplanshøring uden synlig virksomhedspåvirkning; lokalpolitik vægtes lavt.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokalt høringssvar fra grundejerforening om lokalplan; rammer ingen bredt, ingen kuriøs vinkel.",
+      "M": "Lokal lokalplanshøring i én kommune; ingen tegn på forvaltningssvigt eller bredere rækkevidde.",
+      "E": "Lokalplanshøring uden synlig virksomhedspåvirkning; lokalpolitik vægtes lavt."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

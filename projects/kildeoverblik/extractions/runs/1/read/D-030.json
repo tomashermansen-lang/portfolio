@@ -1,0 +1,60 @@
+{
+  "prompt_sha256": "64a5ed42f6dc73314bfc19809357ac1a3ee45e73c1b0a0d67ccc401766f555e1",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:03:14+00:00",
+  "id": "D-030",
+  "reply": "{\"summary\": \"Ifølge Dagbladet Tiden nedskriver rederiet Tangholm sin tørlastflåde med 1,2 mia. kr. og nedjusterer forventningerne til året, og aktien ventes at åbne lavere, når børsen åbner.\",\n\"facts\": [\n{\"text\": \"Rederiet Tangholm nedskriver værdien af sin tørlastflåde med 1,2 mia. kr., ifølge Dagbladet Tiden.\", \"quote\": \"Rederiet Tangholm nedskriver værdien af sin tørlastflåde med 1,2 mia. kr.\", \"statement\": true, \"speaker\": \"Dagbladet Tiden\", \"accuses\": null},\n{\"text\": \"Tangholm nedjusterer forventningerne til året, ifølge Dagbladet Tiden.\", \"quote\": \"nedjusterer forventningerne til året, skriver Dagbladet Tiden\", \"statement\": true, \"speaker\": \"Dagbladet Tiden\", \"accuses\": null},\n{\"text\": \"En aktieanalytiker siger ifølge Dagbladet Tiden, at nedskrivningen er større end ventet.\", \"quote\": \"Avisen citerer en aktieanalytiker for, at nedskrivningen er større end ventet.\", \"statement\": true, \"speaker\": \"En aktieanalytiker (unavngiven), citeret af Dagbladet Tiden\", \"accuses\": null},\n{\"text\": \"Aktien ventes at åbne lavere, når børsen åbner kl. 09.\", \"quote\": \"Aktien ventes at åbne lavere, når børsen åbner kl. 09.\", \"statement\": true, \"speaker\": null, \"accuses\": null}\n],\n\"places\": [],\n\"orgs\": [\"Tangholm\", \"Dagbladet Tiden\"],\n\"values\": {\n\"F\": {\"value\": 3, \"why\": \"Rederiregnskab og aktiefald rammer få læsere direkte; ingen omtalt jobtab eller forbrugerfølger.\"},\n\"M\": {\"value\": 2, \"why\": \"Privat virksomheds nedskrivning uden politisk eller forvaltningsmæssig vinkel eller myndighedssvigt.\"},\n\"E\": {\"value\": 8, \"why\": \"Stor nedskrivning, nedjusterede forventninger og forventet kursfald ved børsåbning; dog kun videregivet via andet medie.\"}\n}}\n",
+  "parsed": {
+    "summary": "Ifølge Dagbladet Tiden nedskriver rederiet Tangholm sin tørlastflåde med 1,2 mia. kr. og nedjusterer forventningerne til året, og aktien ventes at åbne lavere, når børsen åbner.",
+    "facts": [
+      {
+        "text": "Rederiet Tangholm nedskriver værdien af sin tørlastflåde med 1,2 mia. kr., ifølge Dagbladet Tiden.",
+        "quote": "Rederiet Tangholm nedskriver værdien af sin tørlastflåde med 1,2 mia. kr.",
+        "statement": true,
+        "speaker": "Dagbladet Tiden",
+        "accuses": null
+      },
+      {
+        "text": "Tangholm nedjusterer forventningerne til året, ifølge Dagbladet Tiden.",
+        "quote": "nedjusterer forventningerne til året, skriver Dagbladet Tiden",
+        "statement": true,
+        "speaker": "Dagbladet Tiden",
+        "accuses": null
+      },
+      {
+        "text": "En aktieanalytiker siger ifølge Dagbladet Tiden, at nedskrivningen er større end ventet.",
+        "quote": "Avisen citerer en aktieanalytiker for, at nedskrivningen er større end ventet.",
+        "statement": true,
+        "speaker": "En aktieanalytiker (unavngiven), citeret af Dagbladet Tiden",
+        "accuses": null
+      },
+      {
+        "text": "Aktien ventes at åbne lavere, når børsen åbner kl. 09.",
+        "quote": "Aktien ventes at åbne lavere, når børsen åbner kl. 09.",
+        "statement": true,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [],
+    "orgs": [
+      "Tangholm",
+      "Dagbladet Tiden"
+    ],
+    "values": {
+      "F": {
+        "value": 3,
+        "why": "Rederiregnskab og aktiefald rammer få læsere direkte; ingen omtalt jobtab eller forbrugerfølger."
+      },
+      "M": {
+        "value": 2,
+        "why": "Privat virksomheds nedskrivning uden politisk eller forvaltningsmæssig vinkel eller myndighedssvigt."
+      },
+      "E": {
+        "value": 8,
+        "why": "Stor nedskrivning, nedjusterede forventninger og forventet kursfald ved børsåbning; dog kun videregivet via andet medie."
+      }
+    }
+  },
+  "parse_error": null
+}

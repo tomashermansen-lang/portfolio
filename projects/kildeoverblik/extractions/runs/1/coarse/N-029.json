@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "1ab3d727e9d059449d3848dea862d5e782454191beabe19edd2e692cfbdb9f27",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:37+00:00",
+  "id": "N-029",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 3, \"E\": 2}, \"why\": {\"F\": \"Lokalplanhøring om 12 rækkehuse; rammer ingen læsere i dag eller i nat.\", \"M\": \"Kommunal høring, men rent lokal og rutinepræget; ingen svigt eller bredere rækkevidde.\", \"E\": \"Lokalplan for få rækkehuse; ingen tydelig virksomhedspåvirkning, regulering eller nøgletal.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 3,
+      "E": 2
+    },
+    "why": {
+      "F": "Lokalplanhøring om 12 rækkehuse; rammer ingen læsere i dag eller i nat.",
+      "M": "Kommunal høring, men rent lokal og rutinepræget; ingen svigt eller bredere rækkevidde.",
+      "E": "Lokalplan for få rækkehuse; ingen tydelig virksomhedspåvirkning, regulering eller nøgletal."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

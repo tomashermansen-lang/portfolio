@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "4a944c0cda0e03f843bbf97214c5bde3eb5ba92c6bd4517f366ca3e8f20b2f41",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:44+00:00",
+  "id": "A-032",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 3}, \"why\": {\"F\": \"Lokal banks generalforsamling uden konkret konsekvens for mange læsere i dag.\", \"M\": \"Reklamepræget pressemeddelelse; ingen myndighedsvinkel eller svigt, kun lokal betydning.\", \"E\": \"Bank lover at beholde filialer; ingen lukning eller tal i uddraget.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 3
+    },
+    "why": {
+      "F": "Lokal banks generalforsamling uden konkret konsekvens for mange læsere i dag.",
+      "M": "Reklamepræget pressemeddelelse; ingen myndighedsvinkel eller svigt, kun lokal betydning.",
+      "E": "Bank lover at beholde filialer; ingen lukning eller tal i uddraget."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

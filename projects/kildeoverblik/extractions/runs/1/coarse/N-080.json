@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "a1361a26e5b65004ee08885d664c1b989189c4904805f366baec9ec1ba9feed3",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:03+00:00",
+  "id": "N-080",
+  "reply": "{\"scores\": {\"F\": 7, \"M\": 3, \"E\": 3}, \"why\": {\"F\": \"Stormvarsel i aften rammer mange bilister, især med trailer eller campingvogn; haster.\", \"M\": \"Trafikmelding om vejr uden myndighedssvigt eller politisk vinkel; mest servicestof.\", \"E\": \"Vejrrelateret trafikadvarsel; kun relevant hvis broer lukkes og transport rammes.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 7,
+      "M": 3,
+      "E": 3
+    },
+    "why": {
+      "F": "Stormvarsel i aften rammer mange bilister, især med trailer eller campingvogn; haster.",
+      "M": "Trafikmelding om vejr uden myndighedssvigt eller politisk vinkel; mest servicestof.",
+      "E": "Vejrrelateret trafikadvarsel; kun relevant hvis broer lukkes og transport rammes."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

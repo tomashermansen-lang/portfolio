@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "3c4f9419222fea712693397f0f0b1649d3ed4b9cd131ffabe17fb99af49127a4",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:01+00:00",
+  "id": "N-079",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 2, \"E\": 1}, \"why\": {\"F\": \"Ny kommunal hjemmeside rammer få læsere og er ren servicemeddelelse.\", \"M\": \"Lokal kommune, rutinemæssig pressemeddelelse uden forvaltningssag eller svigt.\", \"E\": \"Ingen betydning for virksomheder, regulering eller drift.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 2,
+      "E": 1
+    },
+    "why": {
+      "F": "Ny kommunal hjemmeside rammer få læsere og er ren servicemeddelelse.",
+      "M": "Lokal kommune, rutinemæssig pressemeddelelse uden forvaltningssag eller svigt.",
+      "E": "Ingen betydning for virksomheder, regulering eller drift."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

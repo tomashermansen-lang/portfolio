@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "03a1e7976733af90733ccf923580514623f44829fc8ffd7be3ff084cf9d4b13a",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:21+00:00",
+  "id": "A-012",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 3}, \"why\": {\"F\": \"Lokal rutinkontrakt om boldbaneplejen; rammer få læsere og har ingen kuriøs vinkel.\", \"M\": \"Kommunalt udbud af lokal karakter; ingen tegn på fejl eller forvaltningssvigt i uddraget.\", \"E\": \"Udbudsresultat uden synlige beløb eller afvigelser; kun lille lokal erhvervsinteresse for leverandører.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 3
+    },
+    "why": {
+      "F": "Lokal rutinkontrakt om boldbaneplejen; rammer få læsere og har ingen kuriøs vinkel.",
+      "M": "Kommunalt udbud af lokal karakter; ingen tegn på fejl eller forvaltningssvigt i uddraget.",
+      "E": "Udbudsresultat uden synlige beløb eller afvigelser; kun lille lokal erhvervsinteresse for leverandører."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

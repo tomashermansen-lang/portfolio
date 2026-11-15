@@ -1,0 +1,652 @@
+{
+  "about": "Facit, skrevet i hånden. Modellen ser det aldrig. story_for siger for hver redaktionstype, om begivenheden er en historie dér. Vurderingerne er ansøgerens gæt på tre redaktioners dømmekraft. Facit spørger, om begivenheden var en historie på noget tidspunkt i løbet af morgenen. At en lukning skyldes et påbud, er en hypotese, redaktionen skal have bekræftet; facit siger kun, at dokumenterne hører sammen.",
+  "events": [
+    {
+      "id": "E01",
+      "title": "Stormflod på vestkysten i nat: evakuering ved Nørrevang, tog og havn lukker",
+      "story_for": {
+        "F": true,
+        "M": true,
+        "E": false
+      },
+      "facts": [
+        {
+          "no": 1,
+          "text": "Varslet om stormflod er hævet til højeste niveau for natten til torsdag.",
+          "find": "D-001",
+          "quote": "hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag"
+        },
+        {
+          "no": 2,
+          "text": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke holder.",
+          "find": "D-006",
+          "statement": true,
+          "quote": "Beredskab Vest frygter, at diget ved Nørrevang Strand ikke kan holde til nattens stormflod"
+        },
+        {
+          "no": 3,
+          "text": "Omkring 300 boliger ligger bag diget.",
+          "find": "D-006",
+          "statement": true,
+          "quote": "Ifølge Beredskab Vest ligger omkring 300 boliger bag diget"
+        },
+        {
+          "no": 4,
+          "text": "Kommunen åbner et evakueringscenter kl. 16.",
+          "find": "D-028",
+          "quote": "åbner onsdag kl. 16 et evakueringscenter i Nørrevang Idrætshal"
+        }
+      ],
+      "note": "For erhvervsmediet er havnelukningen højst en notits: en regional havn lukket i tolv timer. Tomas' afgørelse 2026-11-11."
+    },
+    {
+      "id": "E02",
+      "title": "Kommunen udskød to gange at lade diget ved Nørrevang Strand udbedre",
+      "story_for": {
+        "F": true,
+        "M": true,
+        "E": false
+      },
+      "via_links": [
+        "L1"
+      ],
+      "not_presented": [
+        "Nørrevang Kommune",
+        "digelaget"
+      ],
+      "note": "Historien findes kun, når beredskabets udsagn ses sammen med dagsordenen i arkivet. Kritikken skal forelægges, før noget udgives.",
+      "facts": [
+        {
+          "no": 1,
+          "text": "Kommunen har siden 2022 givet digelaget tre påbud om at udbedre diget.",
+          "find": "A-001",
+          "quote": "Kommunen har siden 2022 meddelt digelaget tre påbud om udbedring af diget ved Nørrevang Strand"
+        },
+        {
+          "no": 2,
+          "text": "Påbuddene er ikke efterkommet.",
+          "find": "A-001",
+          "quote": "Påbuddene er ikke efterkommet"
+        },
+        {
+          "no": 3,
+          "text": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning.",
+          "find": "A-001",
+          "quote": "Forvaltningen har i 2023 og 2025 udskudt at lade arbejdet udføre på digelagets regning af hensyn til anlægsrammen"
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "title": "Tangsø Energi lukker fabrik og venter at nedlægge op til 240 stillinger",
+      "story_for": {
+        "F": false,
+        "M": true,
+        "E": true
+      }
+    },
+    {
+      "id": "E05",
+      "title": "Lottogevinst på 42 mio. kr. er ikke hentet",
+      "story_for": {
+        "F": true,
+        "M": false,
+        "E": false
+      }
+    },
+    {
+      "id": "E06",
+      "title": "Rederiet Tangholm nedskriver 1,2 mia. kr.",
+      "story_for": {
+        "F": false,
+        "M": true,
+        "E": true
+      }
+    },
+    {
+      "id": "E07",
+      "title": "Halvor & Søn er gået konkurs",
+      "story_for": {
+        "F": false,
+        "M": false,
+        "E": true
+      }
+    },
+    {
+      "id": "E08",
+      "title": "Væltet lastbil spærrer motorvejen ved Egeby",
+      "story_for": {
+        "F": false,
+        "M": false,
+        "E": false
+      }
+    },
+    {
+      "id": "E09",
+      "title": "Læger advarer mod ny ventetidsgaranti",
+      "story_for": {
+        "F": false,
+        "M": false,
+        "E": false
+      }
+    },
+    {
+      "id": "E10",
+      "title": "Nørrevang Skole lukker efter fund af skimmelsvamp",
+      "story_for": {
+        "F": true,
+        "M": false,
+        "E": false
+      }
+    },
+    {
+      "id": "E11",
+      "title": "Samme entreprenør vinder tredje udbud i Lindholt som eneste tilbudsgiver",
+      "story_for": {
+        "F": false,
+        "M": false,
+        "E": false
+      }
+    },
+    {
+      "id": "E12",
+      "title": "Elprisen topper i aften",
+      "story_for": {
+        "F": false,
+        "M": false,
+        "E": false
+      }
+    },
+    {
+      "id": "E13",
+      "title": "Erhvervsministeren trækker forslag om ny lukkelov",
+      "story_for": {
+        "F": false,
+        "M": true,
+        "E": true
+      }
+    },
+    {
+      "id": "E14",
+      "title": "Inflationen steg til 3,4 procent i oktober",
+      "story_for": {
+        "F": false,
+        "M": true,
+        "E": true
+      }
+    },
+    {
+      "id": "E15",
+      "title": "Kyllingesalat tilbagekaldes efter fund af listeria",
+      "story_for": {
+        "F": true,
+        "M": false,
+        "E": false
+      }
+    },
+    {
+      "id": "E16",
+      "title": "Ventetiden på akutmodtagelsen i Egeby er fordoblet",
+      "story_for": {
+        "F": false,
+        "M": true,
+        "E": false
+      }
+    },
+    {
+      "id": "E17",
+      "title": "Vesterfjord Bank lukker 12 filialer",
+      "story_for": {
+        "F": false,
+        "M": false,
+        "E": true
+      }
+    },
+    {
+      "id": "E18",
+      "title": "Borgmesteren i Sønderholt melder sig ud af sit parti",
+      "story_for": {
+        "F": false,
+        "M": true,
+        "E": false
+      }
+    },
+    {
+      "id": "E19",
+      "title": "Plejecenter lukker den afdeling, tilsynet har givet påbud",
+      "story_for": {
+        "F": true,
+        "M": true,
+        "E": false
+      }
+    }
+  ],
+  "finds": {
+    "D-001": {
+      "event": "E01"
+    },
+    "D-002": {
+      "event": "E11",
+      "buried": "Kontrakten er indgået med Brdr. Kvist Anlæg ApS"
+    },
+    "D-003": {
+      "event": "E12"
+    },
+    "D-004": {
+      "event": "E10",
+      "buried": "skolen lukker fra torsdag"
+    },
+    "D-005": {
+      "event": "E04",
+      "buried": "forventer at nedlægge op til 240 stillinger"
+    },
+    "D-006": {
+      "event": "E01"
+    },
+    "D-007": {
+      "event": "E01"
+    },
+    "D-008": {
+      "event": "E05"
+    },
+    "D-009": {
+      "event": "E01"
+    },
+    "D-010": {
+      "event": "E04"
+    },
+    "D-011": {
+      "event": "E01"
+    },
+    "D-012": {
+      "event": "E08"
+    },
+    "D-013": {
+      "event": "E07"
+    },
+    "D-014": {
+      "event": "E01"
+    },
+    "D-015": {
+      "event": "E16",
+      "buried": "3 timer og 47 minutter"
+    },
+    "D-016": {
+      "event": null,
+      "verification": "Ubekræftet video; i facit er den ikke fra denne storm."
+    },
+    "D-017": {
+      "event": "E06"
+    },
+    "D-018": {
+      "event": "E09"
+    },
+    "D-019": {
+      "event": "E13"
+    },
+    "D-020": {
+      "event": "E15"
+    },
+    "D-021": {
+      "event": "E01"
+    },
+    "D-022": {
+      "event": "E19",
+      "buried": "lukker afdeling C"
+    },
+    "D-023": {
+      "event": "E14"
+    },
+    "D-024": {
+      "event": "E04"
+    },
+    "D-025": {
+      "event": "E17",
+      "buried": "12 af bankens 31 filialer lukker"
+    },
+    "D-026": {
+      "event": "E18"
+    },
+    "D-027": {
+      "event": "E07"
+    },
+    "D-028": {
+      "event": "E01"
+    },
+    "D-029": {
+      "event": "E14"
+    },
+    "D-030": {
+      "event": "E06"
+    },
+    "D-031": {
+      "event": "E08"
+    },
+    "D-032": {
+      "event": "E01"
+    },
+    "D-033": {
+      "event": null
+    },
+    "D-034": {
+      "event": "E05"
+    },
+    "N-001": {
+      "event": null
+    },
+    "N-002": {
+      "event": null
+    },
+    "N-003": {
+      "event": null
+    },
+    "N-004": {
+      "event": null
+    },
+    "N-005": {
+      "event": null
+    },
+    "N-006": {
+      "event": null
+    },
+    "N-007": {
+      "event": null
+    },
+    "N-008": {
+      "event": null
+    },
+    "N-009": {
+      "event": null
+    },
+    "N-010": {
+      "event": null
+    },
+    "N-011": {
+      "event": null
+    },
+    "N-012": {
+      "event": null
+    },
+    "N-013": {
+      "event": null
+    },
+    "N-014": {
+      "event": null
+    },
+    "N-015": {
+      "event": null
+    },
+    "N-016": {
+      "event": null
+    },
+    "N-017": {
+      "event": null
+    },
+    "N-018": {
+      "event": null
+    },
+    "N-019": {
+      "event": null
+    },
+    "N-020": {
+      "event": null
+    },
+    "N-021": {
+      "event": null
+    },
+    "N-022": {
+      "event": null
+    },
+    "N-023": {
+      "event": null
+    },
+    "N-024": {
+      "event": null
+    },
+    "N-025": {
+      "event": null
+    },
+    "N-026": {
+      "event": null
+    },
+    "N-027": {
+      "event": null
+    },
+    "N-028": {
+      "event": null
+    },
+    "N-029": {
+      "event": null
+    },
+    "N-030": {
+      "event": null
+    },
+    "N-031": {
+      "event": null
+    },
+    "N-032": {
+      "event": null
+    },
+    "N-033": {
+      "event": null
+    },
+    "N-034": {
+      "event": null
+    },
+    "N-035": {
+      "event": null
+    },
+    "N-036": {
+      "event": null
+    },
+    "N-037": {
+      "event": null
+    },
+    "N-038": {
+      "event": null
+    },
+    "N-039": {
+      "event": null
+    },
+    "N-040": {
+      "event": null
+    },
+    "N-041": {
+      "event": null
+    },
+    "N-042": {
+      "event": null
+    },
+    "N-043": {
+      "event": null
+    },
+    "N-044": {
+      "event": null
+    },
+    "N-045": {
+      "event": null
+    },
+    "N-046": {
+      "event": null
+    },
+    "N-047": {
+      "event": null
+    },
+    "N-048": {
+      "event": null
+    },
+    "N-049": {
+      "event": null
+    },
+    "N-050": {
+      "event": null
+    },
+    "N-051": {
+      "event": null
+    },
+    "N-052": {
+      "event": null
+    },
+    "N-053": {
+      "event": null
+    },
+    "N-054": {
+      "event": null
+    },
+    "N-055": {
+      "event": null
+    },
+    "N-056": {
+      "event": null
+    },
+    "N-057": {
+      "event": null
+    },
+    "N-058": {
+      "event": null
+    },
+    "N-059": {
+      "event": null
+    },
+    "N-060": {
+      "event": null
+    },
+    "N-061": {
+      "event": null
+    },
+    "N-062": {
+      "event": null
+    },
+    "N-063": {
+      "event": null
+    },
+    "N-064": {
+      "event": null
+    },
+    "N-065": {
+      "event": null
+    },
+    "N-066": {
+      "event": null
+    },
+    "N-067": {
+      "event": null
+    },
+    "N-068": {
+      "event": null
+    },
+    "N-069": {
+      "event": null
+    },
+    "N-070": {
+      "event": null
+    },
+    "N-071": {
+      "event": null
+    },
+    "N-072": {
+      "event": null
+    },
+    "N-073": {
+      "event": null
+    },
+    "N-074": {
+      "event": null
+    },
+    "N-075": {
+      "event": null
+    },
+    "N-076": {
+      "event": null
+    },
+    "N-077": {
+      "event": null
+    },
+    "N-078": {
+      "event": null
+    },
+    "N-079": {
+      "event": null
+    },
+    "N-080": {
+      "event": null
+    },
+    "N-081": {
+      "event": null
+    },
+    "N-082": {
+      "event": null
+    },
+    "N-083": {
+      "event": null
+    },
+    "N-084": {
+      "event": null
+    },
+    "N-085": {
+      "event": null
+    },
+    "N-086": {
+      "event": null
+    }
+  },
+  "links": [
+    {
+      "id": "L1",
+      "from": "D-006",
+      "to": "A-001",
+      "event": "E01",
+      "why": "Samme dige: beredskabet frygter digebrud ved Nørrevang Strand, og dagsordenen viser tre påbud om netop det dige og to udskydelser."
+    },
+    {
+      "id": "L2",
+      "from": "D-002",
+      "to": "A-002",
+      "event": "E11",
+      "why": "Samme entreprenør og samme kommune: eneste tilbudsgiver i september."
+    },
+    {
+      "id": "L3",
+      "from": "D-002",
+      "to": "A-003",
+      "event": "E11",
+      "why": "Samme entreprenør og samme kommune: eneste tilbudsgiver i oktober."
+    },
+    {
+      "id": "L4",
+      "from": "D-022",
+      "to": "A-004",
+      "event": "E19",
+      "why": "Samme afdeling: tilsynet gav i august påbud om medicinhåndtering og natbemanding på afdeling C."
+    },
+    {
+      "id": "L5",
+      "from": "D-005",
+      "to": "A-005",
+      "event": "E04",
+      "why": "Samme fabrik: havnen investerede i 2024 30 mio. kr. i en kaj mod mindst 200 arbejdspladser til og med 2030."
+    },
+    {
+      "id": "L6",
+      "from": "D-022",
+      "to": "A-006",
+      "event": "E19",
+      "why": "Samme afdeling: det opfølgende tilsyn 3. november fandt, at påbuddet ikke var efterlevet."
+    },
+    {
+      "id": "L7",
+      "from": "D-004",
+      "to": "A-031",
+      "event": "E10",
+      "why": "Samme skole og samme fløje: udvalget udskød i 2023 renoveringen af taget på fløj B og C trods fugt og rådgiverens anbefaling."
+    },
+    {
+      "id": "L8",
+      "from": "D-025",
+      "to": "A-032",
+      "event": "E17",
+      "why": "Samme bank: direktøren lovede i marts 2026, at ingen filialer lukkes i 2026 og 2027; lukningerne sker 1. februar 2027."
+    }
+  ],
+  "reviewed": "Første udgave af tabellen blev godkendt af Tomas Hermansen 2026-11-11, før nogen modelkørsel. Samme dag besluttede han efter to gennemgange: redaktionerne er landsdækkende; stormhistorien deles i to (E01 og E02), med tog og havn som dele af E01; ja og nej beholdes. Ja og nej er derefter vurderet på ny for landsdækkende medier af Claude og godkendt af Tomas 2026-11-11, mens første kørsel var i gang og før noget resultat var set. E01 sat til nej for erhvervsmediet af Tomas 2026-11-11."
+}

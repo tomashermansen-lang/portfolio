@@ -1,0 +1,71 @@
+{
+  "prompt_sha256": "05ac2c1d347c1f886917e74ced05d6d67db4376f9a6408ec6b95e46f3428b0a6",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:50+00:00",
+  "id": "D-001",
+  "reply": "{\"summary\": \"Varslingstjenesten har onsdag morgen hævet stormflodsvarslet for vestkysten til højeste niveau for natten til torsdag, med vandstand på 3,2 til 3,6 meter over normalen.\", \"facts\": [{\"text\": \"Varslingstjenesten har hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.\", \"quote\": \"Varslingstjenesten har onsdag morgen hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Vandstanden ventes at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.\", \"quote\": \"Vandstanden ventes at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.\", \"statement\": true, \"speaker\": \"Varslingstjenesten\", \"accuses\": null}, {\"text\": \"Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.\", \"quote\": \"Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Vinden ventes at nå stormstyrke fra vest i løbet af aftenen.\", \"quote\": \"Vinden ventes at nå stormstyrke fra vest i løbet af aftenen.\", \"statement\": true, \"speaker\": \"Varslingstjenesten\", \"accuses\": null}, {\"text\": \"Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.\", \"quote\": \"Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.\", \"statement\": true, \"speaker\": \"Varslingstjenesten\", \"accuses\": null}], \"places\": [\"vestkysten\", \"Tangsø\", \"Nørrevang\"], \"orgs\": [\"Varslingstjenesten\", \"beredskabet\"], \"values\": {\"F\": {\"value\": 9, \"why\": \"Stormflodsvarsel på højeste niveau rammer beboere langs hele vestkysten i nat, og vejr- og sikkerhedsadvarsler vægtes højt.\"}, \"M\": {\"value\": 5, \"why\": \"Offentlig varsling og beredskab er involveret, og mange borgere berøres, men ingen myndighed har svigtet.\"}, \"E\": {\"value\": 3, \"why\": \"Vejr vægtes lavt, og kilden nævner ingen havne, transport, energi eller virksomheder, der rammes.\"}}}\n",
+  "parsed": {
+    "summary": "Varslingstjenesten har onsdag morgen hævet stormflodsvarslet for vestkysten til højeste niveau for natten til torsdag, med vandstand på 3,2 til 3,6 meter over normalen.",
+    "facts": [
+      {
+        "text": "Varslingstjenesten har hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.",
+        "quote": "Varslingstjenesten har onsdag morgen hævet varslet om stormflod på vestkysten til højeste niveau for natten til torsdag.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Vandstanden ventes at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.",
+        "quote": "Vandstanden ventes at nå mellem 3,2 og 3,6 meter over normalen fra Tangsø i syd til Nørrevang i nord.",
+        "statement": true,
+        "speaker": "Varslingstjenesten",
+        "accuses": null
+      },
+      {
+        "text": "Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.",
+        "quote": "Varslet gælder fra onsdag kl. 22 til torsdag kl. 06.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Vinden ventes at nå stormstyrke fra vest i løbet af aftenen.",
+        "quote": "Vinden ventes at nå stormstyrke fra vest i løbet af aftenen.",
+        "statement": true,
+        "speaker": "Varslingstjenesten",
+        "accuses": null
+      },
+      {
+        "text": "Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.",
+        "quote": "Varslingstjenesten opfordrer beboere i lavtliggende områder til at følge beredskabets anvisninger.",
+        "statement": true,
+        "speaker": "Varslingstjenesten",
+        "accuses": null
+      }
+    ],
+    "places": [
+      "vestkysten",
+      "Tangsø",
+      "Nørrevang"
+    ],
+    "orgs": [
+      "Varslingstjenesten",
+      "beredskabet"
+    ],
+    "values": {
+      "F": {
+        "value": 9,
+        "why": "Stormflodsvarsel på højeste niveau rammer beboere langs hele vestkysten i nat, og vejr- og sikkerhedsadvarsler vægtes højt."
+      },
+      "M": {
+        "value": 5,
+        "why": "Offentlig varsling og beredskab er involveret, og mange borgere berøres, men ingen myndighed har svigtet."
+      },
+      "E": {
+        "value": 3,
+        "why": "Vejr vægtes lavt, og kilden nævner ingen havne, transport, energi eller virksomheder, der rammes."
+      }
+    }
+  },
+  "parse_error": null
+}

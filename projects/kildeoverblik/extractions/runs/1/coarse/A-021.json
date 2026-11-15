@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "5e382ba847e2b87417e5f2b2078a8b3c6ec50fc81b73b8624b686a4554e48a0b",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:30+00:00",
+  "id": "A-021",
+  "reply": "{\"scores\": {\"F\": 1, \"M\": 2, \"E\": 2}, \"why\": {\"F\": \"Rutinemæssig ansættelse af havnefoged; rammer ingen læsere.\", \"M\": \"Lokal personalesag i havnemyndighed uden forvaltningsmæssig substans.\", \"E\": \"Havneperson-skifte uden driftspåvirkning; kun marginalt erhvervsrelevant.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 1,
+      "M": 2,
+      "E": 2
+    },
+    "why": {
+      "F": "Rutinemæssig ansættelse af havnefoged; rammer ingen læsere.",
+      "M": "Lokal personalesag i havnemyndighed uden forvaltningsmæssig substans.",
+      "E": "Havneperson-skifte uden driftspåvirkning; kun marginalt erhvervsrelevant."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

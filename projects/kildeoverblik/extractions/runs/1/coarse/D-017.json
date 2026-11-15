@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "41fa8b2e2beef0e02c8a9597e2c369e4985626ffd1f0ee4654ad1bd80d982095",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T13:59:57+00:00",
+  "id": "D-017",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 9}, \"why\": {\"F\": \"Regnskab og nedskrivning rammer ikke almindelige læsere direkte i dag.\", \"M\": \"Virksomhedsregnskab uden tydelig politisk eller forvaltningsmæssig vinkel i uddraget.\", \"E\": \"Nedskrivning på 1,2 mia. og nedjustering i et rederi: regnskabsafvigelse og transport.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 9
+    },
+    "why": {
+      "F": "Regnskab og nedskrivning rammer ikke almindelige læsere direkte i dag.",
+      "M": "Virksomhedsregnskab uden tydelig politisk eller forvaltningsmæssig vinkel i uddraget.",
+      "E": "Nedskrivning på 1,2 mia. og nedjustering i et rederi: regnskabsafvigelse og transport."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

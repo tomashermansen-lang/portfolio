@@ -1,0 +1,120 @@
+{
+  "prompt_sha256": "43937c344c1e36fd9a913979f714dbf6634bde72d478fcce1d8f063c354dc116",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:05:46+00:00",
+  "desk": "E",
+  "group": 4,
+  "finds": [
+    "D-007"
+  ],
+  "facts": [
+    {
+      "text": "Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08 på grund af det varslede højvande.",
+      "quote": "På grund af det varslede højvande lukker Tangsø Havn for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-007",
+      "no": 1
+    },
+    {
+      "text": "Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.",
+      "quote": "Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-007",
+      "no": 2
+    },
+    {
+      "text": "Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.",
+      "quote": "Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.",
+      "statement": false,
+      "speaker": null,
+      "accuses": null,
+      "find": "D-007",
+      "no": 3
+    },
+    {
+      "text": "Havnemyndigheden forventer, at 14 anløb må udskydes.",
+      "quote": "Havnemyndigheden forventer, at 14 anløb må udskydes",
+      "statement": true,
+      "speaker": "Havnemyndigheden",
+      "accuses": null,
+      "find": "D-007",
+      "no": 4
+    },
+    {
+      "text": "Havnemyndigheden forventer, at terminalen først er i normal drift torsdag eftermiddag.",
+      "quote": "at terminalen først er i normal drift torsdag eftermiddag",
+      "statement": true,
+      "speaker": "Havnemyndigheden",
+      "accuses": null,
+      "find": "D-007",
+      "no": 5
+    }
+  ],
+  "reply": "{\"angle\": \"Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 pga. højvande\", \"web\": [{\"s\": \"Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08 på grund af det varslede højvande.\", \"facts\": [1]}, {\"s\": \"Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.\", \"facts\": [2]}, {\"s\": \"Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.\", \"facts\": [3]}, {\"s\": \"Havnemyndigheden forventer, at 14 anløb må udskydes.\", \"facts\": [4]}, {\"s\": \"Havnemyndigheden forventer, at terminalen først er i normal drift torsdag eftermiddag.\", \"facts\": [5]}], \"notification\": {\"s\": \"Tangsø Havn lukker for al skibstrafik onsdag kl. 20 til torsdag kl. 08 pga. højvande\", \"facts\": [1]}, \"audio\": [{\"s\": \"Tangsø Havn lukker for al skibstrafik fra onsdag klokken 20 til torsdag klokken 08 på grund af det varslede højvande.\", \"facts\": [1]}, {\"s\": \"Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.\", \"facts\": [2]}, {\"s\": \"Havnemyndigheden forventer, at 14 anløb må udskydes.\", \"facts\": [4]}]}\n",
+  "parsed": {
+    "angle": "Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 pga. højvande",
+    "web": [
+      {
+        "s": "Tangsø Havn lukker for al skibstrafik fra onsdag kl. 20 til torsdag kl. 08 på grund af det varslede højvande.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Skibe, der ligger ved kaj, skal være fortøjet efter havnens stormreglement senest kl. 18.",
+        "facts": [
+          3
+        ]
+      },
+      {
+        "s": "Havnemyndigheden forventer, at 14 anløb må udskydes.",
+        "facts": [
+          4
+        ]
+      },
+      {
+        "s": "Havnemyndigheden forventer, at terminalen først er i normal drift torsdag eftermiddag.",
+        "facts": [
+          5
+        ]
+      }
+    ],
+    "notification": {
+      "s": "Tangsø Havn lukker for al skibstrafik onsdag kl. 20 til torsdag kl. 08 pga. højvande",
+      "facts": [
+        1
+      ]
+    },
+    "audio": [
+      {
+        "s": "Tangsø Havn lukker for al skibstrafik fra onsdag klokken 20 til torsdag klokken 08 på grund af det varslede højvande.",
+        "facts": [
+          1
+        ]
+      },
+      {
+        "s": "Lukningen omfatter erhvervshavnen, containerterminalen og færgelejet.",
+        "facts": [
+          2
+        ]
+      },
+      {
+        "s": "Havnemyndigheden forventer, at 14 anløb må udskydes.",
+        "facts": [
+          4
+        ]
+      }
+    ]
+  },
+  "parse_error": null
+}

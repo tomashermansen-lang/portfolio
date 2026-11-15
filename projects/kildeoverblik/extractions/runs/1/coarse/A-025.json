@@ -1,0 +1,21 @@
+{
+  "prompt_sha256": "c6fb525182a4eaf9896e9943c6ab24f01c4a4502fd40b87da84899e89211dc99",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:01:36+00:00",
+  "id": "A-025",
+  "reply": "{\"scores\": {\"F\": 2, \"M\": 3, \"E\": 1}, \"why\": {\"F\": \"Lokal cykelsti, ingen akut betydning for mange læsere.\", \"M\": \"Kommunal pressemeddelelse, rent lokal og rutinepræget uden forvaltningssvigt.\", \"E\": \"Ingen erhvervsmæssig vinkel; lokal infrastruktur uden driftspåvirkning.\"}, \"unverified\": false}\n",
+  "parsed": {
+    "scores": {
+      "F": 2,
+      "M": 3,
+      "E": 1
+    },
+    "why": {
+      "F": "Lokal cykelsti, ingen akut betydning for mange læsere.",
+      "M": "Kommunal pressemeddelelse, rent lokal og rutinepræget uden forvaltningssvigt.",
+      "E": "Ingen erhvervsmæssig vinkel; lokal infrastruktur uden driftspåvirkning."
+    },
+    "unverified": false
+  },
+  "parse_error": null
+}

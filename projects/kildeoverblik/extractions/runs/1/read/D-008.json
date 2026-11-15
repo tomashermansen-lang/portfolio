@@ -1,0 +1,75 @@
+{
+  "prompt_sha256": "0ce6a7cf2ead60f25aedcbb552b2d6bff8b37a03ff324add5408e0030779e770",
+  "model": "claude-sonnet-5-5",
+  "at": "2026-11-11T14:02:02+00:00",
+  "id": "D-008",
+  "reply": "{\"summary\": \"En lotterigevinst på 42 mio. kr. fra en kupon købt i en kiosk i Lindholt er stadig ikke hentet, og vinderen har frist til lørdag den 14. november kl. 12.\", \"facts\": [{\"text\": \"En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er endnu ikke hentet.\", \"quote\": \"En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er stadig ikke hentet.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Kuponen blev købt i en kiosk i Lindholt.\", \"quote\": \"Kuponen blev købt i en kiosk i Lindholt\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Vinderen har frist til lørdag den 14. november kl. 12 til at melde sig.\", \"quote\": \"vinderen har frist til lørdag den 14. november kl. 12 til at melde sig\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Efter fristen går beløbet tilbage i puljen.\", \"quote\": \"Derefter går beløbet tilbage i puljen.\", \"statement\": false, \"speaker\": null, \"accuses\": null}, {\"text\": \"Vestlotteriet oplyser, at det er den største uafhentede gevinst i lotteriets historie.\", \"quote\": \"Det er den største uafhentede gevinst i lotteriets historie.\", \"statement\": true, \"speaker\": \"Vestlotteriet\", \"accuses\": null}, {\"text\": \"Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.\", \"quote\": \"Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.\", \"statement\": false, \"speaker\": null, \"accuses\": null}], \"places\": [\"Lindholt\"], \"orgs\": [\"Vestlotteriet\"], \"values\": {\"F\": {\"value\": 9, \"why\": \"Rekordgevinst på 42 mio. kr., kuriøs sag med frist lørdag, og læsere kan selv tjekke deres kuponer.\"}, \"M\": {\"value\": 2, \"why\": \"Kuriøs sag uden myndighedssvigt eller politisk dimension; kun lokalt anslag i Lindholt.\"}, \"E\": {\"value\": 2, \"why\": \"Ingen lukninger, regnskaber eller regulering; kun en lotterigevinst uden betydning for erhvervslivet.\"}}}\n",
+  "parsed": {
+    "summary": "En lotterigevinst på 42 mio. kr. fra en kupon købt i en kiosk i Lindholt er stadig ikke hentet, og vinderen har frist til lørdag den 14. november kl. 12.",
+    "facts": [
+      {
+        "text": "En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er endnu ikke hentet.",
+        "quote": "En gevinst på 42 mio. kr. fra Vestlotteriets trækning den 15. august er stadig ikke hentet.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Kuponen blev købt i en kiosk i Lindholt.",
+        "quote": "Kuponen blev købt i en kiosk i Lindholt",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Vinderen har frist til lørdag den 14. november kl. 12 til at melde sig.",
+        "quote": "vinderen har frist til lørdag den 14. november kl. 12 til at melde sig",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Efter fristen går beløbet tilbage i puljen.",
+        "quote": "Derefter går beløbet tilbage i puljen.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      },
+      {
+        "text": "Vestlotteriet oplyser, at det er den største uafhentede gevinst i lotteriets historie.",
+        "quote": "Det er den største uafhentede gevinst i lotteriets historie.",
+        "statement": true,
+        "speaker": "Vestlotteriet",
+        "accuses": null
+      },
+      {
+        "text": "Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.",
+        "quote": "Vestlotteriet opfordrer alle, der spillede i Lindholt i uge 33, til at tjekke deres kuponer.",
+        "statement": false,
+        "speaker": null,
+        "accuses": null
+      }
+    ],
+    "places": [
+      "Lindholt"
+    ],
+    "orgs": [
+      "Vestlotteriet"
+    ],
+    "values": {
+      "F": {
+        "value": 9,
+        "why": "Rekordgevinst på 42 mio. kr., kuriøs sag med frist lørdag, og læsere kan selv tjekke deres kuponer."
+      },
+      "M": {
+        "value": 2,
+        "why": "Kuriøs sag uden myndighedssvigt eller politisk dimension; kun lokalt anslag i Lindholt."
+      },
+      "E": {
+        "value": 2,
+        "why": "Ingen lukninger, regnskaber eller regulering; kun en lotterigevinst uden betydning for erhvervslivet."
+      }
+    }
+  },
+  "parse_error": null
+}
